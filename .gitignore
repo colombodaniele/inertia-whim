@@ -1,0 +1,7 @@
+# Local operating system and editor noise.
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary local work folders.
+trials/
