@@ -235,3 +235,11 @@
 - Files touched: `.gitignore`, `.git/`, `PROJECT_LOG.md`.
 - Commands/tests run + results: Checked largest asset size; largest file was `Music/Ophelia vocals - 33.wav` at about 51.2 MB, below GitHub's 100 MB file limit. `git init`, `git add .`, `git commit -m "Initial Inertia Whim website"`, `git branch -M main`, `git remote set-url origin https://github.com/colombodaniele/inertia-whim.git` succeeded. Push attempts to `https://github.com/DColombo13/inertia-whim.git` and `https://github.com/colombodaniele/inertia-whim.git` both failed with `Repository not found`.
 - Follow-ups / TODOs: Create or grant access to the GitHub repository `colombodaniele/inertia-whim`, then rerun `git push -u origin main`.
+
+## 2026-06-17 19:54
+
+- What changed: Pushed the committed Inertia Whim site to the newly created GitHub repository.
+- Why: The repository was created after the first push attempt, so the local site could now be uploaded.
+- Files touched: `PROJECT_LOG.md`, remote repository `https://github.com/colombodaniele/inertia-whim`.
+- Commands/tests run + results: `git push -u origin main` succeeded and set `main` to track `origin/main`; GitHub warned that `Music/Ophelia vocals - 33.wav` is 51.20 MB, slightly above the recommended 50 MB but below the hard 100 MB limit. `git status --short --branch` showed `main...origin/main`; `git ls-remote --heads origin main` returned commit `1cfedff`.
+- Follow-ups / TODOs: Enable GitHub Pages from the repository's `main` branch root if a public preview URL is needed.
