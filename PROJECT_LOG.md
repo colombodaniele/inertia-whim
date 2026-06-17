@@ -227,3 +227,11 @@
 - Files touched: `script.js`, `PROJECT_LOG.md`.
 - Commands/tests run + results: Python smoke check for replayable tab reveal markers, local references, tab/panel order, no duplicate ids, no one-shot `observer.unobserve`, and HTML structure passed.
 - Follow-ups / TODOs: Browser-review tab switching to confirm the replay timing feels natural during horizontal slides.
+
+## 2026-06-17 19:45
+
+- What changed: Initialized a local Git repository, added a minimal `.gitignore`, committed the current Inertia Whim website, renamed the branch to `main`, and configured the GitHub remote to match the Foreign Logic account pattern.
+- Why: The user asked to upload the local site to GitHub so it can be checked online.
+- Files touched: `.gitignore`, `.git/`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Checked largest asset size; largest file was `Music/Ophelia vocals - 33.wav` at about 51.2 MB, below GitHub's 100 MB file limit. `git init`, `git add .`, `git commit -m "Initial Inertia Whim website"`, `git branch -M main`, `git remote set-url origin https://github.com/colombodaniele/inertia-whim.git` succeeded. Push attempts to `https://github.com/DColombo13/inertia-whim.git` and `https://github.com/colombodaniele/inertia-whim.git` both failed with `Repository not found`.
+- Follow-ups / TODOs: Create or grant access to the GitHub repository `colombodaniele/inertia-whim`, then rerun `git push -u origin main`.
