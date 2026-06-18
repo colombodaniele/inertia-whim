@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Inertia Whim</title>
-    <link rel="icon" type="image/png" href="Graphics/inertia_whim_circle_logo.png">
-    <link rel="apple-touch-icon" href="Graphics/inertia_whim_circle_logo.png">
+    <link rel="icon" type="image/png" href="Graphics/extracted_low_left_patch.png">
+    <link rel="apple-touch-icon" href="Graphics/extracted_low_left_patch.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body class="is-landing-intro">
     <!-- Landing keeps the requested image as the only first-screen visual content. -->
     <main>
       <section class="landing" aria-label="Inertia Whim landing image">
-        <img class="landing-image" src="Graphics/inertia_whim_correct_top_right_HD.png" alt="Inertia Whim">
+        <img class="landing-image" src="Graphics/Inertia Whim.png" alt="Inertia Whim">
         <form class="landing-signup" data-landing-signup aria-label="Email signup">
           <p>Stay in the know</p>
           <div>
@@ -43,15 +43,19 @@
         </footer>
       </section>
 
-      <!-- Tabs keep the local site single-file friendly while separating core content. -->
+      <div class="site-background" aria-hidden="true">
+        <div class="site-background-layer site-background-black"></div>
+        <div class="site-background-layer site-background-blue"></div>
+      </div>
+
+      <!-- Section buttons stay pinned after the landing page and jump through the scroll page. -->
       <nav class="tab-bar" aria-label="Site sections">
         <button class="tab-button is-active" type="button" data-tab="bio" aria-controls="bio" aria-selected="true">Music</button>
         <button class="tab-button" type="button" data-tab="contact" aria-controls="contact" aria-selected="false">Contact</button>
         <button class="tab-button" type="button" data-tab="gallery" aria-controls="gallery" aria-selected="false">Gallery</button>
       </nav>
 
-      <div class="tab-viewport">
-        <div class="tab-track" data-tab-track>
+      <div class="site-sections" data-section-track>
           <section id="bio" class="tab-panel bio-panel is-active" data-panel="bio">
             <div class="panel-overlay">
               <div class="content-shell bio-grid">
@@ -60,25 +64,31 @@
                   <p>Born in London, Inertia Whim make blurred, high-pressure guitar music that drifts between shoegaze haze, post-punk pulse, and 90s alternative noise. Their songs move like half-remembered dreams: soft voices buried under waves of distortion, repetition, and sudden flashes of melody.</p>
                 </article>
 
-                <section class="music-list" aria-label="Music">
-                  <article class="track-card reveal reveal-right" style="--reveal-delay: 120ms">
-                    <div>
-                      <h2>Demo 33</h2>
+                <section class="music-list carousel reveal reveal-right" style="--reveal-delay: 120ms" aria-label="Music" data-carousel>
+                  <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="Previous song" data-carousel-prev></button>
+                  <div class="carousel-viewport">
+                    <div class="carousel-track" data-carousel-track>
+                      <article class="track-card carousel-card" data-carousel-card>
+                        <div>
+                          <h2>Demo 33</h2>
+                        </div>
+                        <audio controls preload="metadata" src="Music/Ophelia%20vocals%20-%2033.wav"></audio>
+                      </article>
+                      <article class="track-card carousel-card" data-carousel-card>
+                        <div>
+                          <h2>Demo 11</h2>
+                        </div>
+                        <audio controls preload="metadata" src="Music/Tambourine.mp3"></audio>
+                      </article>
+                      <article class="track-card carousel-card" data-carousel-card>
+                        <div>
+                          <h2>Demo 9</h2>
+                        </div>
+                        <audio controls preload="metadata" src="Music/Demo%209%20Dani%20-%20new%20structure.mp3"></audio>
+                      </article>
                     </div>
-                    <audio controls preload="metadata" src="Music/Ophelia%20vocals%20-%2033.wav"></audio>
-                  </article>
-                  <article class="track-card reveal reveal-right" style="--reveal-delay: 240ms">
-                    <div>
-                      <h2>Demo 11</h2>
-                    </div>
-                    <audio controls preload="metadata" src="Music/Tambourine.mp3"></audio>
-                  </article>
-                  <article class="track-card reveal reveal-right" style="--reveal-delay: 360ms">
-                    <div>
-                      <h2>Demo 9</h2>
-                    </div>
-                    <audio controls preload="metadata" src="Music/Demo%209%20Dani%20-%20new%20structure.mp3"></audio>
-                  </article>
+                  </div>
+                  <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="Next song" data-carousel-next></button>
                 </section>
               </div>
             </div>
@@ -130,33 +140,38 @@
           <section id="gallery" class="tab-panel gallery-panel" data-panel="gallery">
             <div class="content-shell gallery-shell">
               <p class="section-kicker reveal reveal-blur">Gallery</p>
-              <div class="gallery-stage" aria-label="Band image gallery">
-                <figure class="featured-photo reveal reveal-blur">
-                  <img data-gallery-featured src="Pictures/Michal1.png" alt="Michal">
-                  <figcaption data-gallery-caption>Michal</figcaption>
-                </figure>
-                <div class="gallery-strip" role="list" aria-label="Choose gallery image">
-                  <button class="gallery-thumb is-active reveal reveal-right" style="--reveal-delay: 120ms" type="button" data-gallery-src="Pictures/Michal1.png" data-gallery-alt="Michal" role="listitem">
-                    <img src="Pictures/Michal1.png" alt="">
-                    <span>Michal</span>
-                  </button>
-                  <button class="gallery-thumb reveal reveal-right" style="--reveal-delay: 220ms" type="button" data-gallery-src="Pictures/Ophelia1.png" data-gallery-alt="Ophelia" role="listitem">
-                    <img src="Pictures/Ophelia1.png" alt="">
-                    <span>Ophelia</span>
-                  </button>
-                  <button class="gallery-thumb reveal reveal-right" style="--reveal-delay: 320ms" type="button" data-gallery-src="Pictures/Dani1.png" data-gallery-alt="Dani" role="listitem">
-                    <img src="Pictures/Dani1.png" alt="">
-                    <span>Dani</span>
-                  </button>
-                  <button class="gallery-thumb reveal reveal-right" style="--reveal-delay: 420ms" type="button" data-gallery-src="Pictures/Tony1.png" data-gallery-alt="Tony" role="listitem">
-                    <img src="Pictures/Tony1.png" alt="">
-                    <span>Tony</span>
-                  </button>
+              <div class="gallery-stage carousel reveal reveal-blur" aria-label="Band image gallery" data-carousel>
+                <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="Previous image" data-carousel-prev></button>
+                <div class="carousel-viewport">
+                  <div class="carousel-track" data-carousel-track>
+                    <figure class="featured-photo carousel-card" data-carousel-card>
+                      <img src="Pictures/Michal1.png" alt="Michal">
+                      <figcaption>Michal</figcaption>
+                    </figure>
+                    <figure class="featured-photo carousel-card" data-carousel-card>
+                      <img src="Pictures/Ophelia1.png" alt="Ophelia">
+                      <figcaption>Ophelia</figcaption>
+                    </figure>
+                    <figure class="featured-photo carousel-card" data-carousel-card>
+                      <img src="Pictures/Dani1.png" alt="Dani">
+                      <figcaption>Dani</figcaption>
+                    </figure>
+                    <figure class="featured-photo carousel-card" data-carousel-card>
+                      <img src="Pictures/Tony1.png" alt="Tony">
+                      <figcaption>Tony</figcaption>
+                    </figure>
+                  </div>
                 </div>
+                <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="Next image" data-carousel-next></button>
               </div>
             </div>
           </section>
-        </div>
+
+          <section class="outro-panel" aria-label="Inertia Whim closing artwork">
+            <figure class="outro-frame reveal reveal-blur">
+              <img src="Graphics/iw_patch_initials_logo_trial_preview.png" alt="Inertia Whim initials logo">
+            </figure>
+          </section>
       </div>
     </main>
 

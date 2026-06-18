@@ -1,25 +1,18 @@
-// Simple tab controller keeps all sections available in one local static page.
+// Scroll-section controller keeps the sticky buttons synced with the visible content.
 (() => {
   const buttons = Array.from(document.querySelectorAll("[data-tab]"));
   const panels = Array.from(document.querySelectorAll("[data-panel]"));
-  const track = document.querySelector("[data-tab-track]");
-  const viewport = document.querySelector(".tab-viewport");
+  const tabBar = document.querySelector(".tab-bar");
+  const outroPanel = document.querySelector(".outro-panel");
   const enteredSiteKey = "inertiaWhimEnteredSite";
-  const swipeDistance = 110;
-  const wheelDistance = 160;
-  const previewLimit = 132;
-  let touchStartX = null;
-  let touchStartY = null;
-  let touchDeltaX = 0;
-  let touchDeltaY = 0;
-  let wheelDeltaX = 0;
-  let wheelResetTimer = null;
-  let previewResetTimer = null;
-  let wheelGestureCommitted = false;
+  let scrollTicking = false;
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  const activateTab = (tabName) => {
-    const activeIndex = buttons.findIndex((button) => button.dataset.tab === tabName);
+  if (buttons.length === 0 || panels.length === 0) {
+    return;
+  }
 
+  const setActiveSection = (tabName, { replayReveal = false } = {}) => {
     buttons.forEach((button) => {
       const isActive = button.dataset.tab === tabName;
       button.classList.toggle("is-active", isActive);
@@ -29,64 +22,119 @@
     panels.forEach((panel) => {
       const isActive = panel.dataset.panel === tabName;
       panel.classList.toggle("is-active", isActive);
-      panel.setAttribute("aria-hidden", String(!isActive));
+      panel.setAttribute("aria-hidden", "false");
     });
 
-    if (track && activeIndex >= 0) {
-      track.style.transform = `translateX(-${activeIndex * 100}vw)`;
+    if (replayReveal) {
+      window.inertiaWhimReveal?.refresh({ replayActiveTab: true });
     }
-
-    window.inertiaWhimReveal?.refresh({ replayActiveTab: true });
   };
 
-  window.inertiaWhimTabs = {
-    activateTab,
-    enteredSiteKey,
-    getActiveTab: () => buttons[getActiveIndex()]?.dataset.tab || "bio",
+  const getActiveIndex = () => {
+    const activeIndex = buttons.findIndex((button) => button.classList.contains("is-active"));
+    return activeIndex >= 0 ? activeIndex : 0;
   };
 
-  const getActiveIndex = () => buttons.findIndex((button) => button.classList.contains("is-active"));
+  const getPanel = (tabName) => panels.find((panel) => panel.dataset.panel === tabName);
 
-  const shouldIgnoreGesture = (target) => Boolean(target.closest("button, input, textarea, select, a, audio, .custom-audio-player, .contact-form"));
-
-  const clampPreviewOffset = (offset) => {
-    const activeIndex = getActiveIndex();
-    const isPullingBeforeFirst = offset > 0 && activeIndex === 0;
-    const isPullingAfterLast = offset < 0 && activeIndex === buttons.length - 1;
-    const resistedOffset = isPullingBeforeFirst || isPullingAfterLast ? offset * 0.28 : offset;
-
-    return Math.max(Math.min(resistedOffset, previewLimit), -previewLimit);
+  const writeHash = (tabName) => {
+    if (window.location.hash !== `#${tabName}`) {
+      history.replaceState(null, "", `#${tabName}`);
+    }
   };
 
-  const setPreviewOffset = (offset, isDragging = true) => {
-    if (!viewport) {
+  const scrollToSection = (tabName, { updateHash = true } = {}) => {
+    const panel = getPanel(tabName);
+
+    if (!panel) {
       return;
     }
 
-    clearTimeout(previewResetTimer);
-    viewport.classList.add("is-previewing");
-    viewport.classList.toggle("is-dragging", isDragging);
-    viewport.style.setProperty("--tab-preview-offset", `${clampPreviewOffset(offset).toFixed(1)}px`);
+    setActiveSection(tabName);
+    window.inertiaWhimReveal?.showSection(panel);
+    panel.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    if (updateHash) {
+      writeHash(tabName);
+    }
+
+    try {
+      sessionStorage.setItem(enteredSiteKey, "true");
+    } catch (error) {
+      // Browsers can block storage; section navigation should still work.
+    }
   };
 
-  const resetPreviewOffset = (animate = true) => {
-    if (!viewport) {
+  const updateActiveFromScroll = () => {
+    const marker = (tabBar?.offsetHeight || 68) + window.innerHeight * 0.32;
+    const visiblePanel = panels.find((panel) => {
+      const rect = panel.getBoundingClientRect();
+      return rect.top <= marker && rect.bottom >= marker;
+    });
+
+    if (visiblePanel) {
+      setActiveSection(visiblePanel.dataset.panel);
+    }
+
+    updateBackgroundFade();
+    scrollTicking = false;
+  };
+
+  const updateBackgroundFade = () => {
+    const firstPanel = panels[0];
+    if (!firstPanel) {
       return;
     }
 
-    clearTimeout(previewResetTimer);
-    viewport.classList.remove("is-dragging");
-    viewport.classList.add("is-previewing");
-    viewport.style.setProperty("--tab-preview-offset", "0px");
+    const stickyOffset = tabBar?.offsetHeight || 68;
+    const start = firstPanel.getBoundingClientRect().top + window.scrollY;
+    const end = document.documentElement.scrollHeight - window.innerHeight;
+    const range = Math.max(end - start, 1);
+    const progress = Math.min(Math.max((window.scrollY - start) / range, 0), 1);
+    const landingRange = Math.max(start - stickyOffset, 1);
+    const landingProgress = Math.min(Math.max(window.scrollY / landingRange, 0), 1);
+    const fadeProgress = Math.min(Math.max((landingProgress - 0.32) / 0.58, 0), 1);
+    const easedLandingProgress = fadeProgress * fadeProgress * (3 - 2 * fadeProgress);
+    const tabProgress = Math.min(Math.max((landingProgress - 0.64) / 0.36, 0), 1);
+    const easedTabProgress = tabProgress * tabProgress * (3 - 2 * tabProgress);
+    const outroStart = outroPanel ? outroPanel.getBoundingClientRect().top + window.scrollY - window.innerHeight * 0.6 : Infinity;
+    const outroProgress = outroPanel ? Math.min(Math.max((window.scrollY - outroStart) / (window.innerHeight * 0.45), 0), 1) : 0;
+    const easedOutroProgress = outroProgress * outroProgress * (3 - 2 * outroProgress);
+    const outroImageStart = outroPanel ? outroPanel.getBoundingClientRect().top + window.scrollY - window.innerHeight * 0.55 : Infinity;
+    const outroImageEnd = end;
+    const outroImageRange = Math.max(outroImageEnd - outroImageStart, 1);
+    const outroImageProgress = outroPanel ? Math.min(Math.max((window.scrollY - outroImageStart) / outroImageRange, 0), 1) : 0;
+    const easedOutroImageProgress = outroImageProgress * outroImageProgress * (3 - 2 * outroImageProgress);
+    const backgroundOffset = prefersReducedMotion ? 0 : -160 * progress;
+    const landingOffset = 0;
+    const landingOpacity = 1 - easedLandingProgress;
+    const overlayOpacity = 1 - easedLandingProgress;
+    const tabOpacity = easedTabProgress * (1 - easedOutroProgress);
+    const tabSlide = prefersReducedMotion ? 0 : 44 * ((1 - easedTabProgress) + easedOutroProgress);
+    const outroBlur = prefersReducedMotion ? 0 : 12 * (1 - easedOutroImageProgress);
+    const outroY = prefersReducedMotion ? 0 : 34 * (1 - easedOutroImageProgress);
+    const outroScale = 0.94 + 0.06 * easedOutroImageProgress;
 
-    if (!animate) {
-      viewport.classList.remove("is-previewing");
+    document.body.style.setProperty("--blue-background-opacity", progress.toFixed(3));
+    document.body.style.setProperty("--background-y", `${backgroundOffset.toFixed(1)}px`);
+    document.body.style.setProperty("--landing-image-opacity", Math.max(landingOpacity, 0).toFixed(3));
+    document.body.style.setProperty("--landing-image-y", `${landingOffset.toFixed(1)}px`);
+    document.body.style.setProperty("--landing-overlay-opacity", Math.max(overlayOpacity, 0).toFixed(3));
+    document.body.style.setProperty("--landing-tabs-opacity", tabOpacity.toFixed(3));
+    document.body.style.setProperty("--landing-tabs-slide", `${tabSlide.toFixed(1)}px`);
+    document.body.style.setProperty("--outro-opacity", easedOutroImageProgress.toFixed(3));
+    document.body.style.setProperty("--outro-blur", `${outroBlur.toFixed(1)}px`);
+    document.body.style.setProperty("--outro-y", `${outroY.toFixed(1)}px`);
+    document.body.style.setProperty("--outro-scale", outroScale.toFixed(3));
+  };
+
+  const requestScrollUpdate = () => {
+    if (scrollTicking) {
       return;
     }
 
-    previewResetTimer = setTimeout(() => {
-      viewport.classList.remove("is-previewing");
-    }, 240);
+    scrollTicking = true;
+    requestAnimationFrame(updateActiveFromScroll);
   };
 
   const activateByOffset = (offset) => {
@@ -94,8 +142,7 @@
     const nextIndex = Math.min(Math.max(activeIndex + offset, 0), buttons.length - 1);
 
     if (nextIndex !== activeIndex && buttons[nextIndex]) {
-      activateTab(buttons[nextIndex].dataset.tab);
-      history.replaceState(null, "", `#${buttons[nextIndex].dataset.tab}`);
+      scrollToSection(buttons[nextIndex].dataset.tab);
       return true;
     }
 
@@ -104,123 +151,41 @@
 
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
-      resetPreviewOffset(false);
-      activateTab(button.dataset.tab);
-      history.replaceState(null, "", `#${button.dataset.tab}`);
+      scrollToSection(button.dataset.tab);
     });
   });
 
   const initialTab = window.location.hash.replace("#", "");
   if (buttons.some((button) => button.dataset.tab === initialTab)) {
-    activateTab(initialTab);
+    setActiveSection(initialTab);
   } else if (buttons[0]) {
-    activateTab(buttons[0].dataset.tab);
+    setActiveSection(buttons[0].dataset.tab);
   }
 
-  window.addEventListener("wheel", (event) => {
-    if (shouldIgnoreGesture(event.target)) {
-      return;
-    }
-
-    if (Math.abs(event.deltaX) <= Math.abs(event.deltaY) * 1.15) {
-      return;
-    }
-
-    event.preventDefault();
-
-    if (wheelGestureCommitted) {
-      clearTimeout(wheelResetTimer);
-      wheelResetTimer = setTimeout(() => {
-        wheelDeltaX = 0;
-        wheelGestureCommitted = false;
-        resetPreviewOffset(true);
-      }, 520);
-      return;
-    }
-
-    wheelDeltaX += event.deltaX;
-    setPreviewOffset(-wheelDeltaX * 0.62);
-
-    if (Math.abs(wheelDeltaX) >= wheelDistance) {
-      const direction = wheelDeltaX > 0 ? 1 : -1;
-      wheelDeltaX = 0;
-      wheelGestureCommitted = true;
-      resetPreviewOffset(false);
-      activateByOffset(direction);
-      clearTimeout(wheelResetTimer);
-      wheelResetTimer = setTimeout(() => {
-        wheelGestureCommitted = false;
-      }, 520);
-      return;
-    }
-
-    clearTimeout(wheelResetTimer);
-    wheelResetTimer = setTimeout(() => {
-      wheelDeltaX = 0;
-      wheelGestureCommitted = false;
-      resetPreviewOffset(true);
-    }, 260);
-  }, { passive: false });
-
-  window.addEventListener("touchstart", (event) => {
-    if (shouldIgnoreGesture(event.target)) {
-      touchStartX = null;
-      touchStartY = null;
-      return;
-    }
-
-    const touch = event.touches[0];
-    touchStartX = touch.clientX;
-    touchStartY = touch.clientY;
-    touchDeltaX = 0;
-    touchDeltaY = 0;
-  }, { passive: true });
-
-  window.addEventListener("touchmove", (event) => {
-    if (touchStartX === null || touchStartY === null) {
-      return;
-    }
-
-    const touch = event.touches[0];
-    touchDeltaX = touch.clientX - touchStartX;
-    touchDeltaY = touch.clientY - touchStartY;
-
-    if (Math.abs(touchDeltaX) > 12 && Math.abs(touchDeltaX) > Math.abs(touchDeltaY) * 1.2) {
-      event.preventDefault();
-      setPreviewOffset(touchDeltaX);
-    }
-  }, { passive: false });
-
-  window.addEventListener("touchend", () => {
-    if (touchStartX === null || touchStartY === null) {
-      return;
-    }
-
-    const deltaX = touchDeltaX;
-    const deltaY = touchDeltaY;
-    touchStartX = null;
-    touchStartY = null;
-    touchDeltaX = 0;
-    touchDeltaY = 0;
-
-    if (Math.abs(deltaX) > swipeDistance && Math.abs(deltaX) > Math.abs(deltaY) * 1.25) {
-      resetPreviewOffset(false);
-      activateByOffset(deltaX < 0 ? 1 : -1);
-      return;
-    }
-
-    resetPreviewOffset(true);
-  }, { passive: true });
-
   window.addEventListener("keydown", (event) => {
+    const isTyping = event.target.closest("input, textarea, select");
+
+    if (isTyping) {
+      return;
+    }
+
     if (event.key === "ArrowRight") {
-      resetPreviewOffset(false);
       activateByOffset(1);
     } else if (event.key === "ArrowLeft") {
-      resetPreviewOffset(false);
       activateByOffset(-1);
     }
   });
+
+  window.addEventListener("scroll", requestScrollUpdate, { passive: true });
+  window.addEventListener("resize", requestScrollUpdate, { passive: true });
+
+  window.inertiaWhimTabs = {
+    activateTab: scrollToSection,
+    enteredSiteKey,
+    getActiveTab: () => buttons[getActiveIndex()]?.dataset.tab || "bio",
+  };
+
+  requestAnimationFrame(updateActiveFromScroll);
 })();
 
 // Landing intro resolves the artwork from blur before revealing overlays.
@@ -229,168 +194,6 @@
     document.body.classList.add("is-landing-ready");
     document.body.classList.remove("is-landing-intro");
   });
-})();
-
-// Landing-to-tabs preview makes the first downward gesture feel physical before snapping.
-(() => {
-  const landing = document.querySelector(".landing");
-  const tabBar = document.querySelector(".tab-bar");
-
-  if (!landing || !tabBar) {
-    return;
-  }
-
-  const commitDistance = 190;
-  const previewLimit = 230;
-  let wheelDeltaY = 0;
-  let wheelResetTimer = null;
-  let touchStartX = null;
-  let touchStartY = null;
-  let touchDeltaX = 0;
-  let touchDeltaY = 0;
-  let previewResetTimer = null;
-
-  const shouldIgnoreLandingGesture = (target) => Boolean(target.closest("button, input, textarea, select, a, audio, .custom-audio-player, .contact-form"));
-
-  const isLandingActive = () => window.scrollY < Math.min(landing.offsetHeight * 0.5, 420);
-
-  const setLandingPreview = (distance, isDragging = true) => {
-    const clampedDistance = Math.max(Math.min(distance, previewLimit), 0);
-    const progress = Math.min(clampedDistance / commitDistance, 1);
-    const tabLift = Math.min(clampedDistance * 0.74, 168);
-
-    clearTimeout(previewResetTimer);
-    document.body.classList.add("is-landing-previewing");
-    document.body.classList.toggle("is-landing-dragging", isDragging);
-    document.body.style.setProperty("--landing-image-y", `${(-clampedDistance * 0.34).toFixed(1)}px`);
-    document.body.style.setProperty("--landing-image-scale", (1 - progress * 0.055).toFixed(3));
-    document.body.style.setProperty("--landing-image-opacity", (1 - progress * 0.32).toFixed(3));
-    document.body.style.setProperty("--landing-overlay-opacity", (1 - progress * 0.48).toFixed(3));
-    document.body.style.setProperty("--landing-tabs-y", `${(-tabLift).toFixed(1)}px`);
-    document.body.style.setProperty("--landing-tabs-opacity", (0.2 + progress * 0.8).toFixed(3));
-  };
-
-  const resetLandingPreview = (animate = true) => {
-    clearTimeout(previewResetTimer);
-    document.body.classList.remove("is-landing-dragging");
-    document.body.classList.add("is-landing-previewing");
-    document.body.style.setProperty("--landing-image-y", "0px");
-    document.body.style.setProperty("--landing-image-scale", "1");
-    document.body.style.setProperty("--landing-image-opacity", "1");
-    document.body.style.setProperty("--landing-overlay-opacity", "1");
-    document.body.style.setProperty("--landing-tabs-y", "0px");
-    document.body.style.setProperty("--landing-tabs-opacity", "1");
-
-    if (!animate) {
-      document.body.classList.remove("is-landing-previewing");
-      return;
-    }
-
-    previewResetTimer = setTimeout(() => {
-      document.body.classList.remove("is-landing-previewing");
-    }, 280);
-  };
-
-  const commitToTabs = () => {
-    const tabState = window.inertiaWhimTabs;
-    const hasEnteredSite = (() => {
-      try {
-        return sessionStorage.getItem(tabState?.enteredSiteKey) === "true";
-      } catch (error) {
-        return false;
-      }
-    })();
-
-    if (!hasEnteredSite && !window.location.hash) {
-      tabState?.activateTab("bio");
-      history.replaceState(null, "", "#bio");
-    }
-
-    try {
-      sessionStorage.setItem(tabState?.enteredSiteKey || "inertiaWhimEnteredSite", "true");
-    } catch (error) {
-      // Browsers can block storage; the visual transition should still work.
-    }
-
-    setLandingPreview(previewLimit, false);
-    tabBar.scrollIntoView({ behavior: "auto", block: "start" });
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        resetLandingPreview(false);
-      });
-    });
-  };
-
-  window.addEventListener("wheel", (event) => {
-    if (shouldIgnoreLandingGesture(event.target) || !isLandingActive() || event.deltaY <= 0 || Math.abs(event.deltaY) <= Math.abs(event.deltaX) * 1.2) {
-      return;
-    }
-
-    event.preventDefault();
-    wheelDeltaY += event.deltaY;
-    setLandingPreview(wheelDeltaY);
-
-    if (wheelDeltaY >= commitDistance) {
-      wheelDeltaY = 0;
-      commitToTabs();
-      return;
-    }
-
-    clearTimeout(wheelResetTimer);
-    wheelResetTimer = setTimeout(() => {
-      wheelDeltaY = 0;
-      resetLandingPreview(true);
-    }, 180);
-  }, { passive: false });
-
-  window.addEventListener("touchstart", (event) => {
-    if (shouldIgnoreLandingGesture(event.target) || !isLandingActive()) {
-      touchStartX = null;
-      touchStartY = null;
-      return;
-    }
-
-    const touch = event.touches[0];
-    touchStartX = touch.clientX;
-    touchStartY = touch.clientY;
-    touchDeltaX = 0;
-    touchDeltaY = 0;
-  }, { passive: true });
-
-  window.addEventListener("touchmove", (event) => {
-    if (touchStartX === null || touchStartY === null) {
-      return;
-    }
-
-    const touch = event.touches[0];
-    touchDeltaX = touch.clientX - touchStartX;
-    touchDeltaY = touchStartY - touch.clientY;
-
-    if (touchDeltaY > 12 && touchDeltaY > Math.abs(touchDeltaX) * 1.15) {
-      event.preventDefault();
-      setLandingPreview(touchDeltaY);
-    }
-  }, { passive: false });
-
-  window.addEventListener("touchend", () => {
-    if (touchStartX === null || touchStartY === null) {
-      return;
-    }
-
-    const finalDeltaY = touchDeltaY;
-    const finalDeltaX = touchDeltaX;
-    touchStartX = null;
-    touchStartY = null;
-    touchDeltaX = 0;
-    touchDeltaY = 0;
-
-    if (finalDeltaY >= commitDistance && finalDeltaY > Math.abs(finalDeltaX) * 1.15) {
-      commitToTabs();
-      return;
-    }
-
-    resetLandingPreview(true);
-  }, { passive: true });
 })();
 
 // Scroll and tab-entry reveals bring content in with subtle slide/blur motion.
@@ -462,6 +265,9 @@
   };
 
   window.inertiaWhimReveal = {
+    showSection: (section) => {
+      section?.querySelectorAll(".reveal").forEach((item) => item.classList.add("is-visible"));
+    },
     refresh: ({ replayActiveTab = false } = {}) => {
       if (replayActiveTab) {
         restartActivePanelReveals();
@@ -491,26 +297,225 @@
   });
 })();
 
-// Gallery thumbnails swap the large image without leaving the section.
+// Music and gallery use the same centered carousel interaction.
 (() => {
-  const featured = document.querySelector("[data-gallery-featured]");
-  const caption = document.querySelector("[data-gallery-caption]");
-  const thumbs = Array.from(document.querySelectorAll("[data-gallery-src]"));
+  const carousels = Array.from(document.querySelectorAll("[data-carousel]"));
 
-  if (!featured || !caption || thumbs.length === 0) {
+  if (carousels.length === 0) {
     return;
   }
 
-  thumbs.forEach((thumb) => {
-    thumb.addEventListener("click", () => {
-      featured.src = thumb.dataset.gallerySrc;
-      featured.alt = thumb.dataset.galleryAlt;
-      caption.textContent = thumb.dataset.galleryAlt;
+  carousels.forEach((carousel) => {
+    const viewport = carousel.querySelector(".carousel-viewport");
+    const track = carousel.querySelector("[data-carousel-track]");
+    const previousButton = carousel.querySelector("[data-carousel-prev]");
+    const nextButton = carousel.querySelector("[data-carousel-next]");
+    let isMoving = false;
+    let currentTranslate = 0;
+    let dragPointerId = null;
+    let dragStartX = 0;
+    let dragDeltaX = 0;
+    let wheelUnlockTimer = null;
+    let wheelLocked = false;
 
-      thumbs.forEach((button) => {
-        button.classList.toggle("is-active", button === thumb);
+    if (!viewport || !track) {
+      return;
+    }
+
+    const getCards = () => Array.from(track.querySelectorAll("[data-carousel-card]"));
+    const getClones = () => Array.from(track.querySelectorAll("[data-carousel-clone]"));
+
+    const createCarouselClone = (card) => {
+      const clone = card.cloneNode(true);
+      clone.setAttribute("data-carousel-clone", "");
+      clone.setAttribute("aria-hidden", "true");
+
+      if ("inert" in clone) {
+        clone.inert = true;
+      }
+
+      return clone;
+    };
+
+    const removeCarouselClones = () => {
+      getClones().forEach((clone) => clone.remove());
+    };
+
+    const setTransition = (enabled) => {
+      track.style.transition = enabled ? "" : "none";
+    };
+
+    const alignToSlot = (slotIndex, { animate = true } = {}) => {
+      const cards = getCards();
+      const targetCard = cards[slotIndex];
+
+      if (!targetCard) {
+        return;
+      }
+
+      setTransition(animate);
+
+      const viewportCenter = viewport.clientWidth / 2;
+      const cardCenter = targetCard.offsetLeft + targetCard.offsetWidth / 2;
+      currentTranslate = viewportCenter - cardCenter;
+      track.style.transform = `translateX(${currentTranslate.toFixed(1)}px)`;
+
+      if (!animate) {
+        track.offsetHeight; // Apply the instant reset before restoring transitions.
+        setTransition(true);
+      }
+    };
+
+    const updateCardState = (centerSlot = 1) => {
+      const cards = getCards();
+
+      cards.forEach((card, index) => {
+        const isActive = index === centerSlot;
+        const isNeighbor = index === centerSlot - 1 || index === centerSlot + 1;
+
+        card.classList.toggle("is-active", isActive);
+        card.classList.toggle("is-neighbor", isNeighbor);
+        card.setAttribute("aria-current", String(isActive));
+      });
+
+      previousButton?.toggleAttribute("disabled", cards.length < 2 || isMoving);
+      nextButton?.toggleAttribute("disabled", cards.length < 2 || isMoving);
+    };
+
+    const moveCarousel = (direction) => {
+      const cards = getCards();
+
+      if (isMoving || cards.length < 2) {
+        return;
+      }
+
+      isMoving = true;
+      removeCarouselClones();
+
+      let targetSlot = direction > 0 ? 2 : 1;
+
+      if (direction > 0) {
+        track.appendChild(createCarouselClone(track.firstElementChild));
+      } else {
+        track.insertBefore(createCarouselClone(track.lastElementChild), track.firstElementChild);
+        alignToSlot(2, { animate: false });
+        updateCardState(2);
+      }
+
+      updateCardState(targetSlot);
+      alignToSlot(targetSlot);
+
+      const finishMove = (event) => {
+        if (event.target !== track) {
+          return;
+        }
+
+        track.removeEventListener("transitionend", finishMove);
+        removeCarouselClones();
+
+        if (direction > 0) {
+          track.appendChild(track.firstElementChild);
+        } else {
+          track.insertBefore(track.lastElementChild, track.firstElementChild);
+        }
+
+        alignToSlot(1, { animate: false });
+        isMoving = false;
+        updateCardState(1);
+      };
+
+      track.addEventListener("transitionend", finishMove);
+    };
+
+    previousButton?.addEventListener("click", () => moveCarousel(-1));
+    nextButton?.addEventListener("click", () => moveCarousel(1));
+
+    carousel.addEventListener("wheel", (event) => {
+      const horizontalDelta = Math.abs(event.deltaX) > Math.abs(event.deltaY) ? event.deltaX : 0;
+      const shiftedVerticalDelta = event.shiftKey ? event.deltaY : 0;
+      const delta = horizontalDelta || shiftedVerticalDelta;
+
+      if (!delta || Math.abs(delta) < 18 || wheelLocked) {
+        return;
+      }
+
+      event.preventDefault();
+      wheelLocked = true;
+      moveCarousel(delta > 0 ? 1 : -1);
+      clearTimeout(wheelUnlockTimer);
+      wheelUnlockTimer = setTimeout(() => {
+        wheelLocked = false;
+      }, 560);
+    }, { passive: false });
+
+    viewport.addEventListener("pointerdown", (event) => {
+      if (isMoving || event.target.closest("button, input, audio, .custom-audio-player")) {
+        return;
+      }
+
+      dragPointerId = event.pointerId;
+      dragStartX = event.clientX;
+      dragDeltaX = 0;
+      carousel.classList.add("is-dragging");
+      setTransition(false);
+      viewport.setPointerCapture?.(event.pointerId);
+    });
+
+    viewport.addEventListener("pointermove", (event) => {
+      if (dragPointerId !== event.pointerId) {
+        return;
+      }
+
+      dragDeltaX = event.clientX - dragStartX;
+      track.style.transform = `translateX(${(currentTranslate + dragDeltaX).toFixed(1)}px)`;
+    });
+
+    const finishDrag = (event) => {
+      if (dragPointerId !== event.pointerId) {
+        return;
+      }
+
+      viewport.releasePointerCapture?.(event.pointerId);
+      dragPointerId = null;
+      carousel.classList.remove("is-dragging");
+      setTransition(true);
+
+      if (Math.abs(dragDeltaX) > 58) {
+        moveCarousel(dragDeltaX < 0 ? 1 : -1);
+      } else {
+        alignToSlot(1);
+      }
+
+      dragDeltaX = 0;
+    };
+
+    viewport.addEventListener("pointerup", finishDrag);
+    viewport.addEventListener("pointercancel", finishDrag);
+
+    if (getCards().length > 2) {
+      track.insertBefore(track.lastElementChild, track.firstElementChild);
+    }
+
+    getCards().forEach((card) => {
+      card.addEventListener("click", (event) => {
+        if (event.target.closest("button, input, audio, .custom-audio-player")) {
+          return;
+        }
+
+        const cards = getCards();
+        const clickedIndex = cards.indexOf(card);
+
+        if (clickedIndex === 0) {
+          moveCarousel(-1);
+        } else if (clickedIndex === 2) {
+          moveCarousel(1);
+        }
       });
     });
+
+    updateCardState(1);
+    requestAnimationFrame(() => alignToSlot(1, { animate: false }));
+    window.addEventListener("resize", () => alignToSlot(1, { animate: false }), { passive: true });
   });
 })();
 

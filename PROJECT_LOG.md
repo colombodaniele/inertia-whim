@@ -243,3 +243,275 @@
 - Files touched: `PROJECT_LOG.md`, remote repository `https://github.com/colombodaniele/inertia-whim`.
 - Commands/tests run + results: `git push -u origin main` succeeded and set `main` to track `origin/main`; GitHub warned that `Music/Ophelia vocals - 33.wav` is 51.20 MB, slightly above the recommended 50 MB but below the hard 100 MB limit. `git status --short --branch` showed `main...origin/main`; `git ls-remote --heads origin main` returned commit `1cfedff`.
 - Follow-ups / TODOs: Enable GitHub Pages from the repository's `main` branch root if a public preview URL is needed.
+
+## 2026-06-18 10:20
+
+- What changed: Converted the post-landing site from a horizontal tab carousel into a continuous vertical scroll page with a sticky section nav, smooth section jumps, scroll-synced active tab state, and a fixed cross-fading background layer.
+- Why: The user wanted a NewDad-style page where the whole site scrolls down while the Music/Contact/Gallery controls remain available at the top after the landing page.
+- Files touched: `index.html`, `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for vertical section structure, sticky nav CSS, local asset references, background layer CSS, smooth section-scroll JS, absence of old horizontal track markers, no duplicate ids, and balanced HTML structure passed.
+- Follow-ups / TODOs: Browser-review local `index.html` for scroll feel and background cross-fade timing before pushing to GitHub.
+
+## 2026-06-18 10:31
+
+- What changed: Removed the extra reveal replay after sticky-nav section jumps and added a reveal helper that marks the destination section visible immediately when a tab is used.
+- Why: Tab navigation already has smooth scrolling, so replaying the fade-in afterward created a double-animation effect.
+- Files touched: `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for tab jumps pre-showing reveals, normal scroll reveal path remaining active, local asset references, tab/panel order, no duplicate ids, and reveal CSS presence passed.
+- Follow-ups / TODOs: Browser-review tab clicks locally to confirm the scroll now feels cleaner while first-time manual scrolling still fades sections in.
+
+## 2026-06-18 10:47
+
+- What changed: Rebuilt the Music song cards and Gallery photos as centered carousel strips with one emphasized active item, neighboring items visible at the sides, and left/right arrow controls.
+- Why: The user wanted the Music and Gallery elements to behave more like the album carousel on NewDad's site.
+- Files touched: `index.html`, `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for two carousels, seven carousel cards, two previous and two next buttons, local asset references, song order, gallery order, no duplicate ids, carousel CSS markers, carousel JS markers, and preserved custom-audio hooks passed.
+- Follow-ups / TODOs: Browser-review the carousel sizing and arrow placement on desktop and mobile before pushing to GitHub.
+
+## 2026-06-18 11:02
+
+- What changed: Moved the Music carousel below the bio text, resized Music/Gallery carousel cards so side items remain fully visible beside the emphasized center card, and changed carousel movement to rotate real cards after each transition for continuous circular scrolling.
+- Why: The user wanted the songs under the London bio, fully visible side items, and arrow clicks that keep moving in the same direction instead of visually snapping back to the start.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for vertical Music layout, full-neighbor carousel sizing markers, circular forward/backward track rotation, invisible reset after each transition, local asset references, song/gallery order, no duplicate ids, and preserved custom-audio hooks passed.
+- Follow-ups / TODOs: Browser-review the local carousel motion and card sizing, especially on smaller screens.
+
+## 2026-06-18 11:13
+
+- What changed: Widened the Music and Gallery carousel stages to span the viewport on desktop, increased the center song/photo card widths, and moved the arrows farther toward the sides while keeping mobile carousels constrained.
+- Why: The carousel cards had become smaller than before; the user wanted the main song players and gallery images closer to the earlier width while using more horizontal page space like the NewDad example.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for wider carousel CSS markers, local asset references, two carousels, seven cards, arrow controls, circular rotation JS, and custom-audio hooks passed.
+- Follow-ups / TODOs: Browser-review desktop widths to confirm the arrows and side cards feel balanced.
+
+## 2026-06-18 11:24
+
+- What changed: Replaced the active-section background switch with a scroll-progress crossfade between the black-white and blue-cream background layers.
+- Why: The user wanted just two background images that progressively fade into each other from the start to the end of the post-landing page, instead of changing quickly by tab/section.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for two background layers, page-progress opacity variable, black layer fading down, blue layer fading up, absence of the old `is-contact-background` switch, local asset references, no duplicate ids, and expected section order passed.
+- Follow-ups / TODOs: Browser-review the fade pacing; adjust the start/end scroll range if the transition should complete earlier or later.
+
+## 2026-06-18 11:32
+
+- What changed: Added a very subtle scroll-driven parallax offset to the two fixed background layers, with a small scale buffer and reduced-motion safeguards.
+- Why: The user wanted the backgrounds to drift slightly as the page scrolls, much less than foreground content, to create a distant perspective effect.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for the `--background-y` variable, background transform/scale CSS, reduced-motion guard, scroll-set parallax variable, existing background fade variable, local asset references, and no duplicate ids passed.
+- Follow-ups / TODOs: Browser-review the parallax amount; adjust the current 36px total drift if it feels too still or too noticeable.
+
+## 2026-06-18 11:43
+
+- What changed: Increased the shared background parallax drift for both background layers, enlarged the scale buffer, added horizontal wheel/trackpad and pointer-drag carousel navigation, and padded the carousel edges so arrows sit fully inside the viewport.
+- Why: The background movement was too subtle, the carousels needed to be sideways-scrollable rather than arrow-only, and the arrow circles were slightly clipped by page margins.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for stronger two-layer parallax, background transform/scale, carousel edge padding, drag cursor/touch CSS, wheel and pointer gesture JS, circular carousel rotation, local asset references, no duplicate ids, two carousels, and seven carousel cards passed.
+- Follow-ups / TODOs: Browser-review drag/trackpad sensitivity and the stronger 96px total background drift.
+
+## 2026-06-18 11:51
+
+- What changed: Extended the background parallax range to the full document scroll height and increased total drift from 96px to 160px.
+- Why: The parallax previously completed around the start of the Gallery section, so the background stopped moving after Contact; the user also wanted the movement to be more noticeable.
+- Files touched: `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for full-page parallax end point, 160px drift, removal of the old last-section-start end point, both background layers using the shared transform, local asset references, no duplicate ids, and expected section order passed.
+- Follow-ups / TODOs: Browser-review the stronger drift through Gallery.
+
+## 2026-06-18 12:02
+
+- What changed: Expanded fixed background layers beyond the viewport to prevent the parallax from exposing a black lower edge, and added temporary offscreen carousel clones during each slide so incoming cards enter from the side instead of appearing after the DOM rotation.
+- Why: Browser review showed a black band at the bottom during Gallery and carousel items popping into view rather than sliding naturally from offscreen.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for extended background coverage, parallax transform, carousel clone CSS, forward/backward incoming clones, clone cleanup, track-scoped transition end handling, circular rotation, local asset references, no duplicate ids, two carousels, and seven real carousel cards passed.
+- Follow-ups / TODOs: Browser-review Gallery bottom edge and carousel side-entry motion.
+
+## 2026-06-18 12:10
+
+- What changed: Removed carousel card scale transforms and reduced the active Music card shadow.
+- Why: The song carousel looked like it had an extra outer box around the cards, and the active/neighbor scale transition caused a second small-to-large animation after sliding.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for no base/active/neighbor carousel scale transforms, reduced Music active shadow, local asset references, two carousels, seven cards, clone runway JS, and preserved audio hooks passed.
+- Follow-ups / TODOs: Browser-review Music carousel to confirm the slide now feels stable and frame-free.
+
+## 2026-06-18 12:20
+
+- What changed: Restored center-card emphasis by giving active carousel cards a larger layout width, kept side cards smaller without scale transforms, removed Music/Gallery card shadows, and softened the Gallery caption gradient.
+- Why: The user wanted the center song/image to be larger again, but without the post-slide shrink/grow animation or bottom shade/box under the carousels.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for active layout width, no carousel scale transforms, no Music/Gallery card box-shadows, softened Gallery caption shade, local asset references, two carousels, seven cards, clone runway JS, and preserved audio hooks passed.
+- Follow-ups / TODOs: Browser-review center/side size contrast and confirm the bottom shade is gone.
+
+## 2026-06-18 14:20
+
+- What changed: Changed the Music carousel emphasis so the active song card keeps the same layout proportions as the side cards and scales up as a whole, while leaving the Gallery center-card layout unchanged.
+- Why: The user liked the Gallery emphasis but wanted Music to feel proportionally bigger rather than simply wider.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for proportional Music active scaling, preserved Gallery center layout, removed carousel shadows, two carousel containers, and preserved custom-audio hooks passed.
+- Follow-ups / TODOs: Browser-review the Music carousel to confirm the active song now reads as bigger rather than wider.
+
+## 2026-06-18 14:27
+
+- What changed: Widened the Music song cards, added a larger Music-only carousel gap, slightly shortened the song card/player height, and kept the active song emphasized with proportional scaling.
+- Why: The active song card was touching the side cards and still felt wider rather than cleanly larger; the user wanted more spacing and slightly wider, less tall song boxes.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for wider Music cards, proportional active scaling, larger Music gap, shorter player controls, no carousel shadows, two carousel containers, and preserved custom-audio hooks passed.
+- Follow-ups / TODOs: Browser-review the Music carousel spacing and scale on desktop; adjust `--carousel-gap` if the side cards should sit farther out.
+
+## 2026-06-18 14:32
+
+- What changed: Swapped the landing page artwork from `Graphics/inertia_whim_correct_top_right_HD.png` to `Graphics/Inertia Whim.png`.
+- Why: The user asked to use the newer `Inertia Whim.png` image for the landing page.
+- Files touched: `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check with URL-decoded local asset references passed; `Graphics/Inertia Whim.png` is now used and the old landing image reference is absent from `index.html`.
+- Follow-ups / TODOs: Browser-review the landing crop because the new image may need a different `object-position`.
+
+## 2026-06-18 14:35
+
+- What changed: Zoomed the landing artwork out very slightly by changing the landing image scale from `1` to `0.985`.
+- Why: The user asked for the new landing image to be backed off a tiny bit.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for `Graphics/Inertia Whim.png`, landing scale `0.985`, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the landing edges; if the slight scale reveals unwanted border, adjust `object-position` or use a less aggressive scale such as `0.992`.
+
+## 2026-06-18 14:45
+
+- What changed: Kept the tiny landing zoom-out but enlarged the landing image canvas so the scaled image still covers the viewport, and added a scroll-progress landing fade/slide handoff into the fixed site backgrounds.
+- Why: The previous zoom-out exposed black side margins; the user also asked how to transition more nicely from the landing artwork to the rest-of-site backgrounds.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for oversized landing cover box, scroll handoff variables, `Graphics/Inertia Whim.png`, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the landing-to-Music scroll; adjust the fade thresholds in `script.js` if the handoff should start earlier or later.
+
+## 2026-06-18 14:52
+
+- What changed: Generated two wider landing artwork variants: `Graphics/Inertia Whim landing extended sides.png` with mirrored/blurred side extensions and `Graphics/Inertia Whim landing canvas sides.png` with paper/canvas-style side extensions. Updated the landing page to use the canvas-side version and slowed the landing fade so it reaches zero only at the Music section.
+- Why: The original artwork aspect ratio was too narrow for the wide browser viewport, causing black side margins when zoomed out; the user also wanted the fade-out to complete only when arriving at Music.
+- Files touched: `index.html`, `script.js`, `Graphics/Inertia Whim landing extended sides.png`, `Graphics/Inertia Whim landing canvas sides.png`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python/Pillow generated both side-extension variants at 2215x1065; visual inspection favored the canvas-side version. Python smoke check for the new landing image reference, alternate variant existence, slower fade formula, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the canvas-side landing image on the target viewport; switch to the mirrored-side version only if the canvas edges feel too artificial.
+
+## 2026-06-18 15:00
+
+- What changed: Reverted the active landing image to `Graphics/Inertia Whim.png`, restored normal full-cover sizing with no zoom-out canvas scale, and changed the landing fade curve to a slower late fade.
+- Why: The user preferred the original image filling the viewport for now and wanted the fade-out to happen much more slowly while scrolling.
+- Files touched: `index.html`, `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for the original landing image reference, normal cover sizing, removed cover-scale variable, slower `Math.pow(landingProgress, 2.8)` fade curve, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the scroll handoff; increase the exponent if the fade should hold even longer before Music.
+
+## 2026-06-18 15:17
+
+- What changed: Fixed the landing fade timing to use Music's real document position instead of `offsetTop`, and delayed the fade so it starts late in the landing scroll and completes when Music approaches the sticky-nav/top area.
+- Why: The landing image was fully faded while Music was only beginning to appear near the bottom of the viewport; the user wanted the fade to complete much later.
+- Files touched: `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for document-position fade calculation, sticky-offset landing range, late fade window, original landing image reference, normal cover sizing, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the landing-to-Music scroll; adjust the `0.58` fade start if the image should hold even longer.
+
+## 2026-06-18 15:23
+
+- What changed: Made the landing image fade start slightly earlier/faster while still completing near the Music/top approach, and added a late tab-bar entrance where the bar fades in and the side buttons slide inward.
+- Why: The previous fade was now too slow, and the tab bar appeared too abruptly as soon as it entered view.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for faster landing fade timing, late tab fade/slide variables, original landing image reference, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the tab entrance; adjust the tab start point `0.64` or slide distance `44px` if it should enter sooner or more subtly.
+
+## 2026-06-18 15:28
+
+- What changed: Made the landing image fade a bit quicker, restyled the landing email signup as a translucent angled panel, and reduced the Music section's bottom spacing before Contact.
+- Why: The user liked the transition but wanted the main image to fade slightly faster, the signup control to feel more designed, and the gap between songs and Contact to be closer to the Contact-to-Gallery spacing.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for faster landing fade timing, signup panel styling markers, Music bottom spacing override, original landing image reference, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the Music-to-Contact spacing on the target viewport; adjust the Music `padding-bottom` if it still feels too open.
+
+## 2026-06-18 15:35
+
+- What changed: Restored the Music section's original bottom/full-height behavior, moved the Music content lower, increased the gap before the song carousel, slimmed the landing signup control by removing the visible outer panel, and made the landing image fixed while it fades out in place.
+- Why: The user wanted the Music bottom spacing restored, the text/songs repositioned within the section, a less boxy signup control, and the landing image to fade without scrolling upward.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for fixed landing image behavior, no scroll offset, slimmer signup styling, restored Music height, lower Music text, larger song gap, original landing image reference, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the fixed landing fade to ensure it does not visually cover Music too long during the handoff.
+
+## 2026-06-18 15:41
+
+- What changed: Started the fixed landing image fade earlier in the landing-to-Music scroll.
+- Why: The user liked the fixed fade behavior but wanted the main image to begin fading sooner.
+- Files touched: `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for earlier fade timing, unchanged fixed landing image behavior, unchanged tab timing, original landing image reference, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the fade timing; adjust the `0.32` fade start if it should begin even earlier or later.
+
+## 2026-06-18 15:48
+
+- What changed: Added a final scroll section after Gallery with a smaller boxed version of `Graphics/Inertia Whim.png` that fades in using the existing reveal animation.
+- Why: The user wanted a closing page after Gallery that brings back the landing image in a smaller framed treatment.
+- Files touched: `index.html`, `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for the new outro section, no added tab, three tab panels preserved, reveal hookup, original landing image references, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the closing frame size and inner fade; adjust `width` or inset shadow if it should feel more poster-like or more subtle.
+
+## 2026-06-18 15:52
+
+- What changed: Replaced the outro image's hard boxed frame with a borderless radial mask and overlay so the artwork margins fade into the page background.
+- Why: The user wanted the final landing-image reprise to dissolve at the margins rather than look like a framed box.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for the outro margin fade mask, removed hard frame shadow, unchanged tab count, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the fade strength; adjust the radial mask stops if the edges should disappear more gradually.
+
+## 2026-06-18 15:59
+
+- What changed: Removed the dark outro overlay and changed the closing image to fade its left/right sides directly to transparency, plus added a reverse tab-bar fade/slide as the outro section comes into view.
+- Why: The previous outro treatment still looked like a dark rectangular box, and the user wanted the tabs to fade away at the end with a reverse of their entrance motion.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for transparent outro side fade, removed dark overlay, reverse outro tab timing, unchanged tab count, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review whether the image also needs top/bottom fading; currently the main fade is left/right to preserve the logo shape.
+
+## 2026-06-18 16:06
+
+- What changed: Made the outro image fade aggressively on all sides with a circular/elliptical mask, and moved its fade-in to a later scroll-driven blur/scale/opacity animation.
+- Why: The user wanted no visible contours around the final image and wanted the closing image to appear later and more noticeably while scrolling to the bottom.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for aggressive radial transparency, later scroll-driven outro fade-in, generic reveal override, unchanged tab count, reverse tab fade still present, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the radial mask; adjust the `22%/36%/67%` stops if the logo itself becomes too cropped or still shows edges.
+
+## 2026-06-18 16:12
+
+- What changed: Made the outro image more visible by increasing opacity, replacing the simple radial mask with layered off-center masks for an irregular edge, and reducing the scroll-in blur.
+- Why: The previous outro image was too faint and the mask looked too much like a clean circle.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for the layered irregular mask, stronger image opacity, reduced outro blur, closing section presence, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the irregular fade; adjust the layered mask stops if the center should be stronger or the edge should be rougher.
+
+## 2026-06-18 16:19
+
+- What changed: Slightly reduced the Music carousel song card width and Music-only gap while keeping the active card scale and Gallery carousel unchanged.
+- Why: The side song cards were being clipped at the viewport edges; the user wanted the cards to fit by trimming card size and center-to-side spacing only.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for smaller Music card/gap values, unchanged Gallery sizing, preserved active song scale, custom audio hooks, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the Music carousel side-card visibility; fine-tune the gap if the side cards still touch the viewport edge.
+
+## 2026-06-18 16:24
+
+- What changed: Reduced the Music carousel card width and Music-only gap one more small step.
+- Why: The side song cards were still slightly clipped after the first sizing pass.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for the updated Music card/gap values, unchanged Gallery sizing, preserved active song scale, custom audio hooks, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the Music carousel side-card visibility on the target viewport.
+
+## 2026-06-18 16:46
+
+- What changed: Copied `iw_patch_initials_logo_trial_preview.png` and `extracted_low_left_patch.png` from `trials/logo_extraction/` into `Graphics/`, changed the outro logo to the initials logo asset, changed the browser/apple tab icons to the extracted low-left patch, and removed the old outro image mask.
+- Why: The user noticed the active outro image and browser icon were still using old artwork instead of the requested trial logo assets.
+- Files touched: `index.html`, `styles.css`, `Graphics/iw_patch_initials_logo_trial_preview.png`, `Graphics/extracted_low_left_patch.png`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for copied asset existence/dimensions, active favicon reference, active outro logo reference, no old outro landing image reference, no outro mask CSS, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-refresh hard if the favicon appears cached; Chrome may keep the old tab icon until reload/cache refresh.
+
+## 2026-06-18 16:51
+
+- What changed: Adjusted the outro logo scroll fade so it explicitly reaches full opacity at the document bottom, while keeping the logo image itself unmasked with `opacity: 1`.
+- Why: The user wanted the logo to fade in while scrolling but be fully opaque with no static transparency at the bottom.
+- Files touched: `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for document-bottom outro fade endpoint, unmasked `opacity: 1` logo CSS, active initials-logo reference, active favicon reference, and URL-decoded local asset references passed.
+- Follow-ups / TODOs: Browser-review the bottom of the page; if the logo should become fully opaque earlier, move the outro fade start lower or compress its range.
+
+## 2026-06-18 16:56
+
+- What changed: Prepared the current static site state for GitHub push, including the active landing image, initials outro logo, and extracted favicon assets.
+- Why: The user asked to push the completed local website changes to GitHub.
+- Files touched: `index.html`, `styles.css`, `script.js`, `PROJECT_LOG.md`, `Graphics/Inertia Whim.png`, `Graphics/extracted_low_left_patch.png`, `Graphics/iw_patch_initials_logo_trial_preview.png`.
+- Commands/tests run + results: Pre-push Python smoke check for active HTML/CSS/JS refs, required local assets, three tabs, three panels, custom audio hooks, outro fade endpoint, and URL-decoded asset references passed.
+- Follow-ups / TODOs: Push the committed production files to `origin/main`; leave unrelated unreferenced untracked Graphics variants out of the commit.

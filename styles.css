@@ -24,11 +24,14 @@ html {
 }
 
 body {
+  --background-y: 0px;
+  --blue-background-opacity: 0;
   --landing-image-opacity: 1;
   --landing-image-scale: 1;
   --landing-image-y: 0px;
   --landing-overlay-opacity: 1;
   --landing-tabs-opacity: 1;
+  --landing-tabs-slide: 0px;
   --landing-tabs-y: 0px;
   margin: 0;
   min-width: 320px;
@@ -60,24 +63,29 @@ figure {
 /* The opening viewport uses only the supplied Inertia Whim image. */
 .landing {
   align-items: center;
-  background: #020303;
+  background: transparent;
   display: grid;
   min-height: 100svh;
   overflow: hidden;
   padding: 0;
   position: relative;
+  z-index: 2;
 }
 
 .landing-image {
   filter: blur(0);
   height: 100svh;
-  margin: 0 auto;
+  inset: 0;
+  margin: 0;
   object-fit: cover;
   object-position: center 35%;
   opacity: var(--landing-image-opacity);
+  pointer-events: none;
+  position: fixed;
   transform: translateY(var(--landing-image-y)) scale(var(--landing-image-scale));
   transition: filter 1900ms ease, opacity 260ms ease, transform 260ms cubic-bezier(0.19, 1, 0.22, 1);
   width: 100vw;
+  z-index: 0;
 }
 
 body.is-landing-intro .landing-image {
@@ -89,17 +97,23 @@ body.is-landing-dragging .landing-image {
 }
 
 .landing-signup {
+  backdrop-filter: none;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
   color: #173255;
   display: grid;
-  gap: 8px;
+  gap: 6px;
   left: clamp(18px, 4vw, 46px);
   opacity: var(--landing-overlay-opacity);
+  padding: 0;
   position: absolute;
+  box-shadow: none;
   text-transform: uppercase;
   top: clamp(18px, 4vw, 42px);
   transform: translateY(var(--landing-image-y));
   transition: opacity 260ms ease, transform 260ms cubic-bezier(0.19, 1, 0.22, 1);
-  width: min(300px, calc(100vw - 36px));
+  width: min(278px, calc(100vw - 36px));
   z-index: 2;
 }
 
@@ -127,21 +141,22 @@ body.is-landing-ready .landing-footer {
 
 .landing-signup div {
   align-items: center;
-  border: 1px solid rgba(23, 50, 85, 0.46);
-  border-radius: 999px;
+  background: rgba(245, 242, 234, 0.26);
+  border: 1px solid rgba(23, 50, 85, 0.38);
+  border-radius: 999px 12px 999px 12px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  min-height: 38px;
+  min-height: 34px;
   overflow: hidden;
 }
 
 .landing-signup input {
-  background: rgba(245, 242, 234, 0.52);
+  background: transparent;
   border: 0;
   color: #173255;
-  min-height: 38px;
+  min-height: 34px;
   min-width: 0;
-  padding: 0 12px;
+  padding: 0 11px;
 }
 
 .landing-signup input::placeholder {
@@ -154,15 +169,15 @@ body.is-landing-ready .landing-footer {
 }
 
 .landing-signup button {
-  background: rgba(23, 50, 85, 0.72);
+  background: rgba(23, 50, 85, 0.78);
   border: 0;
   color: #f5f2ea;
   cursor: pointer;
   font-family: var(--title-font);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 800;
-  min-height: 38px;
-  padding: 0 14px;
+  min-height: 34px;
+  padding: 0 12px;
   text-transform: uppercase;
 }
 
@@ -239,13 +254,10 @@ body.is-landing-dragging .landing-footer {
   padding: 12px clamp(12px, 3vw, 28px);
   position: sticky;
   top: 0;
+  opacity: var(--landing-tabs-opacity);
   transform: translateY(var(--landing-tabs-y));
   transition: opacity 260ms ease, transform 260ms cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 20;
-}
-
-body.is-landing-previewing .tab-bar {
-  opacity: var(--landing-tabs-opacity);
 }
 
 body.is-landing-dragging .tab-bar {
@@ -263,7 +275,21 @@ body.is-landing-dragging .tab-bar {
   font-weight: 800;
   min-height: 42px;
   padding: 0 16px;
+  transform: translateX(0);
+  transition: background 160ms ease, color 160ms ease, transform 260ms cubic-bezier(0.19, 1, 0.22, 1);
   text-transform: uppercase;
+}
+
+.tab-button:first-child {
+  transform: translateX(calc(var(--landing-tabs-slide) * -1));
+}
+
+.tab-button:nth-child(2) {
+  transform: translateY(calc(var(--landing-tabs-slide) * 0.16));
+}
+
+.tab-button:last-child {
+  transform: translateX(var(--landing-tabs-slide));
 }
 
 .tab-button:hover,
@@ -272,43 +298,51 @@ body.is-landing-dragging .tab-bar {
   color: var(--paper);
 }
 
-.tab-viewport {
-  --tab-preview-offset: 0px;
-  overflow: hidden;
+.site-background {
+  inset: 0;
+  pointer-events: none;
+  position: fixed;
+  z-index: 0;
+}
+
+.site-background-layer {
+  inset: -190px 0;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(var(--background-y)) scale(1.08);
+  transition: opacity 80ms linear;
+  will-change: opacity, transform;
+}
+
+.site-background-black {
+  background:
+    linear-gradient(90deg, rgba(5, 6, 7, 0.84), rgba(5, 6, 7, 0.48)),
+    url("Graphics/inertia_whim_website_background_black_white.webp") center / cover no-repeat;
+  opacity: calc(1 - var(--blue-background-opacity));
+}
+
+.site-background-blue {
+  background:
+    linear-gradient(90deg, rgba(5, 6, 7, 0.77), rgba(5, 6, 7, 0.35), rgba(5, 6, 7, 0.88)),
+    url("Graphics/inertia_whim_website_background_blue_cream.webp") center / cover no-repeat;
+  opacity: var(--blue-background-opacity);
+}
+
+.site-sections {
   position: relative;
-  touch-action: pan-y;
   transform: translateY(var(--landing-tabs-y));
   transition: transform 260ms cubic-bezier(0.19, 1, 0.22, 1);
-  width: 100%;
+  z-index: 1;
 }
 
-body.is-landing-dragging .tab-viewport {
+body.is-landing-dragging .site-sections {
   transition: none;
-}
-
-.tab-track {
-  display: flex;
-  transform: translateX(0);
-  transition: transform 520ms cubic-bezier(0.19, 1, 0.22, 1);
-  width: 300%;
 }
 
 .tab-panel {
-  flex: 0 0 100vw;
   min-height: calc(100svh - 68px);
-  width: 100vw;
-}
-
-.tab-panel .content-shell {
-  transition: transform 220ms cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.tab-viewport.is-previewing .tab-panel.is-active .content-shell {
-  transform: translateX(var(--tab-preview-offset));
-}
-
-.tab-viewport.is-dragging .tab-panel.is-active .content-shell {
-  transition: none;
+  scroll-margin-top: 68px;
+  width: 100%;
 }
 
 .panel-overlay {
@@ -317,8 +351,13 @@ body.is-landing-dragging .tab-viewport {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .tab-track {
+  .site-background-layer,
+  .site-sections {
     transition: none;
+  }
+
+  .site-background-layer {
+    transform: none;
   }
 }
 
@@ -376,20 +415,22 @@ body.is-landing-dragging .tab-viewport {
 }
 
 .bio-panel {
-  background:
-    linear-gradient(90deg, rgba(5, 6, 7, 0.82), rgba(5, 6, 7, 0.48)),
-    url("Graphics/inertia_whim_website_background_black_white.webp") center / cover fixed no-repeat;
+  background: transparent;
+}
+
+.bio-panel .panel-overlay {
+  padding-top: clamp(68px, 10vw, 124px);
 }
 
 .bio-grid {
-  align-items: center;
+  align-items: start;
   display: grid;
-  gap: clamp(28px, 6vw, 76px);
-  grid-template-columns: minmax(0, 1.06fr) minmax(300px, 0.94fr);
+  gap: clamp(42px, 7vw, 86px);
+  grid-template-columns: 1fr;
 }
 
 .bio-copy {
-  max-width: 680px;
+  max-width: 760px;
 }
 
 .bio-copy h1,
@@ -408,9 +449,106 @@ body.is-landing-dragging .tab-viewport {
   line-height: 1.62;
 }
 
-.music-list {
+.carousel {
+  --carousel-card-width: clamp(260px, 23vw, 360px);
+  --carousel-active-card-width: clamp(360px, 34vw, 520px);
+  --carousel-gap: clamp(14px, 1.6vw, 26px);
+  align-items: center;
   display: grid;
   gap: 10px;
+  grid-template-columns: 48px minmax(0, 1fr) 48px;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-inline: clamp(14px, 2vw, 30px);
+  position: relative;
+  width: 100vw;
+}
+
+.carousel-viewport {
+  cursor: grab;
+  overflow: hidden;
+  padding: 28px 0;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.carousel.is-dragging .carousel-viewport {
+  cursor: grabbing;
+}
+
+.carousel-track {
+  align-items: center;
+  display: flex;
+  gap: var(--carousel-gap);
+  transition: transform 520ms cubic-bezier(0.19, 1, 0.22, 1);
+  will-change: transform;
+}
+
+.carousel-card {
+  flex: 0 0 var(--carousel-card-width);
+  opacity: 0.8;
+  transition:
+    border-color 260ms ease,
+    box-shadow 260ms ease,
+    opacity 260ms ease;
+}
+
+.carousel-card[data-carousel-clone] {
+  pointer-events: none;
+}
+
+.carousel-card.is-active {
+  flex-basis: var(--carousel-active-card-width);
+  opacity: 1;
+}
+
+.carousel-card.is-neighbor {
+  opacity: 0.9;
+}
+
+.carousel-arrow {
+  align-self: center;
+  background: rgba(245, 242, 234, 0.1);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--ink);
+  cursor: pointer;
+  height: 48px;
+  position: relative;
+  transition: background 160ms ease, color 160ms ease, transform 160ms ease;
+  width: 48px;
+  z-index: 3;
+}
+
+.carousel-arrow:hover {
+  background: var(--ink);
+  color: var(--paper);
+  transform: translateY(-1px);
+}
+
+.carousel-arrow::before {
+  border-right: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  content: "";
+  height: 11px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 11px;
+}
+
+.carousel-arrow-prev::before {
+  transform: translate(-38%, -50%) rotate(-135deg);
+}
+
+.carousel-arrow-next::before {
+  transform: translate(-62%, -50%) rotate(45deg);
+}
+
+.music-list {
+  --carousel-card-width: clamp(322px, 26.8vw, 448px);
+  --carousel-active-card-width: var(--carousel-card-width);
+  --carousel-gap: clamp(22px, 3vw, 50px);
 }
 
 .track-card {
@@ -418,11 +556,20 @@ body.is-landing-dragging .tab-viewport {
   border: 1px solid var(--line);
   backdrop-filter: blur(2px);
   border-radius: 8px 28px 8px 28px;
-  box-shadow: 0 22px 46px var(--shadow);
   display: grid;
-  gap: 10px;
+  gap: 8px;
   min-height: 0;
-  padding: 12px 14px 14px 18px;
+  padding: 10px 14px 11px 18px;
+  transform-origin: center;
+  transition:
+    border-color 260ms ease,
+    opacity 260ms ease,
+    transform 260ms ease;
+}
+
+.track-card.is-active {
+  border-color: rgba(245, 242, 234, 0.44);
+  transform: scale(1.13);
 }
 
 .track-card h2 {
@@ -456,10 +603,10 @@ body.is-landing-dragging .tab-viewport {
   border: 1px solid rgba(245, 242, 234, 0.18);
   border-radius: 999px 18px 999px 18px;
   display: grid;
-  gap: 12px;
-  grid-template-columns: 32px minmax(0, 1fr);
-  min-height: 48px;
-  padding: 8px 18px 8px 14px;
+  gap: 11px;
+  grid-template-columns: 30px minmax(0, 1fr);
+  min-height: 42px;
+  padding: 6px 16px 6px 12px;
 }
 
 .audio-toggle {
@@ -470,9 +617,9 @@ body.is-landing-dragging .tab-viewport {
   color: var(--paper);
   cursor: pointer;
   display: inline-flex;
-  height: 32px;
+  height: 30px;
   justify-content: center;
-  width: 32px;
+  width: 30px;
 }
 
 .audio-toggle:hover,
@@ -554,9 +701,7 @@ body.is-landing-dragging .tab-viewport {
 }
 
 .contact-panel {
-  background:
-    linear-gradient(90deg, rgba(5, 6, 7, 0.77), rgba(5, 6, 7, 0.35), rgba(5, 6, 7, 0.88)),
-    url("Graphics/inertia_whim_website_background_blue_cream.webp") center / cover fixed no-repeat;
+  background: transparent;
 }
 
 .contact-grid {
@@ -685,31 +830,30 @@ body.is-landing-dragging .tab-viewport {
 }
 
 .gallery-panel {
-  background:
-    linear-gradient(90deg, rgba(5, 6, 7, 0.84), rgba(5, 6, 7, 0.48)),
-    url("Graphics/inertia_whim_website_background_black_white.webp") center / cover fixed no-repeat;
+  background: transparent;
   padding: clamp(46px, 8vw, 96px) clamp(18px, 5vw, 62px);
 }
 
 .gallery-stage {
-  align-items: stretch;
-  display: grid;
-  gap: 18px;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.34fr);
+  --carousel-card-width: clamp(300px, 25vw, 420px);
+  --carousel-active-card-width: clamp(480px, 38vw, 680px);
+  margin-top: 10px;
 }
 
-.featured-photo,
-.gallery-thumb {
+.featured-photo {
   background: rgba(245, 242, 234, 0.06);
   border: 1px solid var(--line);
   border-radius: 8px;
-  box-shadow: 0 18px 42px var(--shadow);
 }
 
 .featured-photo {
   margin: 0;
   overflow: hidden;
   position: relative;
+}
+
+.featured-photo.is-active {
+  border-color: rgba(245, 242, 234, 0.48);
 }
 
 .featured-photo img {
@@ -719,7 +863,7 @@ body.is-landing-dragging .tab-viewport {
 }
 
 .featured-photo figcaption {
-  background: linear-gradient(0deg, rgba(5, 6, 7, 0.88), rgba(5, 6, 7, 0));
+  background: linear-gradient(0deg, rgba(5, 6, 7, 0.58), rgba(5, 6, 7, 0));
   bottom: 0;
   color: var(--ink);
   font-family: var(--title-font);
@@ -732,43 +876,38 @@ body.is-landing-dragging .tab-viewport {
   text-transform: uppercase;
 }
 
-.gallery-strip {
+.outro-panel {
   display: grid;
-  gap: 12px;
-  grid-auto-rows: 1fr;
+  min-height: calc(100svh - 68px);
+  padding: clamp(58px, 9vw, 112px) clamp(18px, 5vw, 62px);
+  place-items: center;
 }
 
-.gallery-thumb {
-  align-items: center;
-  color: var(--ink);
-  cursor: pointer;
-  display: grid;
-  gap: 12px;
-  grid-template-columns: 82px minmax(0, 1fr);
-  min-height: 88px;
-  padding: 8px;
-  text-align: left;
+.outro-frame {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  max-width: 780px;
+  position: relative;
+  width: min(72vw, 780px);
 }
 
-.gallery-thumb:hover,
-.gallery-thumb.is-active {
-  border-color: var(--ink);
-  background: rgba(245, 242, 234, 0.12);
+.outro-frame.reveal,
+.outro-frame.reveal.is-visible {
+  filter: blur(var(--outro-blur, 18px));
+  opacity: var(--outro-opacity, 0);
+  transform: translateY(var(--outro-y, 34px)) scale(var(--outro-scale, 0.94));
+  transition:
+    filter 160ms linear,
+    opacity 160ms linear,
+    transform 160ms linear;
 }
 
-.gallery-thumb img {
-  aspect-ratio: 1;
-  border-radius: 6px;
-  object-fit: cover;
-  width: 82px;
-}
-
-.gallery-thumb span {
-  font-family: var(--title-font);
-  font-size: 13px;
-  font-weight: 800;
-  overflow-wrap: anywhere;
-  text-transform: uppercase;
+.outro-frame img {
+  display: block;
+  opacity: 1;
+  width: 100%;
 }
 
 @media (max-width: 820px) {
@@ -801,10 +940,18 @@ body.is-landing-dragging .tab-viewport {
     padding: 0 12px;
   }
 
-  .bio-panel,
-  .gallery-panel,
-  .contact-panel {
-    background-attachment: scroll;
+  .carousel {
+    --carousel-card-width: min(54vw, 300px);
+    --carousel-active-card-width: min(72vw, 420px);
+    grid-template-columns: 38px minmax(0, 1fr) 38px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .carousel-arrow {
+    height: 38px;
+    width: 38px;
   }
 
   .bio-grid,
@@ -827,16 +974,11 @@ body.is-landing-dragging .tab-viewport {
   }
 
   .gallery-stage {
-    grid-template-columns: 1fr;
+    --carousel-card-width: min(56vw, 320px);
+    --carousel-active-card-width: min(74vw, 520px);
   }
 
-  .gallery-strip {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 520px) {
-  .gallery-strip {
-    grid-template-columns: 1fr;
+  .outro-frame {
+    width: min(86vw, 520px);
   }
 }
