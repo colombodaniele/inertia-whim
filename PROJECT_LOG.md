@@ -515,3 +515,11 @@
 - Files touched: `index.html`, `styles.css`, `script.js`, `PROJECT_LOG.md`, `Graphics/Inertia Whim.png`, `Graphics/extracted_low_left_patch.png`, `Graphics/iw_patch_initials_logo_trial_preview.png`.
 - Commands/tests run + results: Pre-push Python smoke check for active HTML/CSS/JS refs, required local assets, three tabs, three panels, custom audio hooks, outro fade endpoint, and URL-decoded asset references passed.
 - Follow-ups / TODOs: Push the committed production files to `origin/main`; leave unrelated unreferenced untracked Graphics variants out of the commit.
+
+## 2026-06-18 17:11
+
+- What changed: Verified live GitHub Pages HTML/CSS/JS/assets are already updated, then added cache-busting query strings to the HTML references for CSS, JS, favicon, landing image, and outro logo.
+- Why: The GitHub version appeared different from local even though `origin/main` and the live Pages files were updated; the likely cause was browser/GitHub Pages caching of old static resources.
+- Files touched: `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Live `Invoke-WebRequest` checks showed Pages HTML, CSS, JS, and key assets return updated content/200 status. Python smoke check for cache-busted refs and local asset resolution passed.
+- Follow-ups / TODOs: Push this cache-busting commit; after deployment, hard refresh the Pages URL if the browser still shows cached favicon/assets.
