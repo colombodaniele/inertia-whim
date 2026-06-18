@@ -523,3 +523,107 @@
 - Files touched: `index.html`, `PROJECT_LOG.md`.
 - Commands/tests run + results: Live `Invoke-WebRequest` checks showed Pages HTML, CSS, JS, and key assets return updated content/200 status. Python smoke check for cache-busted refs and local asset resolution passed.
 - Follow-ups / TODOs: Push this cache-busting commit; after deployment, hard refresh the Pages URL if the browser still shows cached favicon/assets.
+
+## 2026-06-18 17:29
+
+- What changed: Added mobile-only responsive overrides: contained landing artwork over a soft mobile background, centered sticky tabs, full-viewport carousel stages with smaller arrows near the screen edges, smaller Music song cards/player controls, preserved Gallery sizing with farther-out arrows, and a taller outro section so the final logo can scroll higher.
+- Why: The desktop version was acceptable, but the mobile layout had cropped landing letters, left-aligned tabs, cut song players, cramped carousel arrows, and a final logo that sat too low.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for mobile-only landing/tabs/carousel/audio/outro CSS markers, preserved desktop Music/Gallery sizing, and query-string-aware local asset references passed.
+- Follow-ups / TODOs: Browser-review on an actual mobile viewport; push these responsive changes if they look correct.
+
+## 2026-06-18 17:50
+
+- What changed: Retuned the mobile layout so the landing image uses a full-screen cover crop, centered the tab bar, reduced mobile typography and contact/song/player sizing, tightened Music carousel dimensions so side players fit better, and moved the final IW logo lower again.
+- Why: The mobile version still did not match the desired full-screen landing behavior, the text and components were too large overall, and the outro logo position was better before.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for the mobile cover-crop landing, centered tabs, smaller Music carousel/player/contact typography, lower outro logo, preserved desktop carousel sizing, query-string-aware local asset references, and balanced CSS braces passed.
+- Follow-ups / TODOs: Browser-review the mobile viewport; push these local-only responsive changes after approval.
+
+## 2026-06-18 17:58
+
+- What changed: Further narrowed the mobile Music carousel cards/player controls, kept Gallery sizing unchanged, compressed the mobile Contact section/form, kept first and last name side-by-side on mobile, and forced the management email to stay on one line.
+- Why: The mobile song carousel still clipped at the screen edges, and the Contact page did not fit into one mobile viewport with the email wrapping before `.com`.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for updated mobile Music/Contact CSS markers, preserved Gallery mobile sizing, query-string-aware local asset references, and balanced CSS braces passed.
+- Follow-ups / TODOs: Browser-review on a mobile viewport; adjust the Music side-card width again if the target phone still clips the side cards.
+
+## 2026-06-18 18:06
+
+- What changed: Changed the mobile tab bar from sticky to fixed, added mobile section top padding for the fixed bar, and made the mobile Music carousel use a full centered active card with smaller scaled side previews pushed toward the screen edges.
+- Why: The tabs disappeared after navigating to Contact/Gallery on mobile, and the Music side cards were visually colliding with the active song card.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check for fixed mobile tabs, preserved Gallery mobile sizing, query-string-aware local asset references, balanced CSS braces, and a 402px mobile carousel geometry check passed; the computed Music card visual gap is about 16.8px with side previews partially offscreen.
+- Follow-ups / TODOs: Browser-review on the target phone; if the side previews should be even less visible, reduce the side-card scale or move them farther out.
+
+## 2026-06-18 18:14
+
+- What changed: Added a carousel reset state to suppress side-card transitions during the post-arrow clone swap, added a little more mobile padding inside song cards and custom audio players, slightly reduced the mobile audio button size, and shortened the mobile landing signup width.
+- Why: The active player controls were sitting too close to the player/song-card edges, a side song appeared to blink after arrow navigation completed, and the user wanted the `STAY IN THE KNOW` email box a little shorter.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed. Python smoke check for mobile player padding/signup width, carousel reset CSS/JS markers, preserved Gallery mobile sizing, query-string-aware local asset references, and balanced CSS/JS braces passed.
+- Follow-ups / TODOs: Browser-review the arrow-click animation on mobile; if any blink remains, inspect whether the browser is repainting the cloned audio controls rather than the card transitions.
+
+## 2026-06-18 18:20
+
+- What changed: Changed the Music carousel to rotate the real song cards directly instead of using temporary cloned song cards, while leaving Gallery on the clone-based loop, and widened the mobile landing signup box slightly.
+- Why: The side-song blink persisted after transition suppression, suggesting the visible flash came from removing/replacing a cloned audio card at the end of the arrow animation. The signup box had been shortened too much.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed. Python smoke check for Music real-card rotation markers, widened mobile signup width, preserved Gallery mobile sizing, query-string-aware local asset references, and balanced CSS/JS braces passed.
+- Follow-ups / TODOs: Browser-review the Music arrow animation; if any blink remains, inspect whether the audio control repaint itself needs a mobile-only simplified side-preview rendering.
+
+## 2026-06-18 18:27
+
+- What changed: Added a mobile-only landing `<picture>` source that uses `Graphics/Inertia Whim extended top bottom 9x16.png`, made the mobile tab bar ignore scroll-driven opacity/slide variables so it remains fixed and visible, widened the mobile signup box slightly, and restored the Music carousel to the same clone-loop sliding behavior used by desktop/Gallery.
+- Why: The mobile landing needed the taller artwork, the tabs were disappearing while scrolling or after tab clicks, the signup width was slightly too narrow, and the Music carousel direct-rotation experiment made the arrow animation worse.
+- Files touched: `index.html`, `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed. Python smoke check for the mobile landing picture source, fixed visible mobile tabs, restored desktop-style carousel loop, adjusted signup width, query-string-aware local asset references, and balanced CSS/JS braces passed.
+- Follow-ups / TODOs: Browser-review the Music carousel arrow animation on mobile; include `Graphics/Inertia Whim extended top bottom 9x16.png` in any future GitHub push because it is now an active mobile asset.
+
+## 2026-06-18 18:32
+
+- What changed: Removed the mobile-only fixed/always-visible tab bar override and the mobile tab-button transform reset, while keeping the smaller centered mobile tab sizing.
+- Why: The tabs should not appear on the landing page; mobile should inherit the desktop scroll/fade/sticky tab behavior and only differ in layout and sizing.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed. Python smoke check confirmed mobile tabs no longer force `position: fixed`, `opacity: 1`, or `transform: none`, mobile landing image references resolve, restored carousel loop markers remain present, and CSS/JS braces are balanced.
+- Follow-ups / TODOs: Browser-review on mobile to confirm the tabs appear after scrolling past the landing page and then stick at the top like desktop.
+
+## 2026-06-18 18:41
+
+- What changed: Made mobile Music carousel cards use a constant card width like desktop, with center/side emphasis coming from scale only, and delayed the tab-bar outro fade until the outro section reaches the sticky tab boundary.
+- Why: The mobile Music carousel blink was caused by switching the active card from a small side width to a larger center width after the slide reset. The tabs disappeared after Contact/Gallery clicks because the outro fade began too early on the shorter mobile scroll path.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed. Python smoke check confirmed constant-width mobile Music carousel markers, restored clone-loop markers, later tab outro fade, query-string-aware local asset references, balanced CSS/JS braces, and a 402px mobile geometry check with about 31.7px gap and 41.8px visible side preview.
+- Follow-ups / TODOs: Browser-review on mobile; if the carousel still blinks, inspect whether audio control repainting rather than card sizing is causing the remaining flash.
+
+## 2026-06-18 18:55
+
+- What changed: Added an `is-moving` carousel state and made mobile Music card `transform` transitions run only during the active slide, not during the post-slide reset. Replaced tab click `scrollIntoView()` navigation with explicit `scrollTo(panelTop - tabHeight)` navigation.
+- Why: The user-provided video/description showed the slide itself was correct but the card scaled again after the slide completed, meaning the reset class swap was still animating transforms. The tab loss after Contact/Gallery clicks was likely caused by section scrolling aligning the target under/above the sticky tab bar.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed. Python smoke check confirmed mobile Music transform transitions are limited to the moving state, tab-aware scroll navigation is present, query-string-aware local asset references resolve, and CSS/JS braces are balanced.
+- Follow-ups / TODOs: Browser-review the recorded mobile scenario again; if a flash remains, the next step is to simplify side-preview audio controls during carousel movement.
+
+## 2026-06-18 18:59
+
+- What changed: Removed the tab bar's scroll-driven outro fade-out while keeping its landing-page fade-in.
+- Why: After the carousel blink fix, the top tabs were disappearing during normal scrolling; the tab bar should appear after the landing page and then remain visible/sticky through the site.
+- Files touched: `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed. Python smoke check confirmed tab opacity no longer depends on outro scroll progress, the carousel moving-state blink fix remains present, query-string-aware local asset references resolve, and CSS/JS braces are balanced.
+- Follow-ups / TODOs: Browser-review mobile scrolling to confirm tabs remain visible after appearing.
+
+## 2026-06-18 19:09
+
+- What changed: Switched the mobile landing height/image height to `100dvh`, added a scroll-driven `has-entered-site` body class, and made the mobile tab bar fixed only after the landing transition completes, with added section padding to account for the fixed bar.
+- Why: Mobile Chrome viewport changes were exposing a black strip below the landing image, and sticky tabs could move out of view after appearing. The requested behavior is landing-only without tabs, then fixed visible tabs once the site content is reached.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed. Python smoke check confirmed mobile dynamic viewport landing sizing, `has-entered-site` fixed tab behavior, preserved carousel moving-state blink fix, query-string-aware local asset references, and balanced CSS/JS braces.
+- Follow-ups / TODOs: Browser-review mobile scroll from landing into Music and through Contact/Gallery to confirm the landing image no longer exposes black below it and tabs stay visible after appearing.
+
+## 2026-06-18 19:15
+
+- What changed: Activated `has-entered-site` as soon as the tab reveal begins instead of waiting for the reveal to complete, added a `visualViewport` resize listener for mobile browser chrome changes, and set the mobile landing section/image to explicit `height: 100dvh` in addition to `min-height`.
+- Why: The first downward scroll still behaved like the old version, while subsequent scrolls were correct, indicating the entered-site state and viewport measurements were being initialized too late on first pass.
+- Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed. Python smoke check confirmed early entered-site activation, visual viewport resize tracking, explicit mobile `100dvh` landing sizing, preserved carousel moving-state blink fix, query-string-aware local asset references, and balanced CSS/JS braces.
+- Follow-ups / TODOs: Browser-review the first scroll after a fresh reload specifically; compare it with scrolling back up/down to verify the two passes now match.

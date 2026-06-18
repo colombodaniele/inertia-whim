@@ -52,7 +52,10 @@
 
     setActiveSection(tabName);
     window.inertiaWhimReveal?.showSection(panel);
-    panel.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    const stickyOffset = tabBar?.offsetHeight || 68;
+    const targetY = panel.getBoundingClientRect().top + window.scrollY - stickyOffset;
+    window.scrollTo({ top: Math.max(targetY, 0), behavior: "smooth" });
 
     if (updateHash) {
       writeHash(tabName);
@@ -97,9 +100,7 @@
     const easedLandingProgress = fadeProgress * fadeProgress * (3 - 2 * fadeProgress);
     const tabProgress = Math.min(Math.max((landingProgress - 0.64) / 0.36, 0), 1);
     const easedTabProgress = tabProgress * tabProgress * (3 - 2 * tabProgress);
-    const outroStart = outroPanel ? outroPanel.getBoundingClientRect().top + window.scrollY - window.innerHeight * 0.6 : Infinity;
-    const outroProgress = outroPanel ? Math.min(Math.max((window.scrollY - outroStart) / (window.innerHeight * 0.45), 0), 1) : 0;
-    const easedOutroProgress = outroProgress * outroProgress * (3 - 2 * outroProgress);
+    document.body.classList.toggle("has-entered-site", tabProgress > 0);
     const outroImageStart = outroPanel ? outroPanel.getBoundingClientRect().top + window.scrollY - window.innerHeight * 0.55 : Infinity;
     const outroImageEnd = end;
     const outroImageRange = Math.max(outroImageEnd - outroImageStart, 1);
@@ -109,8 +110,8 @@
     const landingOffset = 0;
     const landingOpacity = 1 - easedLandingProgress;
     const overlayOpacity = 1 - easedLandingProgress;
-    const tabOpacity = easedTabProgress * (1 - easedOutroProgress);
-    const tabSlide = prefersReducedMotion ? 0 : 44 * ((1 - easedTabProgress) + easedOutroProgress);
+    const tabOpacity = easedTabProgress;
+    const tabSlide = prefersReducedMotion ? 0 : 44 * (1 - easedTabProgress);
     const outroBlur = prefersReducedMotion ? 0 : 12 * (1 - easedOutroImageProgress);
     const outroY = prefersReducedMotion ? 0 : 34 * (1 - easedOutroImageProgress);
     const outroScale = 0.94 + 0.06 * easedOutroImageProgress;
@@ -178,6 +179,7 @@
 
   window.addEventListener("scroll", requestScrollUpdate, { passive: true });
   window.addEventListener("resize", requestScrollUpdate, { passive: true });
+  window.visualViewport?.addEventListener("resize", requestScrollUpdate, { passive: true });
 
   window.inertiaWhimTabs = {
     activateTab: scrollToSection,
@@ -390,6 +392,7 @@
       }
 
       isMoving = true;
+      carousel.classList.add("is-moving");
       removeCarouselClones();
 
       let targetSlot = direction > 0 ? 2 : 1;
@@ -411,6 +414,9 @@
         }
 
         track.removeEventListener("transitionend", finishMove);
+        carousel.classList.remove("is-moving");
+        carousel.classList.add("is-resetting");
+        setTransition(false);
         removeCarouselClones();
 
         if (direction > 0) {
@@ -422,6 +428,11 @@
         alignToSlot(1, { animate: false });
         isMoving = false;
         updateCardState(1);
+
+        requestAnimationFrame(() => {
+          carousel.classList.remove("is-resetting");
+          setTransition(true);
+        });
       };
 
       track.addEventListener("transitionend", finishMove);
