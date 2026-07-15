@@ -627,3 +627,11 @@
 - Files touched: `styles.css`, `script.js`, `PROJECT_LOG.md`.
 - Commands/tests run + results: `node --check script.js` passed. Python smoke check confirmed early entered-site activation, visual viewport resize tracking, explicit mobile `100dvh` landing sizing, preserved carousel moving-state blink fix, query-string-aware local asset references, and balanced CSS/JS braces.
 - Follow-ups / TODOs: Browser-review the first scroll after a fresh reload specifically; compare it with scrolling back up/down to verify the two passes now match.
+
+## 2026-07-15 13:29
+
+- What changed: Updated the Gallery carousel to use the current files in `Pictures/`: `Michal.jpeg`, `Ophelia1.jpeg`, `Ophelia2.jpeg`, `Dani1.jpg`, `Dani2.jpg`, and `Tony1.png`.
+- Why: The user replaced the gallery source images and wanted the website to use the current `Pictures/` folder contents instead of the old image filenames.
+- Files touched: `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check confirmed all six current gallery images are referenced, old gallery image references were removed, and all local HTML asset references resolve.
+- Follow-ups / TODOs: Commit and push the gallery reference update to GitHub if repository/network permissions allow.
