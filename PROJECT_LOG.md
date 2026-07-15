@@ -635,3 +635,19 @@
 - Files touched: `index.html`, `PROJECT_LOG.md`.
 - Commands/tests run + results: Python smoke check confirmed all six current gallery images are referenced, old gallery image references were removed, and all local HTML asset references resolve.
 - Follow-ups / TODOs: Commit and push the gallery reference update to GitHub if repository/network permissions allow.
+
+## 2026-07-15 14:11
+
+- What changed: Reordered the Gallery carousel to start with `Ophelia2.jpeg`, separated same-person photos so no adjacent or wraparound pair repeats the same person, made `Dani1.jpg` display with `object-fit: contain`, and slightly zoomed out `Ophelia1.jpeg` with a targeted contain/object-position rule.
+- Why: The user wanted Ophelia 2 as the main gallery image, no same-person photos next to each other, Dani1's head not cut off, and Ophelia1 slightly less cropped.
+- Files touched: `index.html`, `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check confirmed the gallery starts with Ophelia2, no adjacent repeated people including wraparound, Dani1 and Ophelia1 crop classes are present, all gallery files exist, and all local HTML references resolve.
+- Follow-ups / TODOs: Browser-review the visual crop of Ophelia1; commit/push after the gallery order and crop look right.
+
+## 2026-07-15 14:18
+
+- What changed: Reordered the Gallery carousel to `Ophelia2`, `Michal`, `Tony`, `Dani2`, `Ophelia1`, `Dani1`.
+- Why: The user wanted Tony as the third image and the two Dani images switched in order while keeping the no-same-person-adjacent arrangement.
+- Files touched: `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check confirmed the requested order, no adjacent repeated people including wraparound, required crop classes remain on Ophelia1/Dani1, all gallery files exist, and all local HTML references resolve.
+- Follow-ups / TODOs: Browser-review the Gallery carousel order and crop; commit/push once approved.

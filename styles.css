@@ -868,6 +868,16 @@ body.is-landing-dragging .site-sections {
   width: 100%;
 }
 
+.featured-photo img.gallery-image-contain {
+  background: rgba(5, 6, 7, 0.52);
+  object-fit: contain;
+}
+
+.featured-photo img.gallery-image-ophelia-one {
+  object-fit: contain;
+  object-position: center 42%;
+}
+
 .featured-photo figcaption {
   background: linear-gradient(0deg, rgba(5, 6, 7, 0.58), rgba(5, 6, 7, 0));
   bottom: 0;
