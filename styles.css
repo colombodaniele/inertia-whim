@@ -238,6 +238,33 @@ body.is-landing-ready .landing-footer {
   width: 21px;
 }
 
+.landing-scroll-button {
+  background: transparent;
+  border: 0;
+  color: #173255;
+  cursor: pointer;
+  height: 28px;
+  padding: 0;
+  position: relative;
+  width: 28px;
+}
+
+.landing-scroll-button::before {
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  content: "";
+  height: 10px;
+  left: 50%;
+  position: absolute;
+  top: 42%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 10px;
+}
+
+.landing-scroll-button:hover {
+  transform: translateY(2px);
+}
+
 body.is-landing-dragging .landing-signup,
 body.is-landing-dragging .landing-footer {
   transition: none;
@@ -275,9 +302,11 @@ body.is-landing-dragging .tab-bar {
   font-weight: 800;
   min-height: 42px;
   padding: 0 16px;
+  text-align: center;
   transform: translateX(0);
   transition: background 160ms ease, color 160ms ease, transform 260ms cubic-bezier(0.19, 1, 0.22, 1);
   text-transform: uppercase;
+  width: 98px;
 }
 
 .tab-button:first-child {
@@ -881,6 +910,8 @@ body.is-landing-dragging .site-sections {
 .featured-photo img.gallery-image-tony {
   background: rgba(5, 6, 7, 0.52);
   object-fit: contain;
+  object-position: center 44%;
+  transform: scale(1.08);
 }
 
 .featured-photo figcaption {
@@ -1001,6 +1032,7 @@ body.is-landing-dragging .site-sections {
     font-size: 10px;
     min-height: 36px;
     padding: 0 10px;
+    width: 80px;
   }
 
   .carousel {

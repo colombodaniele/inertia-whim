@@ -3,6 +3,7 @@
   const buttons = Array.from(document.querySelectorAll("[data-tab]"));
   const panels = Array.from(document.querySelectorAll("[data-panel]"));
   const tabBar = document.querySelector(".tab-bar");
+  const landingScrollButton = document.querySelector("[data-scroll-to-music]");
   const outroPanel = document.querySelector(".outro-panel");
   const enteredSiteKey = "inertiaWhimEnteredSite";
   let scrollTicking = false;
@@ -154,6 +155,10 @@
     button.addEventListener("click", () => {
       scrollToSection(button.dataset.tab);
     });
+  });
+
+  landingScrollButton?.addEventListener("click", () => {
+    scrollToSection("bio");
   });
 
   const initialTab = window.location.hash.replace("#", "");

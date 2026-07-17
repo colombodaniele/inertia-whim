@@ -667,3 +667,27 @@
 - Files touched: `index.html`, `styles.css`, `PROJECT_LOG.md`.
 - Commands/tests run + results: Python smoke check confirmed consistent bio paragraph selector, Tony image class and contain zoom rule, preserved gallery order/no-adjacent rule, all bio text, and all local HTML references resolve.
 - Follow-ups / TODOs: Browser-review Tony's crop; commit/push after approval.
+
+## 2026-07-17 17:01
+
+- What changed: Added a minimal icon-only landing scroll button that scrolls to the Music section, and gave tab buttons fixed widths on desktop/mobile so `MUSIC`, `CONTACT`, and `GALLERY` read with more consistent visual weight.
+- Why: The user wanted a clean cue that the landing page scrolls and wanted the shorter `MUSIC` tab not to appear visually larger than the other tab labels.
+- Files touched: `index.html`, `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed. Python smoke check confirmed the landing scroll button markup/style/handler, fixed tab widths, preserved carousel moving-state fix, all local HTML references, and balanced CSS/JS braces.
+- Follow-ups / TODOs: Browser-review the arrow placement and tab widths on desktop/mobile; commit/push after approval.
+
+## 2026-07-17 17:09
+
+- What changed: Adjusted the targeted Tony gallery image rule from full contain to a mild cover crop with `object-position: center 44%`.
+- Why: The user wanted the new Tony image zoomed in slightly more than the prior fully contained version.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check confirmed the Tony image still uses its targeted class, the crop rule now uses `object-fit: cover`, and all local HTML references resolve.
+- Follow-ups / TODOs: Browser-review the Tony image crop; adjust `object-position` if the face should sit higher/lower.
+
+## 2026-07-17 17:31
+
+- What changed: Adjusted the Tony gallery crop again from cover to contained image with `transform: scale(1.08)`.
+- Why: The user wanted the Tony image a little more zoomed out than the cover crop, but not as small as plain contain.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check confirmed the Tony image uses its targeted class, the rule now uses contain with slight scale-up and centered positioning, and all local HTML references resolve.
+- Follow-ups / TODOs: Browser-review the Tony crop; adjust the scale value if it should be slightly larger or smaller.
