@@ -659,3 +659,11 @@
 - Files touched: `index.html`, `PROJECT_LOG.md`.
 - Commands/tests run + results: Python smoke check confirmed the new bio text is present, the old bio text and `Tony1.png` reference are gone, `Andonio1.jpg` exists, Gallery order remains intact, no adjacent repeated people exist, and all local HTML references resolve.
 - Follow-ups / TODOs: Confirm whether the source file should remain named `Andonio1.jpg` or be renamed to `Antonio1.jpg`; commit/push after approval.
+
+## 2026-07-17 16:36
+
+- What changed: Updated the bio paragraph selector from `p:last-child` to `p:not(.section-kicker)` so both bio paragraphs share the same styling, and added a targeted `gallery-image-tony` contain rule for the new Tony image.
+- Why: Splitting the bio into two paragraphs made only the second paragraph match the old `p:last-child` selector, causing a font/size mismatch. The user also wanted the new Tony image zoomed out slightly.
+- Files touched: `index.html`, `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check confirmed consistent bio paragraph selector, Tony image class and contain zoom rule, preserved gallery order/no-adjacent rule, all bio text, and all local HTML references resolve.
+- Follow-ups / TODOs: Browser-review Tony's crop; commit/push after approval.
