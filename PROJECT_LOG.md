@@ -651,3 +651,11 @@
 - Files touched: `index.html`, `PROJECT_LOG.md`.
 - Commands/tests run + results: Python smoke check confirmed the requested order, no adjacent repeated people including wraparound, required crop classes remain on Ophelia1/Dani1, all gallery files exist, and all local HTML references resolve.
 - Follow-ups / TODOs: Browser-review the Gallery carousel order and crop; commit/push once approved.
+
+## 2026-07-17 16:16
+
+- What changed: Replaced the Music bio copy with the new two-paragraph band description and changed the Tony Gallery image reference from `Tony1.png` to the newly added `Andonio1.jpg`.
+- Why: The user wanted updated band copy and wanted the Gallery to use the new Tony/Antonio picture.
+- Files touched: `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check confirmed the new bio text is present, the old bio text and `Tony1.png` reference are gone, `Andonio1.jpg` exists, Gallery order remains intact, no adjacent repeated people exist, and all local HTML references resolve.
+- Follow-ups / TODOs: Confirm whether the source file should remain named `Andonio1.jpg` or be renamed to `Antonio1.jpg`; commit/push after approval.
