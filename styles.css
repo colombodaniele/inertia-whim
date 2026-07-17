@@ -442,7 +442,7 @@ body.is-landing-dragging .site-sections {
   text-transform: uppercase;
 }
 
-.bio-copy p:last-child,
+.bio-copy p:not(.section-kicker),
 .track-card p {
   color: var(--muted);
   font-size: 18px;
@@ -876,6 +876,11 @@ body.is-landing-dragging .site-sections {
 .featured-photo img.gallery-image-ophelia-one {
   object-fit: contain;
   object-position: center 42%;
+}
+
+.featured-photo img.gallery-image-tony {
+  background: rgba(5, 6, 7, 0.52);
+  object-fit: contain;
 }
 
 .featured-photo figcaption {
