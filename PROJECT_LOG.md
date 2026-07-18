@@ -691,3 +691,11 @@
 - Files touched: `styles.css`, `PROJECT_LOG.md`.
 - Commands/tests run + results: Python smoke check confirmed the Tony image uses its targeted class, the rule now uses contain with slight scale-up and centered positioning, and all local HTML references resolve.
 - Follow-ups / TODOs: Browser-review the Tony crop; adjust the scale value if it should be slightly larger or smaller.
+
+## 2026-07-18 14:39
+
+- What changed: Replaced the Music carousel tracks with `Serpentine`, `Ghost`, `Leech`, `Limerence`, and `The Big Lonely` in that order. The first four use their matching new MP3 files, and `The Big Lonely` uses the existing `Demo 9 Dani - new structure.mp3`.
+- Why: The user added new songs and wanted them to replace the old `Demo 33`, `Demo 11`, and `Demo 9` player lineup, with `Demo 9` renamed to `The Big Lonely`.
+- Files touched: `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check confirmed the five requested songs are in order, all audio files exist, old song titles/audio references were removed from the player markup, and all local HTML references resolve.
+- Follow-ups / TODOs: Browser-test audio playback for the new MP3s; commit/push after approval.
