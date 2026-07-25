@@ -747,3 +747,35 @@
 - Files touched: `styles.css`, `index.html`, `PROJECT_LOG.md`.
 - Commands/tests run + results: `node --check script.js` passed; Python smoke check confirmed the mobile bio font rule, updated cache token, balanced CSS braces, and all local HTML references resolve.
 - Follow-ups / TODOs: Commit and push the mobile font/cache update together with the pending management email change.
+
+## 2026-07-25 16:00
+
+- What changed: Added a site-served `@font-face` named `InertiaCopperplate` using `Fonts/COPRGTB.TTF`, made it the first `--title-font`, and bumped the CSS/JS cache query strings to `20260725-1559`.
+- Why: Windows had the intended Copperplate font installed locally, while Mac/Android fell back to different fonts; serving the font file makes title/bio/contact typography consistent across devices.
+- Files touched: `styles.css`, `index.html`, `Fonts/COPRGTB.TTF`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed; Python smoke check confirmed the local font file exists, the CSS `@font-face` references it, the cache token is updated, CSS braces are balanced, and all local HTML/CSS references resolve.
+- Follow-ups / TODOs: Commit and push the new font file plus HTML/CSS/log updates; confirm font licensing is acceptable for public website embedding.
+
+## 2026-07-25 16:05
+
+- What changed: Switched the served Copperplate font from the bold file to the lighter `Fonts/COPRGTL.TTF`, mapped it across the title-font weight range, and bumped the CSS/JS cache query strings to `20260725-1604`.
+- Why: The bold Copperplate file looked heavier than the Windows desktop rendering the user wanted to match.
+- Files touched: `Fonts/COPRGTL.TTF`, `styles.css`, `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Copied `COPRGTL.TTF` from `C:\Windows\Fonts`; `node --check script.js` passed; Python smoke check confirmed the lighter font file is referenced, the bold file is no longer referenced by CSS, the cache token is updated, CSS braces are balanced, and all local references resolve.
+- Follow-ups / TODOs: Browser-review the lighter font on Windows, Mac, and Android; push `Fonts/COPRGTL.TTF` with the HTML/CSS/log updates if it matches.
+
+## 2026-07-25 16:10
+
+- What changed: Switched the served `InertiaCopperplate` font back to `Fonts/COPRGTB.TTF` but kept it mapped across `font-weight: 400 900`, and bumped the CSS/JS cache query strings to `20260725-1609`.
+- Why: The light Copperplate file was too thin, while the earlier bold attempt likely looked too heavy because `font-weight: 800` could synthesize extra weight on top of a single 700-weight face.
+- Files touched: `styles.css`, `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed; Python smoke check confirmed the bold Copperplate file is referenced with the wider weight mapping, the light file is no longer referenced by CSS, the cache token is updated, CSS braces are balanced, and all local references resolve.
+- Follow-ups / TODOs: Browser-review the contact heading/email against the Windows desktop reference; push `Fonts/COPRGTB.TTF` with the HTML/CSS/log updates if it matches.
+
+## 2026-07-25 16:13
+
+- What changed: Changed `InertiaCopperplate` to use `Fonts/COPRGTL.TTF` again, but exposed it only at `font-weight: 400` so the existing `font-weight: 800` CSS rules can synthesize the heavier Windows-like rendering; bumped the CSS/JS cache query strings to `20260725-1612`.
+- Why: The true bold Copperplate face remained too thick, while the light face mapped across all weights remained too thin. The likely old Windows rendering was the light face with synthetic bolding.
+- Files touched: `styles.css`, `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed; Python smoke check confirmed the light Copperplate file is referenced as a normal-weight face, the bold file is no longer referenced by CSS, the cache token is updated, CSS braces are balanced, and all local references resolve.
+- Follow-ups / TODOs: Use Chrome DevTools Rendered Fonts on the old/live Windows page to confirm the exact resolved face if this still does not match.

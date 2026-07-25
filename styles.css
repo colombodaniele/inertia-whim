@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "InertiaCopperplate";
+  src: url("Fonts/COPRGTL.TTF") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
 :root {
   --ink: #f5f2ea;
   --muted: rgba(245, 242, 234, 0.72);
@@ -8,7 +16,7 @@
   --accent: #c86f55;
   --accent-cool: #7991a7;
   --shadow: rgba(0, 0, 0, 0.55);
-  --title-font: "Copperplate Gothic Bold", "Copperplate Gothic Light", "Perpetua Titling MT", Georgia, serif;
+  --title-font: "InertiaCopperplate", "Copperplate Gothic Bold", "Copperplate Gothic Light", "Perpetua Titling MT", Georgia, serif;
   --text-font: Bahnschrift, "Segoe UI", Arial, Helvetica, sans-serif;
 }
 
