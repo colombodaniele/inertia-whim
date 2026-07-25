@@ -731,3 +731,19 @@
 - Files touched: `index.html`, `PROJECT_LOG.md`.
 - Commands/tests run + results: `node --check script.js` passed; Python smoke check confirmed the updated CSS/JS query strings are present and all local HTML references resolve.
 - Follow-ups / TODOs: Commit and push this cache-buster update, then reload the GitHub Pages URL with a hard refresh.
+
+## 2026-07-25 15:16
+
+- What changed: Updated the Contact section management email and FormSubmit destination to `inertiawhim@gmail.com`.
+- Why: The user requested the management email change.
+- Files touched: `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check confirmed the old booking email was removed, the new visible `mailto:` link and FormSubmit action are present, and all local HTML references resolve.
+- Follow-ups / TODOs: Commit and push the email update to GitHub when ready.
+
+## 2026-07-25 15:20
+
+- What changed: Narrowed the mobile bio typography override to `.bio-copy p:not(.section-kicker)`, explicitly kept the title font and mixed-case transform for the bio paragraphs, and bumped the CSS/JS cache query strings to `20260725-1519`.
+- Why: The mobile bio paragraph was rendering with different typography than desktop, and the updated stylesheet needs to bypass browser/GitHub Pages caching.
+- Files touched: `styles.css`, `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed; Python smoke check confirmed the mobile bio font rule, updated cache token, balanced CSS braces, and all local HTML references resolve.
+- Follow-ups / TODOs: Commit and push the mobile font/cache update together with the pending management email change.

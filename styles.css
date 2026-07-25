@@ -1150,12 +1150,17 @@ body.is-landing-dragging .site-sections {
     margin-bottom: 10px;
   }
 
-  .bio-copy p,
+  .bio-copy p:not(.section-kicker),
   .contact-email,
   .contact-form label,
   .contact-form input,
   .contact-form textarea {
     font-size: 14px;
+  }
+
+  .bio-copy p:not(.section-kicker) {
+    font-family: var(--title-font);
+    text-transform: none;
   }
 
   .contact-email {
