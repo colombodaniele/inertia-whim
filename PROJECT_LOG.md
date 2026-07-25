@@ -699,3 +699,27 @@
 - Files touched: `index.html`, `PROJECT_LOG.md`.
 - Commands/tests run + results: Python smoke check confirmed the five requested songs are in order, all audio files exist, old song titles/audio references were removed from the player markup, and all local HTML references resolve.
 - Follow-ups / TODOs: Browser-test audio playback for the new MP3s; commit/push after approval.
+
+## 2026-07-25 14:38
+
+- What changed: Updated the custom audio player's border radius to match the outer song card shape (`8px 28px 8px 28px`).
+- Why: The user wanted the inner audio player to use the same shape as the outer song player box.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check confirmed `.custom-audio-player` and `.track-card` use the same border radius, the old pill radius is gone, and all local HTML references resolve.
+- Follow-ups / TODOs: Browser-review the Music carousel cards to confirm the inner and outer shapes now feel consistent.
+
+## 2026-07-25 14:43
+
+- What changed: Updated the landing signup input group to use the same `8px 28px 8px 28px` shape as the song/player boxes, and set bio paragraphs plus the booking email to use the title font family without uppercase transformation.
+- Why: The user wanted the `STAY IN THE KNOW` box to match the music player geometry, and wanted the descriptive/booking text to share the title font while preserving mixed-case copy.
+- Files touched: `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check confirmed the signup box, song card, and audio player share the same radius; bio text and booking email use `var(--title-font)` with `text-transform: none`; and all local HTML references resolve.
+- Follow-ups / TODOs: Browser-review the text readability and signup shape on desktop/mobile.
+
+## 2026-07-25 14:50
+
+- What changed: Linked the landing-page Instagram icon to `https://www.instagram.com/inertiawhim` and added safe new-tab attributes.
+- Why: The user provided the official Instagram account link.
+- Files touched: `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check confirmed the Instagram href, `target="_blank"`, `rel="noopener noreferrer"`, and all local HTML references resolve.
+- Follow-ups / TODOs: Push the link update to GitHub when ready.

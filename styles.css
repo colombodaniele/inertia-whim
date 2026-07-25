@@ -143,7 +143,7 @@ body.is-landing-ready .landing-footer {
   align-items: center;
   background: rgba(245, 242, 234, 0.26);
   border: 1px solid rgba(23, 50, 85, 0.38);
-  border-radius: 999px 12px 999px 12px;
+  border-radius: 8px 28px 8px 28px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   min-height: 34px;
@@ -474,8 +474,10 @@ body.is-landing-dragging .site-sections {
 .bio-copy p:not(.section-kicker),
 .track-card p {
   color: var(--muted);
+  font-family: var(--title-font);
   font-size: 18px;
   line-height: 1.62;
+  text-transform: none;
 }
 
 .carousel {
@@ -636,7 +638,7 @@ body.is-landing-dragging .site-sections {
   align-items: center;
   background: rgba(245, 242, 234, 0.08);
   border: 1px solid rgba(245, 242, 234, 0.18);
-  border-radius: 999px 18px 999px 18px;
+  border-radius: 8px 28px 8px 28px;
   display: grid;
   gap: 11px;
   grid-template-columns: 30px minmax(0, 1fr);
@@ -763,10 +765,12 @@ body.is-landing-dragging .site-sections {
 
 .contact-email {
   display: inline-block;
+  font-family: var(--title-font);
   font-size: clamp(19px, 2.4vw, 30px);
   font-weight: 800;
   overflow-wrap: anywhere;
   text-decoration: none;
+  text-transform: none;
 }
 
 .contact-email:hover {
