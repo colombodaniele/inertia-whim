@@ -723,3 +723,11 @@
 - Files touched: `index.html`, `PROJECT_LOG.md`.
 - Commands/tests run + results: Python smoke check confirmed the Instagram href, `target="_blank"`, `rel="noopener noreferrer"`, and all local HTML references resolve.
 - Follow-ups / TODOs: Push the link update to GitHub when ready.
+
+## 2026-07-25 15:07
+
+- What changed: Bumped the `styles.css` and `script.js` cache-busting query strings to `20260725-1507`.
+- Why: GitHub Pages/browser caching could keep serving the previous CSS/JS after the latest push.
+- Files touched: `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed; Python smoke check confirmed the updated CSS/JS query strings are present and all local HTML references resolve.
+- Follow-ups / TODOs: Commit and push this cache-buster update, then reload the GitHub Pages URL with a hard refresh.
