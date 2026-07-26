@@ -787,3 +787,11 @@
 - Files touched: `Graphics/optimized/`, `Pictures/optimized/`, `index.html`, `styles.css`, `PROJECT_LOG.md`.
 - Commands/tests run + results: Pillow conversion created WebP assets, with examples including `Dani2.jpg` 15.77 MB to `dani2.webp` 0.34 MB and background WebPs reduced to 0.64 MB / 0.47 MB; `node --check script.js` passed; Python smoke check confirmed optimized WebP files are valid, active references/cache tokens are updated, CSS braces are balanced, and all local HTML/CSS references resolve. An initial reference-check script incorrectly split a normal `src` path containing spaces and was corrected/rerun successfully.
 - Follow-ups / TODOs: Browser-review desktop and mobile image quality; push the optimized folders plus HTML/CSS/log updates if the quality looks right.
+
+## 2026-07-26 12:55
+
+- What changed: Added a root `CNAME` file containing `inertiawhim.com`.
+- Why: The GitHub Pages custom domain works in the UI, and the repository should persist the custom domain across future pushes/deployments.
+- Files touched: `CNAME`, `PROJECT_LOG.md`.
+- Commands/tests run + results: PowerShell check confirmed `CNAME` contains exactly `inertiawhim.com`; `git status --short` confirmed the new domain file is untracked and unrelated local files remain separate.
+- Follow-ups / TODOs: Commit and push `CNAME` plus the log entry; leave unrelated `set_directory_IW.R`, unused graphics trials, and unused `Fonts/COPRGTB.TTF` out of the commit unless intentionally needed.
