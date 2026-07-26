@@ -795,3 +795,11 @@
 - Files touched: `CNAME`, `PROJECT_LOG.md`.
 - Commands/tests run + results: PowerShell check confirmed `CNAME` contains exactly `inertiawhim.com`; `git status --short` confirmed the new domain file is untracked and unrelated local files remain separate.
 - Follow-ups / TODOs: Commit and push `CNAME` plus the log entry; leave unrelated `set_directory_IW.R`, unused graphics trials, and unused `Fonts/COPRGTB.TTF` out of the commit unless intentionally needed.
+
+## 2026-07-26 13:08
+
+- What changed: Generated standard favicon files (`favicon.ico`, `Graphics/favicon-32x32.png`, and `Graphics/apple-touch-icon.png`) from the existing low-left patch artwork, and updated the HTML icon links with cache token `20260726-1308`.
+- Why: The custom domain was working, but the browser tab icon was not appearing on `inertiawhim.com`; serving a root `/favicon.ico` plus explicit PNG links improves browser favicon discovery on the new domain.
+- Files touched: `favicon.ico`, `Graphics/favicon-32x32.png`, `Graphics/apple-touch-icon.png`, `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Pillow generated the favicon assets; Python smoke check confirmed the icon links, 32x32 and 180x180 PNG dimensions, root ICO presence, and all local HTML/CSS references resolve.
+- Follow-ups / TODOs: Push the favicon files and HTML/log update, then clear/reload the favicon cache for `inertiawhim.com` if Chrome still shows the old blank icon briefly.
