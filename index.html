@@ -6,15 +6,17 @@
     <title>Inertia Whim</title>
     <link rel="icon" type="image/png" href="Graphics/extracted_low_left_patch.png?v=20260618-1656">
     <link rel="apple-touch-icon" href="Graphics/extracted_low_left_patch.png?v=20260618-1656">
-    <link rel="stylesheet" href="styles.css?v=20260725-1612">
+    <link rel="stylesheet" href="styles.css?v=20260726-1201">
   </head>
   <body class="is-landing-intro">
     <!-- Landing keeps the requested image as the only first-screen visual content. -->
     <main>
       <section class="landing" aria-label="Inertia Whim landing image">
         <picture>
+          <source media="(max-width: 820px)" type="image/webp" srcset="Graphics/optimized/inertia-whim-landing-mobile.webp?v=20260726-1201">
+          <source type="image/webp" srcset="Graphics/optimized/inertia-whim-landing.webp?v=20260726-1201">
           <source media="(max-width: 820px)" srcset="Graphics/Inertia%20Whim%20extended%20top%20bottom%209x16.png?v=20260618-1828">
-          <img class="landing-image" src="Graphics/Inertia Whim.png?v=20260618-1656" alt="Inertia Whim">
+          <img class="landing-image" src="Graphics/Inertia Whim.png?v=20260618-1656" alt="Inertia Whim" fetchpriority="high">
         </picture>
         <form class="landing-signup" data-landing-signup aria-label="Email signup">
           <p>Stay in the know</p>
@@ -162,27 +164,27 @@
                 <div class="carousel-viewport">
                   <div class="carousel-track" data-carousel-track>
                     <figure class="featured-photo carousel-card" data-carousel-card>
-                      <img src="Pictures/Ophelia2.jpeg" alt="Ophelia">
+                      <img src="Pictures/optimized/ophelia2.webp?v=20260726-1201" alt="Ophelia" loading="lazy" decoding="async">
                       <figcaption>Ophelia</figcaption>
                     </figure>
                     <figure class="featured-photo carousel-card" data-carousel-card>
-                      <img src="Pictures/Michal.jpeg" alt="Michal">
+                      <img src="Pictures/optimized/michal.webp?v=20260726-1201" alt="Michal" loading="lazy" decoding="async">
                       <figcaption>Michal</figcaption>
                     </figure>
                     <figure class="featured-photo carousel-card" data-carousel-card>
-                      <img class="gallery-image-tony" src="Pictures/Andonio1.jpg" alt="Tony">
+                      <img class="gallery-image-tony" src="Pictures/optimized/antonio1.webp?v=20260726-1201" alt="Tony" loading="lazy" decoding="async">
                       <figcaption>Tony</figcaption>
                     </figure>
                     <figure class="featured-photo carousel-card" data-carousel-card>
-                      <img src="Pictures/Dani2.jpg" alt="Dani">
+                      <img src="Pictures/optimized/dani2.webp?v=20260726-1201" alt="Dani" loading="lazy" decoding="async">
                       <figcaption>Dani</figcaption>
                     </figure>
                     <figure class="featured-photo carousel-card" data-carousel-card>
-                      <img class="gallery-image-ophelia-one" src="Pictures/Ophelia1.jpeg" alt="Ophelia">
+                      <img class="gallery-image-ophelia-one" src="Pictures/optimized/ophelia1.webp?v=20260726-1201" alt="Ophelia" loading="lazy" decoding="async">
                       <figcaption>Ophelia</figcaption>
                     </figure>
                     <figure class="featured-photo carousel-card" data-carousel-card>
-                      <img class="gallery-image-contain" src="Pictures/Dani1.jpg" alt="Dani">
+                      <img class="gallery-image-contain" src="Pictures/optimized/dani1.webp?v=20260726-1201" alt="Dani" loading="lazy" decoding="async">
                       <figcaption>Dani</figcaption>
                     </figure>
                   </div>
@@ -200,6 +202,6 @@
       </div>
     </main>
 
-    <script src="script.js?v=20260725-1612"></script>
+    <script src="script.js?v=20260726-1201"></script>
   </body>
 </html>

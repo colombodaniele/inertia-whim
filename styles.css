@@ -354,14 +354,14 @@ body.is-landing-dragging .tab-bar {
 .site-background-black {
   background:
     linear-gradient(90deg, rgba(5, 6, 7, 0.84), rgba(5, 6, 7, 0.48)),
-    url("Graphics/inertia_whim_website_background_black_white.webp") center / cover no-repeat;
+    url("Graphics/optimized/background-black-white.webp?v=20260726-1201") center / cover no-repeat;
   opacity: calc(1 - var(--blue-background-opacity));
 }
 
 .site-background-blue {
   background:
     linear-gradient(90deg, rgba(5, 6, 7, 0.77), rgba(5, 6, 7, 0.35), rgba(5, 6, 7, 0.88)),
-    url("Graphics/inertia_whim_website_background_blue_cream.webp") center / cover no-repeat;
+    url("Graphics/optimized/background-blue-cream.webp?v=20260726-1201") center / cover no-repeat;
   opacity: var(--blue-background-opacity);
 }
 

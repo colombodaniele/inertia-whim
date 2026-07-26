@@ -779,3 +779,11 @@
 - Files touched: `styles.css`, `index.html`, `PROJECT_LOG.md`.
 - Commands/tests run + results: `node --check script.js` passed; Python smoke check confirmed the light Copperplate file is referenced as a normal-weight face, the bold file is no longer referenced by CSS, the cache token is updated, CSS braces are balanced, and all local references resolve.
 - Follow-ups / TODOs: Use Chrome DevTools Rendered Fonts on the old/live Windows page to confirm the exact resolved face if this still does not match.
+
+## 2026-07-26 12:04
+
+- What changed: Created optimized WebP copies for the active landing images, fixed background images, and Gallery photos under `Graphics/optimized/` and `Pictures/optimized/`; updated active HTML/CSS references to use those optimized images with original landing PNG fallbacks; bumped CSS/JS cache query strings to `20260726-1201`.
+- Why: The site was still loading several large image files, especially Gallery photos and background art, and the user wanted the Foreign Logic-style optimized image format without visible quality loss.
+- Files touched: `Graphics/optimized/`, `Pictures/optimized/`, `index.html`, `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Pillow conversion created WebP assets, with examples including `Dani2.jpg` 15.77 MB to `dani2.webp` 0.34 MB and background WebPs reduced to 0.64 MB / 0.47 MB; `node --check script.js` passed; Python smoke check confirmed optimized WebP files are valid, active references/cache tokens are updated, CSS braces are balanced, and all local HTML/CSS references resolve. An initial reference-check script incorrectly split a normal `src` path containing spaces and was corrected/rerun successfully.
+- Follow-ups / TODOs: Browser-review desktop and mobile image quality; push the optimized folders plus HTML/CSS/log updates if the quality looks right.
