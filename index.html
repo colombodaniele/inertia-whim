@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.ico?v=20260726-1308" sizes="any">
     <link rel="icon" type="image/png" href="Graphics/favicon-32x32.png?v=20260726-1308" sizes="32x32">
     <link rel="apple-touch-icon" href="Graphics/apple-touch-icon.png?v=20260726-1308">
-    <link rel="stylesheet" href="styles.css?v=20260726-1201">
+    <link rel="stylesheet" href="styles.css?v=20260726-1358">
   </head>
   <body class="is-landing-intro">
     <!-- Landing keeps the requested image as the only first-screen visual content. -->
@@ -19,14 +19,17 @@
           <source media="(max-width: 820px)" srcset="Graphics/Inertia%20Whim%20extended%20top%20bottom%209x16.png?v=20260618-1828">
           <img class="landing-image" src="Graphics/Inertia Whim.png?v=20260618-1656" alt="Inertia Whim" fetchpriority="high">
         </picture>
-        <form class="landing-signup" data-landing-signup aria-label="Email signup">
+        <form class="landing-signup" action="https://707a0482.sibforms.com/serve/MUIFAMEddHP2pyY2svj3JaxVhFCoYiyzK0AwaOnPWBHE83W9U6HkLTifkKaLyFiT3BICRXZS_XLM4cot2qm-cS8xP5M90f9DTSWV01nD92MAkiTbunMud6PHGCJnIi_HTn1SbQp9bi2KzcrIASOE590Uth_oUbbwhj4esM9fnfd5ysQKCrf3zSlIgtNw0uAUIE5KsjfZRNjTJreSzw==" method="POST" target="brevo-signup-frame" data-landing-signup aria-label="Email signup">
           <p>Stay in the know</p>
           <div>
-            <input type="email" name="email" aria-label="Email address" placeholder="Email" required>
+            <input type="email" id="EMAIL" name="EMAIL" aria-label="Email address" placeholder="Email" autocomplete="email" required>
             <button type="submit">Sign Up</button>
           </div>
+          <input type="text" name="email_address_check" value="" hidden tabindex="-1" autocomplete="off">
+          <input type="hidden" name="locale" value="en">
           <span data-signup-message hidden>Thank you.</span>
         </form>
+        <iframe class="signup-target-frame" name="brevo-signup-frame" title="Newsletter signup response" hidden></iframe>
         <footer class="landing-footer" aria-label="Social links">
           <div class="landing-socials">
             <a href="https://www.instagram.com/inertiawhim" aria-label="Inertia Whim on Instagram" target="_blank" rel="noopener noreferrer">
@@ -203,6 +206,6 @@
       </div>
     </main>
 
-    <script src="script.js?v=20260726-1201"></script>
+    <script src="script.js?v=20260726-1358"></script>
   </body>
 </html>

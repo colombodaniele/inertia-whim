@@ -803,3 +803,11 @@
 - Files touched: `favicon.ico`, `Graphics/favicon-32x32.png`, `Graphics/apple-touch-icon.png`, `index.html`, `PROJECT_LOG.md`.
 - Commands/tests run + results: Pillow generated the favicon assets; Python smoke check confirmed the icon links, 32x32 and 180x180 PNG dimensions, root ICO presence, and all local HTML/CSS references resolve.
 - Follow-ups / TODOs: Push the favicon files and HTML/log update, then clear/reload the favicon cache for `inertiawhim.com` if Chrome still shows the old blank icon briefly.
+
+## 2026-07-26 14:00
+
+- What changed: Connected the landing `STAY IN THE KNOW` signup box to the Brevo subscription form endpoint while preserving the existing Inertia Whim visual design; changed the email field to Brevo's `EMAIL` name, added Brevo hidden fields, submitted to a hidden iframe target, updated local feedback behavior, and bumped CSS/JS cache query strings to `20260726-1358`.
+- Why: The user created a Brevo newsletter form for Inertia Whim and wanted the existing landing signup UI to collect newsletter signups managed in Brevo.
+- Files touched: `index.html`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed; Python smoke check confirmed the Brevo action URL, POST method, `EMAIL` field, hidden fields, iframe target, updated cache tokens, balanced CSS/JS braces, and all local references resolve. An initial over-broad check for `event.preventDefault()` was corrected to inspect only the landing signup block.
+- Follow-ups / TODOs: Browser-test one real signup after pushing to confirm the contact appears in the Brevo list; verify whether Brevo's confirmation/opt-in settings show the desired message/email.

@@ -288,7 +288,7 @@
   requestAnimationFrame(revealVisibleItems);
 })();
 
-// Landing signup is a local placeholder until the real mailing-list endpoint is chosen.
+// Landing signup submits to Brevo in a hidden frame while keeping the landing page in place.
 (() => {
   const form = document.querySelector("[data-landing-signup]");
   const message = document.querySelector("[data-signup-message]");
@@ -297,10 +297,11 @@
     return;
   }
 
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
+  form.addEventListener("submit", () => {
     message.hidden = false;
-    form.reset();
+    window.setTimeout(() => {
+      form.reset();
+    }, 700);
   });
 })();
 
