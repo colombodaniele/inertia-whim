@@ -811,3 +811,19 @@
 - Files touched: `index.html`, `script.js`, `PROJECT_LOG.md`.
 - Commands/tests run + results: `node --check script.js` passed; Python smoke check confirmed the Brevo action URL, POST method, `EMAIL` field, hidden fields, iframe target, updated cache tokens, balanced CSS/JS braces, and all local references resolve. An initial over-broad check for `event.preventDefault()` was corrected to inspect only the landing signup block.
 - Follow-ups / TODOs: Browser-test one real signup after pushing to confirm the contact appears in the Brevo list; verify whether Brevo's confirmation/opt-in settings show the desired message/email.
+
+## 2026-07-26 14:21
+
+- What changed: Improved the landing signup feedback copy to `You're on the list. Check your inbox.`, styled it with the site title font, added a fade transition, auto-hid it after a few seconds, and bumped CSS/JS cache query strings to `20260726-1417`.
+- Why: The Brevo signup worked, but the on-page thank-you message was too plain and stayed visible indefinitely.
+- Files touched: `index.html`, `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed; Python smoke check confirmed the signup feedback styling/auto-hide markers, Brevo form wiring, updated cache tokens, balanced CSS/JS braces, and all local references resolve.
+- Follow-ups / TODOs: Push the feedback refinement; customize the Brevo confirmation email template and sender/domain authentication in Brevo to reduce spam placement.
+
+## 2026-07-26 14:47
+
+- What changed: Changed the landing signup feedback text to `Thank you. You'll hear from us soon.`
+- Why: The user preferred a warmer, simpler thank-you message while keeping the existing font and auto-hide behavior.
+- Files touched: `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Python smoke check confirmed the new message copy, Brevo form wiring, signup message styling/auto-hide markers, balanced CSS/JS braces, and all local references resolve.
+- Follow-ups / TODOs: Push the copy update together with the existing newsletter feedback/style changes.

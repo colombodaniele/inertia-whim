@@ -292,16 +292,25 @@
 (() => {
   const form = document.querySelector("[data-landing-signup]");
   const message = document.querySelector("[data-signup-message]");
+  let messageTimer;
 
   if (!form || !message) {
     return;
   }
 
   form.addEventListener("submit", () => {
-    message.hidden = false;
+    window.clearTimeout(messageTimer);
+    message.classList.add("is-visible");
+    message.setAttribute("aria-hidden", "false");
+
     window.setTimeout(() => {
       form.reset();
     }, 700);
+
+    messageTimer = window.setTimeout(() => {
+      message.classList.remove("is-visible");
+      message.setAttribute("aria-hidden", "true");
+    }, 5200);
   });
 })();
 
