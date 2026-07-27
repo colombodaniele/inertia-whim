@@ -314,6 +314,73 @@
   });
 })();
 
+// Contact messages use FormSubmit's AJAX endpoint so the visitor stays on the site.
+(() => {
+  const form = document.querySelector("[data-contact-form]");
+  const status = document.querySelector("[data-contact-form-status]");
+  const submitButton = form?.querySelector(".send-button");
+  let statusTimer;
+
+  if (!form || !status || !submitButton || !window.fetch) {
+    return;
+  }
+
+  const setStatus = (message, { isError = false, autoHide = true } = {}) => {
+    window.clearTimeout(statusTimer);
+    status.textContent = message;
+    status.classList.toggle("is-error", isError);
+    status.classList.add("is-visible");
+    status.setAttribute("aria-hidden", "false");
+
+    if (autoHide) {
+      statusTimer = window.setTimeout(() => {
+        status.classList.remove("is-visible", "is-error");
+        status.setAttribute("aria-hidden", "true");
+      }, 6200);
+    }
+  };
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    // If the hidden honeypot is filled, avoid sending spam while showing a neutral response.
+    if (formData.get("_honey")) {
+      form.reset();
+      setStatus("Thank you. Your message has been sent.");
+      return;
+    }
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending";
+    setStatus("Sending...", { autoHide: false });
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (!response.ok) {
+        throw new Error(`FormSubmit returned ${response.status}`);
+      }
+
+      form.reset();
+      setStatus("Thank you. Your message has been sent.");
+    } catch (error) {
+      setStatus("Sorry, the message could not be sent. Please email us directly.", {
+        isError: true,
+        autoHide: false,
+      });
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = "Send";
+    }
+  });
+})();
+
 // Music and gallery use the same centered carousel interaction.
 (() => {
   const carousels = Array.from(document.querySelectorAll("[data-carousel]"));

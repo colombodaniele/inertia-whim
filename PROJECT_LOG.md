@@ -827,3 +827,11 @@
 - Files touched: `index.html`, `PROJECT_LOG.md`.
 - Commands/tests run + results: Python smoke check confirmed the new message copy, Brevo form wiring, signup message styling/auto-hide markers, balanced CSS/JS braces, and all local references resolve.
 - Follow-ups / TODOs: Push the copy update together with the existing newsletter feedback/style changes.
+
+## 2026-07-27 13:40
+
+- What changed: Switched the Contact form to FormSubmit's AJAX endpoint, added an inline contact-form status message, disabled the send button while a message is being submitted, and bumped the CSS/JS cache query strings to `20260727-1340`.
+- Why: The user wanted visitors to stay on `inertiawhim.com` after sending a contact message instead of landing on FormSubmit's default thank-you page.
+- Files touched: `index.html`, `styles.css`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` passed; Python smoke check confirmed the FormSubmit AJAX action, contact-form hooks/status element, cache tokens, balanced HTML parsing, and all local asset references resolve. A first naive asset-reference parser failed on a filename containing spaces and was corrected/rerun successfully.
+- Follow-ups / TODOs: Push the contact-form AJAX update to GitHub, then submit one live contact-form test to confirm FormSubmit email delivery and inline success behavior.
