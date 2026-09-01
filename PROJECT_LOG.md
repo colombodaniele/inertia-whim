@@ -2211,6 +2211,14 @@
 - Commands/tests run + results: `node --check influences.js` and `node --check script.js` passed. Static validation confirmed content-sized dialog rules, matching control sizing, and the post-layout carousel refresh. `git diff --check -- styles.css influences.js index.html script.js PROJECT_LOG.md` passed (standard Git line-ending warnings only).
 - Follow-ups / TODOs: Reopen on the same mobile viewport and confirm the panel is compact, centred and the two controls match.
 
+## 2026-09-01 20:50
+
+- What changed: Updated the cache-version query strings for the main stylesheet, carousel script and Influences script.
+- Why: The live site was rendering new markup against browser-cached older styling and script assets, producing an unstyled default dialog.
+- Files touched: `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check influences.js` and `node --check script.js` passed. Local reference validation confirmed all three assets exist and use the new cache version; `git diff --check -- index.html PROJECT_LOG.md` passed (standard Git line-ending warnings only).
+- Follow-ups / TODOs: Commit and push this cache-busting change, then reload the public page normally.
+
 ## 2026-09-01 16:06
 
 - What changed: Completed validation for the Toulouse Lautrec ticket terms and South London mapping fix.
