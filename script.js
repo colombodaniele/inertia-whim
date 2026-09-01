@@ -409,6 +409,24 @@
     const getCards = () => Array.from(track.querySelectorAll("[data-carousel-card]"));
     const getClones = () => Array.from(track.querySelectorAll("[data-carousel-clone]"));
 
+    // On desktop, make the music shelf exactly three cards wide so an unmatched fourth-card sliver cannot appear.
+    const syncMusicCardWidth = () => {
+      if (!carousel.classList.contains("music-list")) {
+        return;
+      }
+
+      if (window.matchMedia("(max-width: 820px)").matches) {
+        carousel.style.removeProperty("--carousel-card-width");
+        carousel.style.removeProperty("--carousel-active-card-width");
+        return;
+      }
+
+      const gap = Number.parseFloat(window.getComputedStyle(track).gap) || 0;
+      const cardWidth = (viewport.clientWidth - gap * 2) / 3;
+      carousel.style.setProperty("--carousel-card-width", `${cardWidth.toFixed(1)}px`);
+      carousel.style.setProperty("--carousel-active-card-width", `${cardWidth.toFixed(1)}px`);
+    };
+
     const createCarouselClone = (card) => {
       const clone = card.cloneNode(true);
       clone.setAttribute("data-carousel-clone", "");
@@ -589,6 +607,7 @@
       track.insertBefore(track.lastElementChild, track.firstElementChild);
     }
 
+    syncMusicCardWidth();
     getCards().forEach((card) => {
       card.addEventListener("click", (event) => {
         if (event.target.closest("button, input, audio, .custom-audio-player")) {
@@ -608,7 +627,10 @@
 
     updateCardState(1);
     requestAnimationFrame(() => alignToSlot(1, { animate: false }));
-    window.addEventListener("resize", () => alignToSlot(1, { animate: false }), { passive: true });
+    window.addEventListener("resize", () => {
+      syncMusicCardWidth();
+      alignToSlot(1, { animate: false });
+    }, { passive: true });
   });
 })();
 

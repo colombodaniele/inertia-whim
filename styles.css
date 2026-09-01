@@ -46,6 +46,11 @@ body {
   overflow-x: hidden;
 }
 
+/* Keep the page fixed behind the modal deck until its closing animation has finished. */
+body.references-open {
+  overflow: hidden;
+}
+
 button,
 input,
 textarea {
@@ -250,6 +255,13 @@ body.is-landing-ready .landing-footer {
   transform: translateY(-2px);
 }
 
+/* The inactive Instagram glyph keeps the same visual hover response as the active Spotify link. */
+.landing-socials .social-icon:hover {
+  background: #173255;
+  color: #f5f2ea;
+  transform: translateY(-2px);
+}
+
 .landing-socials svg {
   fill: none;
   height: 21px;
@@ -405,6 +417,11 @@ body.is-landing-dragging .site-sections {
   .site-background-layer,
   .site-sections {
     transition: none;
+  }
+
+  .references-dialog[open],
+  .references-dialog.is-closing {
+    animation: none;
   }
 
   .site-background-layer {
@@ -981,6 +998,163 @@ body.is-landing-dragging .site-sections {
   text-transform: uppercase;
 }
 
+/* References opens as a modal deck, keeping it out of the page's scroll and tab flow. */
+.references-trigger,
+.references-close {
+  background: transparent;
+  border: 1px solid var(--line);
+  box-sizing: border-box;
+  color: var(--ink);
+  cursor: pointer;
+  font-family: var(--title-font);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  min-height: 31px;
+  padding: 10px 14px;
+  text-transform: uppercase;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.references-trigger {
+  margin-top: 16px;
+}
+
+.references-trigger:hover,
+.references-close:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.references-dialog {
+  background: rgba(5, 6, 7, 0.96);
+  border: 1px solid var(--line);
+  box-sizing: border-box;
+  color: var(--ink);
+  height: min(760px, calc(100dvh - 44px));
+  max-width: min(1180px, calc(100vw - 44px));
+  overflow: hidden;
+  padding: clamp(22px, 4vw, 52px);
+  width: min(1180px, calc(100vw - 44px));
+}
+
+@keyframes references-deck-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes references-deck-out {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(18px) scale(0.985);
+  }
+}
+
+.references-dialog[open] {
+  animation: references-deck-in 900ms cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+
+.references-dialog.is-closing {
+  animation: references-deck-out 380ms cubic-bezier(0.55, 0, 0.25, 1) both;
+}
+
+.references-dialog::backdrop {
+  background: rgba(5, 6, 7, 0.78);
+  backdrop-filter: blur(10px);
+}
+
+.references-dialog-shell {
+  display: grid;
+  gap: clamp(12px, 2vw, 24px);
+  height: 100%;
+}
+
+.references-dialog-header {
+  align-items: end;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+}
+
+.references-dialog-header h1 {
+  font-family: var(--title-font);
+  font-size: clamp(46px, 7vw, 96px);
+  line-height: 0.86;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.references-carousel {
+  --carousel-card-width: clamp(260px, 24vw, 370px);
+  --carousel-active-card-width: clamp(380px, 34vw, 540px);
+  margin: 0;
+  min-width: 0;
+  padding-inline: 0;
+  width: 100%;
+}
+
+.reference-card {
+  aspect-ratio: 16 / 10;
+  background: rgba(5, 6, 7, 0.45);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.reference-card.is-active {
+  border-color: rgba(245, 242, 234, 0.48);
+}
+
+.reference-card::after {
+  background: linear-gradient(180deg, rgba(5, 6, 7, 0.04) 28%, rgba(5, 6, 7, 0.88));
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.reference-card img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.reference-card h2 {
+  bottom: clamp(16px, 2vw, 24px);
+  color: var(--ink);
+  font-family: var(--title-font);
+  font-size: clamp(28px, 3.2vw, 48px);
+  line-height: 0.9;
+  margin: 0;
+  padding: 0 clamp(16px, 2vw, 24px);
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+/* Side cards are about 70% of the active-card width, so their type and inset follow that scale. */
+.reference-card:not(.is-active) h2 {
+  bottom: clamp(12px, 1.4vw, 17px);
+  font-size: clamp(20px, 2.2vw, 33px);
+  padding-inline: clamp(12px, 1.3vw, 16px);
+}
+
 .outro-panel {
   display: grid;
   min-height: calc(100svh - 68px);
@@ -1013,6 +1187,17 @@ body.is-landing-dragging .site-sections {
   display: block;
   opacity: 1;
   width: 100%;
+}
+
+.outro-frame figcaption {
+  color: var(--ink);
+  font-family: var(--title-font);
+  font-size: clamp(11px, 1.1vw, 14px);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  margin-top: 14px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media (max-width: 820px) {
@@ -1266,6 +1451,68 @@ body.is-landing-dragging .site-sections {
   .gallery-stage {
     --carousel-card-width: min(52vw, 280px);
     --carousel-active-card-width: min(68vw, 420px);
+  }
+
+  .references-carousel {
+    --carousel-card-width: min(46vw, 250px);
+    --carousel-active-card-width: min(66vw, 390px);
+  }
+
+  .references-trigger {
+    font-size: 10px;
+    margin-top: 12px;
+    padding: 8px 11px;
+  }
+
+  .references-dialog {
+    /* Keep the compact deck at its content height instead of borrowing dialog defaults. */
+    height: fit-content;
+    max-height: calc(100dvh - 24px);
+    max-width: calc(100vw - 24px);
+    min-height: 0;
+    padding: 18px 12px;
+    width: calc(100vw - 24px);
+  }
+
+  .references-dialog-shell {
+    align-content: start;
+    height: auto;
+    grid-template-rows: max-content max-content;
+  }
+
+  .references-dialog-header {
+    align-items: start;
+    padding-inline: 6px;
+    position: relative;
+  }
+
+  .references-dialog-header > div {
+    padding-top: 32px;
+  }
+
+  .references-dialog-header h1 {
+    font-size: clamp(36px, 11vw, 46px);
+    white-space: nowrap;
+  }
+
+  .references-close {
+    font-size: 10px;
+    padding: 8px 11px;
+    position: absolute;
+    right: 6px;
+    top: 0;
+  }
+
+  /* Override the page-wide mobile carousel rule: this shelf must stay within the dialog frame. */
+  .references-dialog .references-carousel {
+    grid-template-columns: 28px minmax(0, 1fr) 28px;
+    margin: 0;
+    padding-inline: 0;
+    width: 100%;
+  }
+
+  .references-dialog .carousel-viewport {
+    padding-block: 18px;
   }
 
   .outro-panel {

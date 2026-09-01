@@ -75,6 +75,7 @@
                   <p class="section-kicker">Music</p>
                   <p>Inertia Whim are a London four-piece blending shimmery shoegaze, 90's alt noise, and a post-punk drive into one cohesive, distinct sound.</p>
                   <p>The soft spoken lyrics lie beside brooding, atmospheric melodies, which feels both ethereal and disorderly.</p>
+                  <button class="references-trigger" type="button" data-open-references>Influences</button>
                 </article>
 
                 <section class="music-list carousel reveal reveal-right" style="--reveal-delay: 120ms" aria-label="Music" data-carousel>
@@ -204,11 +205,33 @@
           <section class="outro-panel" aria-label="Inertia Whim closing artwork">
             <figure class="outro-frame reveal reveal-blur">
               <img src="Graphics/iw_patch_initials_logo_trial_preview.png?v=20260618-1656" alt="Inertia Whim initials logo">
+              <figcaption>&copy; 2026 Inertia Whim</figcaption>
             </figure>
           </section>
       </div>
     </main>
 
+    <!-- Reversible modal reference deck: it remains outside the site-section scroll flow. -->
+    <dialog class="references-dialog" data-references-dialog aria-labelledby="references-title">
+      <div class="references-dialog-shell">
+        <header class="references-dialog-header">
+          <div>
+            <p class="section-kicker">References</p>
+            <h1 id="references-title">Influences</h1>
+          </div>
+          <button class="references-close" type="button" data-close-references aria-label="Close influences">Close</button>
+        </header>
+        <section class="references-carousel carousel" aria-label="Inertia Whim influences" data-carousel>
+          <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="Previous influence" data-carousel-prev></button>
+          <div class="carousel-viewport">
+            <div class="carousel-track" data-carousel-track data-influence-track></div>
+          </div>
+          <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="Next influence" data-carousel-next></button>
+        </section>
+      </div>
+    </dialog>
+
+    <script src="influences.js?v=20260901-1900"></script>
     <script src="script.js?v=20260727-1340"></script>
   </body>
 </html>
