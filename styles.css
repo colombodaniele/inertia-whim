@@ -231,7 +231,8 @@ body.is-landing-ready .landing-footer {
   gap: 14px;
 }
 
-.landing-socials a {
+.landing-socials a,
+.landing-socials .social-icon {
   align-items: center;
   border: 1px solid rgba(23, 50, 85, 0.42);
   border-radius: 50%;
