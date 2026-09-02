@@ -2219,6 +2219,46 @@
 - Commands/tests run + results: `node --check influences.js` and `node --check script.js` passed. Local reference validation confirmed all three assets exist and use the new cache version; `git diff --check -- index.html PROJECT_LOG.md` passed (standard Git line-ending warnings only).
 - Follow-ups / TODOs: Commit and push this cache-busting change, then reload the public page normally.
 
+## 2026-09-02 10:00
+
+- What changed: Added Night Tales Loft as a checked Hackney / London Fields venue and PATTERNS Weekly Live Jazz as a weekly Wednesday Skilled jam; broadened the Hackney area matcher to classify the new venue correctly.
+- Why: Official venue and event pages confirm a recurring participatory improvised-music night spanning jazz, soul, broken beat and hip-hop, with transparent walk-in prices.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check data/scene-data.js` passed. Data-load validation confirmed 175 venues, 41 jams, a valid Night Tales/PATTERNS link, Wednesday/Skilled fields, official capacity wording and the Hackney mapping marker. `git diff --check -- data/scene-data.js index.html` passed (standard Git line-ending warnings only).
+- Follow-ups / TODOs: Recheck the weekly series if its walk-in pricing or participation format changes.
+
+## 2026-09-02 10:15
+
+- What changed: Renamed the established venue type to “Established music venue / touring acts & built-in crowd” and added an on-page Venue types legend above the filters.
+- Why: The previous “Established / step-up room” label did not clearly convey the programme scale, audience dynamic or realistic booking route.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Inline dashboard script parsing and `node --check data/scene-data.js` passed. Validation confirmed the revised type label, legend and explanatory code comment; `git diff --check -- index.html PROJECT_LOG.md` passed (standard Git line-ending warnings only).
+- Follow-ups / TODOs: Continue reviewing venue-type assignments three venues at a time.
+
+## 2026-09-02 10:30
+
+- What changed: Added Siouxsie and the Banshees and The Smiths to the Inertia Whim visual deck and the London Scene Influences tab, with image-backed cards placed directly after The Cure in the curated post-punk sequence.
+- Why: Both are important reference acts for the project’s alternative, post-punk and dreamier guitar-music lineage.
+- Files touched: `influences.js`, `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check influences.js` and `node --check research/scene-and-venues/data/scene-data.js` passed. Data and inline-script validation confirmed 29 directory influences, both IDs in both surfaces and their intended sequence; `git diff --check` passed (standard Git line-ending warning only).
+- Follow-ups / TODOs: Visually review the two new image crops when next opening the site and directory.
+
+## 2026-09-02 10:35
+
+- What changed: Reordered Siouxsie and the Banshees and The Smiths to immediately follow DIIV in both influence views.
+- Why: This better fits the user’s intended sequence within the reference set.
+- Files touched: `influences.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check influences.js` passed; direct sequence validation confirmed DIIV → Siouxsie and the Banshees → The Smiths → The Jesus and Mary Chain in both views. `git diff --check` passed (standard Git line-ending warning only).
+- Follow-ups / TODOs: None.
+
+## 2026-09-02 10:40
+
+- What changed: Updated the published Influences-script cache version after adding the two new reference acts.
+- Why: A new query version ensures visitors receive the amended visual deck rather than a browser-cached pre-addition script.
+- Files touched: `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check influences.js` passed. Local validation confirmed the new script version and both added acts; `git diff --check -- index.html influences.js PROJECT_LOG.md` passed (standard Git line-ending warnings only).
+- Follow-ups / TODOs: Commit and push the Inertia Whim files together.
+
 ## 2026-09-01 16:06
 
 - What changed: Completed validation for the Toulouse Lautrec ticket terms and South London mapping fix.
