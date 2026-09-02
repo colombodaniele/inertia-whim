@@ -12,6 +12,7 @@
     ['DIIV', 'https://images.weserv.nl/?url=https%3A%2F%2Fcdn.fs.thecreativeindependent.com%2Fy4l0oWswTU6jtHYFoDvb&w=960&h=640&fit=cover&output=webp&q=80'],
     ['Siouxsie and the Banshees', 'https://images.weserv.nl/?url=https%3A%2F%2Fwww.udiscovermusic.com%2Fwp-content%2Fuploads%2F2022%2F10%2FSIOUXSIE-THE-BANSHEES-GettyImages-84901602.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
     ['The Smiths', 'https://images.weserv.nl/?url=https%3A%2F%2Fchorus.fm%2Fwp-content%2Fuploads%2F2016%2F06%2Fthe-smiths.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
+    ['The Cranberries', 'https://images.weserv.nl/?url=https%3A%2F%2Fmedia.hotpress.com%2Fuploads%2F2018%2F11%2F06144435%2FCranber2-1022x1024.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
     ['The Jesus and Mary Chain', 'https://images.weserv.nl/?url=https%3A%2F%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F5c87e14a2727be3ec00e25fd%2F1710950004884-TDQ4PQXKXKO83RDW3VEG%2FJAMCPromoPhotosNov23HiRes-3.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
     ['The Stone Roses', 'https://images.weserv.nl/?url=https%3A%2F%2Fassets.vogue.com%2Fphotos%2F5891fa0b186d7c1b6493c827%2Fmaster%2Fw_2560%252Cc_limit%2F00-Stone-Roses.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
     ['Ride', 'https://images.weserv.nl/?url=https%3A%2F%2Fi.scdn.co%2Fimage%2Fab6761610000e5eb958d509c00ca0257c95071e1&w=960&h=640&fit=cover&output=webp&q=80'],
