@@ -30,7 +30,8 @@
     ['The Smashing Pumpkins', 'https://images.weserv.nl/?url=https%3A%2F%2Fwww.concierto.cl%2Fwp-content%2Fuploads%2F2023%2F10%2FThe-Smashing-Pumpkins-jpeg.webp&w=960&h=640&fit=cover&output=webp&q=80'],
     ['Deftones', 'https://images.weserv.nl/?url=https%3A%2F%2Fcdn.mos.cms.futurecdn.net%2Fo7p2vbhmbAmFq6ghbwJenc.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
     ['Verdena', 'https://images.weserv.nl/?url=https%3A%2F%2Fshop.universalmusic.it%2Fcdn%2Fshop%2Ffiles%2FVERDENA_2.jpg%3Fformat%3Dwebp%26quality%3D80%26v%3D1693900801%26width%3D2000&w=960&h=640&fit=cover&output=webp&q=80'],
-    ['Failure', 'https://images.weserv.nl/?url=https%3A%2F%2Fassets.blabbermouth.net%2Fmedia%2Ffailureapril2026_638.jpg&w=960&h=640&fit=cover&output=webp&q=80']
+    ['Failure', 'https://images.weserv.nl/?url=https%3A%2F%2Fassets.blabbermouth.net%2Fmedia%2Ffailureapril2026_638.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
+    ['Warpaint', 'https://images.weserv.nl/?url=https%3A%2F%2Fcdn.craft.cloud%2F3747bbfe-07db-499d-aa3d-b239ba21c062%2Fassets%2Fimages%2Fwarpaint-2022-press-shot-2-credit-Mia-Kirby.jpg&w=960&h=640&fit=cover&output=webp&q=80']
   ];
 
   const track = document.querySelector('[data-influence-track]');
