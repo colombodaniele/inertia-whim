@@ -31,7 +31,9 @@
     ['Deftones', 'https://images.weserv.nl/?url=https%3A%2F%2Fcdn.mos.cms.futurecdn.net%2Fo7p2vbhmbAmFq6ghbwJenc.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
     ['Verdena', 'https://images.weserv.nl/?url=https%3A%2F%2Fshop.universalmusic.it%2Fcdn%2Fshop%2Ffiles%2FVERDENA_2.jpg%3Fformat%3Dwebp%26quality%3D80%26v%3D1693900801%26width%3D2000&w=960&h=640&fit=cover&output=webp&q=80'],
     ['Failure', 'https://images.weserv.nl/?url=https%3A%2F%2Fassets.blabbermouth.net%2Fmedia%2Ffailureapril2026_638.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
-    ['Warpaint', 'https://images.weserv.nl/?url=https%3A%2F%2Fcdn.craft.cloud%2F3747bbfe-07db-499d-aa3d-b239ba21c062%2Fassets%2Fimages%2Fwarpaint-2022-press-shot-2-credit-Mia-Kirby.jpg&w=960&h=640&fit=cover&output=webp&q=80']
+    ['Warpaint', 'https://images.weserv.nl/?url=https%3A%2F%2Fcdn.craft.cloud%2F3747bbfe-07db-499d-aa3d-b239ba21c062%2Fassets%2Fimages%2Fwarpaint-2022-press-shot-2-credit-Mia-Kirby.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
+    ['Hum', 'https://images.weserv.nl/?url=https%3A%2F%2F1.bp.blogspot.com%2F-PjWhvxO4_fQ%2FT1jhaqd_JmI%2FAAAAAAAAHnc%2F4R2KtrMW0JY%2Fs1600%2FHum%252B5%252Bmejores%252Bcanciones%252Bde%252Brock.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
+    ['Gleemer', 'https://images.weserv.nl/?url=https%3A%2F%2Fotherpeoplerecords.com%2Fcdn%2Fshop%2Ffiles%2FGleemer-webpromofinal_ddfb28b2-2a97-415d-bea6-138306b726fc_1080x.jpg%3Fv%3D1640787263&w=960&h=640&fit=cover&output=webp&q=80']
   ];
 
   const track = document.querySelector('[data-influence-track]');
