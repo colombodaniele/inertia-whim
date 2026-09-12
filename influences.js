@@ -33,7 +33,8 @@
     ['Failure', 'https://images.weserv.nl/?url=https%3A%2F%2Fassets.blabbermouth.net%2Fmedia%2Ffailureapril2026_638.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
     ['Warpaint', 'https://images.weserv.nl/?url=https%3A%2F%2Fcdn.craft.cloud%2F3747bbfe-07db-499d-aa3d-b239ba21c062%2Fassets%2Fimages%2Fwarpaint-2022-press-shot-2-credit-Mia-Kirby.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
     ['Hum', 'https://images.weserv.nl/?url=https%3A%2F%2Fwww.northcoastcurrent.com%2Fwp-content%2Fuploads%2F2015%2F10%2F2015_10_beat_hum-900x661.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
-    ['Gleemer', 'https://images.weserv.nl/?url=https%3A%2F%2Fotherpeoplerecords.com%2Fcdn%2Fshop%2Ffiles%2FGleemer-webpromofinal_ddfb28b2-2a97-415d-bea6-138306b726fc_1080x.jpg%3Fv%3D1640787263&w=960&h=640&fit=cover&output=webp&q=80']
+    ['Gleemer', 'https://images.weserv.nl/?url=https%3A%2F%2Fotherpeoplerecords.com%2Fcdn%2Fshop%2Ffiles%2FGleemer-webpromofinal_ddfb28b2-2a97-415d-bea6-138306b726fc_1080x.jpg%3Fv%3D1640787263&w=960&h=640&fit=cover&output=webp&q=80'],
+    ['The Sundays', 'https://images.weserv.nl/?url=https%3A%2F%2Fmedia.brooklynvegan.com%2Fxxrzsfjkyw%2Fuploads%2F2020%2F09%2F22%2Fthe-sundays1.jpg&w=960&h=640&fit=cover&output=webp&q=80']
   ];
 
   const track = document.querySelector('[data-influence-track]');
