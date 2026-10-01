@@ -725,7 +725,14 @@
       updatePlayState();
     });
     player.addEventListener("pause", updatePlayState);
-    player.addEventListener("ended", updatePlayState);
+    // Continue in document order and wrap to the first song after the final track.
+    player.addEventListener("ended", () => {
+      updatePlayState();
+
+      const playerIndex = players.indexOf(player);
+      const nextPlayer = players[(playerIndex + 1) % players.length];
+      nextPlayer.play().catch(() => {});
+    });
     player.addEventListener("loadedmetadata", updateProgress);
     player.addEventListener("durationchange", updateProgress);
     player.addEventListener("timeupdate", updateProgress);

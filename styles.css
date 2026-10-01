@@ -255,13 +255,6 @@ body.is-landing-ready .landing-footer {
   transform: translateY(-2px);
 }
 
-/* The inactive Instagram glyph keeps the same visual hover response as the active Spotify link. */
-.landing-socials .social-icon:hover {
-  background: #173255;
-  color: #f5f2ea;
-  transform: translateY(-2px);
-}
-
 .landing-socials svg {
   fill: none;
   height: 21px;
@@ -584,7 +577,7 @@ body.is-landing-dragging .site-sections {
 
 .carousel-arrow {
   align-self: center;
-  background: rgba(245, 242, 234, 0.1);
+  background: transparent;
   border: 1px solid var(--line);
   border-radius: 50%;
   color: var(--ink);
@@ -935,7 +928,9 @@ body.is-landing-dragging .site-sections {
 }
 
 .gallery-panel {
+  align-content: center;
   background: transparent;
+  display: grid;
   padding: clamp(46px, 8vw, 96px) clamp(18px, 5vw, 62px);
 }
 
@@ -1276,7 +1271,7 @@ body.is-landing-dragging .site-sections {
   .carousel {
     --carousel-card-width: min(46vw, 228px);
     --carousel-active-card-width: min(60vw, 300px);
-    grid-template-columns: 30px minmax(0, 1fr) 30px;
+    grid-template-columns: 38px minmax(0, 1fr) 38px;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     padding-inline: 2px;
@@ -1284,8 +1279,8 @@ body.is-landing-dragging .site-sections {
   }
 
   .carousel-arrow {
-    height: 30px;
-    width: 30px;
+    height: 38px;
+    width: 38px;
   }
 
   .site-sections {
@@ -1300,6 +1295,26 @@ body.is-landing-dragging .site-sections {
     --carousel-card-width: min(44vw, 178px);
     --carousel-active-card-width: var(--carousel-card-width);
     --carousel-gap: 14px;
+    grid-template-columns: minmax(0, 1fr);
+    padding-inline: 0;
+  }
+
+  .music-list .carousel-viewport {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .music-list .carousel-arrow {
+    position: absolute;
+    top: calc(50% - 16px);
+  }
+
+  .music-list .carousel-arrow-prev {
+    left: 6px;
+  }
+
+  .music-list .carousel-arrow-next {
+    right: 6px;
   }
 
   .bio-grid,
@@ -1449,8 +1464,33 @@ body.is-landing-dragging .site-sections {
   }
 
   .gallery-stage {
-    --carousel-card-width: min(52vw, 280px);
-    --carousel-active-card-width: min(68vw, 420px);
+    --carousel-card-width: min(88vw, 560px);
+    --carousel-active-card-width: min(88vw, 560px);
+    grid-template-columns: minmax(0, 1fr);
+    padding-inline: 0;
+  }
+
+  .gallery-stage .carousel-viewport {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 18px 0;
+  }
+
+  .gallery-stage .carousel-card:not(.is-active) {
+    opacity: 0;
+  }
+
+  .gallery-stage .carousel-arrow {
+    position: absolute;
+    top: 50%;
+  }
+
+  .gallery-stage .carousel-arrow-prev {
+    left: 6px;
+  }
+
+  .gallery-stage .carousel-arrow-next {
+    right: 6px;
   }
 
   .references-carousel {
