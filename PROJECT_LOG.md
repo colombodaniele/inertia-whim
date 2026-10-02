@@ -4,6 +4,1039 @@
 - Source content currently lives in `Bio.txt`, `Graphics/`, `Music/`, and `Pictures/`.
 - The first local build is a single-page HTML/CSS/JS site using existing image and audio assets.
 
+## 2026-09-12 — The Sundays influence addition
+
+- What changed: Added The Sundays, using a four-member band photo, to the public Inertia Whim influence carousel and the private London-scene dashboard's Influences view.
+- Why: The band is now a shared curated reference across both sites, while preserving the existing influence sequence.
+- Files touched: `influences.js`, `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check influences.js`, data/test syntax checks, `node trials/verify-scene-update.js` and scoped whitespace checks passed.
+
+## 2026-09-20 — Partisan and New River records
+
+- What changed: Added Partisan Records to Labels; added New River Studios as a live-music venue; refreshed New River's separate rehearsal-card rates from its official current rate page.
+- Why: Partisan has a verified international label record with London and Brooklyn bases, a public contact route and a no-unsolicited-demos policy. New River's active event programme supports a venue card in addition to its existing rehearsal and recording cards. The Miller was confirmed already present as an active Borough rehearsal card, so it was not duplicated.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: JavaScript syntax checks for both data files and the regression test, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+
+## 2026-09-21 — New River venue-model correction
+
+- What changed: Reclassified New River Studios from venue-led to promoter-led and clarified that direct contact is for hire/self-produced events, while ordinary public bills are promoter-led.
+- Why: Its current listings are principally presented by external promoters; rehearsal hire is separate from a public performance slot.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Data/test syntax checks, dashboard smoke test and scoped whitespace validation passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 111
+
+- What changed: Added C.A.R. as a capture-backed Developing card with display ordering, review/ledger entry, manifest and regression coverage.
+- Why: Exact London coldwave/post-punk identity, a verified 6,064-follower profile, current album/release activity, recurring 2026 local dates and a monthly NTS show meet the directory gates; The Nothing Special is independently confirmed as label.
+- Files touched: artist data/order, batch-111 manifest, goal review, ledger, test and this log.
+- Commands/tests run + results: Exact visible Instagram capture inspected. Manifest validation, JavaScript syntax checks, dashboard smoke test and scoped `git diff --check` follow this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 110
+
+- What changed: Recorded NOST as an adjacent-genre exclusion; no public card, artist URL or metric was added.
+- Why: Independent current sources establish London activity and a current release, but consistently describe the project as alternative / modern metal, outside the intended peer-scene threshold.
+- Files touched: batch-110 manifest, goal review, discovery ledger and this log.
+- Commands/tests run + results: No capture required. Manifest validation, dashboard smoke test and scoped `git diff --check` follow this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 109
+
+- What changed: Added Daffodils as a capture-backed Developing card with explicit display ordering, review/ledger entry, manifest and regression coverage.
+- Why: Exact London artist identity, an inspected 1,674-follower profile, a verified independent Big Richard Records relationship and repeat 2026 Windmill/Paper Dress/Lexington activity meet the directory gates. Developing reflects repeat small-room current activity rather than historic activity or social figures alone.
+- Files touched: artist data/order, batch-109 manifest, goal review, ledger, test and this log.
+- Commands/tests run + results: Exact visible Instagram capture inspected. Manifest validation, JavaScript syntax checks, dashboard smoke test and scoped `git diff --check` follow this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 108
+
+- What changed: Added The Howling Fiends as a capture-backed Developing card with explicit display ordering, review/ledger entry, manifest and regression coverage.
+- Why: Exact artist identity, an inspected 1,349-follower Instagram profile, South East London psych-garage relevance and current Old Blue Last/Paper Dress/New River evidence meet the directory gates. Developing reflects repeat grassroots activity and durable public profile rather than a large-room scale.
+- Files touched: artist data/order, batch-108 manifest, goal review, ledger, test and this log.
+- Commands/tests run + results: Exact visible Instagram capture inspected. Manifest validation, JavaScript syntax checks, dashboard smoke test and scoped `git diff --check` follow this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 107
+
+- What changed: Added Rainham Sheds as a capture-backed Developing card with explicit display ordering, review/ledger entry, manifest and regression coverage.
+- Why: Exact artist identity, a verified 7-listener Spotify page, 2026 New River and Upset the Rhythm / UT specialist-circuit evidence, and direct all-female art-core/no-wave relevance meet the directory gates. Developing is based on durable recurring specialist-circuit activity rather than streaming figures.
+- Files touched: artist data/order, batch-107 manifest, goal review, ledger, test and this log.
+- Commands/tests run + results: Exact visible Spotify capture inspected. Manifest validation, JavaScript syntax checks, dashboard smoke test and scoped `git diff --check` follow this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 106
+
+- What changed: Added Fatberg as a capture-backed Emerging card with explicit display ordering, review/ledger entry, manifest and regression coverage.
+- Why: Exact London artist identity, an inspected 138-listener Spotify page, independent South East London garage-punk evidence and current 2026 Windmill/New River activity meet the directory gates. Rat Run Records is only documented for the 2020 debut EP, so no current label is asserted.
+- Files touched: artist data/order, batch-106 manifest, goal review, ledger, test and this log.
+- Commands/tests run + results: Exact visible Spotify capture inspected. Manifest validation, JavaScript syntax checks, dashboard smoke test and scoped `git diff --check` follow this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 105
+
+- What changed: Recorded Crisol Rust as an exact-identity repair-queue lead; no public card, artist URL or metric was added.
+- Why: South London Latin-influenced post-rock relevance and three current 2026 London bills are corroborated, but no artist-controlled source can be safely separated from generic search noise.
+- Files touched: batch-105 manifest, goal review, ledger and this log.
+- Commands/tests run + results: No capture attempted because no exact artist-controlled route is resolved. Manifest validation and scoped `git diff --check` follow this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 104
+
+- What changed: Added RedEye as a capture-backed Emerging card with display ordering, review/ledger entry, manifest and regression coverage.
+- Why: Its exact public profile plus independent 2026 Half Moon and Jaguar Shoes bills establish relevant London art-grunge activity. The inspected profile shows 395 followers and a current Lexington programme post; no Spotify profile or label was guessed.
+- Files touched: artist data/order, batch-104 manifest, goal review, ledger, test and this log.
+- Commands/tests run + results: Exact visible Instagram capture inspected. Manifest validation, JavaScript syntax checks, dashboard smoke test and scoped `git diff --check` follow this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 103
+
+- What changed: Added Windpipe as a capture-backed Emerging card with display ordering, review/ledger entry, manifest and regression coverage.
+- Why: The exact Instagram profile confirms the public identity and follower figure, while independent Half Moon and Windmill routes establish London base, current activity and relevant noise-/avant-guitar context. No Spotify profile or label was guessed.
+- Files touched: artist data/order, batch-103 manifest, goal review, ledger, test and this log.
+- Commands/tests run + results: Exact visible Instagram capture inspected. Manifest validation, JavaScript syntax checks, dashboard smoke test and scoped `git diff --check` follow this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 102
+
+- What changed: Added China Aster as a capture-backed Emerging card with display ordering, review/ledger entry, manifest and regression coverage.
+- Why: Official London identity, a current April 2026 art-pop release and London coldwave/synth-pop live context meet the entry gate. The exact Spotify capture visibly shows 34 monthly listeners; no Instagram route or label was guessed.
+- Files touched: artist data/order, batch-102 manifest, goal review, ledger, test and this log.
+- Commands/tests run + results: Exact visible Spotify capture inspected. Manifest validation, JavaScript syntax checks, dashboard smoke test and scoped `git diff --check` follow this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 101
+
+- What changed: Added Godzooki as a new Emerging London-scene card with documented display order, source-backed independent-label field, review/ledger entry and regression coverage.
+- Why: Exact artist Bandcamp and current Lost Wisdom release plus repeated 2026 Old Blue Last, George Tavern and Shacklewell Arms activity meet the entry gates. No Instagram, Spotify route or audience metric was guessed.
+- Files touched: artist data/order, batch-101 manifest, goal review, ledger, test and this log.
+- Commands/tests run + results: No capture was attempted because no exact artist-controlled Instagram or Spotify artist profile is resolved. Manifest validation, JavaScript syntax checks, dashboard smoke test and scoped `git diff --check` follow this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 100
+
+- What changed: Recorded Middleman as a profile-identity repair-queue lead; no public card, artist URL or metric was added.
+- Why: London base, current 2026 album, national live reach and sonic relevance are well supported, but the apparent Instagram profile visibly belongs to a private personal account rather than a verifiable band profile.
+- Files touched: batch-100 manifest, ledger/review and this log.
+- Commands/tests run + results: The visible Instagram capture was inspected and rejected. Manifest validation, dashboard smoke test and scoped `git diff --check` follow this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 099
+
+- What changed: Added Static Palm as a capture-backed Emerging card, with display ordering, review/ledger records, manifest and regression coverage.
+- Why: Exact London Bandcamp and Spotify identity, independent darkwave/post-punk evidence and a current 2026 London support slot meet the addition gate; no Instagram profile or label was guessed.
+- Files touched: artist data/order, batch-099 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Spotify capture inspected (150 monthly listeners). Manifest validation, JavaScript syntax checks, dashboard smoke test and scoped `git diff --check` follow this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 098
+
+- What changed: Added Strange Devotion as a capture-backed Emerging card, with display ordering, independent-label status, review/ledger records, manifest and regression coverage.
+- Why: Exact South London identity, relevant post-punk/dream-pop/shoegaze evidence, current grassroots bills and an inspected artist profile meet the addition gate; no Spotify artist page was guessed.
+- Files touched: artist data/order, batch-098 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram capture inspected (590 followers). Manifest validation, JavaScript syntax checks, dashboard smoke test and scoped `git diff --check` follow this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 097
+
+- What changed: Added SUEP as a capture-backed Developing card, with display ordering, independent-label status, review/ledger records, manifest and regression coverage.
+- Why: Exact official profiles, the current Forever album on Memorials of Distinction and independent evidence of a sustained South East London underground position meet the directory gates.
+- Files touched: artist data/order, batch-097 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures inspected (2,064 followers; 1,327 monthly listeners). Manifest validation, JavaScript syntax checks, dashboard smoke test and scoped `git diff --check` follow this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 096
+
+- What changed: Added Honest Work as a capture-backed Emerging card, with display ordering, review/ledger records, manifest and regression coverage.
+- Why: Exact official profiles, an active current release cycle and independent East/South London bill evidence establish a relevant early-stage garage-rock/grunge peer.
+- Files touched: artist data/order, batch-096 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures inspected (1,190 followers; 1,074 monthly listeners). Manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 095
+
+- What changed: Added Huarinami as a capture-backed Developing card, with display ordering, review/ledger records, manifest and regression coverage.
+- Why: The French London-based four-piece has a current EP cycle, verified exact profiles, a George Tavern headline and current support/festival evidence. The first Spotify capture was a loading skeleton, so only the inspected retry is used for the displayed metric.
+- Files touched: artist data/order, batch-095 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify retry captures inspected (1,838 followers; 2,863 monthly listeners). Manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 094
+
+- What changed: Added Mary Mousetrap as a capture-backed Developing card, with display ordering, review/ledger records, manifest and regression coverage.
+- Why: Exact artist identity plus repeat current Deptford/Paper Dress and dark-electronic experimental evidence meet the London-scene and adjacency gates. No Spotify artist page is inferred from the profile's album link.
+- Files touched: artist data/order, batch-094 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram capture inspected (5,820 followers). Manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 093
+
+- What changed: Added Cuckoo Spit as a capture-backed Emerging card, with display ordering, review/ledger records, manifest and regression coverage.
+- Why: Official London releases and exact profiles plus independent South East London dreamgaze/current-show evidence meet the entry gate. The documented live scale remains grassroots.
+- Files touched: artist data/order, batch-093 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures inspected (1,241 followers; 354 monthly listeners). Manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 092
+
+- What changed: Recorded Wasabi as an identity-unresolved current Windmill Brixton lead; no artist data or public card changed.
+- Why: The bill establishes dream-pop relevance and current local activity, but the generic name resolves to multiple unrelated projects and a podcast, so no artist-controlled profile can be safely used.
+- Files touched: batch-092 manifest, discovery ledger, goal review and this log.
+- Commands/tests run + results: Manifest validation, dashboard smoke test and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 091
+
+- What changed: Added Telegraph Hill as a capture-backed Emerging card, with display ordering, review/ledger records, manifest and regression coverage.
+- Why: Official North London dream-pop routes, a current 2026 single and a verified Jago bill meet the entry gate. The available live evidence remains early-scale.
+- Files touched: artist data/order, batch-091 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures inspected (385 followers; 778 monthly listeners). Manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 090
+
+- What changed: Added For Breakfast as a capture-backed Developing card, with display ordering, review/ledger records, manifest and regression coverage.
+- Why: Official North London identity, a current full album and current Oslo/Strongroom activity establish a relevant art-/dream-pop/post-rock peer with a more developed local live trajectory than an initial show-only act.
+- Files touched: artist data/order, batch-090 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures inspected (1,496 followers; 229 monthly listeners). Manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 089
+
+- What changed: Added Non-Threatening Boys as a capture-backed Emerging card, with display ordering, review/ledger records, manifest and regression coverage.
+- Why: Exact South East London music identity was confirmed and separated from the unrelated same-named comedy act. Current Paper Dress/Ivy House activity and relevant emo/grunge/post-punk/shoegaze-adjacent sound meet the entry gate.
+- Files touched: artist data/order, batch-089 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram capture inspected (404 followers). Manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 088
+
+- What changed: Added Whitelocust as a capture-backed Emerging card, with display ordering, review/ledger records, manifest and regression coverage.
+- Why: Official London routes, a current 2026 EP, a Paper Dress date and independently corroborated shoegaze-adjacent sound meet the addition gate. Current evidence remains at smaller-room local scale.
+- Files touched: artist data/order, batch-088 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures inspected (1,746 followers; 2,148 monthly listeners). Manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 087
+
+- What changed: Re-captured CRY-99's exact public profiles and refreshed its existing card's displayed Spotify and Instagram metrics; no duplicate card or ordering change remains.
+- Why: Preflight validation identified CRY-99 as an existing card, so the verified 2026 figures are recorded as an explicit existing-card metric refresh rather than a duplicate addition.
+- Files touched: existing artist metrics, batch-087 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures inspected (421 followers; 1,736 monthly listeners). Manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 086
+
+- What changed: Recorded Lex Vervain as a screened-out adjacent-bill lead; no public artist card or directory data changed.
+- Why: The project has current South London activity, but official and independent descriptions consistently place it in singer-songwriter / acoustic indie-folk rather than the defined peer scene. Shoegaze appears only as a secondary texture.
+- Files touched: batch-086 manifest, discovery ledger, goal review and this log.
+- Commands/tests run + results: Manifest validation, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 085
+
+- What changed: Added Hiding as a capture-backed Emerging card, with display ordering, review/ledger records, manifest and regression coverage.
+- Why: Exact `@hidingband` identity, independent South London new-wave/alt-rock evidence and repeat 2026 The Victoria/Windmill activity meet the entry gate. No Spotify artist profile was inferred from unrelated search results.
+- Files touched: artist data/order, batch-085 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram capture inspected (479 followers). Manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 079
+
+- What changed: Added Tough Cookie as a capture-backed Established card, with display ordering, review/ledger records, manifest and regression coverage.
+- Why: Capitol’s official artist page, independent London/UK/European live evidence and two exact inspected public profiles establish the current Dalston art-grunge/indie-rock act. The initial `@noodle_irl` route was visibly rejected as unrelated and replaced with the official `@toughcookie` profile.
+- Files touched: artist data/order, batch-079 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures inspected (10.7K followers; 16,799 monthly listeners). Manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 080
+
+- What changed: Recorded Two Man Lift as an excluded adjacent-genre lead; no public artist card or directory data changed.
+- Why: Current London activity and identity are clear, but independent programme copy identifies a funk-punk / indie synth-disco act rather than a peer in the directory's specified alternative, shoegaze, post-punk, noise-rock or darkwave orbit.
+- Files touched: batch-080 manifest, ledger/review and this log.
+- Commands/tests run + results: Batch JSON validation, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 081
+
+- What changed: Added Lo Simple as a source-backed Developing card, with display ordering, review/ledger records, manifest and regression coverage.
+- Why: Official London Bandcamp, independent current Ormside activity and the Left of the Dial showcase establish a relevant post-rock/shoegaze-adjacent current project. Exact artist-controlled Instagram and Spotify identities remain unresolved and are intentionally absent.
+- Files touched: artist data/order, batch-081 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Batch JSON validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 082
+
+- What changed: Added The Home Service as a capture-backed Developing card, with display ordering, review/ledger records, manifest and regression coverage.
+- Why: Exact official profiles, a South East London identity, current releases and independent Paper Dress/RA live evidence establish a relevant guitar-band peer. The current live record is developing rather than sustained larger-room scale.
+- Files touched: artist data/order, batch-082 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures inspected (1,366 followers; 58 monthly listeners). Manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 083
+
+- What changed: Added Deep Bleak as a capture-backed Emerging card, with display ordering, review/ledger records, manifest and regression coverage.
+- Why: Exact public identity, East London darkwave/post-punk evidence, current release activity and a forthcoming Old Blue Last show meet the entry gate. Spotify remains intentionally absent because only a short-link, not an exact artist page, was resolved.
+- Files touched: artist data/order, batch-083 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram capture inspected (457 followers). Manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 084
+
+- What changed: Added Transmigration as a capture-backed Emerging adjacent electronic post-punk/darkwave card, with display ordering, review/ledger records, manifest and regression coverage.
+- Why: Official London Bandcamp, exact Instagram, current Lost Wisdom EP and independent Old Blue Last evidence satisfy the addition gate. Its electronic EBM framing is retained precisely rather than treated as a shoegaze act.
+- Files touched: artist data/order, batch-084 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram capture inspected (977 followers). Manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` are recorded with this batch.
+
+## London-scene artist-directory goal - 2026-09-08 batch 072
+
+- What changed: Added Pedestrian Band as a capture-backed Developing card, with display ordering, review/ledger records, a manifest and regression coverage.
+- Why: Exact official profiles, independent London noise-punk evidence and a current Old Blue Last headline meet the entry gate. The documented scale shows credible grassroots progression, not sustained larger-room or touring scale.
+- Files touched: artist data/order, batch-072 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures were inspected (2,269 followers; 616 monthly listeners). Batch JSON validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 073
+
+- What changed: Added Norman D. Loco as a source-backed Developing card, with display ordering, review/ledger records, a no-capture repair record and regression coverage.
+- Why: Artist-provided and independent sources establish the current London shoegaze/IDM/slowcore four-piece, recurring local activity and a 2026 international showcase. Exact public Instagram and Spotify artist pages were not safely identified, so neither route nor metric was invented.
+- Files touched: artist data/order, batch-073 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Batch JSON validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 074
+
+- What changed: Recorded Burnt Chapter and The Vouchers as screened-out bill leads; no public directory data changed.
+- Why: Burnt Chapter is a clear extreme-metal mismatch. The Vouchers' current evidence supports post-punk relevance but not the sustained London-scene connection required by this directory.
+- Files touched: batch-074 manifest, discovery ledger, goal review and this log.
+- Commands/tests run + results: Batch JSON validation, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 075
+
+- What changed: Repaired the previously held Candy's Room lead and added it as a capture-backed Developing card, with display ordering, review/ledger records, a manifest and regression coverage.
+- Why: Official routes plus independent Paper Dress, A2Z and George Tavern evidence establish a current South London shoegaze/post-punk project with repeat 2026 London activity. The exact published Instagram profile was captured and inspected; an exact Spotify artist page remains intentionally absent.
+- Files touched: artist data/order, batch-075 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram capture inspected (624 followers). Batch JSON validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 076
+
+- What changed: Added The Kitchen Sink Band as a capture-backed Developing card, with display ordering, review/ledger records, a manifest and regression coverage.
+- Why: The project is Brighton-formed but half London-based, and its repeated current London bills, Great Escape appearance and BBC Introducing attention establish sustained London-scene presence and progressing grassroots scale. Exact current Instagram identity was captured; no Spotify artist page was inferred.
+- Files touched: artist data/order, batch-076 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram capture inspected (951 followers). Batch JSON validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 077
+
+- What changed: Added House Arrest as a capture-backed Developing card, with display ordering, review/ledger records, a manifest and regression coverage.
+- Why: Artist-controlled London music evidence, repeated current London bills, a Windmill headline and emerging European festival reach meet the Developing threshold. The exact Spotify profile was captured and inspected; Instagram remains absent rather than inferred.
+- Files touched: artist data/order, batch-077 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Spotify capture inspected (1,107 monthly listeners). Batch JSON validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 078
+
+- What changed: Recorded Peer Pleasure, Skunkworm and Kitchen Lover as screened-out support-network leads; no public directory data changed.
+- Why: Each has relevant sound or a London bill, but available evidence places them respectively in Ireland, outside the M25, or Brighton/regional circuits without the required sustained London-scene connection.
+- Files touched: batch-078 manifest, discovery ledger, goal review and this log.
+- Commands/tests run + results: Batch JSON validation, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 071
+
+- What changed: Added War Club as a capture-backed Emerging card, with display ordering, review/ledger records, a manifest and regression coverage.
+- Why: Official London identity, current 2026 output, verified profiles and independent London noise-rock booking evidence meet the card gate. Its current documented scale remains grassroots.
+- Files touched: artist data/order, batch-071 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures were inspected (874 followers; 35 monthly listeners). Batch JSON validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 070
+
+- What changed: Added The Sun's Journey Through The Night to the documented exclusion queue with a manifest, ledger and clean review entry; no artist card or public directory data changed.
+- Why: Its current London appearance is real, but official and independent sources identify a UK ambient/black-metal project outside the directory's defined peer scene.
+- Files touched: batch-070 manifest, ledger/review and this log.
+- Commands/tests run + results: Batch manifest JSON validation and scoped `git diff --check` passed. No data or code changed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 069
+
+- What changed: Added DEADLETTER as a capture-backed Established card, in the upper Established display order, with review/ledger records, manifest and regression coverage.
+- Why: South London identity, current KOKO headline, 2026 album cycle and international festival bookings meet the live-first Established threshold. Exact public profile captures corroborate the resolved identity.
+- Files touched: artist data/order, batch-069 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures were inspected (32K followers; 163,675 monthly listeners). Batch JSON validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 068
+
+- What changed: Added Million Moons as a capture-backed Developing card, with display ordering, review/ledger records, a manifest and regression coverage.
+- Why: An official London post-rock release route, a current album/headline cycle and independent live/editorial evidence satisfy the addition gates. The current scale is credible but remains below the sustained larger-room threshold.
+- Files touched: artist data/order, batch-068 manifest, ledger/review, test and this log.
+- Commands/tests run + results: The exact Instagram capture was inspected (1,450 followers). Batch JSON validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed after updating the active-count assertion from 137 to 138.
+
+## London-scene artist-directory goal - 2026-09-08 batch 067
+
+- What changed: Added Sashes to the held identity-repair queue with a manifest, ledger and clean review entry; no artist card or public directory data changed.
+- Why: A current Windmill Brixton bill supports a potentially relevant South London DIY guitar act, but no exact artist-controlled identity route was safely resolved.
+- Files touched: batch-067 manifest, ledger/review and this log.
+- Commands/tests run + results: Batch manifest JSON validation and scoped `git diff --check` passed. No data or code changed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 066
+
+- What changed: Added Hadda Be as a capture-backed Developing card, including ordering, review/ledger records, manifest and regression coverage.
+- Why: Exact public profiles, an official South London release route and independent current London live/release sources clear the card gate. Current evidence supports Developing rather than a larger-scale tier.
+- Files touched: artist data/order, batch-066 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures were inspected (1,427 followers; 73 monthly listeners). Batch manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 065
+
+- What changed: Added Mannequin Flowers as a capture-backed Emerging card, including ordering, review/ledger records, manifest and regression coverage.
+- Why: London dream-pop/shoegaze identity, current local activity and exact public profiles are verified; the live evidence remains grassroots-scale.
+- Files touched: artist data/order, batch-065 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures were inspected (2,423 followers; 985 monthly listeners). Batch manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 064
+
+- What changed: Added a capture-backed Established card for Cusk, with manifest, ledger/review records, display ordering and regression coverage.
+- Why: London identity, label activity, a current national support run and repeated prominent support opportunities meet the current live-position rubric. Exact Spotify and Instagram profiles were inspected.
+- Files touched: artist data/order, batch-064 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures were inspected (2,293 followers; 37,043 monthly listeners). Batch manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 063
+
+- What changed: Added Curbside Lambsear as a Developing card, with manifest, ledger/review records, display ordering and regression coverage.
+- Why: Current London official music and label sources, an imminent release, independent scene coverage and 2026 Green Man placement clear the live-scene gate; unresolved social/Spotify profiles were not inferred.
+- Files touched: artist data/order, batch-063 manifest, ledger/review, test and this log.
+- Commands/tests run + results: No capture was appropriate because exact profiles remain unresolved. Batch manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 062
+
+- What changed: Added one capture-backed Emerging card for Espuma, with a manifest, ledger/review records, display ordering and regression coverage.
+- Why: Independent current listings support London shoegaze/psych relevance and activity; both exact public profiles were inspected. The tier remains Emerging because the current live evidence is still grassroots-scale.
+- Files touched: artist data/order, batch-062 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures were inspected (953 followers; 84 monthly listeners). Batch manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 061
+
+- What changed: Added Citizen Above Suspicion as an evidence-backed Emerging card, with manifest, ledger/review records, display ordering and regression coverage.
+- Why: Artist-owned London Bandcamp, relevant current noise/post-punk billing and a September 2026 London support date satisfy the addition gates; conflicting Spotify results were rejected.
+- Files touched: artist data/order, batch-061 manifest, ledger/review, test and this log.
+- Commands/tests run + results: No capture was appropriate because exact profiles remain unresolved. Batch manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 060
+
+- What changed: Added Meaner Loy to the held repair queue with a manifest, ledger and review entry; no artist data changed.
+- Why: Current London art-/alt-rock relevance and release/live evidence pass the lead screen, but exact owned social and Spotify artist routes remain unresolved.
+- Files touched: batch-060 manifest, discovery ledger, goal review and this log.
+- Commands/tests run + results: Batch manifest validation and scoped `git diff --check` passed; no data or code changed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 059
+
+- What changed: Added one capture-backed Developing card for This Is The Deep, including a manifest, ledger/review records, display ordering and regression coverage.
+- Why: Current independent sources verify London identity, relevant art-rock sound, a 2026 5dB Records debut album and Oslo Hackney headline cycle. The exact Instagram profile was inspected; the mismatched Spotify result was deliberately excluded.
+- Files touched: artist data/order, batch-059 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram capture inspected (2,418 followers). Batch manifest validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 058
+
+- What changed: Documented Worldpeace DMT as a held identity-repair candidate, with inspected Instagram and Spotify captures and a batch manifest; no public card was added.
+- Why: The official Instagram route led to an unrelated profile, so its metric cannot be attributed to the artist. The exact Spotify capture remains private repair evidence only.
+- Files touched: batch-058 manifest, discovery ledger, goal review and this log.
+- Commands/tests run + results: Both visible-browser screenshots were inspected. The batch manifest JSON validates; no artist data changed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 057
+
+- What changed: Added one capture-backed Established card for RIP Magic, with a review entry, manifest, ledger record, display ordering and regression coverage.
+- Why: London artist and label identity, independent current coverage, arena support and international festival/touring evidence meet the Established live-position threshold.
+- Files touched: artist data/order, batch-057 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures were inspected (9,668 followers; 45,499 monthly listeners). Manifest JSON validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 056
+
+- What changed: Added one capture-backed Developing card for CAN'T STOP TALKING, with a review entry, manifest, ledger record, display ordering and regression coverage.
+- Why: Artist-owned London post-punk routes, independently corroborated current grassroots activity and inspected exact public profiles meet the card gate. Live-room evidence supports Developing rather than Established.
+- Files touched: artist data/order, batch-056 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify captures were inspected (3,239 followers; 1,363 monthly listeners). Manifest JSON validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 055
+
+- What changed: Added one capture-backed Emerging card for Taste of Cherry, with a review entry, manifest, ledger record, display ordering and regression coverage.
+- Why: Artist-owned London stagegaze/garage-punk routes, a verified public profile and independently listed 2026 grassroots bills meet the entry gate. No Spotify artist page or label was inferred.
+- Files touched: artist data/order, batch-055 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram capture was inspected (441 followers). Manifest JSON validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 054
+
+- What changed: Added one capture-backed Developing card for Dura Mater, with a review entry, manifest, ledger record, display ordering and regression coverage.
+- Why: Artist-owned South London routes, independent art-rock coverage and current UK/London bills establish a genuinely adjacent peer. Current live evidence supports Developing rather than Established.
+- Files touched: artist data/order, batch-054 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Exact visible Instagram and Spotify profile captures were inspected (2,427 followers; 256 monthly listeners). Manifest JSON validation, JavaScript syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 053
+
+- What changed: Added Asandia to the discovery ledger, review queue and a no-capture manifest as a held lead.
+- Why: Exact London identity and scene relevance are well supported, but no artist-controlled release route or exact Spotify artist page is safely resolved.
+- Files touched: batch-053 manifest, ledger, review and this log.
+- Commands/tests run + results: source/duplicate checks completed; manifest JSON validation and scoped whitespace checks follow. No data or code changed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 052
+
+- What changed: Added one capture-backed Developing card for Sydenham High Road, with manifest, ledger/review entry, display order and regression coverage.
+- Why: Artist-owned London routes, inspected exact public profiles, current 2026 releases and independent London/European live evidence establish a relevant experimental/slowcore-adjacent peer.
+- Files touched: artist data/order, batch-052 manifest, ledger/review, test and this log.
+- Commands/tests run + results: both public-profile screenshots inspected; manifest validation, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 051
+
+- What changed: Added one capture-backed Developing card for Ain't, with manifest, ledger/review entry, display order and regression coverage.
+- Why: Official South London artist routes, inspected exact profiles, a confirmed current Fear of Missing Out Records EP and national/festival activity establish a relevant current guitar-scene peer.
+- Files touched: artist data/order, batch-051 manifest, ledger/review, test and this log.
+- Commands/tests run + results: both public-profile screenshots inspected; manifest validation, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 050
+
+- What changed: Added one capture-backed Emerging card for Sodden Pelt, with manifest, ledger/review entry, display order and regression coverage.
+- Why: Artist-owned London routes, inspected exact public profiles and independent current London circuit evidence establish a relevant gutter-folk/post-punk peer. Its current live evidence remains below Developing scale.
+- Files touched: artist data/order, batch-050 manifest, ledger/review, test and this log.
+- Commands/tests run + results: both public-profile screenshots inspected; manifest validation, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 049
+
+- What changed: Added Ropeburn to the discovery ledger, review queue and a no-capture manifest as a held lead.
+- Why: Independent current Windmill and showcase sources establish a relevant London slowcore/post-rock lead, but multiple unrelated similarly named projects prevent a safe official-profile match.
+- Files touched: batch-049 manifest, ledger, review and this log.
+- Commands/tests run + results: source/duplicate checks completed; manifest JSON validation and scoped whitespace checks follow. No data or code changed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 048
+
+- What changed: Corrected an initial duplicate-candidate collision for the existing Wendigo card. The duplicate was removed; the existing card gained its verified official Linktree plus current Camden, Victoria Dalston and New Cross live evidence, while the inspected Instagram capture was retained.
+- Why: Wendigo was already a baseline artist with exact Instagram and Spotify profiles. The new research reconfirmed, rather than replaced, that identity, so it must remain an explicit existing-card correction rather than appear as a new card.
+- Files touched: artist data/order, batch-048 manifest, ledger/review, regression test and this log.
+- Commands/tests run + results: batch-048 manifest validation, data/test syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 047
+
+- What changed: Corrected the existing Dogviolet card after discovery exposed a duplicate ID: refreshed Instagram from 1,460 to 1,462 followers and moved the existing card from Emerging to Developing. The duplicate candidate record was removed and the display order moved the single existing ID into Developing.
+- Why: The inspected exact profile, current September EP and independent evidence of two years of touring/support slots materially change the earlier live-position assessment. The correction is explicitly recorded in the review file and ledger.
+- Files touched: artist data/order, batch-047 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; batch-047 manifest validation, data/test syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 046
+
+- What changed: Added one capture-backed, separately reviewable Emerging card for Monochromatic Visions, with manifest, ledger/review entry, display order and regression coverage.
+- Why: Artist-owned London routes, a verified current Closure campaign and independent East London shoegaze/post-punk and 2026 album coverage establish a relevant current peer. Limited current live-scale evidence supports Emerging rather than Developing.
+- Files touched: artist data/order, batch-046 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; batch-046 manifest validation, data/test syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 045
+
+- What changed: Logged Maiden as a held specialist-press discovery lead without modifying artist data.
+- Why: Independent coverage supports a relevant new London shoegaze/dream-pop live project, but no exact artist-controlled identity or released-music route is safely resolvable yet.
+- Files touched: goal review, discovery ledger and this log.
+- Commands/tests run + results: Read-only source and duplicate checks completed; no data or code changed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 044
+
+- What changed: Added one capture-backed, separately reviewable Developing card for Velvetine, with its manifest, ledger/review entry, display order and regression coverage.
+- Why: Official London artist routes and independent 2026 Old Blue Last/Victoria Dalston evidence establish a relevant active gothic/post-rock/shoegaze peer. The inspected exact profile confirms its identity and 2,777 followers.
+- Files touched: artist data/order, batch-044 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; batch-044 manifest validation, data/test syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 043
+
+- What changed: Added one capture-backed, separately reviewable Developing card for Roscoe Roscoe after repairing its stale published Instagram route, with manifest, ledger/review entry, display order and regression coverage.
+- Why: The current Social/FutureFORM bill, visible exact artist profile and independent East London/Hackney shoegaze/post-rock coverage establish a relevant current peer. The inspected replacement profile confirms the identity and 1,752 followers.
+- Files touched: artist data/order, batch-043 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Both Instagram captures inspected; batch-043 manifest validation, data/test syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 042
+
+- What changed: Added one capture-backed, separately reviewable Developing card for Restless Taxis, with its manifest, ledger/review entry, display order and regression coverage.
+- Why: Artist-owned London Bandcamp and independent East London shoegaze/noise-rock coverage establish a current peer with 2025 festival/Sebright Arms activity and a 2026 release route. The inspected exact Instagram profile confirms the public artist identity and 2,006 followers.
+- Files touched: artist data/order, batch-042 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; batch-042 manifest validation, data/test syntax checks, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 041
+
+- What changed: Added one capture-backed, separately reviewable Developing card for Kissing Gate, with a manifest, ledger/review entry, display order and regression coverage.
+- Why: Artist-owned London Bandcamp and independent art-rock/DIY coverage establish a current South London peer with a 2025 debut and 2026 local activity. The inspected exact Instagram profile confirms its public identity and 1,068 followers.
+- Files touched: artist data/order, batch-041 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 040
+
+- What changed: Added one capture-backed, separately reviewable Developing card for Jawharp, with a manifest, ledger/review entry, display order and regression coverage.
+- Why: Artist-owned London Bandcamp, a verified profile and independent Venue MOT/Pindrop evidence establish a current noise/post-punk peer. The inspected exact Instagram confirms its current 2026 release marker and 1,205 followers.
+- Files touched: artist data/order, batch-040 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 039
+
+- What changed: Added one capture-backed, separately reviewable Developing card for gegenpress, with a manifest, ledger/review entry, display order and regression coverage.
+- Why: Artist-owned London Bandcamp and independent specialist coverage establish a core art-noise/post-hardcore peer with a current 2026 debut album and credible London rooms. The inspected exact profile confirms its public identity, Lexington date and 1,122 followers.
+- Files touched: artist data/order, batch-039 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 038
+
+- What changed: Added one capture-backed, separately reviewable Developing card for The Queen's Head, with a manifest, ledger/review entry, display order and regression coverage.
+- Why: Artist-owned London routes and independent current coverage establish a South London post-punk/disco/experimental-pop peer with an active 2025 Lost Futures Records cycle. The inspected exact profile confirms its public identity and 2,532 followers.
+- Files touched: artist data/order, batch-038 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 037
+
+- What changed: Added one capture-backed, separately reviewable Developing card for House of Women, with a manifest, ledger/review entry, display order and regression coverage.
+- Why: Official London routes, current releases and independent coverage establish a core heavy dream-/alt-rock peer. The inspected exact Instagram profile confirms its public artist identity and 2,751 followers; the current-live rule keeps it below Established pending sustained current larger-room evidence.
+- Files touched: artist data/order, batch-037 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 036
+
+- What changed: Added one capture-backed, separately reviewable Developing card for The Wheel 2!, with a manifest, ledger/review entry, display order and regression coverage.
+- Why: Current Windmill/Paper Dress and independent listings establish a London experimental live project with repeat 2026 activity. The inspected exact Instagram profile confirms the active identity and 956 followers.
+- Files touched: artist data/order, batch-036 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 035
+
+- What changed: Added one capture-backed, separately reviewable Developing card for Mabel Clarke, with a manifest, ledger/review entry, display order and regression coverage.
+- Why: Current London artist routes and independent listings establish an active post-folk/drone-rock peer with Shacklewell/Lexington activity. The inspected exact Instagram profile shows the matching identity, current Clodhop Records reference and 766 followers.
+- Files touched: artist data/order, batch-035 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 034
+
+- What changed: Added one capture-backed, separately reviewable Developing card for MPTL Microplastics, with a manifest, ledger/review entry, display order and regression coverage.
+- Why: Official London routes and independently published 2026 coverage establish the industrial-folk/post-punk collective’s current album/live cycle. The inspected exact Instagram profile shows the matching identity, active release route and 2,758 followers.
+- Files touched: artist data/order, batch-034 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 033
+
+- What changed: Added one capture-backed, separately reviewable Developing card for Doom Club, with a manifest, ledger/review entry, display order and regression coverage.
+- Why: Artist-controlled Bandcamp and the inspected exact Instagram establish the project and 1,109 followers; independent London sources support current Brixton/Old Blue Last/Lexington circuit activity.
+- Files touched: artist data/order, batch-033 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 032
+
+- What changed: Added one capture-backed, separately reviewable Developing card for Daltons Fen, with a manifest, ledger/review entry, display order and regression coverage.
+- Why: The inspected exact artist Instagram confirms Daltons Fen, a linked Bandcamp route and 514 followers. Current independent and setlist sources document a relevant Brixton bill and three 2026 Windmill appearances.
+- Files touched: artist data/order, batch-032 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 031
+
+- What changed: Added one capture-backed, separately reviewable Developing card for Babydoll Deadbeat, with a manifest, ledger/review entry, display order and regression coverage.
+- Why: A current Windmill Brixton listing establishes a South London synth-driven punk/noir-pop peer with a sold-out Independent Venue Week headline. The inspected exact artist Instagram shows the matching identity and 1,552 followers.
+- Files touched: artist data/order, batch-031 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 030
+
+- What changed: Added one capture-backed, separately reviewable Developing card for Omertà with its manifest, ledger/review record, display order and regression coverage.
+- Why: Current official and independent sources establish a London garage-/noise-punk project with a 2026 debut, recurring local bills and a sold-out Windmill headline. Inspected exact profiles show 3,044 Instagram followers and 304 Spotify monthly listeners.
+- Files touched: artist data/order, batch-030 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Both screenshots were inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 029
+
+- What changed: Added one capture-backed, separately reviewable Developing card for Fat Concubine with its manifest, ledger/review record, display order and regression coverage.
+- Why: Artist-owned routes, Cruel Nature Records and current independent coverage establish a South East London no-wave/rave-punk project with active 2026 London/New York activity. The inspected exact Instagram profile shows the current release and 1,969 followers.
+- Files touched: artist data/order, batch-029 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 028
+
+- What changed: Resolved Skiving’s previously unavailable social routes and added one capture-backed, separately reviewable Developing card with its manifest, ledger/review record, display order and regression coverage.
+- Why: Official label/Bandcamp and independent 2026 release/live sources establish a London art-/post-rock act with a current debut cycle, Windmill launch and documented UK/France tour activity. Inspected profiles show 1,222 Instagram followers and 232 Spotify monthly listeners.
+- Files touched: artist data/order, batch-028 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Both screenshots were inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 027
+
+- What changed: Resolved a previously held lead and added one capture-backed, separately reviewable Emerging card for Garden slug, with its manifest, ledger/review record, order and regression coverage.
+- Why: The re-inspected exact artist profile visibly confirms Garden slug, its artist-controlled Linktree, current “Lucy” release and 679 followers. Official Bandcamp and independent London dream-pop/support evidence establish a core scene fit, while documented live scale remains early-stage.
+- Files touched: artist data/order, batch-027 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 026
+
+- What changed: Excluded Famous as a capture-backed, separately reviewable former London-scene lead; no dashboard data changed.
+- Why: Exact profile captures established identity and metrics, but the artist-owned Instagram visibly states `2016-2025` and announces the project’s end, failing the current-activity gate.
+- Files touched: batch-026 manifest, ledger/review and this log; inspected captures retained in the inbox.
+- Commands/tests run + results: Both visible-Chrome PNGs were inspected; manifest validation and scoped whitespace checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 025
+
+- What changed: Excluded GRRACE as a separately reviewable current-bill lead; no dashboard data changed.
+- Why: Its Windmill bill establishes shoegaze/post-rock relevance, but the available evidence does not establish a London base or sustained London-scene presence and no artist-controlled identity route was safely resolved.
+- Files touched: ledger/review and this log.
+- Commands/tests run + results: No data or code changed; scoped whitespace check follows.
+
+## London-scene artist-directory goal - 2026-09-08 batch 024
+
+- What changed: Recorded Bugbear as a separately reviewable repair-queue hold; no dashboard card or existing artist data changed.
+- Why: Although official and independent sources support a current London alt/post-rock candidate, its exact artist-controlled Instagram target now visibly returns an unavailable-page screen and the Spotify route remains ambiguous.
+- Files touched: batch-024 manifest, ledger/review and this log; inspected capture retained in the inbox.
+- Commands/tests run + results: Visible-Chrome capture completed and the PNG was inspected; manifest validation and scoped whitespace checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 023
+
+- What changed: Added one capture-backed, separately reviewable Emerging card for Maddison Windfarm with a manifest, ledger/review record, display order and regression coverage.
+- Why: The inspected exact Instagram profile visibly confirms the artist, its Linktree, current Shacklewell/Windmill dates and 569 followers. Artist-owned Bandcamp and current independent bill evidence establish a London noise/post-rock/dance-punk peer, while documented activity remains grassroots-scale.
+- Files touched: artist data/order, batch-023 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Instagram screenshot inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 022
+
+- What changed: Repaired the exact Oh Doom! Spotify capture and added one separately reviewable Emerging card with manifest, ledger/review record, order and regression coverage.
+- Why: The inspected profile visibly confirms Oh Doom! and 238 monthly listeners; official and independent sources establish a current London/Hertfordshire post-rock, shoegaze and post-hardcore project.
+- Files touched: artist data/order, batch-022 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Spotify screenshot inspected; manifest, syntax and directory smoke checks passed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 021
+
+- What changed: Repaired Body Horror's unavailable former profile route and added a capture-backed Developing card with its manifest, evidence records, order and regression coverage.
+- Why: The alternate verified profile visibly confirms the London/Tottenham industrial post-punk project, management/booking routes and 3,524 followers; a current Paper Dress headline supports a Developing current-live position.
+- Files touched: artist data/order, batch-021 manifest, ledger/review, test and this log.
+- Commands/tests run + results: Both capture PNGs inspected; manifest, syntax, smoke and scoped-diff checks follow.
+
+## London-scene artist-directory goal - 2026-09-08 batch 020
+
+- What changed: Repaired Newbuild's unavailable former Instagram route, verified its replacement profile and added one separately reviewable Emerging card with manifest, ledger/review records, display order and regression coverage.
+- Why: The artist-controlled Linktree, independent London DIY-rock listings and verified replacement profile establish a current London five-piece combining noise-rock, dream-pop and electronic elements. The card remains Emerging because its documented current live footprint is grassroots-scale.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-goal-2026-09-08-batch-020.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Rejected old handle capture and inspected replacement Instagram capture (1,439 followers); manifest validation, syntax, regression and scoped whitespace checks follow.
+- Follow-ups / TODOs: Continue repair work only where a current, independently published exact profile route is available.
+
+## London-scene artist-directory goal - 2026-09-08 batch 019
+
+- What changed: Repaired the failed Ewan Samms Instagram capture and added one separately reviewable Emerging card, its manifest, ledger/review records, display order and regression coverage.
+- Why: The prior candidate screen had already established a London experimental/post-punk artist with current Venue MOT and Windmill Brixton activity, but the screenshot was unusable. The repaired capture visibly confirms Ewan Samms and 2,234 followers. Current documented activity remains grassroots-scale, so the card is Emerging.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-goal-2026-09-08-batch-019.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Captured and visually inspected exact Instagram (2,234 followers); manifest validation, syntax, regression and scoped whitespace checks follow.
+- Follow-ups / TODOs: Repair remaining held candidates only with an inspectable exact route; otherwise continue systematic current-bill discovery.
+
+## London-scene artist-directory goal - 2026-09-08 batch 018
+
+- What changed: Added one capture-backed, separately reviewable Emerging card for The InSect, alongside its one-profile manifest, ledger/review records, display order and regression coverage.
+- Why: Official Bandcamp and Gardenhead Records, plus independent Fiddler's Elbow listing evidence, establish a current London post-punk/goth project with a 2026 debut-album launch cycle. The exact Instagram profile was visibly inspected. Current documented rooms and launch dates remain early-scale, so it is Emerging rather than Developing.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-goal-2026-09-08-batch-018.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Captured and visually inspected exact Instagram (387 followers); manifest validation, syntax, regression and scoped whitespace checks follow.
+- Follow-ups / TODOs: Continue current-bill and support-network discovery, keeping unresolved Spotify identity routes absent rather than guessed.
+
+## London-scene artist-directory goal - 2026-09-08 batch 017
+
+- What changed: Recorded Scouts as a held South/East London post-punk discovery lead; no dashboard card or existing artist data was changed.
+- Why: An official Linktree and independent current Shacklewell Arms listing support the act's local, post-punk/shoegaze-adjacent and current-live credentials. The only plausible Instagram handle was captured and inspected but is private, with one post and zero followers, and does not visibly identify the public project. It is therefore not accepted as an artist-owned profile.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `research/scene-and-venues/scripts/artist-discovery-goal-2026-09-08-batch-017.json`, `PROJECT_LOG.md`; inspected capture retained at `research/scene-and-venues/screenshots/inbox/goal-2026-09-08-b017-scouts-instagram.png`.
+- Commands/tests run + results: Visible-Chrome capture completed and PNG was visually inspected. The batch manifest parses as JSON and scoped whitespace check follows. No code or source data changed, so no syntax or dashboard test was applicable.
+- Follow-ups / TODOs: Retain Scouts in the exact-profile repair queue and continue the systematic current-bill discovery pass.
+
+## London-scene artist-directory goal - 2026-09-08 batch 012
+
+- What changed: Added one capture-backed, separately reviewable Developing card for The Eurosuite, alongside its two-profile manifest, audit records, display order and regression coverage.
+- Why: Official Bandcamp and Human Worth, plus independent New River Studios and specialist-review evidence, establish a current London noise-wave/synth-punk quartet with a Human Worth release and active 2026 London/European bills. The exact Instagram and Spotify profiles were visibly inspected.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-goal-2026-09-08-batch-012.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Captured and visually inspected exact Instagram (1,443 followers) and Spotify (94 monthly listeners) profiles; manifest validation, syntax, regression and scoped whitespace checks are run immediately after this entry.
+- Follow-ups / TODOs: Continue current-bill, label-roster and support-network discovery, retaining unresolved profile identities only in the repair queue.
+
+## London-scene artist-directory goal - 2026-09-08 batch 013
+
+- What changed: Added one capture-backed, separately reviewable Developing card for Remote Viewing, alongside its single-profile manifest, audit records, display order and regression coverage.
+- Why: Official Bandcamp and independent noise coverage establish a current London noise-rock/post-hardcore-adjacent project with a September 2026 Human Worth release and two current London dates. The exact Instagram route was visibly inspected; the exposed Spotify destination is an album and is intentionally not displayed.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-goal-2026-09-08-batch-013.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Captured and visually inspected exact Instagram (1,417 followers); manifest validation, syntax, regression and scoped whitespace checks are run immediately after this entry.
+- Follow-ups / TODOs: Keep Remote Viewing's Spotify artist page in the narrow repair queue; continue only with candidates that pass the London live-circuit and relevance gates.
+
+## London-scene artist-directory goal - 2026-09-08 batch 014 screen
+
+- What changed: Recorded Prayer Tech as a held current London post-hardcore/psychedelic lead; no artist card, metric or existing dashboard data was changed.
+- Why: Current release and New River Studios evidence are strong, but no artist-controlled identity page or exact Instagram/Spotify artist profile could be safely resolved. Release and playlist entries are deliberately not substituted for an owned profile.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Reviewed official-adjacent release, current bill and independent playlist sources. No capture or code-data test was applicable because no dashboard card or project data changed.
+- Follow-ups / TODOs: Retain Prayer Tech in the repair queue and revisit only when a direct artist-controlled identity route becomes available.
+
+## London-scene artist-directory goal - 2026-09-08 batch 015
+
+- What changed: Added one capture-backed, separately reviewable Emerging card for Hiding From Mirrors, plus a one-profile manifest, audit records, display order and regression coverage.
+- Why: The New Cross Inn-published Instagram route visibly identifies a London gazey-screamo project and artist website; independent current New Cross Inn and Old Blue Last listings establish local live activity and the shoegaze/post-hardcore-adjacent fit. No exact Spotify artist page was resolved.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-goal-2026-09-08-batch-015.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Captured and visually inspected exact Instagram (505 followers); manifest validation, syntax, regression and scoped whitespace checks are run immediately after this entry.
+- Follow-ups / TODOs: Continue venue- and support-network discovery while retaining absent Spotify routes as documented repair items, not guesses.
+
+## London-scene artist-directory goal - 2026-09-08 batch 016
+
+- What changed: Added one capture-backed, separately reviewable Developing card for Inner Dog, plus a one-profile manifest, audit records, display order and regression coverage.
+- Why: Official Bandcamp and independent London live evidence establish a current post-hardcore/post-punk project. Its exact profile visibly confirms the artist, forthcoming release and EU dates, supporting Developing rather than Emerging; no exact Spotify artist page was resolved.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-goal-2026-09-08-batch-016.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Captured and visually inspected exact Instagram (1,095 followers); manifest validation, syntax, regression and scoped whitespace checks are run immediately after this entry.
+- Follow-ups / TODOs: Continue the systematic current-bill and scene-network pass; retain unresolved Spotify pages in the repair queue rather than guessing a profile.
+
+## London-scene artist-directory goal - 2026-09-08 batch 011
+
+- What changed: Added one capture-backed, separately reviewable Developing card for Lello, plus a one-profile manifest, ledger/review records, display order and regression coverage.
+- Why: Official, promoter and Café OTO sources establish a Deptford art-noise/post-punk trio with a 2026 tour marker and current London bill. No exact Spotify artist page was safely resolved, so no Spotify route or metric is displayed.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-goal-2026-09-08-batch-011.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Captured and visually inspected exact Instagram (819 followers); batch-manifest validation, `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue systematic current-bill and scene-source discovery; retain Lello's absent Spotify route as a deliberate repair item, not a guessed link.
+
+## London-scene artist-directory goal - 2026-09-08 batch 010 screen
+
+- What changed: Recorded Throw Down Bones as an excluded Fuzz Club release-sweep candidate; no dashboard card or existing artist data was changed.
+- Why: The project is musically adjacent and has a current release, but the mixed Milan/London identity and lack of current London live-circuit evidence fail the directory's local-scene gate.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Reviewed official label, independent review and scene-identity sources; no capture or source-data test was applicable because no card or code changed.
+- Follow-ups / TODOs: Continue source-led discovery with candidates whose current local live presence can be directly verified.
+
+## London-scene artist-directory goal - 2026-09-08 batch 009
+
+- What changed: Added one capture-backed, separately reviewable artist card for You Will Eat Bugs (Emerging), plus its two-profile manifest, reviewed captures, ledger/review records, active display-order entry and regression coverage.
+- Why: The London 90s-alternative/noise-rock trio passed official identity, independent live-bill, current-release and exact-profile gates. Its early-stage current evidence supports Emerging rather than a higher scene position.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-goal-2026-09-08-batch-009.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Captured and visually inspected exact Instagram (472 followers) and Spotify (17 monthly listeners) profiles; batch-manifest validation, `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue the systematic live-circuit and support-network pass; keep unresolved profile identities in the repair queue.
+
+## London-scene artist-directory goal - 2026-09-08 batch 008 repair lead
+
+- What changed: Recorded Morreadoras as a held London synth/primitive-Casio-punk lead in the goal review and discovery ledger; no dashboard card or existing artist data was changed.
+- Why: Official Bandcamp and two current London bills satisfy the London, relevance and activity checks, but neither exact artist-controlled Instagram nor exact Spotify artist page was verified. The workflow forbids inferring either route from ambiguous search results.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Reviewed official and independent sources; no capture or source-data test was applicable because no card, metric or project code changed.
+- Follow-ups / TODOs: Continue the live-circuit pass and retain Morreadoras in the exact-profile repair queue.
+
+## London-scene artist-directory goal - 2026-09-08 batch 004 control
+
+- What changed: Ran and visually inspected the required fresh visible-Chrome control capture for deary; explicitly refreshed its Instagram metric from 7,434 to 7,437 followers, removed a conflicting older display-only snapshot, and added regression coverage for the documented refresh.
+- Why: The control verified that capture works while the monitor is off and showed a current public figure. The existing baseline card was changed only through the dedicated metric-refresh review section, preserving an exact old/new audit trail.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`; capture saved at `research/scene-and-venues/screenshots/inbox/goal-2026-09-08-control-deary-instagram.png`.
+- Commands/tests run + results: visible Chrome capture completed and its PNG was inspected; syntax and regression checks are run immediately after this entry.
+- Follow-ups / TODOs: Continue the next evidence-led geographic/live-circuit discovery batch; retain the control capture as proof that visible profile capture remains operational.
+
+## London-scene artist-directory goal - 2026-09-08 batch 005
+
+- What changed: Added three separately reviewable capture-backed London-scene cards: Ritual Error (Developing), Nothingheads (Emerging) and Felicette (Emerging). Added a six-profile manifest, inspected six visible-browser captures, new ledger/review rows, scene-order entries and regression coverage.
+- Why: Each candidate cleared the London-base, current-activity, relevant sonic-scene, independent-support and exact-profile gates. Ritual Error's current festival/support and album-launch evidence places it above early-stage peers; Nothingheads and Felicette retain Emerging status because current live-scale evidence is still limited.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-goal-2026-09-08-batch-005.json`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: validated the batch JSON; captured and inspected six visible Chrome PNGs; `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue geographic and source-led discovery; preserve the small exception queue for candidates whose exact Spotify or Instagram profiles remain unresolved.
+
+## London-scene artist-directory goal - 2026-09-08 batch 006
+
+- What changed: Added one separately reviewable capture-backed card for Tutu Ta, a West London experimental post-punk/dub/industrial-adjacent artist. Added a two-profile manifest, inspected both visible-browser PNGs, and extended the ledger, review record, display order and regression coverage.
+- Why: Official and independent sources establish a current West London artist with March 2026 releases and relevant post-punk/industrial texture. It is Emerging, not Developing, because current live room scale and touring reach are less well documented than the release/radio profile.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-goal-2026-09-08-batch-006.json`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: validated the batch JSON; captured and inspected two visible Chrome PNGs; `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue systematic live-circuit, local-label and support-network passes; retain any candidates lacking an exact independently routed artist profile in the repair queue.
+
+## London-scene artist-directory goal - 2026-09-08 baseline-guard strengthening
+
+- What changed: Extended the artist-directory regression test to compare every baseline Instagram/Spotify route and displayed metric against the immutable 80-artist snapshot. A mismatch now requires a corresponding reviewed existing-card correction, new-link or metric-refresh entry.
+- Why: This enforces the goal's distinction between pre-existing cards and goal-era changes, preventing an unlogged URL or metric rewrite from being mistaken for a new discovery batch.
+- Files touched: `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check trials/verify-scene-update.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Keep any future baseline profile correction in the dedicated review table with exact old/new values and its inspected screenshot.
+
+## London-scene artist-directory goal - 2026-09-08 batch 002
+
+- What changed: Added two separately reviewable current London-scene cards, Tayne and Laddermen, plus a four-profile capture manifest, capture-backed metrics, order entries, ledger rows and regression coverage.
+- Why: Both candidates passed the London-base, current-activity, sonic-relevance, independent-source and exact-profile gates. Tayne is a Developing industrial-noise-pop peer; Laddermen is a Developing Peckham post-punk peer. Their visible Instagram and Spotify pages were inspected rather than inferred.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-goal-2026-09-08-batch-002.json`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: validated the JSON manifest; captured and inspected four visible-browser PNGs; `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue systematic geographic and source-led discovery. Hold wryneck and Firestations until their exact Spotify artist pages are resolved; do not infer them from track or search pages.
+
+## London-scene artist-directory goal — 2026-09-08 batch 001
+
+- What changed: Created and inspected the first goal-specific visible-Chrome capture batch; added five new separately reviewable artist cards (Little Grandad, Broken Horses, Palindrones, Bullmaera and Recogniser). Added an immutable goal baseline, goal-review document, capture manifest and regression checks. Reordered the active London-scene display into Established → Developing → Emerging tiers.
+- Why: The workflow now distinguishes all goal additions from the 80-card baseline, records repair failures rather than guessing, and makes the display ordering consistent with the current-live scene-position rubric.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-goal-2026-09-08-batch-001.json`, `trials/verify-scene-update.js`, `docs/ARTIST_DIRECTORY_BASELINE_2026-09-08.md`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: visible Chrome captures and manual PNG inspection completed; `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, manifest validation and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue the geographic and scene-source pass in further capture batches. `lifepath99` is held because the apparent Instagram route visibly belongs to an unrelated account; repair its official profile and artist-page Spotify route before adding it.
+
+## Jam-directory goal audit — 2026-09-08 02:20
+
+- Canonical pre-goal baseline: 43 jam cards in committed sub-repository snapshot `bfd740bbe7c4fa48137aa22a6eec30c13fc2da53` (`git -C research/scene-and-venues show HEAD:data/scene-data.js`).
+- Current audited state: 94 active jam cards, a net increase of 51 after 62 new current-series identities and 11 retired/reconciled stale identities. The full durable identity ledger is `docs/JAM_SESSION_PROVENANCE.md`.
+- The latest two additions in this continuation are `ronnie-scotts-foundation-jam-workshop` (Ronnie Scott's Charitable Foundation Jam Session) and `springfield-acton-jazz-jam` (Acton Jazz Jam Session). Both link to existing venue identities; the current direct audit found zero unresolved jam-to-venue links.
+- Coverage status: the required systematic pass across every listed geography and scene is **not yet complete**. The next work is to finish those documented passes, reconcile duplicates and refresh existing cards where stronger current official evidence is available.
+
+## 2026-09-07 09:50
+
+- What changed: Added five verified recording-studio cards: Sony Music's Gin Factory, First Studios, The Friary Studios, Rockfield Studios and Peter Gabriel's Real World Studios. The three non-London facilities are explicitly labelled `Outside London / ...` rather than being presented as London studios; their cards retain direct enquiry routes and destination context. Added smoke-test coverage for all five.
+- Why: The directory now covers the requested bookable central/North London additions and a first clearly scoped set of consequential destination studios. British Grove was already present as the Mark Knopfler-associated London facility, so no duplicate was created. The Self Belief Hub remains excluded pending proof that its planned music/podcast studios have opened and offer a live access route; Music Evolution, Bexley Audio and Little House remain location-unresolved leads.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: If the directory is expanded further beyond London, use the `Outside London / place, county` area convention and include a current official booking source; this keeps destination facilities discoverable without diluting London-area filters.
+
+## 2026-09-07 10:10
+
+- What changed: Started the Outside London destination-studio sweep with a South-East batch: Curtis Schwartz Studio (West Sussex), Riverway Studios (Harlow), Stag Studios (Witham) and Antfarm Studios (Waltham Abbey). Each card uses the destination area convention, source-backed access wording, practical booking route and price basis where published.
+- Why: These are current, geographically practical recording routes beyond London, ranging from Curtis Schwartz's private residential landmark studio to transparent independent Essex facilities. Ridge Farm was not added because its current public booking page does not establish an active music-recording offer.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` and a targeted Node recording-card check passed; `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed. The shared full smoke test currently fails only on a concurrent promoter-card assertion (`<b>Role:</b>`) whose matching dashboard change is absent; this is outside the recording-studio module.
+- Follow-ups / TODOs: Continue geographically through Surrey, Kent, Hertfordshire, Berkshire, Buckinghamshire, Oxfordshire, Cambridgeshire and materially relevant Wales, retaining only current official evidence.
+
+## 2026-09-07 10:25
+
+- What changed: Added the next Home Counties destination-studio batch: University of Surrey Music Studios, Blue Bell Hill Studios, The Joplin House, Hotel Quebec Recording Studio, Pandora Studios, RIOT Noise Studio, Egypt Lane Studios and Aston End Recording Studios. Added complete smoke-test coverage for the eight access-model-specific cards.
+- Why: The destination corpus now represents commercial university hire, residential landmark sessions, direct-project booking and appointment-only boutique access without treating any private or enquiry-only facility as walk-in hire.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the geographic sweep through Berkshire, Oxfordshire, Cambridgeshire and further current Wales facilities; check that destination cards remain correctly mapped by the public area filter.
+
+## 2026-09-07 10:40
+
+- What changed: Added the Berkshire, Oxfordshire and Cambridgeshire destination batch: Cowley Road Studios, Pig Music Studios, Woodworm Studios, Under The Apple Tree Studios, Studio Richter Mahr, Headline Music Studios, Bookmatch Recording Studio and Whitehouse Studios. Added source-schema smoke coverage for all eight.
+- Why: The directory now includes Oxford's grassroots recording infrastructure, residential and large-ensemble Oxfordshire rooms, Cambridge-area engineer-led and artist-development routes, and Reading's accessible vocal-recording offer. Monnow Valley was reviewed but excluded because current evidence supports holiday accommodation, not an active recording-service booking route.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the destination sweep with any remaining current South-East/Wales operator sources, then audit the complete outside-London set for duplicates, stale pages, source quality and filter coverage.
+
+## 2026-09-07 10:55
+
+- What changed: Added the final South-East/Wales pass: Chalk Hill Studios, Yiayia Sound Studio, Curve Pusher Recording Studio, Starfield Recording Studios, The Ranch Production House, The Dugout Studios, COBRA Music Studios and One Louder Studios. Added whole-destination corpus checks to the smoke test.
+- Why: The destination directory now spans every requested geographic group with 31 complete cards, including current residential, commercial, university, artist-founded, producer-led, rehearsal-connected and specialist mastering/recording access models. Its destination filter is explicit and no longer miscategorises facilities as London areas.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Corpus audit found 31 destination cards, zero duplicate IDs and zero missing practical/evidence fields. `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js research/scene-and-venues/index.html` passed.
+- Follow-ups / TODOs: Treat future work as periodic source refreshes or newly surfaced facilities; preserve the destination filter and the corpus schema/duplicate checks.
+
+## 2026-09-07 11:05
+
+- What changed: Added a Recording studios `Sort by` control. Artist track record is the default and now orders Landmark, Established, Developing, then Not yet assessed; the Artist track record filter itself uses that same order. Area, Price / basis and Name remain explicit alternative sorts.
+- Why: The default browse order foregrounds publicly documented recording track record without representing it as a quality judgement. Users can still sort matching results by practical location, price basis or name.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` and `git diff --check -- research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Keep future recording credit tiers in the ordered set and retain the clarification that this is an artist-track-record field, not a studio-quality score.
+
+## 2026-09-07 11:15
+
+- What changed: Removed the Recording studios Sort by control. Cards now always render in Artist track record order (Landmark, Established, Developing, Not yet assessed), alphabetically within each tier. Replaced verbose raw category tags with concise practical tags: Full-band studio, Production studio, Mix / master studio, Recording studio, or Rehearsal studio.
+- Why: The directory has one predictable prestige-first browse order rather than a redundant sorting control, while card headers remain scannable. Detailed category evidence remains available in the card’s services and room/access fields.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` and `git diff --check -- research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Preserve the compact tag mapping when new recording or rehearsal card types are introduced.
+
+## 2026-09-07 11:25
+
+- What changed: Replaced the within-tier alphabetical fallback for landmark recording studios with an explicit curated prestige map. The visible order now begins Abbey Road, Metropolis, RAK, British Grove and Studio 13; 123 Studios is deliberately placed at the end of the Landmark tier rather than first because of its numeric name.
+- Why: Artist-track-record tiers remain evidence-based, but alphabetic sorting inside the broad Landmark cohort falsely implied that 123 Studios was the most prestigious entry. The new secondary order is labelled as editorial historical/current industry prominence, not a quality judgement or a claim about bookability.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` and `git diff --check -- research/scene-and-venues/index.html trials/verify-scene-update.js` passed. A direct data-order check confirmed the first twelve entries begin Abbey Road Gatehouse, Abbey Road Writing Room, Metropolis, RAK, British Grove, Studio 13, Angel, The Church, Dean Street, Real World and Rockfield.
+- Follow-ups / TODOs: Revisit the curated map only when a facility's sustained public industry standing materially changes; retain alphabetical fallback for unranked entries.
+
+## 2026-09-07 11:35
+
+- What changed: Removed the four resolved recording-studio exclusions from the visible Research queue: Music Evolution Studios, Bexley Audio Services, Little House Studio, and Mark Angelo Studios / The Oven Studios / Fluid Mastering. Added a smoke assertion preventing their reappearance.
+- Why: There is no active recording-studio research remaining. The queue now represents actual pending work rather than completed exclusions; the supporting rationale remains preserved in earlier dated project-log entries.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Retain Apollo Studio and Sic Lick Studio as separate rehearsal-space research leads.
+
+## 2026-09-04 01:10
+
+- What changed: Added twelve verified venue records from a GLA/Music Venue Trust cross-check: KOKO, Islington Assembly Hall, OMEARA, Lafayette, Union Chapel, 93 Feet East, The Sound Lounge, Aces & Eights, Rich Mix, 1901 Arts Club, St Pancras Old Church and Kings Place. Added their filter mappings and verified classifications, including Union Chapel's attentive-format constraint, St Pancras Old Church as venue-led specialist, Kings Place as established and Rich Mix as venue-led.
+- Why: The directory was missing several active, consequential concert rooms and specialist routes. The classifications now reflect practical programming and booking routes rather than their buildings alone.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed (line-ending warnings only).
+- Follow-ups / TODOs: The shared Google Drive Tube-map folder could not be visually rendered from this environment; compare its contents directly if it becomes accessible. Wilton's Music Hall remains excluded because its current programme is predominantly theatre/operatic, despite an occasional music strand.
+
+## 2026-09-04 00:40
+
+- What changed: Completed the final venue-review queue. The Underworld is now an Established specialist room, UNIT 58 remains a transparent DIY/collective arts-space route, and the generic duplicate The Victoria record is archived. Added Beyond The Grave Promotions and Rancid Offal Booking as specialist Underworld presenter leads.
+- Why: This closes the alphabetical venue review with categories based on the practical route to a gig, while avoiding duplicate cards and preserving source records non-destructively.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed.
+- Follow-ups / TODOs: Venue review queue is complete; future work can focus on periodic programme/contact refreshes.
+
+## 2026-09-04 00:30
+
+- What changed: Applied the approved review outcomes for Village Underground, Vortex Jazz Club, Walthamstow Trades Hall, West Hampstead Arts Club and Woolwich Works. Added Academy Events and Brick Lane Jazz Festival as presenter leads identified in Village Undergroundâ€™s current programme.
+- Why: The update separates established touring rooms, direct specialist programming, genuine local venue-led rooms and invitation-led/self-produced cultural infrastructure.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed.
+- Follow-ups / TODOs: Review the final three unresolved records: The Underworld, UNIT 58 and the duplicate generic The Victoria record.
+
+## 2026-09-04 00:10
+
+- What changed: Applied the approved review outcomes for The Victoria, Tottenham; The Victoria, Walthamstow; The Waiting Room; The Water Rats; and The Windmill. The former Walthamstow Victoria record is archived while retained in source. Added Lateu Music Group, Wet Dog Music, Scruff of the Neck and New Stuff Records as independent promoter leads.
+- Why: The new cards now distinguish self-produced community hire, a genuine venue-led underground room, promoter-presented programming and the Windmillâ€™s unusually favourable in-house route. The former Walthamstow venue has been replaced at its address by Soho Theatre Walthamstow.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed.
+- Follow-ups / TODOs: Continue the remaining alphabetical venue reviews.
+
+## 2026-09-03 07:25
+
+- What changed: Reclassified Venue MOT as Venue-led and Upstairs at the Ritzy as hospitality-led. Refreshed MOTâ€™s programme wording and current listings route; removed Ritzyâ€™s misleading Linktree from its listings field.
+- Why: MOT has a real underground scene audience and regularly hosts medium-scale/international touring electronic and experimental acts, even though individual nights partner with promoters. Ritzy is a bar/cinema cultural space with direct events access but no stable current public music listings calendar.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed.
+- Follow-ups / TODOs: Continue the alphabetical venue review after the just-reviewed batch.
+
+## 2026-09-03 07:05
+
+- What changed: Retained Tropic at Ruislip as a specialist Venue-led record and made its mostly tribute/cover-band programme explicit on the card.
+- Why: It is an active, venue-run music night with a local audience, but it is not a normal emerging-original-band route. The distinction is now visible rather than removing useful context.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed.
+- Follow-ups / TODOs: Continue the strict alphabetical review after Two Palms / Tropic at Ruislip.
+
+## 2026-09-03 06:55
+
+- What changed: Applied the approved updates for Trisha’s, The Troubadour, Troy Bar and Two Palms. Troubadour is now promoter-led; Troy Bar is specialist Venue-led; Two Palms is Venue-led; Trisha’s is hospitality-led.
+- Why: These updates distinguish a true venue-run specialist programme from a venue where artists must propose and promote their own bill. Tropic at Ruislip remains pending because its current programme is overwhelmingly tribute/cover-led, despite occasional original blues/soul acts.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed.
+- Follow-ups / TODOs: Decide whether to archive Tropic at Ruislip, then continue the strict alphabetical review after Two Palms.
+
+## 2026-09-03 06:40
+
+- What changed: Archived TOLA Peckham from the active venue directory while preserving its source record.
+- Why: Current official programming is DJ/soundsystem and underground dance music only; no current regular live-act route is evidenced.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed.
+- Follow-ups / TODOs: Reintroduce TOLA only if a current live-act programme is evidenced.
+
+## 2026-09-03 06:35
+
+- What changed: Applied the approved updates for Stone Nest, Sugar Studios, The Tabernacle and Toulouse Lautrec. Sugar Studios now maps to Hire / self-produced, Tabernacle to DIY / community, while Stone Nest and Toulouse Lautrec remain specialist Venue-led. Added four non-venue presenters identified in Stone Nest’s current programme.
+- Why: The cards now reflect whether a space provides a public audience/programme or merely production infrastructure. TOLA remains pending a user decision after confirmation that its current programme is club/DJ-led rather than live-band-led.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed.
+- Follow-ups / TODOs: Confirm whether TOLA should remain in the directory as Venue-led electronic/club, then resume the next untouched alphabetical venue review.
+
+## 2026-09-03 06:15
+
+- What changed: Added a lightweight, code-native SVG favicon to the London live-music directory and linked it from the dashboard head.
+- Why: The local dashboard is now identifiable in a browser tab without introducing a heavy image asset or external dependency.
+- Files touched: `research/scene-and-venues/favicon.svg`, `research/scene-and-venues/index.html`, `research/scene-and-venues/README.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: PowerShell favicon reference and XML-parse smoke check passed; `git -C research/scene-and-venues diff --check -- index.html README.md favicon.svg` passed.
+- Follow-ups / TODOs: Include `favicon.svg` in the next London-directory commit/push.
+
+## 2026-09-03 06:05
+
+- What changed: Completed the review of all remaining candidate/to-verify venue records. Added the City / Clerkenwell area, corrected The Slaughtered Lamb into it as a general Venue-led route, verified The Beehive, Dalston Den and The Birds Nest, renamed Peckham Audio to Vesper (formerly Peckham Audio), and refreshed The Star in Shoreditch. The former Streatham Space Project is archived from the active directory while its raw research record is retained.
+- Why: The directory now distinguishes active music routes from self-produced DJ/event spaces and no longer displays a closed venue. The additional central-London area prevents Clerkenwell/Barbican venues being inaccurately grouped with Islington/King’s Cross.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed.
+- Follow-ups / TODOs: Resume strict normalised alphabetical review only with active, non-archived venue records; reassess Vesper if an official operator contact becomes public.
+
+## 2026-09-03 05:35
+
+- What changed: Applied the approved alphabetical-review outcomes for The Moustache Bar, The Muddy Puddle, The Ned, The Old Blue Last and The Old Dispensary. The Old Dispensary is now Venue-led; The Old Blue Last now records its direct in-house booking route.
+- Why: The classifications now reflect the practical route to a gig: self-produced hire at Moustache, community-led activity at Muddy Puddle, hospitality programming at The Ned, a genuine in-house venue programme at Old Blue Last, and a small but recurring venue-led music programme at Old Dispensary.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed.
+- Follow-ups / TODOs: Correct the alphabetical review queue to include The Beehive and The Birds Nest before proceeding. Deliberately unresolved leads remain Dalston Den, Peckham Audio, Streatham Space Project, The Slaughtered Lamb and The Star, Shoreditch.
+
+## 2026-09-03 05:15
+
+- What changed: Applied the approved alphabetical venue-review updates for The Jago, Jazz Cafe, The Lexington, Lower Deck Greenwich and The Lower Third; added four independent presenters surfaced in Jago’s current programme.
+- Why: The five venue cards now distinguish venue-led/established/hire routes accurately, with practical contact and listings links. Presenters are kept separately in the promoter directory so future research can cross-reference them.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; `git -C research/scene-and-venues diff --check -- data/scene-data.js index.html` passed.
+- Follow-ups / TODOs: Review the next alphabetical batch: The Moustache Bar, The Muddy Puddle, The Ned, The Old Blue Last and The Old Dispensary.
+
+## 2026-09-03 03:40
+
+- What changed: Applied the reviewed classifications and refreshed the practical links for The Cavendish Arms, The Cavern Freehouse, The Clapham Grand, The Dog & Bell and The Dome.
+- Why: Cavendish has a dedicated, well-equipped venue room and direct booker; Cavern has an established blues/live-music crowd; Dog & Bell remains a casual pub route; and The Dome’s 600/300-capacity rooms and touring programme justify Established status.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; `git diff --check` passed.
+- Follow-ups / TODOs: Continue the alphabetical venue review after The Dome.
+
+## 2026-09-03 03:20
+
+- What changed: Applied the agreed latest venue-review classifications: The Camden Club is Venue-led, The Carpet Shop is Venue-led genre-specific / electronic, and The Castle, Whitechapel is now a checked bookable live-gig room.
+- Why: Venue type now depends on whether the venue has a meaningful existing audience and proper room, not merely whether an external promoter appears on a bill. The Castle’s current official room specification supplies a direct, verified route and production information.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; `git diff --check` passed.
+- Follow-ups / TODOs: Continue the alphabetical venue review after The Cause.
+
+## 2026-09-03 03:05
+
+- What changed: Moved The Cause into the Venue-led / built-in crowd category.
+- Why: The user confirmed that its established scale and audience matter more than its promoter-partnered electronic programming for this practical classification.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; `git diff --check` passed.
+- Follow-ups / TODOs: Continue the alphabetical venue review after The Cause.
+
+## 2026-09-03 02:50
+
+- What changed: Reclassified The Black Heart as Venue-led genre-specific, The Blue Basement as Venue-led, and The Broadcaster as Hospitality-led; refreshed their contact, listings and practical booking-route text.
+- Why: Current first-party sources confirm The Black Heart has direct event bookings and a heavy-music audience, Third Man accepts direct Blue Basement requests without publishing a management requirement, and The Broadcaster’s limited live offer is house-band/acoustic programming within a hospitality business.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; `git diff --check` passed.
+- Follow-ups / TODOs: Continue alphabetical venue review after The Broadcaster.
+
+## 2026-09-03 02:35
+
+- What changed: Audited the London scene-and-venues working tree, then moved The Bedford into the Venue-led / built-in crowd filter category.
+- Why: The user confirmed that The Bedford should be treated as a venue-led live-music route rather than a pub/casual-stage classification. The audit was requested to ensure the already-reviewed venue edits had not been overwritten.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Before editing, `git status --short`, staged/unstaged diffs, and recent history showed a clean directory tree; the data still included the recent TAM, Strongroom, Sucre, Sinfonia Smith Square, Below Stone Nest, Signature Brew, Skehan’s and Slim Jim’s updates. `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; `git diff --check` passed.
+- Follow-ups / TODOs: Continue the alphabetical venue review after The Birkbeck Tavern.
+
 ## 2026-09-01 16:15
 
 - What changed: Temporarily commented out the landing-page Instagram link while preserving its URL and complete markup in place.
@@ -2251,6 +3284,54 @@
 - Commands/tests run + results: `node --check influences.js` passed; direct sequence validation confirmed DIIV → Siouxsie and the Banshees → The Smiths → The Jesus and Mary Chain in both views. `git diff --check` passed (standard Git line-ending warning only).
 - Follow-ups / TODOs: None.
 
+## 2026-09-08 00:10
+
+- What changed: Moved Hum and Gleemer to the end of the Influences display order.
+- Why: They should follow the core reference sequence rather than interrupt it before David Bowie.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` and relevant `git diff --check` commands passed.
+- Follow-ups / TODOs: Establish the next systematic London-scene artist-discovery pass before adding further cards.
+
+## 2026-09-08 00:20
+
+- What changed: Removed completed deary and Menaura artist tasks from the research queue; narrowed the remaining three artist tasks to unresolved profile-metric captures.
+- Why: The visible queue should show only work that remains, while retaining platform-capture tasks where an exact Spotify profile or dated metric is still missing.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and relevant `git diff --check` commands passed.
+- Follow-ups / TODOs: Build a new five-artist London-scene candidate batch, verify each official URL, then run visible-browser captures with explicit GUI approval.
+
+## 2026-09-07 23:55
+
+- What changed: Completed the five London-scene artist cards (deary, The Youth Play, adele dazeem, Menaura and Neighbour Club) and removed the visible Checked badge from artist cards.
+- Why: Each card now has a reviewed scene description, reach, label status, usable direct links and source evidence; the status badge duplicated internal research state without helping the reading flow.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and relevant `git diff --check` commands passed.
+- Follow-ups / TODOs: Refresh fast-changing artist metrics and current dates during future scene reviews rather than treating them as permanent rankings.
+
+## 2026-09-08 00:00
+
+- What changed: Replaced non-specific independent/self-released label text with `/` on the relevant London-scene artist cards.
+- Why: The Label field now names a label only where a specific label is confirmed.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js`, `node --check research/scene-and-venues/data/scene-data.js`, and relevant `git diff --check` commands passed.
+- Follow-ups / TODOs: None.
+
+## 2026-09-07 23:35
+
+- What changed: Replaced the two-card London-scene guide and tag legend with a concise Inertia Whim peer-scene introduction.
+- Why: The section needs to state its focused purpose without displacing the artist cards; the card tags are self-explanatory in context.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` and relevant `git diff --check` commands passed.
+- Follow-ups / TODOs: None.
+
+## 2026-09-06 21:15
+
+- What changed: Added Greystoke Studio and JBJ Studio to the recording-studio directory.
+- Why: Current Miloco pages verify room-level recording offers and live enquiries. JBJ is tagged landmark because its current page names recent internationally established clients; Greystoke remains unassessed where a comparable roster is not published.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue active-directory research with Love Electric, NXNE, The Vault, Westpoint and other unrepresented London listings; defer The Axis and Forever Audio until better current room-level evidence is available.
+
 ## 2026-09-02 10:40
 
 - What changed: Updated the published Influences-script cache version after adding the two new reference acts.
@@ -2258,6 +3339,358 @@
 - Files touched: `index.html`, `PROJECT_LOG.md`.
 - Commands/tests run + results: `node --check influences.js` passed. Local validation confirmed the new script version and both added acts; `git diff --check -- index.html influences.js PROJECT_LOG.md` passed (standard Git line-ending warnings only).
 - Follow-ups / TODOs: Commit and push the Inertia Whim files together.
+
+## 2026-09-02 10:50
+
+- What changed: Reclassified The Water Rats from the established venue type to Scene-led grassroots venue.
+- Why: Its small, mixed grassroots programme does not meet the new definition of a touring-act room with a substantial built-in crowd.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Inline dashboard-script parsing passed; direct validation confirmed Water Rats is absent from the established set and present in the scene-led set. `git diff --check -- research/scene-and-venues/index.html PROJECT_LOG.md` passed (standard Git line-ending warnings only).
+- Follow-ups / TODOs: Add an editable within-type priority for the remaining established venues after agreeing the balance between room size and scene stature.
+
+## 2026-09-02 11:00
+
+- What changed: Added an editable within-type priority list for established venues and made it the secondary venue-card sort after venue type.
+- Why: Established rooms should appear from touring-scale / most established to smaller established rooms, while reclassification still automatically moves a venue to its appropriate type group.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Inline dashboard-script parsing passed. Direct validation confirmed all 17 ranked established IDs resolve to venue data and the secondary priority sort is present; `git diff --check -- research/scene-and-venues/index.html PROJECT_LOG.md` passed (standard Git line-ending warnings only).
+- Follow-ups / TODOs: Review the ranked established venues three at a time and adjust the list where practical scene knowledge overrides this initial scale/profile ordering.
+
+## 2026-09-02 11:15
+
+- What changed: Replaced the prior venue-type labels with the agreed nine-category gig-route taxonomy and removed the proposed club/crossover category.
+- Why: The filters should describe practical booking dynamics, audience and artist risk rather than just venue buildings or genre.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Inline dashboard-script parsing and `node --check data/scene-data.js` passed. Validation confirmed all nine agreed labels, the updated Grassroots and Promoter-dependent keys, and no stale club/crossover or prior label. `git diff --check -- research/scene-and-venues/index.html PROJECT_LOG.md` passed (standard Git line-ending warnings only).
+- Follow-ups / TODOs: Verify and add Streatham Project from current official sources if approved; review the venues currently grouped as promoter-dependent before treating crowd requirements as confirmed facts.
+
+## 2026-09-02 11:30
+
+- What changed: Added Streatham Space Project as a checked Streatham Hill venue, classified as DIY / community / cultural space with its theatre, bar, live-music remit and direct-hire route recorded.
+- Why: Current public venue, TicketWeb and cultural-infrastructure sources confirm it is an active artist-managed community arts venue rather than only a private function room.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed. Data-load validation confirmed the complete record, 176 venues total and its DIY/community classification; inline dashboard-script parsing passed. `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html PROJECT_LOG.md` passed (standard Git line-ending warning only).
+- Follow-ups / TODOs: Review the ambiguous promoter-dependent and multi-room records separately before relying on their present type assignments.
+
+## 2026-09-02 11:40
+
+- What changed: Added a tenth venue type, Hospitality-led / house-band / residency venue, and classified The Ned, both Piano Works sites and Eastcheap Records within it.
+- Why: Their live music is primarily a restaurant, bar, hotel or members-club offer, with a booking route distinct from original-band bills or promoter-led gigs.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Inline dashboard-script parsing passed. Validation confirmed 10 venue types and all four intended hospitality assignments; `git diff --check -- research/scene-and-venues/index.html PROJECT_LOG.md` passed (standard Git line-ending warnings only).
+- Follow-ups / TODOs: Revisit other hospitality-oriented venues only where their programming proves to be similarly residency/house-band-led.
+
+## 2026-09-02 11:50
+
+- What changed: Venue cards now show their filter-driving venue type instead of the older descriptive category, and suppress the redundant CHECKED pill while retaining unresolved-status warnings.
+- Why: Each visible tag should have a distinct practical use; type is the relevant classification and the date already communicates evidence freshness.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Inline dashboard-script parsing passed. Static card-render validation confirmed the filter-type label map, checked-status suppression and retained unresolved-status branch; `git diff --check -- research/scene-and-venues/index.html PROJECT_LOG.md` passed (standard Git line-ending warnings only).
+- Follow-ups / TODOs: Continue the three-at-a-time venue review using the unified type labels.
+
+## 2026-09-02 11:55
+
+- What changed: Shortened venue-card classification pills to the portion of the venue-type label before the first slash.
+- Why: Cards need a compact, scannable classification while filters and the legend retain the full practical definition.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Inline dashboard-script parsing passed; direct validation confirmed the compact prefix rule. `git diff --check -- research/scene-and-venues/index.html PROJECT_LOG.md` passed (standard Git line-ending warnings only).
+- Follow-ups / TODOs: None.
+
+## 2026-09-02 12:00
+
+- What changed: Reformatted the Venue types legend with one category and definition per line.
+- Why: The full taxonomy is easier to scan when reviewing or filtering venues.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Inline dashboard-script parsing passed; validation confirmed ten category line breaks in the legend. `git diff --check -- research/scene-and-venues/index.html PROJECT_LOG.md` passed (standard Git line-ending warnings only).
+- Follow-ups / TODOs: None.
+
+## 2026-09-02 12:05
+
+- What changed: Added bullet prefixes to the one-per-line Venue types legend and made its heading distinct.
+- Why: The legend now reads as a clear, scannable list rather than wrapped prose.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Inline dashboard-script parsing passed; validation confirmed a distinct heading and ten bullet entries. `git diff --check -- research/scene-and-venues/index.html PROJECT_LOG.md` passed (standard Git line-ending warnings only).
+- Follow-ups / TODOs: None.
+
+## 2026-09-02 12:25
+
+- What changed: Rechecked the first established-venue review batch and replaced three home-page listings links with their official event pages; clarified the available contact routes and the two broad-programming genre records.
+- Why: Venue-title links should be landing pages, while Listings must lead directly to current event calendars; generic large-room programming should not be misleadingly filtered as a specific genre.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official venue-page checks completed; pending local syntax and record-link validation.
+- Follow-ups / TODOs: Continue the venue review in the established-priority order, three venues at a time.
+
+## 2026-09-02 12:40
+
+- What changed: Rechecked Woolwich Works, EartH Hackney and The Clapham Grand; corrected the two listings pages, Woolwich Works’ direct event-programming contact, and the official capacity wording for Woolwich Works and EartH.
+- Why: Each card now separates its venue landing page, actual What’s On page and practical booking route using current official material.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official venue-page checks completed; pending local syntax and three-record validation.
+- Follow-ups / TODOs: Decide whether Woolwich Works should move from Established music venue to Hire / self-produced room, since its own programme is mostly invitation-only.
+
+## 2026-09-02 12:45
+
+- What changed: Completed local validation for the second venue-review batch.
+- Why: The factual link and capacity corrections need a reproducible check before review results are reported.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; direct route smoke check confirmed six updated listings/contact/brochure values; `git diff --check` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Decide Woolwich Works’ venue type before the next batch.
+
+## 2026-09-02 12:55
+
+- What changed: Renamed the top venue type to Established live venue and reassigned Woolwich Works to Hire / self-produced room.
+- Why: The top category now accurately includes broad established live-entertainment spaces, while Woolwich Works reflects its primarily hire-led practical route.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Pending dashboard-script syntax and classification checks.
+- Follow-ups / TODOs: Continue the established-venue review with the next three records.
+
+## 2026-09-02 13:00
+
+- What changed: Completed validation for the venue-type taxonomy update.
+- Why: The reassignment must drive card labels, filtering and ordering consistently.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Direct dashboard smoke check confirmed the renamed label, the Woolwich Works hire override and its removal from the established set; `git diff --check` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Continue the established-venue review with the next three records.
+
+## 2026-09-02 13:15
+
+- What changed: Rechecked Village Underground, Dingwalls and 229; updated the 229 and Dingwalls event links, made their practical email contacts direct, and updated Village Underground's current published capacity.
+- Why: The records now link separately to the venue home, genuine event calendar and appropriate hire/programming contact.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official venue-page checks completed; pending local syntax and route validation.
+- Follow-ups / TODOs: Continue the established-venue review in the existing priority order.
+
+## 2026-09-02 13:20
+
+- What changed: Completed validation for the third established-venue review batch.
+- Why: Updated listings, contact and capacity fields must be confirmed before reporting the records as reviewed.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; direct route/capacity smoke check confirmed six updated values; `git diff --check` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Continue the established-venue review in the existing priority order.
+
+## 2026-09-02 13:45
+
+- What changed: Rechecked Bush Hall, The Garage, Hootananny, The Lower Third and 100 Club; corrected event pages, improved booking contacts, added verified capacity where published, and removed misleading genre-filter triggers for broad programmes.
+- Why: The listings, contact and filter fields now reflect the current official venue material rather than generic home pages or indirect links.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official venue-page checks completed; pending local syntax and route validation.
+- Follow-ups / TODOs: Continue the established-venue review after this five-venue batch.
+
+## 2026-09-02 13:50
+
+- What changed: Completed validation for the five-venue established review batch.
+- Why: Each corrected listing, contact and capacity field must be verified before the review output is used.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; direct smoke check confirmed eight updated values; `git diff --check` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Continue the established-venue review after this five-venue batch.
+
+## 2026-09-02 14:00
+
+- What changed: Reclassified Bush Hall's genre field as broad mixed programming.
+- Why: Its current line-up spans materially different styles, so the former rock-driven automatic filter was misleading.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Pending local syntax and Bush Hall filter check.
+- Follow-ups / TODOs: Continue the venue review.
+
+## 2026-09-02 14:05
+
+- What changed: Completed validation for Bush Hall's revised genre classification.
+- Why: The card should remain unclassified in the genre filter when its current programme is broad.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; direct Bush Hall filter smoke check passed; `git diff --check` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Continue the venue review.
+
+## 2026-09-02 14:15
+
+- What changed: Moved Hootananny and The Lower Third from Established live venue to Grassroots music venue; added The Lower Third's current official 250-person capacity.
+- Why: Both venues' current positioning is emerging-artist/scene-led rather than a developed-headline room; Outernet explicitly describes The Lower Third as grassroots.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official source checks completed; pending data and dashboard classification validation.
+- Follow-ups / TODOs: Continue reviewing the remaining venue records.
+
+## 2026-09-02 14:20
+
+- What changed: Completed validation for the Hootananny and Lower Third grassroots reclassification.
+- Why: Reclassification must update both filtering and the default venue-order logic.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; direct classification smoke check confirmed both are in the grassroots set, absent from the established set, and that The Lower Third capacity is recorded; `git diff --check` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Continue reviewing the remaining venue records.
+
+## 2026-09-02 14:40
+
+- What changed: Completed the remaining established-venue review; moved O2 Academy2 Islington, The Grace and the former Camden Assembly to Grassroots music venue, and updated Camden Assembly's stale identity/links to the current Barfly Camden.
+- Why: These are smaller emerging-artist rooms in practical booking terms. The former Camden Assembly domain now redirects to Barfly Camden, whose current programme and venue-hire details supersede the obsolete record.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official venue-page checks completed; pending data and dashboard classification validation.
+- Follow-ups / TODOs: Begin reviewing Grassroots music venue records in their displayed order.
+
+## 2026-09-02 14:45
+
+- What changed: Completed validation for the final established-venue review changes.
+- Why: Identity, route and taxonomy changes must be confirmed before the old established group is treated as fully reviewed.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; direct dashboard/data smoke check confirmed all three moves to Grassroots, their removal from Established, the Barfly identity update and Academy2 listings route; `git diff --check` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Begin reviewing Grassroots music venue records in their displayed order.
+
+## 2026-09-02 14:55
+
+- What changed: Refined the default order of the 11 Established live venues using current touring stature, room scale and regular bill profile.
+- Why: Default venue ordering should represent practical booking prominence, not raw capacity or historic reputation alone.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Pending dashboard ordering validation.
+- Follow-ups / TODOs: Begin reviewing Grassroots music venue records in their displayed order.
+
+## 2026-09-02 15:00
+
+- What changed: Completed validation for the refined Established live venue ordering.
+- Why: The visible default order must match the reviewed practical booking-stature ranking.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Direct ordering smoke check passed; `git diff --check` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Begin reviewing Grassroots music venue records in their displayed order.
+
+## 2026-09-02 15:15
+
+- What changed: Rechecked the first four Grassroots music venue records — Barfly Camden, Fox and Firkin, Grow, Hackney, and Hootananny — and corrected their event/contact routes where the official pages provided a more direct one.
+- Why: Venue titles, listings and booking links must lead to their distinct practical destinations; direct artist-submission routes are more useful than generic contacts.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official source review complete; pending local data validation.
+- Follow-ups / TODOs: Continue the Grassroots music venue review in displayed order.
+
+## 2026-09-02 15:20
+
+- What changed: Completed validation for the first four Grassroots music venue records.
+- Why: The reviewed area, listings and artist-contact routes need to resolve in the local dashboard data before the batch is treated as complete.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; four-record route/area smoke check passed; `git diff --check` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Continue the Grassroots music venue review in displayed order.
+
+## 2026-09-02 15:35
+
+- What changed: Rechecked MOTH Club, New Cross Inn, Next Door Records Two, O2 Academy2 Islington and Sebright Arms; updated direct listings/contact routes, New Cross Inn's current programme description, and Next Door Records Two's intentionally broad genre treatment.
+- Why: These records now distinguish proper current gig calendars and submission routes from generic pages, while genre filtering does not overstate a broadly programmed venue's specialism.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official-source review complete; pending local data validation.
+- Follow-ups / TODOs: Continue the Grassroots music venue review in displayed order.
+
+## 2026-09-02 15:40
+
+- What changed: Completed validation for the five-record Grassroots music venue review batch.
+- Why: Direct listings, contacts, updated dates and intentional broad-genre treatment must resolve in the local data before the batch is treated as complete.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; five-record review smoke check passed; `git diff --check` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Continue the Grassroots music venue review in displayed order.
+
+## 2026-09-02 15:50
+
+- What changed: Reclassified New Cross Inn from Grassroots music venue to Promoter-dependent / crowd-required bill and clarified its route as normally promoter-led multi-band programming.
+- Why: The user’s direct experience and the venue's promoter-centred structure do not support treating it as an in-house-crowd route; deal and audience expectations need checking on each bill.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Pending taxonomy and data validation.
+- Follow-ups / TODOs: Continue the Grassroots music venue review in displayed order.
+
+## 2026-09-02 15:55
+
+- What changed: Completed validation for the New Cross Inn practical-route reclassification.
+- Why: The card filter, classification and route description must move together when practical booking risk changes.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; promoter-mapping and route smoke check passed; `git diff --check` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Continue the Grassroots music venue review in displayed order.
+
+## 2026-09-02 16:10
+
+- What changed: Rechecked Shacklewell Arms, The Beehive, The Birds Nest, The Fighting Cocks and The Finsbury. Moved The Fighting Cocks to Specialist genre venue; reclassified The Beehive as a lower-confidence pub-stage lead; marked The Birds Nest's current public route as unverified; and refreshed Shacklewell/Finsbury evidence details.
+- Why: The filters must describe real booking conditions and musical focus, without presenting stale or third-party-only venue information as confirmed fact.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official and current-public-source review complete; pending taxonomy/data validation.
+- Follow-ups / TODOs: Continue reviewing remaining Grassroots music venue records in displayed order.
+
+## 2026-09-02 16:15
+
+- What changed: Completed validation for the five-venue Grassroots review batch and related venue-type reclassifications.
+- Why: The dashboard's filters and card evidence must stay consistent with the reviewed practical route and confidence level.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; five-venue taxonomy/data smoke check passed; `git diff --check` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Continue reviewing remaining Grassroots music venue records in displayed order.
+
+## 2026-09-02 16:25
+
+- What changed: Updated The Beehive's venue landing link to the user-supplied Facebook page while retaining its lower-confidence Pub / casual live-music stage classification.
+- Why: The named public social page is a more useful venue landing route than the previous Instagram placeholder; its practical gig model remains unverified.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Pending local data validation.
+- Follow-ups / TODOs: Decide whether to add a separate audience-source / deal-risk attribute alongside the venue-type taxonomy.
+
+## 2026-09-02 16:30
+
+- What changed: Completed validation for The Beehive Facebook landing-link update.
+- Why: The card title must resolve to the intended public venue route.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; direct Beehive-link smoke check passed; `git diff --check` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Decide whether to add a separate audience-source / deal-risk attribute alongside the venue-type taxonomy.
+
+## 2026-09-02 16:40
+
+- What changed: Renamed the two practical small-band venue types to Venue-led grassroots venue / built-in crowd and Promoter-led bill / audience-dependent, and moved The Finsbury into the latter.
+- Why: Audience source and financial exposure are part of the practical gig route, so they must be venue types rather than optional secondary tags. The Finsbury's current promoter-branded multi-band listings do not support treating it as a Windmill-style in-house-crowd route.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Pending taxonomy and record validation.
+- Follow-ups / TODOs: Reassess each remaining former Grassroots venue against this two-type split during review.
+
+## 2026-09-02 16:45
+
+- What changed: Completed validation for the venue-led versus promoter-led venue-type split and The Finsbury reassignment.
+- Why: The renamed filters and their underlying ID sets must remain consistent with the card wording and default sort.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; venue-type and Finsbury mapping smoke check passed; `git diff --check` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Reassess each remaining former Grassroots venue against this two-type split during review.
+
+## 2026-09-02 16:55
+
+- What changed: Reordered and renamed the venue taxonomy so its first six types are Established, Venue-led, Venue-led genre-specific, Promoter-led bill, Acoustic/listening room and Pub/casual live-music stage; clarified the dedicated-room/PA distinction for pubs.
+- Why: The filter order should reflect the practical priority of gig routes, while the pub label must not blur ordinary music pubs with proper venue rooms.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Pending dashboard taxonomy validation.
+- Follow-ups / TODOs: Reassess each remaining former Grassroots venue against the venue-led versus promoter-led split during review.
+
+## 2026-09-02 17:00
+
+- What changed: Completed validation for the reordered and clarified venue taxonomy.
+- Why: The venue type dropdown and its explanatory legend must agree on the requested ordering and the pub-infrastructure distinction.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Corrected venue-taxonomy ordering smoke check passed; `git diff --check` passed (standard line-ending warning only). The initial check had only a PowerShell comparison-precedence error and was immediately corrected.
+- Follow-ups / TODOs: Reassess each remaining former Grassroots venue against the venue-led versus promoter-led split during review.
+
+## 2026-09-02 17:10
+
+- What changed: Added Scala as a checked King’s Cross Hire / self-produced room, with official listings, artist-advice route and current capacity figures. Confirmed The George Tavern was already present as a Venue-led East London record.
+- Why: Scala is a major live-music venue but explicitly hire-only for artists, so its practical route differs from a standard artist-booking venue.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official-source review complete; pending local data validation.
+- Follow-ups / TODOs: Continue reviewing remaining venues against the venue-led versus promoter-led split.
+
+## 2026-09-02 17:15
+
+- What changed: Completed validation for Scala and reconfirmed The George Tavern's existing record.
+- Why: The new venue must load correctly and trigger the intended Hire / self-produced room classification.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; Scala/George Tavern data smoke check passed; `git diff --check` passed (standard line-ending warning only). The first comparison only failed because PowerShell altered a curly apostrophe in the test input; the ASCII-safe check passed.
+- Follow-ups / TODOs: Continue reviewing remaining venues against the venue-led versus promoter-led split.
+
+## 2026-09-02 17:25
+
+- What changed: Reclassified Scala from Hire / self-produced room to Promoter-led bill / audience-dependent and clarified that full venue hire is a separate route.
+- Why: Scala's own artist guidance states it does not book artists directly; its busy calendar is promoter-presented rather than in-house artist programming.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Pending taxonomy/data validation.
+- Follow-ups / TODOs: Continue reviewing remaining venues against the venue-led versus promoter-led split.
+
+## 2026-09-02 17:30
+
+- What changed: Completed validation for Scala's promoter-led classification.
+- Why: The card's practical route must match Scala's no-direct-artist-booking policy and remain distinct from full self-produced hire.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; Scala promoter-led mapping smoke check passed; `git diff --check` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Continue reviewing remaining venues against the venue-led versus promoter-led split.
 
 ## 2026-09-01 16:06
 
@@ -2267,3 +3700,5439 @@
 - Commands/tests run + results: `node --check data/scene-data.js` passed; direct data validation confirmed all four Toulouse cards have the individual official links and the musician/audience price wording; static mapping validation confirmed Kennington is included in the South London rule. `git diff --check` passed (standard line-ending warnings only).
 - Follow-ups / TODOs: Recheck Toulouse Lautrec prices if the venue changes its Jam policy.
 - Follow-ups / TODOs: Revisit the Latin Jam’s practical level separately if needed.
+
+## 2026-09-02 17:40
+
+- What changed: Moved Scala to Established, removed the Festival venue type and Crystal Palace Bowl record, placed DIY last, and restored Electric Ballroom to broad genre treatment.
+- Why: Scala's size and current bill scale meet the established definition; festival-only spaces sit outside the directory's recurring gig-route focus; and Electric Ballroom does not need a restrictive genre filter.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Pending taxonomy and data validation.
+- Follow-ups / TODOs: Continue reviewing remaining venue records in small batches.
+
+## 2026-09-02 18:05
+
+- What changed: Made each venue card's displayed area a Google Maps search link for that particular venue.
+- Why: A reviewer can now open the precise venue location without adding a redundant link field to every card.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Pending static rendering validation.
+- Follow-ups / TODOs: Assess Amersham Arms' venue-led versus promoter-dependent route from its official programme and booking information.
+
+## 2026-09-02 18:10
+
+- What changed: Completed static validation of venue Google Maps links.
+- Why: The new card link needs to remain safe and syntactically valid in the static dashboard.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Extracted inline dashboard JavaScript passed `node --check`; static smoke check confirmed the venue-specific Google Maps query template; `git diff --check` passed for the edited files (normal CRLF warning only).
+- Follow-ups / TODOs: Review the next alphabetical venue batch after resolving Amersham Arms' practical booking route.
+
+## 2026-09-02 18:20
+
+- What changed: Reclassified Amersham Arms as Venue-led / built-in crowd and updated its official events link and booking-route wording.
+- Why: Its official site confirms a dedicated stage/sound system and regular ticketed live events; public sources do not confirm artist deal terms, so the card flags that uncertainty rather than implying a promoter cut.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; classification/listings/booking-caveat smoke check passed; `git diff --check` passed for edited directory files (normal CRLF warning only).
+- Follow-ups / TODOs: Continue alphabetical venue review from Avalon Cafe onward.
+
+## 2026-09-02 18:45
+
+- What changed: Moved Bernie Grant Arts Centre to Hire / self-produced room, corrected AMP Studios' listings destination, and replaced Avalon Cafe's stale site/listings links with the supplied Radio Avalon and Avalon Cafe Instagram links.
+- Why: The official Bernie Grant hire material frames its theatre as a self-produced hire route; AMP's homepage is its actual current-events destination; and Avalon’s links needed updating.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Pending taxonomy/data validation.
+- Follow-ups / TODOs: Continue alphabetical venue review after this verified batch.
+
+## 2026-09-02 19:10
+
+- What changed: Reclassified Brixton Jamm as Established, reframed Bricks as a specialist electronic/club venue with occasional live-band capability, and updated both listings routes.
+- Why: Current official programming shows Brixton Jamm operating at established touring-event scale, while Bricks is primarily a DJ/club venue rather than a general live-band room.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; four-condition taxonomy/data smoke check passed; `git diff --check` passed for edited directory files (normal CRLF warning only).
+- Follow-ups / TODOs: Decide whether to create an inactive/redevelopment venue state before retaining Corsica Studios, which closed in March 2026.
+
+## 2026-09-02 19:30
+
+- What changed: Moved Colour Factory to Established, CLF Art Lounge Pop Up to Venue-led, Club Cheek to Hire / self-produced room, and corrected Chats Palace and Dalston Den evidence/links.
+- Why: The review distinguishes proper venue-led and established rooms from self-produced hire routes; Dalston Den has no confirmed current live-band programme and is now visibly marked to verify.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; six-condition taxonomy/link smoke check passed; `git diff --check` passed for edited files (normal CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review.
+
+## 2026-09-02 21:04
+
+- What changed: Added six independently identifiable external promoter/series leads and six source-backed label leads found while reviewing the first twenty alphabetic venue records; enabled rendering for the Labels tab; documented this promoter/booker/label scan as a required step for every future venue review.
+- Why: Venue-programme research should continuously produce reusable contacts and scene relationships, while excluding venue staff, venue-owned series, ticketing platforms and artists.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/docs/RESEARCH_PLAYBOOK.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official programme and organisation-source research completed; `node --check research/scene-and-venues/data/scene-data.js` passed; promoter/label workflow smoke check passed; `git diff --check` passed for the changed directory files.
+- Follow-ups / TODOs: Continue the alphabetical venue review from Dingwalls, applying the independent-organiser scan to each new reviewed batch.
+
+## 2026-09-02 21:11
+
+- What changed: Reviewed Deptford Piehouse, Dingwalls, Downstairs at 180, Dream Bags Jaguar Shoes and Dublin Castle; strengthened Piehouse's hire, capacity, listings and technical-route data; reclassified Dream Bags Jaguar Shoes and Dublin Castle as Venue-led and Downstairs at 180 as Venue-led genre-specific; added Ranga Records, Baba Yaga's Hut and Bugbear Bookings to the promoter directory.
+- Why: Current official sources establish these practical routes more precisely, and named independent programme organisations need to remain reusable research leads rather than being trapped in a venue card.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official venue and organiser pages reviewed; `node --check research/scene-and-venues/data/scene-data.js` passed; venue-review data smoke check passed; venue-type mapping smoke check passed; `git diff --check` passed.
+- Follow-ups / TODOs: Continue the alphabetical review from EartH Hackney.
+
+## 2026-09-02 21:25
+
+- What changed: Reclassified Dublin Castle as Promoter-led; reviewed EartH, Eastcheap Records, Eel Pie Club, Effra Social and Electric Ballroom; updated Eastcheap capacity/route and Effra listings/route; added Eel Pie Club and The Pad Presents to the promoter directory.
+- Why: The venue cards now distinguish established and specialist rooms from hospitality and pub-stage routes, while programme research captures independent external organisers.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official venue and organiser pages reviewed; Dublin Castle type-mapping smoke check passed; `node --check research/scene-and-venues/data/scene-data.js` passed; five-venue review data smoke check passed; `git diff --check` passed.
+- Follow-ups / TODOs: Continue the alphabetical venue review from Electric Brixton.
+
+## 2026-09-02 21:40
+
+- What changed: Corrected Eastcheap Records to Tower Hill / City fringe with its supplied musician-performance email, then reviewed Electric Brixton, Exale Taproom, Fabwick, Folklore Hoxton and Fox and Firkin. Reclassified Fabwick as hospitality-led, replaced its stale third-party jam contact with the official venue email and events link, marked Folklore Hoxton to verify because its current official listings do not establish an active gig programme, and added Evidence Music and Ritmo del Barrio as source-backed label leads.
+- Why: The map area and contact route must be useful in practice, while venue type needs to distinguish an atmosphere-led food/bar programme from a normal original-band bill. Venue research continues to capture only independently identifiable organisations.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official venue and organisation pages reviewed; `node --check research/scene-and-venues/data/scene-data.js` passed; venue-review smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after Fox and Firkin.
+
+## 2026-09-02 21:50
+
+- What changed: Kept Exale Taproom as a DJ/community-led casual bar rather than treating it as an actionable regular live-band route; retained Fabwick as hospitality-led; and moved Folklore Hoxton from Acoustic / listening room to Venue-led with a direct-route and uncertain-crowd caveat.
+- Why: Folklore has the practical infrastructure and non-predatory direct route of a venue-led gig, but current evidence does not justify claiming a reliable in-house crowd. Exale and Fabwick should not be mistaken for standard original-band venues.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Pending local venue-model and data validation.
+- Follow-ups / TODOs: Include a Google Maps link alongside venue, listings and contact links in every future review recap.
+
+## 2026-09-02 22:05
+
+- What changed: Reviewed Gerry’s Club, Gigi’s Underbelly, Green Note, Greenwich Theatre and Grow, Hackney. Refreshed current contacts and booking routes, clarified Greenwich Theatre as a self-produced hire route, and strengthened Grow’s curated venue-led route. Added Rotation Policy to promoters and Mr Bongo to labels from Grow’s current programme.
+- Why: The directory needs to distinguish direct artist booking, venue-led curation and self-produced hire; independent organisations named on current bills should be reusable network leads.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official venue and organisation pages reviewed; `node --check research/scene-and-venues/data/scene-data.js` passed; five-venue and organiser-lead smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after Grow, Hackney.
+
+## 2026-09-02 22:15
+
+- What changed: Reclassified Gerry’s Club as a venue-led genre-specific members-club route with an unknown practical booker, and renamed Gigi’s Underbelly to Hoxton Underbelly while moving it to Promoter-led bill / audience-dependent.
+- Why: User experience establishes Gerry’s existing local-musician audience and Hoxton Underbelly’s promoter-led practical route; neither should be represented by the earlier fallback classifications.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; Gerry’s/Hoxton Underbelly venue-model smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after Grow, Hackney.
+
+## 2026-09-02 22:30
+
+- What changed: Reviewed Half Moon Putney, HOME Deptford, Hootananny, Hope & Anchor and House of MOBO. Moved Half Moon to Venue-led / built-in crowd; moved HOME to DIY / community / cultural; and updated House of MOBO’s area wording, events link and direct artist-proposal route.
+- Why: The type filter should describe the practical route: Half Moon has a direct emerging-artist programme, HOME is a flexible community event space, and House of MOBO publicly accepts artist-performance proposals.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; five-venue venue-model smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after House of MOBO.
+
+## 2026-09-02 22:40
+
+- What changed: Reclassified Hope & Anchor as Promoter-led bill / audience-dependent and revised its gig-route wording.
+- Why: User experience confirms that individual bills are promoter-led, so the directory should foreground deal and audience-risk checks rather than present it as an ordinary casual pub-stage route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; Hope & Anchor promoter-model smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after House of MOBO.
+
+## 2026-09-02 22:55
+
+- What changed: Reviewed House of Ora (TRAM), Hoxton Hall, Hoxton Underbelly, HWK and Jamboree. Converted House of Ora from an unlinked candidate into a checked DIY/community cultural-space record and refreshed HWK’s hire-risk wording.
+- Why: Newly available current public information makes House of Ora actionable, while HWK needs its actual booking constraints visible on the card. Hoxton Hall, Hoxton Underbelly and Jamboree retain their existing reviewed routes.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; House of Ora/HWK smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after Jamboree.
+
+## 2026-09-02 23:05
+
+- What changed: Made Jamboree appear under both Jazz and Folk venue-genre filters, using a small multi-genre-aware filter helper.
+- Why: Its specialist programme genuinely spans both genres; forcing it into only one filter would hide a useful route from the other.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Inline dashboard script syntax check and multi-genre filter smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after Jamboree.
+
+## 2026-09-02 23:20
+
+- What changed: Reviewed Jumbi Peckham, Karamel N22, Leo’s Red Lion, Loud Lounge Kingston and LVLS. Reclassified Jumbi and LVLS as hospitality-led; moved Karamel to Venue-led genre-specific and Leo’s to Venue-led; refreshed Karamel’s curated-route wording; and added Tomorrow’s Warriors as a source-backed jazz development and creative-production lead.
+- Why: The type filter now distinguishes DJ/restaurant-led destinations from genuinely curated specialist rooms and dedicated live-music venues.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; five-venue venue-model and lead smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after LVLS.
+
+## 2026-09-02 23:25
+
+- What changed: Added multi-genre filter assignments for Karamel N22 (Jazz and Global) and Leo’s Red Lion (Rock and Blues).
+- Why: Both venues have focused, meaningful programming across two relevant genres and should not disappear from either filter.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Inline dashboard syntax and focused multi-genre filter smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after LVLS.
+
+## 2026-09-02 23:35
+
+- What changed: Corrected Jumbi Peckham to a DJ/selector-led Hi-Fi bar with no recurring live-band programme; clarified Loud Lounge as a private-hire/events space with no confirmed recurring live bill; and moved LVLS from Hospitality-led to Venue-led after verifying its active dedicated music-room calendar.
+- Why: A venue should not appear as an original-band target solely because its marketing says it can host live performances; LVLS has stronger evidence of an ongoing in-house music programme.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; Jumbi/Loud Lounge/LVLS classification smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after LVLS.
+
+## 2026-09-02 23:50
+
+- What changed: Reclassified MAP Studio Cafe as Venue-led genre-specific and Night Tales Loft as Venue-led.
+- Why: The user considers MAP's specialist live programme and Night Tales Loft's active regular music activity stronger practical route signals than the prior fallback classifications.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: MAP Studio Cafe and Night Tales Loft venue-model smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after Night Tales Loft.
+
+## 2026-09-03 00:05
+
+- What changed: Moved Ninety One Living Room to Venue-led and corrected its listings link to the official What’s On page.
+- Why: The venue has a continuing in-house live-music identity and the card should route users to its current official programme.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; Ninety One venue-model and listings smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after Oslo Hackney.
+
+## 2026-09-03 00:20
+
+- What changed: Reclassified Paper Dress Vintage as Venue-led, Peckham Levels as DIY / community / cultural, and retained Peckham Audio as Promoter-led while marking it To verify; refreshed their practical links and route wording.
+- Why: Paper Dress has a substantial recurring live programme, Peckham Levels is a multi-space social-enterprise cultural complex, and Peckham Audio's active name and booker are currently uncertain.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; Paper Dress, Peckham Levels and Peckham Audio smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after the PizzaExpress Live rooms.
+
+## 2026-09-03 00:35
+
+- What changed: Moved Ronnie Scott’s main room to Established music venue and added Upstairs at Ronnie’s as a separate Venue-led genre-specific record.
+- Why: The main club and its upstairs late-night room have meaningfully different practical scale and programme routes, so one venue type could not describe both clearly.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; Ronnie Scott main-room and Upstairs venue-model smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after the PizzaExpress Live rooms.
+
+## 2026-09-03 00:50
+
+- What changed: Reclassified Ram Jam Records as Venue-led genre-specific; added its official artist-submission and calendar routes; corrected PizzaExpress Live Soho’s listings link; and made Rough Trade Denmark Street a broad/no-genre record with an active event-calendar link.
+- Why: Ram Jam runs a substantial in-house live programme and recurring audience, although prospective acts should still confirm its ticket-selling expectation. The other two cards now use the practical current links and filters.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; Ram Jam, PizzaExpress Soho and Rough Trade smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after the PizzaExpress Live rooms.
+
+## 2026-09-03 01:05
+
+- What changed: Added a Google Maps link to every jam-session card, reusing the associated venue's exact-address mapping where present.
+- Why: Jam cards now offer the same practical navigation shortcut as venue cards without duplicating address data.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Jam-map syntax and linkage smoke check passed for 41 sessions; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after Scala.
+
+## 2026-09-03 01:12
+
+- What changed: Removed Ram Jam Records from the Acoustic set after its reclassification to Venue-led genre-specific.
+- Why: Venue-model lookup checks the Acoustic set first, so leaving the old ID there would have silently overridden the intended new classification.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Direct Ram Jam venue-model resolution check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the alphabetical venue review after Scala.
+
+## 2026-09-03 01:20
+
+- What changed: Moved the jam-card Google Maps action into the Area value, matching the venue-card interaction and removing the separate link row.
+- Why: The maps shortcut should be visually consistent across the directory.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Jam Area-to-Maps rendering smoke check passed; `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Verify Sebright Arms and Shai Space practical music routes.
+
+## 2026-09-02 18:50
+
+- What changed: Completed validation for the Bernie Grant, AMP Studios and Avalon Cafe corrections.
+- Why: Filter mapping and the new official links must remain reliable in the static directory.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; five-condition taxonomy/link smoke check passed; `git diff --check` passed for the edited files (normal CRLF warning only).
+- Follow-ups / TODOs: Continue alphabetical venue review after this verified batch.
+
+## 2026-09-02 18:30
+
+- What changed: Added an exact-address Google Maps override for Electric Brixton.
+- Why: A name-only Google Maps search can surface its former Fridge identity rather than the current venue label.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; exact-address Google Maps override smoke check passed; `git diff --check` passed for the edited directory files.
+- Follow-ups / TODOs: Continue alphabetical venue review from Avalon Cafe onward.
+
+## 2026-09-02 17:45
+
+- What changed: Completed validation for the Scala, Festival, DIY-order and Electric Ballroom updates.
+- Why: The directory needs classification changes to be safe, consistent and filterable.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; six-condition taxonomy/data smoke check passed. `git diff --check` found one pre-existing unrelated trailing blank-line warning in `set_directory_IW.R` (and normal CRLF warnings), with no issue in the edited directory files.
+- Follow-ups / TODOs: Continue reviewing remaining venue records in small batches.
+
+## 2026-09-03 01:35
+
+- What changed: Kept Google Maps within each jam card's Area text; moved Sebright Arms to Promoter-led bill / audience-dependent; and marked Shai Space To verify as a listening-led cultural/hire space.
+- Why: The separate Maps row was redundant. Sebright's live-room infrastructure does not establish a venue-built crowd or a venue-led artist route, and Shai describes intimate music events but does not currently substantiate a recurring full-band live programme.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; `git diff --check` passed.
+- Follow-ups / TODOs: Continue the alphabetical venue review after Scala.
+
+## 2026-09-03 01:50
+
+- What changed: Removed Shai Space's visible To verify state while retaining its Acoustic / listening-room placement; moved both Signature Brew rooms and Skehan's to Venue-led; and moved Slim Jim's Liquor Store to Venue-led genre-specific with its live listings link.
+- Why: The reviewed routes better reflect a regular venue crowd at Signature Haggerston, Signature Blackhorse Road and Skehan's, while Skehan's card still makes clear that it is a pub. Slim Jim's has a direct rock-band route and recurring local live bills.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; `git diff --check` passed.
+- Follow-ups / TODOs: Continue the alphabetical venue review after Spanners.
+
+## 2026-09-03 02:05
+
+- What changed: Replaced the weakly sourced Leytonstone St John’s Music Hall record with Sinfonia Smith Square in Westminster, and added Below Stone Nest as a separate promoter-led basement venue alongside the existing main Stone Nest card. Westminster/Victoria now maps to Soho / West End.
+- Why: Sinfonia Smith Square is the current official concert-hall programme supplied by the user. Stone Nest’s chapel and Below Stone Nest’s downstairs bar host distinct event programmes and need separate practical routes.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; Smith Square/Below Stone Nest smoke check passed; `git diff --check` passed.
+- Follow-ups / TODOs: Continue the alphabetical venue review after Spanners.
+
+## 2026-09-03 02:20
+
+- What changed: Reclassified Strongroom Venue and TAM as Venue-led, Sucre / Downstairs at Sucre as Venue-led genre-specific with a Jazz filter, and Streatham Space Project as To verify. Added Soho Live to the promoter directory from its current Sucre residency.
+- Why: Strongroom and TAM publish direct, active venue-led music routes; Sucre has a regular specialist jazz/Latin/soul residency; Streatham’s first-party site and event calendar do not currently substantiate an active route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; `git diff --check` passed.
+- Follow-ups / TODOs: Continue the alphabetical venue review after TAM.
+
+## 2026-09-03 00:38
+
+- What changed: Added The Cranberries to the public website's Influences carousel and the private scene-and-venues Influences view, positioned after The Smiths and before The Jesus and Mary Chain.
+- Why: The band is now an approved Inertia Whim influence; matching placement keeps the two curated lists consistent.
+- Files touched: `influences.js`, `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check influences.js` and `node --check research/scene-and-venues/data/scene-data.js` passed; website and scene-index placement/image smoke checks passed; `git diff --check` passed (standard CRLF notice only).
+- Follow-ups / TODOs: No additional work for this influence entry.
+
+## 2026-09-03 04:10
+
+- What changed: Confirmed The Fiddler’s Elbow and The Finsbury as promoter-led / audience-dependent, moved The Front Room into the Hire / self-produced route, and added the organisers and label-presenters identified from the current Fiddler’s, Fighting Cocks and Finsbury programmes.
+- Why: The practical classification must reflect crowd and ticket responsibility. The new promoter/label leads preserve useful external routes rather than treating venue-owned pages as promoters.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; `git diff --check` passed (only standard CRLF warnings).
+- Follow-ups / TODOs: Continue the alphabetical venue review after The Front Room.
+
+## 2026-09-03 04:25
+
+- What changed: Applied the reviewed Garage-to-Grafton batch: The George Tavern is now promoter-led, The Glove That Fits has current official venue/listings/contact links and remains promoter-led, and FORM Presents, Elata Collective and Jazz at MAP were added to Promoters.
+- Why: The George and Glove classifications now follow the agreed crowd/ticket-responsibility rule. The new external organisers make the actual presenter routes visible rather than conflating them with the venues.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; `git diff --check` passed (only standard CRLF warnings).
+- Follow-ups / TODOs: Continue the alphabetical venue review after The Grafton.
+
+## 2026-09-03 04:40
+
+- What changed: Reclassified The Haggerston as Venue-led genre-specific / jazz and The Hum as Hospitality-led, with current official Hum details refreshed.
+- Why: The Haggerston’s jazz programme is treated as a real niche venue audience. The Hum remains an active hospitality/events venue but should not be presented as a regular original-band circuit or visibly marked unverified.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; `git diff --check` passed (only standard CRLF warnings).
+- Follow-ups / TODOs: Continue the alphabetical venue review after The Ivy House.
+
+## 2026-09-04 01:50
+
+- What changed: Added O2 Academy Brixton, O2 Forum Kentish Town, Eventim Apollo, Troxy and Hackney Church / SAINT as Established venues. HERE at Outernet remains intentionally unlisted because the existing Lower Third card already represents the relevant Outernet route; Aaja and Phoenix Arts Club remain excluded.
+- Why: The final GLA/MVT gap pass confirmed active current concert programmes at all five approved venues. The approach preserves the user’s practical directory scope without duplicating a complex or adding cabaret/DJ-led spaces as normal band routes.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue validating the remaining second-tier GLA/MVT grassroots candidates only where there is a current, practical live-band route.
+
+## 2026-09-03 04:55
+
+- What changed: Added Dalston Jazz Bar as a checked hospitality-led jazz/dining venue. Confirmed that The Star of Kings was already represented in the directory.
+- Why: Dalston Jazz Bar has a current official venue and contact route with live jazz alongside restaurant service, so it is useful as a specialist hospitality lead but not a normal original-band room.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; `git diff --check` passed (only standard CRLF warnings).
+- Follow-ups / TODOs: Continue the alphabetical venue review after The Ivy House.
+
+## 2026-09-04 01:35
+
+- What changed: Added Roundhouse, Hampstead Jazz Club, Boston Music Room and The Betsey Trotwood to the active venue directory. All four are intentionally classified as Established following the user’s route decision. Hackney Church and Aaja Music remain excluded.
+- Why: The GLA/MVT cross-check surfaced these active rooms; the directory now includes their verified venue, listings and practical contact links without treating Aaja’s DJ/event-led evidence or Hackney Church’s mixed hire route as ordinary band venues.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; both relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue validating only genuine live-music omissions from the remaining GLA/MVT source candidates.
+
+## 2026-09-04 02:10
+
+- What changed: Added The Boogaloo, The Magic Garden, The Devonshire Arms / The Dev, Jam in a Jar, Bermondsey Social Club and The Bread & Roses. Added The Magic Garden's Blues Jam and Jam in a Jar's Community Jam as recurring session cards.
+- Why: The new records fill practical live-music and jam-session gaps while retaining the requested distinctions: Bermondsey Social Club is Venue-led despite fewer public events; Devonshire Arms is a casual occasional-performance pub; and Bread & Roses is Venue-led because its music stage is in the public pub area, separate from the upstairs theatre.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Jam in a Jar has other occasional participatory formats; add those only after deciding whether the directory should list every distinct recurring session or just its central regular jam.
+
+## 2026-09-04 02:30
+
+- What changed: Replaced the generic promoter rendering with a dedicated promoter card that shows Role, Focus, Scale, Works with, Best route in and Last checked. Added a reference-card enrichment for Tripples, including its public LINES profile and direct email link; removed the public display of private “do not pursue” notes.
+- Why: Promoter cards should make outreach relationships legible rather than inheriting venue-specific tags such as “promoter-led” or exposing internal research-status labels.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant venue-repo and root `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: After card-layout approval, enrich the original document's promoter list, including Hot Vox, with a current public route and confirmed venue/event relationships.
+
+## 2026-09-04 02:50
+
+- What changed: Added the original document's promoter leads to the directory, including the former avoid-list names and Hot Vox. Added a neutral Deal model field and legend: “Artist-led ticket target” flags the practical need to confirm audience targets, fees and ticket splits without making a moral claim about a promoter.
+- Why: The promoter directory now records the full research universe while distinguishing curated/touring/venue-programming routes from artist-responsible showcase models. Where an old note could not be mapped safely to a current organisation (notably “Real”), that uncertainty is explicit.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Review the new promoter cards visually, then standardise venue/event relationships for the previously existing promoter records in the same structured format.
+
+## 2026-09-04 03:00
+
+- What changed: Added Tripples Is Best’s Instagram as its primary public card link and retained its LINES profile as a separate Event listings link. Added optional promoter profile links to the card renderer.
+- Why: Instagram is the more useful current public identity route, while LINES remains useful for its event activity.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Add equivalent primary social/event links for other promoters when their active public routes are confirmed.
+
+## 2026-09-04 03:10
+
+- What changed: Added the Promoter standing filter with four practical options: Established / touring promoter, Scene promoter / multi-venue, Venue-specific booker, and Artist-led ticket target. The standing is computed from editable promoter ID sets, so later reclassification updates filtering and ordering automatically.
+- Why: The filter gives a concise assessment of practical promoter reach and ticket-risk model, without conflating missing research evidence with a lower-quality promoter tier.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Initial smoke check correctly caught an outdated render assertion; the assertion was updated. `node --check research/scene-and-venues/data/scene-data.js` then passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Review the four filter assignments visually; revise individual promoter standing sets as new venue/event relationships are verified.
+
+## 2026-09-04 03:15
+
+- What changed: Added a promoter-standing legend above the promoter filter, matching the venue-types guide and explaining each of the four practical categories.
+- Why: The dropdown labels alone do not explain the difference between a credible curated scene route, a narrow venue booker and an artist-responsible ticket model.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Review the four filter assignments visually; revise individual promoter standing sets as new venue/event relationships are verified.
+
+## 2026-09-04 03:25
+
+- What changed: Added the first reusable promoter–venue relationship layer. Club the Mammoth now has four verified current links—MOTH Club, The Victoria, The Old Blue Last and The Lexington—stored once and rendered as internal links on both promoter and venue cards.
+- Why: Venue/promoter connections are many-to-many. A single relationship record prevents duplicated, drifting data while making the research graph navigable in either direction.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Use the same relationship records while reviewing venue listings and promoter pages; add each relationship only when it has a current evidence link.
+
+## 2026-09-04 03:30
+
+- What changed: Made promoter–venue cross-links reset restrictive filters and wait for the target tab's card grid to lay out before scrolling to the linked card.
+- Why: A relationship target could otherwise be hidden by an active filter or scrolled before its tab became measurable, making navigation appear to land at a random list position.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Manually verify Club the Mammoth ↔ MOTH Club navigation in a browser; future relationship links inherit the same behaviour.
+
+## 2026-09-04 03:35
+
+- What changed: Corrected the internal relationship-link target IDs: tab names are plural but individual venue/promoter card IDs are singular.
+
+## 2026-09-04 16:57
+
+- What changed: Continued the venue-first promoter review and added eight evidenced links: Lanzarote Works → MOTH Club; Brick Lane Jazz Festival → Ninety One Living Room and Rich Mix; InPop, AEG Presents and Academy Events → O2 Academy2 Islington; FORM Presents and Flash Delirium → Paper Dress Vintage.
+- Why: These are named external presenters or programming partners in current 2026 venue/operator listings; one-off or under-evidenced candidates remain unlinked.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the exact venue-card order from Shacklewell Arms, retaining only external organisers with a public evidence link.
+
+## 2026-09-04 03:35 (completion)
+- Why: Links such as `promoters-club-mammoth` did not match the rendered `promoter-club-mammoth` card, so tabs changed but no target card could be found for scrolling.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Manually verify Club the Mammoth ↔ MOTH Club navigation in a browser; all future relationship links now use the corrected card-ID convention.
+
+## 2026-09-04 17:13
+
+- What changed: Continued the venue-first promoter audit through Walthamstow Trades Hall. Added 20 evidenced promoter–venue links, plus ten new public-route promoter cards: FDE Events, The Jazz Cafe, iluvlive, World Music Method, Club Soda, I Sure Hope It Does, London Music Showcase, Hideous Mink Records, Eastern Margins and Grapes of Wrath.
+- Why: Each retained relationship is tied to a current or dated-2026 named external presenter. Venue-owned Two Palms/Jaguar Shoes programming, DJ-only MOT activity, and the Waiting Room names without a workable independent route remain unlinked.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; both relevant `git diff --check` commands passed (standard CRLF warning only).
+- Follow-ups / TODOs: Review the final remaining venue in the displayed order: West Hampstead Arts Club.
+
+## 2026-09-04 17:31
+
+- What changed: Continued the full displayed-order venue-to-promoter audit through Scala. Added 17 evidenced organiser relationships across O2 Academy Brixton, O2 Forum Kentish Town, O2 Shepherd’s Bush Empire, Ronnie Scott’s, Roundhouse and Scala, plus public-route cards for Communion One, JOY. Concerts and Labyrinth Events.
+- Why: These are named external promoters or programme curators with current venue/event evidence and usable public routes. DJ-only / no-route candidates remain excluded.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant venue-repo and root `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue in exact card order from The Betsey Trotwood, then The Clapham Grand, The Dome, The Garage, The Jazz Cafe, The Underworld and Troxy.
+
+## 2026-09-04 17:38
+
+- What changed: Continued the full displayed-order venue-to-promoter audit through Troxy. Added 20 evidenced relationships, including established existing promoters at The Dome, The Garage and The Underworld; added six public-route cards: Battersea Jazz Festival, Born Again Concerts, Sentinel Music, 432 Presents, Test Pressing and Pitchfork Music Festival London.
+- Why: Retains current recurring or clearly external music-presenter relationships while leaving ambiguous one-off credits, DJ-only programming and an unrelated Black Cat Music result out of the directory.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue in exact card order from Union Chapel, then Village Underground, 93 Feet East, Amersham Arms, Barfly Camden, Bermondsey Social Club and CLF Art Lounge Pop Up.
+
+## 2026-09-04 17:43
+
+- What changed: Continued the full displayed-order promoter audit through CLF Art Lounge Pop Up. Added 19 current relationships across Union Chapel, Village Underground, 93 Feet East, Amersham Arms, Barfly Camden and Bermondsey Social Club; added five public-route cards: AGMP Concerts, Eat Your Own Ears, Serious, FHP Presents and Parallel Lines.
+- Why: Named external promoters with current programme evidence are now connected to venues in both directions. The EFG London Jazz Festival relationship is represented through its actual producer, Serious. CLF remains unlinked because current results show venue-led rather than independently booked music programming.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue in exact card order from Dream Bags Jaguar Shoes, Folklore Hoxton, Fox and Firkin, Grow Hackney, Half Moon Putney, Hootananny and Jam in a Jar.
+
+## 2026-09-04 18:05
+
+- What changed: Added N’Calma Collective, Petra’s Dream and Ritmo del Barrio as Grow, Hackney presenter cards, each with a 2026 live-bill relationship and a public route.
+- Why: The Grow listings explicitly credit each organisation as presenting a live band or percussion-trio performance; their public event, Instagram or Linktree route makes the relationship actionable without treating Grow’s in-house programming as an external promoter.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue in exact card order after Jam in a Jar.
+
+## 2026-09-04 18:20
+
+- What changed: Added nine current promoter–venue relationships across The Lower Third and MOTH Club. Added Action! Presents and Bad Vibrations as promoter cards with public routes.
+- Why: The current programme credits AEG, Kilimanjaro, DHP and Communion at The Lower Third, and DHP, Kilimanjaro, FORM, Action! and Bad Vibrations at MOTH. Venue-owned and DJ-only activity remains excluded.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue in displayed card order after Night Tales Loft.
+
+## 2026-09-04 18:35
+
+- What changed: Added Decolonise Fest → Signature Brew Blackhorse Road and Entrenched Promotions → Signature Brew Haggerston, with both organisations represented as public-route promoter cards.
+- Why: Both relationships are explicitly credited in current 2026 venue programmes. Decolonise Fest provides a direct email route; Entrenched's Eventbrite organiser page is its workable current public route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue in displayed card order from Skehan’s.
+
+## 2026-09-04 18:55
+
+- What changed: Added Strongroom's current external promoter links to Bark, Baba Yaga’s Hut, London Music Showcase and REAL; resolved the former ambiguous “Real” note to REAL's verified public route. Added Fifty3 and its recurring Live at The Bedford curator relationship.
+- Why: Strongroom's official community page credits the four independent promoters, while current Bedford listings explicitly credit Fifty3 as the Live at The Bedford curator. No unverified external bookers were added for Skehan’s, TAM, The Birds Nest, The Blue Basement or The Bread & Roses.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue in displayed card order from The Camden Club.
+
+## 2026-09-04 19:10
+
+- What changed: Added Peachy and London Prog Gigs as Camden Club relationships, and Discover Live / Jodie Bryant as a current The Grace relationship. Added public-route cards for London Prog Gigs and Discover Live.
+- Why: The Camden Club's 2026 programme documents the specialist London Prog Gigs series; Peachy's existing venue-specific event route is now represented in the shared relationship data. The Grace explicitly credits Jodie Bryant's Discover Live series.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue in displayed card order from The Magic Garden.
+
+## 2026-09-04 19:25
+
+- What changed: Added CROSSTALK and Grooves For Good / Rosie Fricker as Old Dispensary promoter cards and linked each to its named 2026 Resident Advisor event.
+- Why: Both listings identify a concrete independent organiser and retain a public event route, making them more useful than the venue's otherwise unpublished booking path.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue in displayed card order from The Windmill.
+
+## 2026-09-04 19:40
+
+- What changed: Added Cosmic Carnage, Some Weird Sin and Gob Nation as current Windmill promoter cards and linked each to its explicitly credited 2026 Windmill bill.
+- Why: The current programme supplies clear independent-promoter evidence. Cosmic Carnage has a public email and website; Some Weird Sin has a public LINES route; Gob Nation's current official event page remains the available public route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue in displayed card order from Bricks.
+
+## 2026-09-04 20:00
+
+- What changed: Added Tomorrow's Warriors, KAIYO and Insaan Arts / Jumeraat Jaam as current Karamel N22 relationships; added public-route promoter cards for KAIYO and Insaan Arts.
+- Why: Karamel's current specialist programme explicitly credits the three external producers, so these practical routes are now linked without treating Collage Arts' venue programming as an outside promoter.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue in displayed card order from Sinfonia Smith Square.
+
+## 2026-09-04 20:15
+
+- What changed: Added City Sound Session at Slim Jim's; five external promoter links at St Pancras Old Church; five specialist links at Stone Nest; Soho Live at Sucre; and Primitive Rising plus Incineration Festival at The Black Heart. Added public-route cards for City Sound Session, nonclassical, Primitive Rising and Incineration Festival.
+- Why: Each retained relationship is explicitly credited by a current venue or promoter page. Sinfonia Smith Square and The Blues Kitchen remain unlinked because their current music programme is venue-owned.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue in displayed card order after The Blues Kitchen.
+
+## 2026-09-04 20:30
+
+- What changed: Added Brighter Days Family as a Carpet Shop promoter and Undercover Presents as a Fighting Cocks promoter, each with a public-route card.
+- Why: Each organisation is explicitly named on a current venue bill. Blues Kitchen Shoreditch, Bull's Head Barnes, Cavern Freehouse, The Haggerston and The Sound Lounge remain unlinked because their public material indicates venue-led music or no verified outside booker.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue in displayed card order from Toulouse Lautrec Jazz Club.
+
+## 2026-09-04 20:45
+
+- What changed: Added Bird On The Wire, CROSSTALK and Farsight Collective as Below Stone Nest relationships, and linked Bugbear Bookings to Dublin Castle. Added a public-route Farsight Collective card.
+- Why: The Below Stone Nest programme explicitly credits the three external presenters, while Bugbear is Dublin Castle's actual live-programme booker. Venue-owned programming, unverified one-off organisers and DJ-only Exale activity remain excluded.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue in displayed card order from Sebright Arms.
+
+## 2026-09-05 09:15
+
+- What changed: Added current promoter relationships for Sebright Arms, The Beehive, The Fiddler's Elbow, The Finsbury, The George Tavern and The Star in Shoreditch. Added So Live Sessions as a public-route promoter card and updated Rough Edges with its current promoter route.
+- Why: Each retained link is backed by a current venue programme or organiser listing. No Nothing Records remains a label-only card, so it is deliberately not placed in the promoter-to-venue relationship list; The Troubadour had no sufficiently repeatable external promoter route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue external-promoter verification from Water Rats, then Vortex Jazz Club.
+
+## 2026-09-05 10:05
+
+- What changed: Added current promoter relationships for Oslo Hackney and Servant Jazz Quarters. Added Dialled In, Stoomfest and Teide Events as public-route specialist promoter cards, and completed Scruff of the Neck's explicit contact-link field.
+- Why: The Oslo programme explicitly credits each retained organiser; Servant Jazz Quarters credits AEG and REAL beyond its existing SJM and Incredible Society links. The remaining checked pub venues had no sufficiently current external booker to add.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue external-promoter verification from The Birkbeck Tavern in displayed pub-venue order.
+
+## 2026-09-05 10:25
+
+- What changed: Added Bathtime Sounds as a public-route promoter card and linked it to The Ivy House.
+- Why: The Ivy House's current programme explicitly credits Bathtime Sounds; the other six pub venues in that pass did not expose a current, repeatable external booker.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue external-promoter verification from The Social, then the hospitality-led venues.
+
+## 2026-09-05 10:45
+
+- What changed: Added Communion One and FORM Presents at The Social, Discover Live / Jodie Bryant at The Ned, and Stone Mountain Collective at The Broadcaster. Added a public-route Stone Mountain Collective promoter card.
+- Why: Each relationship is explicitly credited in a current venue programme. Eastcheap Records, Fabwick, Jumbi Peckham and The Hum remain unlinked because their current music is house-band, hospitality, DJ-led or specialist in-house activity rather than an externally booked original-gig route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue external-promoter verification from the next seven displayed venue cards after the hospitality-led pass.
+
+## 2026-09-05 11:00
+
+- What changed: Added Laid Bare Music as a public-route promoter card and linked it to Upstairs at the Ritzy.
+- Why: Upstairs at the Ritzy's current programme links Laid Bare directly, while the two Piano Works sites, Trisha's, AMP Studios, Bernie Grant Arts Centre and Big Penny Social did not yield a comparable external live-gig booker in this pass.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue external-promoter verification from AMP Studios through HWK in displayed hire/self-produced-space order.
+
+## 2026-09-05 11:15
+
+- What changed: Completed the AMP Studios-through-HWK promoter-review pass without adding relationships.
+- Why: The current evidence was hire-led, house-band, centre-run, DJ-led or too ambiguous to establish a reliable external live-gig booker. Club Cheek remains active for live acts, but its named current partners are principally club-night organisers rather than a verified original-band promoter route.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: No directory code changed in this pass; prior syntax, smoke and whitespace checks remain passing.
+- Follow-ups / TODOs: Continue from Loud Lounge Kingston in displayed hire/self-produced-space order.
+
+## 2026-09-05 11:30
+
+- What changed: Added Factory Setting at The Front Room, and Elata Collective, Sunshine Soul and Fossil Archive at The Glove That Fits. Added public-route promoter cards for Factory Setting, Sunshine Soul and Fossil Archive; completed Elata Collective's promoter-card detail fields.
+- Why: Each relationship has a specific 2026 specialist-music bill. The other five reviewed hire/self-produced spaces did not expose a comparable external live-gig booker.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warning only). The rendered-order calculation reports 202 active venue cards, 178 reviewed through The Glove That Fits, and 24 remaining.
+- Follow-ups / TODOs: Continue from The Greyhound in displayed hire/self-produced-space order.
+
+## 2026-09-05 11:45
+
+- What changed: Added Face The Raven Records at The Greyhound, Underground Sound and FHP Presents at The Moustache Bar, City Sound Session and Scruff of the Neck at The Stag's Head, and Rough Edges plus Audio Scream at The Star of Kings. Added public-route cards for Face The Raven Records and Audio Scream.
+- Why: Each retained relationship is named by a current ticketed live-music bill. The Lower Deck, Red Lion Leytonstone and The Victoria Tottenham remain unlinked because their current material did not identify a reliable outside live-gig booker.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from Avalon Cafe in displayed DIY/community-space order; 17 cards remain after this pass.
+
+## 2026-09-05 12:00
+
+- What changed: Linked Hackney Folk Club, AEG Presents and Communion One to Chats Palace. Enriched the pre-existing Hackney Folk Club seed record with a direct public booking route rather than duplicating it.
+- Why: Chats Palace's current programme explicitly names all three presenters, including Hackney Folk Club as a recurring specialist series with a usable artist/contact route. The other six DIY/community venues in the pass did not identify a comparable external live-gig booker.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from The Muddy Puddle in displayed DIY/community-space order; 10 cards remain after this pass.
+
+## 2026-09-05 12:15
+
+- What changed: Added Bliss Out Live and Half Nine at The Muddy Puddle, Ronnie’s Lates at Peckham Levels, Decolonise Fest at Deptford Piehouse, and Pleasure Promise at Spanners. Added public-route cards for the three new specialist organisers and modelled Ronnie’s Lates separately from the Ronnie Scott’s venue card.
+- Why: Each retained relationship is a current named external music series. SET Social, Staffordshire Street and The Tabernacle remain unlinked because their public programmes are venue/organisation-led or do not name a reliable independent booker.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Initial smoke test correctly caught the venue/promoter ID mismatch for Ronnie Scott’s; it was fixed by adding a distinct Ronnie’s Lates presenter card. Final `node --check`, `node trials/verify-scene-update.js` and both `git diff --check` commands passed (standard CRLF warning only).
+- Follow-ups / TODOs: Audit the final three venue cards; three cards remain after this pass.
+
+## 2026-09-05 12:30
+
+- What changed: Completed the venue-first promoter audit. Added Crosstown Concerts, LWE and Mastery at Hackney Church, and Funky Mambo at Boston Music Room. Added public-route cards for LWE, Mastery and Funky Mambo.
+- Why: The final current listings explicitly name these external organisers. AEG Presents and DHP were already correctly linked to Hackney Church, so they were retained without duplication. Hampstead Jazz Club remains unlinked because its own venue team programmes the club.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; venue-repo and root `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: All 202 active venue cards have now received an external-promoter/booker audit. Future work should be periodic refreshes of listings, contact routes and relationship evidence rather than a first-pass coverage review.
+
+## 2026-09-05 12:45
+
+- What changed: Began a full alphabetical promoter-first audit, rather than limiting review to promoters with no existing venue link. Added 432 Presents at Electric Brixton, AGMP Concerts at the 100 Club and Alan Bearman Music at Union Chapel. Replaced Absent Kelly's historical press URL with its current Citizen Ticket organiser profile.
+- Why: Existing relationship coverage still needs independent current confirmation across all promoter cards; these explicit 2026 listings added practical links without retaining speculation.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue promoter-first audit alphabetically from Audio Scream through Battersea Jazz Festival, then proceed through all active promoter cards in batches of seven.
+
+## 2026-09-05 13:05
+
+- What changed: Completed the second alphabetical promoter-first batch. Added Audio Scream at O2 Academy2 Islington; Bathtime Sounds at The George Tavern and EartH; and Beyond The Grave Promotions at The Black Heart and New Cross Inn.
+- Why: These are explicitly credited current 2026 bills. Existing relationships for Baba Yaga's Hut, Bad Vibrations, Bark and Battersea Jazz Festival remain supported; no low-confidence extra links were added.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue alphabetically with Bird On The Wire through Coda Agency.
+
+## 2026-09-05 13:25
+
+- What changed: Completed the third alphabetical promoter-first batch. Added Bird On The Wire at O2 Academy Brixton, MOTH Club and The Lexington; Bliss Out Live at The Haggerston; and Born Again Concerts at Islington Assembly Hall, The Black Heart, Electric Ballroom and Camden Assembly.
+- Why: Each relationship is backed by an explicit current 2026 organiser or venue listing. Black Lives in Music, Boomerang Club London, Breaking Sound and Brick Lane Jazz Festival retained their existing coverage because no extra public, specific in-directory relationship was verified in this pass.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue alphabetically from Club The Mammoth through Communion One.
+
+## 2026-09-05 13:40
+
+- What changed: Continued the promoter-first audit in the directory's actual rendered locale order, which retains the remaining B cards before C. Added Bridging The Music at The Fiddler's Elbow and Chop Gigs at The Finsbury.
+- Why: Both are explicit current 2026 live-music bills. This corrects the planned queue so no B-card promoter is skipped; Camden Rocks' existing Barfly coverage and Chuckie Online's KOKO coverage were already supported, while club/DJ-only activity was not expanded as a live-gig relationship.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from Club The Mammoth in exact rendered alphabetical order.
+
+## 2026-09-05 14:00
+
+- What changed: Completed the City Sound Session-to-Crosstown Concerts promoter-first batch. Added seven current Communion One venue links: Oslo, St Pancras Old Church, Village Underground, The Garage, MOTH Club, The Lexington and Electric Brixton.
+- Why: Communion's own current 2026 programme explicitly names each room. The other six cards had supported existing links but no additional verified live-gig relationship in this pass.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from Dance Umbrella in exact rendered alphabetical order.
+
+## 2026-09-05 14:20
+
+- What changed: Corrected the stale next-card pointer and continued from the actual next active card after Crosstown Concerts. Added Dad's Mood Is Bad at The Finsbury, The Lower Third and Water Rats, and upgraded its card to its own current promoter/contact route.
+- Why: Dad's Mood Is Bad's active 2026 programme and organiser page explicitly establish these emerging-artist relationships. Decolonise Fest, DHP Live, Dialled In, Discover Live and Eastern Margins retained their already-supported coverage; no speculative links were added.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from Eat Your Own Ears in exact rendered alphabetical order.
+
+## 2026-09-05 14:35
+
+- What changed: Added Eel Pie Club's venue-specific promoter/programmer relationship to the active Eel Pie Club venue card.
+- Why: The organiser's own current club-dates programme supplies direct 2026 evidence for the relationship.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Resume the full promoter-first pass from Eat Your Own Ears, covering all active cards in rendered alphabetical order.
+
+## 2026-09-05 14:50
+
+- What changed: Continued the alphabetical promoter-first pass through FolkAndRoots. Added FHP Presents at Barfly Camden (formerly Camden Assembly) and FIGURE at Stone Nest.
+- Why: Both relationships are directly supported by their current public programme routes. Farsight Collective, FDE Events, Fifty3, Flash Delirium and FolkAndRoots retained their already-supported venue coverage.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from FORM Presents in exact rendered alphabetical order.
+
+## 2026-09-06 09:10
+
+- What changed: Continued the alphabetical promoter-first audit through the FORM Presents-to-Good Karma Club batch. Added FORM Presents at EartH, KOKO and Servant Jazz Quarters.
+- Why: FORM's own active 2026 programme explicitly lists each room. Fossil Archive, Funky Mambo, Gigue Production, Gob Nation and Good Karma Club retained their already-supported venue coverage.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from Gotobeat in exact rendered alphabetical order.
+
+## 2026-09-06 09:30
+
+- What changed: Continued the Gotobeat-to-IndieKhoj alphabetical promoter audit. Added Incineration Festival at Roundhouse, Electric Ballroom and The Underworld.
+- Why: Incineration's own 2026 FAQ confirms its five-venue Camden festival footprint. The other six cards retained their supported existing venue relationships; extra public listings were either outside the directory or not sufficiently specific.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from InPop in exact rendered alphabetical order.
+
+## 2026-09-06 09:45
+
+- What changed: Continued the promoter-first audit through Made in Bed Promotions. Added InPop at Barfly Camden, Jazz at MAP at The Grafton, current JOY. Concerts links, Labyrinth at The Cause and Colour Factory, Lateu Music Group at Water Rats, London Music Showcase at 93 Feet East, and London Prog Gigs at Water Rats, Hope & Anchor and The Bedford.
+- Why: Each added relationship is explicitly named by a current promoter programme or ticket listing; cards without specific, current in-directory evidence were retained without speculative additions.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from Mahogany Opera in exact rendered alphabetical order.
+
+## 2026-09-06 10:05
+
+- What changed: Continued the promoter-first audit through Petra’s Dream. Added Movimientos at The Jago and New Stuff Records at The Water Rats; the remaining promoter cards in the batch retained their already-supported links.
+- Why: The two additions are directly credited on active venue or promoter pages. No unverified venue relationship was inferred for the other cards.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from Pink Mist in exact rendered alphabetical order.
+
+## 2026-09-06 10:20
+
+- What changed: Continued the promoter-first audit through Primitive Rising. Added Pitchfork Music Festival London's current 2026 festival links to Café OTO, EartH, Hackney Church, KOKO, MOTH Club, Oslo Hackney, Roundhouse, The Cause, The Victoria (Dalston), Troxy and Village Underground.
+- Why: Pitchfork's official 2026 festival venue list directly names this multi-venue London footprint. The remaining cards in the batch retained their already-supported links.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from Propaganda in exact rendered alphabetical order.
+
+## 2026-09-06 10:35
+
+- What changed: Continued the promoter-first audit through Ritmo del Barrio. Added Ranga Records at The Fighting Cocks, The George Tavern, The Old Dispensary, Half Moon Putney, Dingwalls and The Finsbury; added Reggae Pon Top at The Jago.
+- Why: Ranga's own active events route and The Jago's current programme explicitly name these relationships. The other cards in this batch already had supported coverage or did not have a further venue-specific current link.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from Ronnie Scott’s Lates in exact rendered alphabetical order.
+
+## 2026-09-06 10:50
+
+- What changed: Continued the promoter-first audit through Sentinel Music. Added Rotation Policy at Grow, and Scruff of the Neck at Dingwalls, Strongroom, The Old Blue Last, The Waiting Room and The Lexington.
+- Why: Each addition is named on a current 2026 organiser listing or venue programme. The remaining cards retained their existing verified relationships.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from Serious in exact rendered alphabetical order.
+
+## 2026-09-06 11:05
+
+- What changed: Continued the promoter-first audit through Some Weird Sin. Added Serious at The Jazz Cafe, EartH, Stone Nest and KOKO; added Some Weird Sin at Paper Dress Vintage and The Lexington.
+- Why: Each relationship is explicitly named by the promoter's active 2026 listings or a current event listing. Other cards in this batch kept their already-supported venue coverage.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from Songlines in exact rendered alphabetical order.
+
+## 2026-09-06 11:20
+
+- What changed: Continued the promoter-first audit through SwingdanceUK. Added South London Scum at New Cross Inn and Sweetnighter at The Jago.
+- Why: Current public event listings explicitly name the organiser and venue. The remaining specialist cards had already-supported venue relationships.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from Teide Events in exact rendered alphabetical order.
+
+## 2026-09-06 11:35
+
+- What changed: Continued the promoter-first audit through The Sound Sniffer. Added The Beirut Groove Collective at The Jago and The Red Light Sessions at The Finsbury.
+- Why: Both are explicitly credited on current 2026 venue listings. The other cards in this batch retained their already-supported practical venue links.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from This Feeling in exact rendered alphabetical order.
+
+## 2026-09-06 11:50
+
+- What changed: Continued the promoter-first audit through Underground Sound. Added This Feeling at The Dome.
+- Why: The promoter's own active 2026 show listing names Downstairs at The Dome. The other cards already had supported venue relationships or no further venue-specific evidence.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue from WB Live in exact rendered alphabetical order.
+
+## 2026-09-06 12:05
+
+- What changed: Completed the alphabetical promoter-first audit across all 163 active promoter cards. Added Wet Dog Music at The Water Rats; WB Live and World Music Method retained their already-supported current relationships.
+- Why: Wet Dog Music's active 2026 ticket listing explicitly confirms the Water Rats showcase route. No further venue-specific relationship was needed for the remaining cards.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Promoter-first venue coverage is complete for the current directory; future work can revalidate older links or review label relationships.
+
+## 2026-09-06 12:25
+
+- What changed: Began a cross-platform missing-promoter discovery pass. Added The Great Escape at The Old Blue Last, Blackstar Promotions at The Water Rats, Mamaghar Entertainment at Troxy, BUMPAH at Deptford Piehouse, AARA Entertainments at 229, Sonar Presents at Hope & Anchor, and four verified Finsbury organisers; added Wet Dog Music at Hope & Anchor.
+- Why: Each new organiser is explicitly identified on a current 2026 London live-music ticket page or venue listing. DJ-only, artist-led and vague records were excluded.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue targeted public venue-listing discovery and assess whether any further ticket-platform organisers have a repeatable London live-music programme; public Instagram search results were not sufficiently indexable to use as evidence.
+
+## 2026-09-06 12:45
+
+- What changed: Added separate Rehearsal spaces and Recording studios dashboard tabs, with verified starter cards for Pirate Studios Hackney and The Premises Studios.
+- Why: Practice-room decisions and recording-project decisions use different operational criteria, so they should not be merged into the venue directory or each other.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/README.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Review the two initial card formats, then discover London rehearsal facilities and recording studios in separate evidence-first passes.
+
+## 2026-09-06 13:00
+
+- What changed: Added the venue-geography Area filter to Rehearsal spaces and refined Pirate Studios Hackney's card to show room/equipment differences plus a variable, source-backed off-peak hourly range.
+- Why: Room capacity and supplied backline materially affect a band rehearsal; a rough rate is useful only when clearly marked as dependent on room, time and booking length.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Review the rehearsal card in the browser, then decide whether to add an equipment or price-band filter before the wider rehearsal-space discovery pass.
+
+## 2026-09-06 13:15
+
+- What changed: Added four verified rehearsal-space cards: The Premises Studios, Gun Factory Studios, BonaFideStudio and Pirate Studios Camden. Corrected the shared geography matcher so plain Hackney records filter to Hackney / Hackney Wick.
+- Why: The starter set now demonstrates self-service, staffed, independent and different-size rehearsal formats with source-backed equipment and rough price information.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Review the five-card rehearsal layout, then decide filters beyond Area before expanding the list geographically.
+
+## 2026-09-06 13:30
+
+- What changed: Moved rehearsal-space and recording-studio data to `data/operations-data.js`, added a source-backed rehearsal Price filter, and normalised rehearsal cards to a four-person, four-hour weekday session basis. Used JavaScript Unicode escapes for pound and dash characters.
+- Why: The split avoids collisions with concurrent promoter work in `scene-data.js`; the shared price basis makes rehearsal options comparable while retaining individual caveats.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/data/operations-data.js`, `research/scene-and-venues/README.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warnings only); a VM output check confirmed normal £ and – rendering.
+- Follow-ups / TODOs: Expand rehearsal spaces by geography and independent provider, then add recording studios with a separate day-rate-plus-engineer comparison basis.
+
+## 2026-09-06 13:40
+
+- What changed: Changed rehearsal pricing from four-hour totals to approximate hourly rates for a room suitable for a four-person band; updated the price-filter bands to under £10/hr, £10–£20/hr and over £20/hr.
+- Why: Hourly figures are easier to compare directly while preserving each provider's room, equipment and time-of-day caveats.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/operations-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the geographical rehearsal-space discovery pass using the hourly-price model.
+
+## 2026-09-06 14:00
+
+- What changed: Added The Engine Rooms, Dalston Rehearsal Studio, Arch Studios, The Blue Studios and IM Studioz to the rehearsal-space directory.
+- Why: This first geographical batch fills Bow, Dalston, Leyton, West London and Peckham/Nunhead with official booking routes, hourly rates and stated room/equipment information.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Review this ten-space rehearsal layout, then cover South London, Greenwich/Woolwich, Outer London and remaining North/East areas.
+
+## 2026-09-06 14:20
+
+- What changed: Added Rooz Studios (Old Street), Pirate Studios Greenwich and Roundhouse Creative Studios to the rehearsal directory.
+- Why: These verified cards add an independent Old Street complex, a self-service Greenwich option and a clearly labelled 13–25-only Camden route. Rates remain approximate hourly equivalents for four-person bands and retain their access constraints.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the source-led geographical pass, prioritising South London, Croydon and further Outer London options; only add spaces where usable current booking and rate information is public.
+
+## 2026-09-06 14:40
+
+- What changed: Added a separate source-led rehearsal candidate queue drawn from Function Central, HireSpace, the Stage Management Association and the GLA music-rehearsal inventory. Queue cards now show the relevant discovery source link.
+- Why: This preserves all promising music-studio leads while distinguishing them from verified public rehearsal cards. General performance spaces are explicitly marked as requiring a music-suitability check.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Work through the high-priority music-studio candidates from official booking pages in small batches, then assess HireSpace and performance-space leads only where they can realistically support an amplified band.
+
+## 2026-09-06 15:00
+
+- What changed: Promoted Creation Music Studios, Mill Hill Music Complex and The Music Complex from the source queue into verified rehearsal cards; removed those three now-verified leads from the queue.
+- Why: Their official current pages provide a usable booking route, four-person-relevant room details, equipment and public hourly pricing. Bush and Storm remain queued because their current official pages do not publish a rate.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue high-priority candidate verification from K-Town Studios, Vatican Studios, Brixton Hill Studios and Super Unison Studios.
+
+## 2026-09-06 15:15
+
+- What changed: Promoted Brixton Hill Studios into the verified rehearsal directory and removed its lead from the candidate queue.
+- Why: Its live official page confirms dedicated rehearsal rooms, current starting price, location, parking and the recording/storage offer. The remaining batch requires price confirmation from a current public official page or booking flow.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue with Rockbottom, That Sound Studio, Apollo Studio and Terminal Studios; retain Super Unison, K-Town and Vatican as candidates until their current rate is publicly verifiable.
+
+## 2026-09-06 15:30
+
+- What changed: Promoted Rockbottom Studio 69 in Croydon into the verified rehearsal directory and removed its source lead from the queue.
+- Why: Its current official page provides seven room descriptions, complete included equipment, booking route, access and rate slots that can be converted transparently to an hourly four-person comparison.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue with That Sound Studio, Apollo Studio and Terminal Studios. Keep Terminal queued unless a current room rate is found.
+
+## 2026-09-06 15:45
+
+- What changed: Promoted Yellow Hat Studios into the verified rehearsal directory and removed its source lead from the queue.
+- Why: Its official current offer documents a medium room for four-to-five-piece bands, all-in membership cost, 24/7 access, equipment and booking conditions. The card retains the monthly model alongside a clearly calculated hourly equivalent rather than implying it can be booked ad hoc.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue with Apollo Studio and That Sound Studio; keep Terminal queued unless a current room rate is found.
+
+## 2026-09-06 16:00
+
+- What changed: Promoted Pulse Rehearsal Studios, Walthamstow, into the verified rehearsal directory. Removed Apollo Studio from the London candidate queue because its official page locates it in Hertford, not London.
+- Why: Pulse publishes a current official room-rate table, dimensions, access route and extras. Apollo is a valid rehearsal facility but outside the intended geographic scope.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue official checks for That Sound Studio, Terminal Studios and Sic Lick; retain candidates with a missing public rate.
+
+## 2026-09-06 16:15
+
+- What changed: Promoted The Vatican Studios and Music Room London into the verified rehearsal directory; removed both source leads from the queue.
+- Why: Both current official pages provide public room formats, access, booking routes and prices. Their cards explicitly note that standard room charges do not include all backline, preserving comparable cost expectations.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue with Super Unison, That Sound Studio, Terminal Studios and Sic Lick. Keep candidates with a missing official rate or no current official booking page.
+
+## 2026-09-06 16:30
+
+- What changed: Promoted Super Unison Studios into the verified rehearsal directory and removed its source lead from the queue.
+- Why: Its own live booking route and Copeland Park's current resident listing confirm five active hourly band rooms, opening hours, location and a group weekend rate. The card labels the weekday group rate as requiring booking-calendar confirmation.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue current checks for That Sound Studio, Terminal Studios, Sic Lick and the remaining music-specific and performance-space leads.
+
+## 2026-09-06 16:45
+
+- What changed: Added Bally Rehearsal Studios, Tottenham Hale, as a verified rehearsal-space card.
+- Why: Its current official website provides five soundproofed band rooms, included backline, direct booking routes and a transparent room-rate table suitable for a four-person comparison.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue resolving current candidates without a usable official rate or booking page: Bush, Storm, K-Town, That Sound, Terminal, Sic Lick and Rug 'n' Roll.
+
+## 2026-09-06 17:00
+
+- What changed: Added Cargo Rooms, Tottenham Hale, as a verified rehearsal-space card. Archived The Engine Rooms from the active rehearsal view while retaining its source record.
+- Why: Cargo Rooms publishes current band-room equipment, booking access and rate terms. The Engine Rooms' own live page now states that it is closed until further notice, so it should not appear as an active option.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue current checks for That Sound Studio, Terminal Studios, Sic Lick, Rug 'n' Roll and the performance-space leads. Retain a source lead when a reliable public rate or direct booking route is unavailable.
+
+## 2026-09-06 17:15
+
+- What changed: Added Terminal Studios, Bermondsey, as a verified premium production-rehearsal card.
+- Why: Terminal's current official site confirms the active London rehearsal facility and direct booking route. A current public venue-partner listing supplies starting day hire prices for its two production rooms; the card clearly identifies those as a starting-point conversion requiring a direct quote.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue current checks for That Sound Studio, Sic Lick, Rug 'n' Roll and the performance-space leads. Re-check the remaining public-rate gap at Bush and Storm before deciding whether a card can use a qualified third-party price.
+
+## 2026-09-06 12:40
+
+- What changed: Added The Spice of Life, Soho, as an active promoter-led live-music venue. Added current Hot Vox relationships for The Spice of Life, Bush Hall and Barfly Camden (formerly Camden Assembly).
+- Why: Hot Vox's own current events programme showed that its directory card was materially under-linked; the previously recorded 93 Feet East and Fiddler's Elbow links did not represent its documented active London footprint.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; semantic Node smoke check confirmed five Hot Vox venue links and 203 active venues; `git diff --check -- research/scene-and-venues/index.html research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js PROJECT_LOG.md` passed (standard line-ending warning only).
+- Follow-ups / TODOs: Run a systematic promoter-first coverage audit based on each promoter's official events/venues index. Relationship counts alone are a triage signal, not proof that a promoter has missing links.
+
+## 2026-09-06 12:55
+
+- What changed: Started the strict alphabetical promoter-index audit. Added AGMP Concerts at O2 Shepherd's Bush Empire from AGMP's active programme; the other reviewed records (432 Presents, AARA Entertainments, Absent Kelly, Academy Events, Action! Presents, AEG Presents and Alan Bearman Music) did not yield another current, specific London venue relationship in this pass.
+- Why: Each promoter must be checked against its own programme or venue index rather than relying only on relationships discovered venue-first. This catches under-linking such as the preceding Hot Vox correction without adding historical or generic estate claims.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; semantic check confirmed AGMP's three mapped rooms; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue alphabetically from Audio Scream. Re-read currently changing files before any edit; the rehearsal-rooms work should remain separate from the promoter/venue data audit.
+
+## 2026-09-06 13:15
+
+- What changed: Continued the strict alphabetical promoter-index audit through Bird On The Wire. Added four current Bird On The Wire relationships: Eventim Apollo, O2 Forum Kentish Town, Bush Hall and EartH.
+- Why: Bird On The Wire's own 2026 event pages identify these rooms directly; the directory previously retained only seven of its active London venue links. The other promoters in this batch did not yield another current, venue-specific relationship from their available official programmes.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; semantic check confirmed eleven Bird On The Wire venue relationships; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue alphabetically from Black Lives in Music. Consider separately researching the currently absent Barbican, Soho Theatre Walthamstow and London Palladium venue records before adding any relationships to them.
+
+## 2026-09-06 13:30
+
+- What changed: Continued the promoter-index audit through Brick Lane Jazz Festival. Added Breaking Sound's documented London showcase relationships at Sebright Arms, Signature Brew Haggerston, The Star in Shoreditch / Workshop and Dingwalls 2.
+- Why: Breaking Sound's own London venue index identifies all four recurring showcase rooms directly; they were absent from the promoter's relationship card.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; focused Breaking Sound relationship smoke check passed; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. The full `node trials/verify-scene-update.js` is temporarily blocked by the concurrently edited rehearsal-spaces test expecting `pirate-hackney` before its data record exists; no rehearsal-spaces files were changed here.
+- Follow-ups / TODOs: Continue alphabetically from Bridging The Music after the rehearsal-spaces module has restored the shared smoke test.
+
+## 2026-09-06 13:45
+
+- What changed: Continued the promoter-index audit through Chuckie Online. Added Brick Lane Jazz Festival at Paper Dress Vintage from the festival's current Brick Lane Sounds programme.
+- Why: The year-round presenter page explicitly identifies Paper Dress Vintage as a series venue, expanding the promoter's already-mapped 93 Feet East, Village Underground, Rich Mix and Ninety One Living Room footprint without inferring links from historic festival bills.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; focused Brick Lane Jazz Festival relationship smoke check passed; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. The shared full smoke test remains blocked by the concurrent rehearsal-spaces expectation for absent `pirate-hackney` data.
+- Follow-ups / TODOs: Continue alphabetically from City Sound Session. Keep One Hundred Shoreditch as a separate venue-discovery lead rather than a relationship-only record.
+
+## 2026-09-06 04:15
+
+- What changed: Continued the promoter-index audit through Good Karma Club. Added current relationships for Communion One (15 existing London venues), Dialled In at Jumbi, Eat Your Own Ears at Village Underground, Factory Setting at Venue MOT, and FORM at Green Note and Avalon Cafe.
+- Why: Each addition is tied to a promoter's current programme or a specific current event, avoiding inferred venue associations. FORM's own shows index directly identifies the two newly mapped rooms.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; focused Node smoke checks for the added relationship records passed; `git diff --check -- research/scene-and-venues/data/scene-data.js` passed. The full shared smoke test remains blocked by the concurrently edited rehearsal-spaces expectation for absent `pirate-hackney` data; no rehearsal-space files were changed here.
+- Follow-ups / TODOs: Continue alphabetically from Gotta Have It, keeping venues absent from the directory as separately evidenced discovery leads rather than creating relationship-only records.
+
+## 2026-09-06 04:18
+
+- What changed: Completed the I-promoter audit. Added Incineration Festival at The Devonshire Arms / The Dev and iluvlive at Folklore Hoxton.
+- Why: The promoters' own programmes directly name these existing directory venues. Incineration's official FAQ identifies all five festival stages; iluvlive's event page names Folklore Hoxton as the site of its co-presented emerging-artist showcase.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; focused I-promoter relationship smoke check passed; `git diff --check -- research/scene-and-venues/data/scene-data.js` passed.
+- Follow-ups / TODOs: Continue alphabetically from Jazz Cafe. Keep the other iluvlive programme spaces that are absent from the directory as separately evidenced venue-discovery leads.
+
+## 2026-09-06 04:20
+
+- What changed: Completed the J-promoter audit. Added JOY. Concerts at The Black Heart, Oslo Hackney and Eventim Apollo.
+- Why: JOY.'s official 2026 listings directly name all three rooms. Jazz at MAP and Jazz on Wick already had their evidenced venue relationships, so no speculative links were added for them.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; focused J-promoter relationship smoke check passed; `git diff --check -- research/scene-and-venues/data/scene-data.js` passed.
+- Follow-ups / TODOs: Continue alphabetically from K-Music Festival.
+
+## 2026-09-06 04:25
+
+- What changed: Completed the L-promoter audit. Added London Prog Gigs at 229 and Dingwalls; London Music Showcase at Cart & Horses, Hope & Anchor and The Star Shoreditch; and Laid Bare Music at MOTH Club.
+- Why: Each link is supported by a current 2026 promoter or venue listing, except Laid Bare's specifically documented MOTH Club EP launch, which is retained as a dated/documented relationship rather than represented as a current residency.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; focused L-promoter relationship smoke check passed; `git diff --check -- research/scene-and-venues/data/scene-data.js` passed.
+- Follow-ups / TODOs: Continue alphabetically from Mamaghar Entertainment. Treat the Labyrinth, LWE and Live in London locations absent from the directory as separately evidenced venue-discovery leads.
+
+## 2026-09-06 04:30
+
+- What changed: Completed the M-promoter audit. Added Metropolis Music at O2 Shepherd's Bush Empire, plus Movimientos at Fox & Firkin and Jamboree.
+- Why: The Metropolis ticket record names the promoter directly; Movimientos' official programme lists the two additional existing London venues. Other M-promoter evidence either confirmed already mapped rooms or named venues missing from the directory.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; focused M-promoter relationship smoke check passed; `git diff --check -- research/scene-and-venues/data/scene-data.js` passed.
+- Follow-ups / TODOs: Continue alphabetically from New Stuff Records.
+
+## 2026-09-06 04:40
+
+- What changed: Completed the combined P–R promoter audit. Added five Pink Mist rooms (MOTH Club, Oslo, The George Tavern, Electric Ballroom and Bush Hall); Propaganda at Dingwalls and Barfly Camden; Portals at Oslo, Strongroom and Scala; and REAL at The Waiting Room.
+- Why: Each new relationship is named directly in the promoter's current programme or a specific ticketed event. No relationship was created for promoters whose evidence was generic, historical only, or pointed to a venue record that is still absent.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; focused P–R relationship smoke check passed for 11 additions; `git diff --check -- research/scene-and-venues/data/scene-data.js` passed.
+- Follow-ups / TODOs: Continue alphabetically from Scruff of the Neck, batching S–U next.
+
+## 2026-09-06 04:50
+
+- What changed: Completed the S–U promoter audit. Added Scruff of the Neck at The Garage, The Victoria Dalston, Hope & Anchor, The Black Heart, O2 Academy2 Islington and Water Rats.
+- Why: Scruff's live programme names each room directly. The remaining S–U checks either confirmed existing relationships or identified venue-discovery leads not yet represented in the directory.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; focused S–U relationship smoke check passed for six additions; `git diff --check -- research/scene-and-venues/data/scene-data.js` passed.
+- Follow-ups / TODOs: Complete the audit with the V–Z batch.
+
+## 2026-09-06 05:00
+
+- What changed: Completed the final V–Z promoter audit. Added WB Live at The Clapham Grand, Islington Assembly Hall and The Garage.
+- Why: WB Live's own current 2026 events listing names all three directory venues. Wet Dog Music and World Music Method already had their directly evidenced venue links.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; focused V–Z relationship smoke check passed for three additions; `git diff --check -- research/scene-and-venues/data/scene-data.js` passed.
+- Follow-ups / TODOs: The alphabetical promoter audit is complete. Separately evaluate the accumulated venue-discovery leads (for example venues named in promoter programmes but not yet represented in the directory) before creating additional venue records.
+
+- Follow-up verification: `node trials/verify-scene-update.js` was re-run after the concurrent rehearsal-space work and passed: "Jam-area and venue-model smoke checks passed."
+
+## 2026-09-06 14:15
+
+- What changed: Added a first verified recording-studio corpus: The Premises, RAK, Dean Street, The Church, Metropolis and British Grove. The Recording Studios tab now filters active cards by area, recording route and recording-day price status; quote-only remains a distinct filter. Improved the recording-card label to make band suitability explicit.
+- Why: The original single Premises card was a concise start but did not let artists compare practical recording capability or pricing transparency. The new filter fields establish the corpus schema before broader discovery adds lower-cost, production and mix/master options.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed ("Jam-area and venue-model smoke checks passed."); `git diff --check -- research/scene-and-venues/data/operations-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Build the next corpus pass from affordable full-band studios, production-focused rooms and mix/master specialists. Add public day-rate bands only when a current comparable rate is published.
+
+## 2026-09-06 14:25
+
+- What changed: Added the recording-only Artist track record field and filter. The current corpus marks RAK, Dean Street, The Church, Metropolis and British Grove as Landmark / international, based on their substantial published artist credits; The Premises remains Not yet assessed pending a source-led credit review.
+- Why: The card can now distinguish a studio's publicly evidenced credits profile from its room capability, price and service offer. The label explicitly avoids treating credit scale as a quality judgement.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed ("Jam-area and venue-model smoke checks passed."); `git diff --check -- research/scene-and-venues/data/operations-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Apply Developing / independent and Established professional only when the next source-led corpus adds rooms with enough published artist evidence. Retain Not yet assessed when the evidence is absent.
+
+## 2026-09-06 14:45
+
+- What changed: Expanded the recording directory with Mill Hill Music Complex, W13 Studio, Bear Bites Horse, Hicaz Recording Studio and Old Street Studios. Added Artist track record values to the concurrently added Brixton Recording Studios and Brockley Studios records so their cards participate correctly in the new filter.
+- Why: The initial corpus was heavily weighted toward landmark, quote-only commercial studios. This pass adds verified booking routes across affordable full-band recording, producer-led independent work and recording/mix/mastering, with current representative public rates where published.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed ("Jam-area and venue-model smoke checks passed."); `git diff --check -- research/scene-and-venues/data/operations-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue source-led discovery into south/east London production rooms, mastering specialists and current studio-directory leads. Verify published credits before assigning a non-unassessed Artist track record.
+
+## 2026-09-06 15:05
+
+- What changed: Added Brixton Hill Recording Studio, Urchin Studios Studio A and Studio B, Gizzard Analogue Recording Studio, and Studio X to the recording directory.
+- Why: This source-led pass fills the South London and East London gaps with current bookable recording, full-band tracking, production and mix/master options. Urchin's separately bookable Tracking and Production rooms remain separate cards because their suitability and rates materially differ.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed ("Jam-area and venue-model smoke checks passed."); `git diff --check -- research/scene-and-venues/data/operations-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue outward from the established recording clusters with official studio-directory leads. Add more master-only services only if their booking route and current rates are independently clear.
+
+## 2026-09-06 15:20
+
+- What changed: Added Abbey Road's separately bookable Writing Room and Gatehouse, plus Livingston Studio 1, to the recording directory.
+- Why: The official studio-directory pass confirmed that these are distinct booking propositions with different fit and price transparency. Separate cards preserve the £250/day Abbey Road production route, small-band Gatehouse route, and Livingston's large-format commercial tracking route without reducing them to generic facility cards.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed ("Jam-area and venue-model smoke checks passed."); `git diff --check -- research/scene-and-venues/data/operations-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue through official directory leads, prioritising entries that add an uncovered area, price band or recording route rather than duplicating the current flagship coverage.
+
+## 2026-09-06 15:35
+
+- What changed: Added Lightship 95, Qube East Studio 1 and The Red Room London. Extended the shared practical-area mapper so Bermondsey maps to South London.
+- Why: These active Miloco booking routes add an East-London large tracking room, Canary Wharf production/vocal booking, and a dedicated commercial stereo/Atmos mix route. The geography fix keeps the Red Room and any other Bermondsey records visible under the appropriate filter.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed ("Jam-area and venue-model smoke checks passed."); `git diff --check -- research/scene-and-venues/data/operations-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue with direct/independent studio sites outside the Miloco network, prioritising public rates and a clear booking path.
+
+## 2026-09-06 15:50
+
+- What changed: Added Fluke Productions, BonaFideStudio, Orpheus Studio, Fairlight Studios and Radar Sound Services to the recording directory.
+- Why: This independent-site pass adds current bookable options in Islington, Muswell Hill, Haggerston and Outer London, including transparent rates from £200–£250 per recording day and more producer-led project routes.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed ("Jam-area and venue-model smoke checks passed."); `git diff --check -- research/scene-and-venues/data/operations-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue only with current official studio sites. Prioritise studios with a meaningful difference from existing cards, especially lower-cost full-band and dedicated mastering options.
+
+## 2026-09-06 16:05
+
+- What changed: Added New Ground Audio, Lightship 95 Mastering, Church of Noise and Joe Public Studios. Added a `Per-track service` option to the recording price filter and revised its explanatory text.
+- Why: Mastering specialists publish per-track rates, not recording-day rates. The revised filter preserves those different price bases while adding specialist mastering and lower-cost recording/production routes.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed ("Jam-area and venue-model smoke checks passed."); `git diff --check -- research/scene-and-venues/data/operations-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue targeted independent-studio discovery only where first-party evidence supplies a new area, recording route or clear rate. Treat mastered-per-track records as a distinct price basis in all later additions.
+
+## 2026-09-06 16:20
+
+- What changed: Added Noatune Studio A and Studio B, Strongroom Studios, Ten87 The Club and Hague House’s Hague Studio.
+- Why: The cards add separately bookable full-band and vocal rooms in London Fields, Strongroom’s established Shoreditch complex, Ten87’s high-spec Tottenham day-hire suite and a large Canary Wharf live room with transparent public pricing.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed ("Jam-area and venue-model smoke checks passed."); `git diff --check -- research/scene-and-venues/data/operations-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: The public corpus now has broad citywide coverage. Continue with a systematic directory-reconciliation pass, promoting only genuinely missing, current official booking routes.
+
+## 2026-09-06 16:35
+
+- What changed: Added The Pool, The Bridge, Livingston Studio 2 and Battery Studio 2 to the recording directory.
+- Why: The individual official Miloco pages confirm four materially distinct booking routes missing from the corpus: Bermondsey large tracking, Atmos/writing, Wood Green restricted-budget band tracking, and Willesden large-format tracking.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed ("Jam-area and venue-model smoke checks passed."); `git diff --check -- research/scene-and-venues/data/operations-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Reconcile the remaining active directory candidates, excluding long-term-let-only rooms and duplicative facilities without a distinct public booking proposition.
+
+## 2026-09-06 16:50
+
+- What changed: Added Dock Street Studio 1, Dock Street Studio 2 and Super Symmetry Studio A to the recording directory.
+- Why: Each is a distinct current Miloco booking proposition: full-band SSL tracking, writing/vocal production, and a separate high-spec writing/mixing/recording suite. The records retain quote-only pricing because no current comparable public day rate is published.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed ("Jam-area and venue-model smoke checks passed."); `git diff --check -- research/scene-and-venues/data/operations-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue reconciling only active room-level public booking propositions. Verify direct booking availability for any directory page marked as a sale/long-term-let opportunity before adding it.
+
+## 2026-09-06 17:45
+
+- What changed: Added Raw Material Live Room and Brockley Studios to the rehearsal directory; added Brockley Studios to the recording directory; added Arcus Sounds as a source-linked rehearsal candidate.
+- Why: Raw Material and Brockley publish current music-rehearsal or full-band recording facilities and transparent rates. Arcus clearly supports full-band rehearsal, but its live price remains inside the booking form and has not been inferred.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Resolve Arcus, That Sound Studio, Sic Lick and Rug 'n' Roll only where the booking rate and current direct route are verifiable. Continue broader discovery from current music-studio sources.
+
+## 2026-09-06 18:00
+
+- What changed: Promoted Bush Studios into the verified rehearsal directory and removed its source lead from the queue.
+- Why: Its current official studio-rate page now publishes the regular room rate, room dimensions, core included band backline, PA, direct booking route and larger production-room options.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue resolving Arcus, That Sound Studio, Sic Lick, Rug 'n' Roll, K-Town and Storm; review current full-band recording-studio leads separately.
+
+## 2026-09-06 18:15
+
+- What changed: Promoted Storm Rehearsal Studios, Holloway, into the verified rehearsal directory and removed its source lead from the queue.
+- Why: Its current official rates page publishes group rates, phone-only booking, opening hours and confirmation that backline is included. Its main current page specifies the PA, microphones, amps and drum kits.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue resolving Arcus, That Sound Studio, Sic Lick, Rug 'n' Roll and K-Town. Expand the current recording directory from directly published full-band day rates.
+
+## 2026-09-06 18:30
+
+- What changed: Added New River Studios, Manor House, to both rehearsal and recording directories.
+- Why: Its current official pages publish two soundproofed, backline-equipped band practice rooms, a direct rehearsal contact route, and a recording studio with an accessible starting rate.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue resolving Arcus, That Sound Studio, Sic Lick, Rug 'n' Roll and K-Town. Exclude old sources where no current amplified-band offer can be verified.
+
+## 2026-09-06 18:45
+
+- What changed: Added Arcus Sounds, Canning Town, to both the rehearsal and recording directories; removed its resolved research-queue lead.
+- Why: The official current pages verify a full-band isolated live room, comprehensive backline and direct booking. A current public live-room listing supplies a transparent dry-hire reference rate, while recording remains correctly marked as quote-on-enquiry.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue resolving That Sound Studio, Sic Lick, Rug 'n' Roll and K-Town. Keep the £29/hr Arcus figure labelled as dry hire unless Arcus publishes an engineered session rate.
+
+## 2026-09-06 19:00
+
+- What changed: Removed That Sound Studio from the active rehearsal research queue without adding a public rehearsal or recording card.
+- Why: Its supposed official domain now redirects to a domain-sale page. Third-party venue profiles appear stale and cannot substitute for a current direct booking route.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Resolve Sic Lick, Rug 'n' Roll and K-Town only where current direct booking and amplified-band suitability can be confirmed.
+
+## 2026-09-06 19:15
+
+- What changed: Added Rug ’n’ Roll Music Rehearsing Studio, Harringay, to the active rehearsal directory and removed its resolved research-queue lead.
+- Why: Its current bookable band-room listing publishes the PA, microphones, drum kit, guitar/bass amps, a ten-person capacity and an indicative £9/hr rate.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Keep Sic Lick and K-Town out until a current direct booking route and transparent rates can be confirmed. Next, triage the performance-space candidates before using the GLA dataset for wider discovery.
+
+## 2026-09-06 19:30
+
+- What changed: Added Bishopsgate Institute and St John’s Waterloo as specialist ensemble/performance rehearsal options; removed unsuitable or stale performance-space leads and introduced a clearly labelled quote/bespoke rehearsal-price filter.
+- Why: Bishopsgate publishes current music-rehearsal equipment and day rates. St John’s has a current direct music-hire route and appropriate concert/ensemble facilities, but no comparable public rate. Actors East explicitly prohibits amplified music; Mivart is in Bristol; Pacific has only historic evidence. Brixton House remains a sourced follow-up pending band-specific confirmation.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Begin a wider discovery pass using the GLA Cultural Infrastructure dataset, deduplicating against the current verified rehearsal-space list and applying the same current-booking standard.
+
+## 2026-09-06 19:45
+
+- What changed: Added Pirate Studios Dalston and Pirate Studios Wembley to the active rehearsal directory after the first GLA dataset comparison.
+- Why: Both current official location pages show live rehearsal availability and the established Pirate self-service model. The former Tottenham location is not added because its current URL redirects to Dalston.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the GLA-led rehearsal pass with independent, current band-capable rooms; separately triage the recording-studio longlist.
+
+## 2026-09-06 17:30
+
+- What changed: Added Brixton Recording Studios to both the rehearsal and recording directories.
+- Why: Its current official booking pages show a small four-to-five-person band setup, included basic rehearsal equipment, direct online booking, and transparent hourly-equivalent rehearsal and recording prices.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both scene data files; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Resolve That Sound Studio, Sic Lick and Rug 'n' Roll only if a reliable current direct booking route can be found. The performance-space sources have confirmed useful orchestral/theatre hire but mostly do not meet the amplified band-room standard.
+
+## 2026-09-06 20:00
+
+- What changed: Added Sleeper Sounds Studio A/B, Silver Shark Studios, Studio 13 and Sensible Music Studio A to the recording-studio directory; extended West London area matching for Ladbroke Grove and related location terms.
+- Why: Each is a distinct current public studio proposition with an active official or Miloco booking route, expanding the corpus across West, South and North/Central London.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue triaging the active Miloco directory room-by-room; prioritise The Bunker at 13, Soho Sound Kitchen and Highwater while excluding long-term-let or non-bookable listings.
+
+## 2026-09-06 20:15
+
+- What changed: Added The Bunker at 13, Soho Sound Kitchen and Highwater Studio A to the recording-studio directory.
+- Why: The active Miloco directory and individual current pages confirm distinct bookable rooms, their practical recording routes and direct enquiry paths. Quote-only pricing is retained where no comparable rate is published.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue with remaining active Miloco London entries, favouring unique room propositions rather than duplicating a complex or adding long-term-let listings.
+
+## 2026-09-06 20:30
+
+- What changed: Added Runway Recording Studios Studio 3 and TYE London to the recording-studio directory.
+- Why: Current Miloco pages confirm they are active, separately bookable recording propositions with a distinct room specification and enquiry path. They remain quote-only because neither publishes a comparable current rate.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue the active London directory pass with unrepresented entries such as The Axis, The Cabin, Elektrobank and Forever Audio; assess each for an actual current room and public booking route before promoting it.
+
+## 2026-09-06 20:45
+
+- What changed: Added a non-mutating GLA studio-candidate scanner and refreshed the working context after concurrent recording-directory updates.
+- Why: The scanner compares supplied GLA rehearsal/recording CSV snapshots against active dashboard records and reports candidates only, so a dated inventory cannot silently publish stale cards. The refreshed state contains 37 active rehearsal spaces and 57 recording studios.
+- Files touched: `research/scene-and-venues/scripts/scan_gla_studio_candidates.js`, `research/scene-and-venues/README.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both data files and the scanner; `node trials/verify-scene-update.js` passed; scanner completed against the two downloaded GLA CSVs; `git diff --check` passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Re-run the scanner after every batch and verify only the highest-value current candidates. Do not overwrite the independently updated recording directory while resolving GLA rehearsal candidates.
+
+## 2026-09-06 21:00
+
+- What changed: Added Crown Lane Studio, RMS Studios and Westbourne Rehearsals to the active rehearsal directory from the first current GLA shortlist batch; added Morden to the existing Outer London filter mapping.
+- Why: Each has a current direct rehearsal route, usable band setup and price basis or an explicit quote-only status. Panic Music is not added because current evidence marks it closed; Audio Underground and Hermitage Works remain out pending a suitable public booking route.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for both data files and the GLA scanner; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue the GLA rehearsal pass with remaining current candidates, checking the working-tree diff first so the independent recording-studio work remains untouched.
+
+## 2026-09-06 21:00
+
+- What changed: Added The Cabin and Elektrobank to the recording-studio directory.
+- Why: Their current Miloco pages confirm a separately usable room and public enquiry route. The Cabin supports writing/live-recording projects at Tileyard; Elektrobank covers songwriting, production and Dolby Atmos mixing in Bermondsey. Both retain quote-only pricing because no comparable current rate is published.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue the active London directory pass with The Axis, Forever Audio, Greystoke, JBJ, Love Electric and NXNE; keep only rooms with adequate current public evidence.
+
+## 2026-09-06 21:10
+
+- What changed: Added Warpaint to the public website's influence carousel and the private scene-intelligence reference-artist list, using the same external-image resizing pattern as the existing cards.
+- Why: Warpaint is now an explicit Inertia Whim influence in both user-facing and research contexts.
+- Files touched: `influences.js`, `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check influences.js`, `node --check research/scene-and-venues/data/scene-data.js`, and the focused Warpaint consistency assertion passed; `git diff --check` passed (standard line-ending warnings only).
+- Follow-ups / TODOs: None.
+
+## 2026-09-06 21:30
+
+- What changed: Added Love Electric, The Vault and Westpoint Studios to the recording-studio directory.
+- Why: Current Miloco listings confirm distinct live-band, writing/vocal and multi-room recording propositions with active enquiry routes. They remain quote-only where no comparable public rate is published.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue with unrepresented active London listings, especially NXNE, The Axis and Forever Audio, only when their current public room information supports a reliable card.
+
+## 2026-09-06 21:45
+
+- What changed: Added NXNE Studios to the recording-studio directory; excluded Forever Audio from this artist-recording corpus.
+- Why: NXNE has a current music-oriented writing/recording room page and public Miloco enquiry route. Forever Audio is active but its current offer is voice, ADR, audiobook and post-production work rather than artist music recording.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue with remaining active music-focused London listings such as Tape Studios, The Toyshop and 123 Studios. Do not add audio-post-only facilities to the artist-recording tab.
+
+## 2026-09-06 22:00
+
+- What changed: Added Tape Studio and The Toyshop to the recording-studio directory.
+- Why: Current Miloco pages confirm both as active music-focused writing/recording propositions with direct enquiry routes. Tape is a Mayfair writing/vocal-production room; The Toyshop supports writing and multi-musician recording at Miloco HQ. Both retain quote-only pricing where no public comparable rate is published.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Verify 123 Studios, The Axis and remaining directory entries only when a current room-level public page can be established.
+
+## 2026-09-06 22:15
+
+- What changed: Added Qube West Studio A and The Shelter to the recording-studio directory.
+- Why: Current Miloco pages confirm each room’s facility, music-recording scope and live enquiry route. The Shelter is tagged established because its current owner page documents named major-artist work; Qube West is conservatively unassessed without a comparable current roster.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue checking 123 Studios and The Axis. Add only when their current public room content, musician-relevant purpose and enquiry route can all be corroborated.
+
+## 2026-09-06 22:30
+
+- What changed: Added 123 Studios and Battery Studio 1 to the recording-studio directory.
+- Why: 123’s current official Peckham site publishes direct booking, full-band tracking scope, relevant room specifications and a named artist roster. Battery Studio 1 has a current Miloco overview/enquiry route for mixing and overdub sessions. Both are landmark-tier due to their documented major artist/producer credits.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: The Axis remains unresolved. Continue by reconciling the active directory against the expanded corpus and investigate only material gaps with current musician-focused evidence.
+
+## 2026-09-06 22:45
+
+- What changed: Completed the current GLA rehearsal-dataset reconciliation pass. Added Pirate Croydon, Earlsfield and Notting Hill; SW19 Studios; Abbey Music Studios; Husky Studios; The Miller basement studio; Sensible Music Studio 4; FOMO London; Cartel Studios; and Peregrine's Pianos. Extended the shared area matcher for Earlsfield, Abbey Wood and Grays Inn Road.
+- Why: These are distinct current, publicly bookable rehearsal options with appropriate band, production-rehearsal or clearly labelled acoustic/chamber routes. The remaining dated GLA leads were not imported automatically: several are closed, theatre/dance-only, historic aliases, recording-only, or lack a current direct booking route for the relevant use.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node --check research/scene-and-venues/scripts/scan_gla_studio_candidates.js`, `node trials/verify-scene-update.js`, the GLA scanner against both downloaded CSVs, and relevant `git diff --check` all passed (standard CRLF warnings only).
+- Follow-ups / TODOs: The rehearsal directory now contains 51 active cards (52 retained including one archived record). Re-run the non-mutating scanner whenever a newer GLA export is available; next discovery should use current specialist directories or a geographic gap pass, while avoiding overlap with the ongoing recording-studio work.
+
+## 2026-09-06 23:00
+
+- What changed: Added Three Six Zero Studios’ Blue, Red and Green rooms to the recording-studio directory.
+- Why: Current Miloco room pages support distinct tracking, mixing and songwriting/vocal propositions at the active Notting Hill complex. Each uses the live Miloco enquiry route and quote-only pricing where a comparable rate is not published.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: The Axis remains excluded because current sources verify a venue/studio-complex relationship but not a current musician-facing studio offer with an unambiguous booking route. Reconcile remaining current new-studio listings before expanding beyond verified sources.
+
+## 2026-09-06 23:15
+
+- What changed: Added Snap Studios to the recording-studio directory; excluded Octagon Studios Brixton from this tab.
+- Why: Snap’s current official site and booking page document an independently bookable, full-band recording service. Octagon’s current Brixton proposition is long-term rental of private production rooms, not a short-term artist-recording service.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue with current music-specific London facilities that have direct project booking. Keep long-term room lets and non-music post-production services out of the artist-recording tab.
+
+## 2026-09-06 23:30
+
+- What changed: Added Forever Audio, The Axis / Atomic Studios complex and Octagon Studios Brixton to the recording-studio directory. Recording cards now show a dedicated access line, and the directory’s inclusion statement covers direct, enquiry-only, specialist and long-term access models.
+- Why: The user expanded scope to all current London recording facilities, including invitation-only, specialist and long-term options. Access limitations are now disclosed instead of being used as an exclusion rule.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Apply the revised all-access inclusion rule to every subsequent recording-studio discovery pass. The Axis card remains intentionally explicit that studio-session availability needs bespoke confirmation.
+
+## 2026-09-06 23:45
+
+- What changed: Added Sirlute Studios Music Studio Pro, The Low Studios, Park Chapel Studio One, Jukebox Studio A, Eastcote Studios, Uptown Studios and Indigo Sound Studio to the recording-studio directory.
+- Why: This first geographic discovery pass expands the all-inclusive London inventory with independent facilities across Canary Wharf, Hackney, Crouch End and west London, retaining transparent access and price notes.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue the master inventory by geographic pass; reconcile Noatune Studio C/D and named Eastcote rooms only where public information distinguishes their booking proposition.
+
+## 2026-09-06 23:55
+
+- What changed: Added Overdrive Studios to the New Cross / Deptford rehearsal directory.
+- Why: Its current official page confirms three directly bookable, purpose-built band rooms, a complete included backline and public hourly rates. The card uses the four-person medium-room rate as the representative price.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue the geographic rehearsal pass with Peckham / Nunhead or South London, checking the shared working tree before every targeted data patch.
+
+## 2026-09-07 00:10
+
+- What changed: Added Peckham Studios’ live rehearsal room to the Peckham / Nunhead rehearsal directory.
+- Why: The current official booking page confirms a directly bookable, equipped live room for band rehearsals at £25/hr with a three-hour minimum, distinct from the existing Super Unison and IM Studioz options.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue with South London, retaining only current band-ready facilities and avoiding generic event/dance-room hire.
+
+## 2026-09-07 00:05
+
+- What changed: Added a recording-studio filter note clarifying that artist track record reflects publicly documented credits, not studio quality.
+- Why: The credit-tier filter is useful but could otherwise be read as an unsupported quality judgement.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Resume the all-inclusive geographic recording-studio inventory while leaving rehearsal-space work isolated.
+
+## 2026-09-07 00:15
+
+- What changed: Added Peckham Studios to the recording-studio directory.
+- Why: Its current official booking pages confirm a direct music-recording offer, a separate live room, published engineer team and transparent three-hour recording/dry-hire rates.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue the all-inclusive geographic inventory from current official facility pages; do not add generic directories without primary-source verification.
+
+## 2026-09-07 00:35
+
+- What changed: Added Angel Studios - Angel One and Angel Post to the recording-studio directory.
+- Why: Abbey Road’s current official pages confirm two distinct commercial offers at Angel Studios: a large music/score-recording room and a separately bookable Dolby Atmos mixing suite.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue the geographic inventory from current official facility pages, including bespoke and specialist routes where the service is clear.
+
+## 2026-09-07 00:50
+
+- What changed: Added KOZI Studios, Right Hook Recordings and Dodient Studios to the recording-studio directory.
+- Why: Current official pages confirm distinct Soho, Walthamstow and Tottenham facilities, including direct online booking and referral-only access models.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed after the concurrent clarification assertion was corrected; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue current-source geographic discovery; disclose access constraints rather than excluding invitation or referral-only facilities.
+
+## 2026-09-07 00:25
+
+- What changed: Added Groove Park’s Room 4 to the South London rehearsal directory and extended the shared area mapper to recognise Brockley, Forest Hill and SE23 as South London.
+- Why: The official page documents a dedicated full-band room with included drums, amps, piano and PA at a public £21–£23.40/hr rate. The mapper change ensures both the new card and existing Brockley cards appear under the intended filter.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue the geographic rehearsal pass with West London or North-East London, keeping the shared recording-studio work untouched.
+
+## 2026-09-07 00:40
+
+- What changed: Added West London Music Studio’s Live Room to the rehearsal directory and updated Arch Studios’ existing card with its current included band backline.
+- Why: Both current official pages verify practical, equipped band-rehearsal provision. West London Music Studio is a distinct Acton live room with direct booking; Arch already existed, so its card was strengthened rather than duplicated.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue the geographic rehearsal pass with North-East London. During this module the recording-tab test contract changed concurrently; the final shared state restores its required track-record clarification and the full smoke test passes.
+
+## 2026-09-07 01:00
+
+- What changed: Removed legacy label-category card tags, clarified public-contact submission status, added Hum and Gleemer to both influence lists, and restored the recording-studio artist-track-record clarification with a matching smoke-test assertion.
+- Why: The public label view now uses only meaningful, filterable classification; the two requested influences appear on both site surfaces; the recording filter guidance is protected against regression.
+- Files touched: `influences.js`, `index.html`, `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node --check influences.js`, `node --check research/scene-and-venues/data/scene-data.js`, and `node trials/verify-scene-update.js` passed; relevant `git diff --check` commands passed with standard CRLF warnings only.
+- Follow-ups / TODOs: Continue source-backed label discovery and roster classification; keep evidence routes internal.
+
+## 2026-09-07 01:10
+
+- What changed: Removed the labels-tab introductory research/disclaimer paragraph.
+- Why: The labels filters and card fields are now self-explanatory without a front-facing caveat.
+- Files touched: `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` passed; `git -C research/scene-and-venues diff --check -- index.html` passed with a standard CRLF warning only.
+- Follow-ups / TODOs: None for this UI cleanup.
+
+## 2026-09-07 01:20
+
+- What changed: Completed the North-East London rehearsal-space pass and refreshed the Pulse Rehearsal Studios equipment and booking evidence.
+- Why: Current official material confirms that Pulse includes its core drum, PA, microphone, guitar and bass backline at no extra charge. No additional current, purpose-built full-band room was found beyond the existing Walthamstow, Leyton and Tottenham entries.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the geographic rehearsal pass with Outer London, maintaining the current evidence threshold for additions.
+
+## 2026-09-07 01:35
+
+- What changed: Added The Fighting Cocks’ Kingston rehearsal-stage hire and Studio D in New Malden to the Outer London rehearsal directory.
+- Why: Both are current official band-rehearsal routes. The Fighting Cocks publishes a stage, PA and backline setup for bands; Studio D explicitly welcomes bands in an acoustically treated room, while retaining quote-only pricing and inventory where public detail is limited.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and relevant `git diff --check` passed (standard CRLF warning only).
+
+## 2026-09-07 01:45
+
+- What changed: Replaced Hum's third-party blog image with official Polyvinyl *Inlet* release artwork in both influence sources.
+- Why: The new asset is directly hosted by Hum's label/distributor and is unambiguously associated with the band.
+- Files touched: `influences.js`, `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check influences.js`, `node --check research/scene-and-venues/data/scene-data.js`, and `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed with a standard CRLF warning only.
+- Follow-ups / TODOs: If a current official Hum band portrait becomes available, it can replace this definitive release-art fallback.
+
+## 2026-09-07 01:50
+
+- What changed: Added St Saviour Chalk Farm’s music-hire route to the Camden rehearsal directory.
+- Why: Its current official hire page supports musical rehearsals and recording with a grand piano, providing a distinct acoustic/classical and ensemble option alongside Camden’s existing amplified band studios.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and relevant `git diff --check` passed (standard CRLF warning only).
+- Follow-ups / TODOs: Continue the geographic rehearsal pass with Islington / King’s Cross; retain only music-specific or clearly suitable rehearsal routes.
+- Follow-ups / TODOs: Continue the geographic rehearsal pass with Camden or Islington / King’s Cross, then reassess whether any filter areas remain materially under-covered.
+
+## 2026-09-07 02:20
+
+- What changed: Added Soho Sonic - Camden Studio, Camden Records, Mews Productions and Roundhouse - Recording Studio to the recording-studio directory.
+- Why: Current official pages verify distinct Camden, Islington and Walthamstow facilities, including a 13-25-only programme route at Roundhouse. Existing Ten87, Dodient, Right Hook and related listings were retained as already represented rather than duplicated.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue North/North-East audit with specialist current facilities, then progress to the East London pass.
+
+## 2026-09-07 02:35
+
+- What changed: Added The Dust Studios, Famous Times Studio, The Real NV's Penthouse S2DIO, Root 73 Studios and Hackney Road Recording Studios to the recording-studio directory.
+- Why: Current operator pages verify distinct recording facilities across Hackney Wick, Hackney, Stratford and Stoke Newington. Existing Studio X and Links Studios were confirmed as already represented rather than duplicated.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Complete the East London evidence pass for smaller Bow and Canning Town studios, then begin South-East London.
+
+## 2026-09-06 00:00
+
+- What changed: Replaced Hum's *Inlet* release artwork with a Hum group photo from the band's Bandcamp page in both influence displays.
+- Why: The influence cards now consistently show band members rather than release artwork.
+- Files touched: `influences.js`, `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check influences.js`, `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a synchronized-reference assertion, and both targeted `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Commit and push the root website and research dashboard from their separate Git repositories when ready.
+
+## 2026-09-06 00:05
+
+- What changed: Replaced the initial Hum group photo with the exact classic four-member black-and-white publicity portrait supplied as the visual reference.
+- Why: The final image matches the requested Hum photograph and presents the classic lineup consistently across both influence views.
+- Files touched: `influences.js`, `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check influences.js`, `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a synchronized-reference assertion, and both targeted `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Commit and push the root website and research dashboard from their separate Git repositories when ready.
+
+## 2026-09-07 02:50
+
+- What changed: Added ZigZag Recording Studio, RSM Records Studio, Unwound Studios, Pirate Studios Greenwich - Recording, S & E Music Studio and Music Complex - Room303 to the recording-studio directory.
+- Why: Current official sources verify distinct Woolwich, Greenwich, Elephant and Castle and Deptford/New Cross recording offers. Arcus Sounds and Lightship 95 were confirmed as already represented, so no duplicate cards were added.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue the South and South-West geographic pass, then revisit thin-evidence East London micro-studio leads.
+
+## 2026-09-07 03:05
+
+- What changed: Added Iguana Studios, The Dairy Studios, Nashat Studio and Forum Studios to the recording-studio directory.
+- Why: Current operator pages verify distinct Brixton and Croydon facilities, including long-term producer-room, full-band and specialist spoken-word access models. Existing Brixton Hill, Ondabeat and Studio Fifty-Six entries were retained without duplication.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; relevant `git diff --check` passed.
+- Follow-ups / TODOs: Continue South/South-West with Wimbledon, Clapham and Battersea specialist facilities, then move to West/outer west.
+
+## 2026-09-07 02:45
+
+- What changed: Added Ninja Tune, Brownswood Recordings and Erased Tapes as fully classified independent-label records.
+- Why: Current official pages verify their active release activity, London connection, roster/context and submission policy; the three records broaden coverage across multi-genre, jazz/soul/global and experimental music.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+
+## 2026-09-07 03:00
+
+- What changed: Added Moshi Moshi, Transgressive Records, Lex Records and Gearbox Records as fully classified independent-label records.
+- Why: Current official pages verify the labels’ London connection, active catalogue/roster context and public contact status; this broadens the directory across alternative, multi-genre and jazz/global work.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the label audit with South/East London artist-run and community labels, then refresh incomplete legacy records from official sources.
+
+## 2026-09-07 03:10
+
+- What changed: Added Rhythm Section International and Touching Bass as fully classified South London community-label records.
+- Why: Their official pages demonstrate active music releases alongside local radio, studio, club-night and concert infrastructure, so both meet the label-plus-community threshold.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the label audit through remaining London scenes and refresh incomplete legacy label fields from official sources.
+
+## 2026-09-07 04:35
+
+- What changed: Completed the Soho / West End and City / Clerkenwell rehearsal-space evidence pass; no additional card was added.
+- Why: Current official searches surfaced already-represented rehearsal facilities, recording-only services, or generic event/meeting hires without sufficiently specific music-rehearsal evidence. The existing Peregrine’s Pianos, Room Where It Happens and Bishopsgate Institute cards remain the supported central-area routes.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Reviewed current rehearsal data, project log and shared worktree before the pass; no source-data change was required.
+- Follow-ups / TODOs: Continue the systematic rehearsal-space pass through remaining geographic areas, then conduct final duplicate and source-freshness checks.
+
+## 2026-09-07 04:25
+
+- What changed: Added Deptford Lounge Music Room to the New Cross / Deptford rehearsal-space directory.
+- Why: Its current official page clearly identifies a soundproofed Music Room for rehearsal, with a public £25 hourly rate, availability and charity-rate route; other dedicated Peckham/Deptford facilities were already represented.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the systematic pass through the remaining geographic areas and run a final coverage/duplicate audit after source refreshes.
+
+## 2026-09-07 04:35
+
+- What changed: Added Orange Hill Studios, Masterpiece Masters and Ealing Drum Studios to the recording-studio directory.
+- Why: Official current pages verify distinct Brentford recording/rehearsal, Platts Eyot mastering and Brentford specialist drum-tracking facilities. Fluid Mastering was not added because it officially left its London premises in 2021; Rhubarb Voices was excluded as a casting agency rather than a recording facility.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the current-source reconciliation against GLA inventory leads and complete the geographic coverage audit.
+
+## 2026-09-07 04:30
+
+- What changed: Added Big Dada and nonclassical as fully classified distinct London label records.
+- Why: Official pages verify Big Dada’s active London-based imprint and demo route, and nonclassical’s East London label, club-night, artist-development and submission programme.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue discovery in remaining geographic/scene gaps; resolve legacy Finsbury-only leads only with independent official evidence.
+
+## 2026-09-07 04:15
+
+- What changed: Added Links Studios Band Rehearsals and KitchenJam East Village to the East London rehearsal-space directory.
+- Why: Current official sources verify two restricted but genuine rehearsal routes that conventional commercial-studio searches miss: free Canning Town youth band-development access and a Stratford teaching-school student-band programme.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the systematic rehearsal-space pass through Peckham / Nunhead and New Cross / Deptford, retaining programme restrictions and non-hourly price bases on cards.
+
+## 2026-09-07 04:20
+
+- What changed: Removed Evidence Music from the London labels directory and added a smoke-test guard against reintroducing it.
+- Why: Its official label source identifies Geneva, rather than London, as its base; a one-off London event is not sufficient for this directory’s sustained-connection threshold.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node --check research/scene-and-venues/data/operations-data.js`, and `node trials/verify-scene-update.js` passed; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue discovery and resolve the remaining Finsbury-only leads only when independent official evidence appears.
+
+## 2026-09-07 04:20
+
+- What changed: Added Area 44 Studios Recording Studio, Ritz Music Studio Recording, Studio Orbb, Visconti Studio and MX Studios UK to the recording-studio directory.
+- Why: Current operator and university pages verify distinct Barking, Richmond, Walthamstow, Kingston and Dagenham facilities. The entries retain their differing access models: directly bookable rooms, music-school hire, university/research enquiry and engineer-included sessions.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: The initial syntax test caught two unescaped apostrophes in new card copy. Both were corrected with targeted patches. Final `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Complete remaining source-led outer-borough discovery and a documented coverage/duplicate/inactive audit.
+
+## 2026-09-07 04:10
+
+- What changed: Refreshed Ritmo del Barrio and Mr Bongo with source-backed roster-scale, submission-route and check-date fields.
+- Why: Ritmo’s official parent-label Bandcamp confirms a current London reissue operation; Mr Bongo’s official pages confirm its enduring international roster and explicit demo-submission route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Verify Evidence Music’s current London relevance; retain the Finsbury-only leads only if independent official evidence emerges.
+
+## 2026-09-07 04:00
+
+- What changed: Added Intergalactic Studio Space to the Shoreditch / Hoxton rehearsal-space directory.
+- Why: Its current official page evidences a distinct owner-run full-band rehearsal room near Old Street, including amps, PA, microphones, drums, keys, direct access and a published £15 hourly rate.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the systematic rehearsal-space pass through East London and retain only current, clearly music-specific candidates.
+
+## 2026-09-07 04:10
+
+- What changed: Added sixteen current recording-studio cards across Acton, Hammersmith, Ealing, Enfield, Mill Hill, High Barnet, Bexleyheath, West Harrow, Sutton, Ruislip and Romford: Patrick Cassidy Audio, Kore Studios, Lyric Hammersmith Recording Studio, Boomtown Studio, SKP Recording Studios, Niburu Recordings, Clang Studios Recording, A-Bridge Studios, Rithmik Music Studio, Harrow Music Studio Recording, KEWS Studio, The Soundworks, Temple Music Studio, Starcity Studios, Runway Studio Ruislip and The Beans Shed.
+- Why: The West and outer-London geographic passes required every current, primary-source-verified facility, including restricted, youth, community, charity, self-service and specialist voice routes. Existing W13, Greystoke and Qube West cards were retained rather than duplicated. Echo7 was excluded because its verified Ewell address is outside Greater London; The Hideaway was excluded because its operator says it is not accepting new bookings.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Each data batch ran `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js`, all passing. One initially unescaped apostrophe in the Runway card was corrected immediately; the final verification set passed.
+- Follow-ups / TODOs: Continue remaining outer-borough source searches, then conduct a documented geographic coverage, duplicate and inactive-candidate audit.
+
+## 2026-09-07 04:00
+
+- What changed: Refreshed Melodies International, Apron Records and BBE Music with source-backed roster-scale classifications and check dates.
+- Why: Current official label pages support established-scale reissue/community classifications for Melodies and Apron, and landmark-scale status for BBE’s long-running international catalogue.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed after a concurrent `operations-data.js` syntax correction landed.
+- Follow-ups / TODOs: Refresh remaining legacy labels only where official evidence supports complete public fields; continue geographic/scene discovery otherwise.
+
+## 2026-09-07 04:00
+
+- What changed: Added Temple Music Studio, Starcity Studios, Runway Studio Ruislip and The Beans Shed to the recording-studio directory.
+- Why: Current official sources verify distinct Sutton, Ruislip and Romford facilities, covering full-band recording, engineer-led production, independent studio access and DIY live-session work. Echo7 was excluded because its verified Ewell address is outside Greater London; The Hideaway was not added because its operator states it is not accepting new bookings.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: The first syntax check caught and the subsequent patch corrected one escaped apostrophe in the Runway card. Final `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` all passed.
+- Follow-ups / TODOs: Continue the outer-London pass with borough-level official leads, then conduct a documented coverage and duplicate/exclusion audit.
+
+## 2026-09-07 03:50
+
+- What changed: Refreshed Pirate Dalston to distinguish its amplified rooms from its current unamplified piano room, and added The Others Studio as a separately bookable Stoke Newington full-band rehearsal route.
+- Why: Current official sources show a materially different acoustic service at Pirate Dalston and a distinct 24/7 venue-studio hire at The Others with a published band-rehearsal rate.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the systematic rehearsal-space pass through Shoreditch / Hoxton; no additional Dalston/Stoke room was added without current official evidence.
+
+## 2026-09-07 03:50
+
+- What changed: Added jazz re:freshed and Total Refreshment Records as fully classified London jazz/community-label records.
+- Why: Official sources verify active release catalogues and genuine London music-community infrastructure; jazz re:freshed also publishes a clear submission route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the label audit through remaining London scenes and refresh incomplete legacy label fields from official sources.
+
+## 2026-09-07 03:45
+
+- What changed: Added Niburu Recordings, Clang Studios Recording, A-Bridge Studios, Rithmik Music Studio, Harrow Music Studio Recording, KEWS Studio and The Soundworks to the recording-studio directory.
+- Why: Current official sources verify seven distinct outer-London recording routes across Enfield, Mill Hill, High Barnet, Bexleyheath and West Harrow, including charity/community, youth-only, self-service, commercial band, production and spoken-word facilities.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the outer-London pass with remaining borough-level official leads, then conduct a documented coverage and duplicate/exclusion audit.
+
+## 2026-09-07 03:35
+
+- What changed: Added Patrick Cassidy Audio, Kore Studios, Lyric Hammersmith Recording Studio, Boomtown Studio and SKP Recording Studios to the recording-studio directory.
+- Why: Current official operator pages verify five distinct West London facilities across Acton, Hammersmith and Ealing, including private attended sessions, a commercial live-tracking complex, theatre-based voiceover hire and production-focused rooms. W13, Greystoke and Qube West were already represented and were not duplicated.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js` passed; `node trials/verify-scene-update.js` passed; `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Complete the outer-London recording pass, then make an explicit geographic-coverage and excluded/duplicate-lead audit.
+
+## 2026-09-07 03:30
+
+- What changed: Added Speedy Wunderground and Heavenly Recordings as fully classified alternative-label records.
+- Why: Official pages document South London or London live-community connections, active release context and explicit demo routes.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the label audit through remaining London scenes and refresh incomplete legacy label fields from official sources.
+
+## 2026-09-07 03:20
+
+- What changed: Added Phantasy and Honest Jon's Records as fully classified label records.
+- Why: Official pages confirm Phantasy’s London independent-label identity and published demo route, and Honest Jon’s active label catalogue plus its London shop platform.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the label audit through remaining London scenes and refresh incomplete legacy label fields from official sources.
+- Follow-ups / TODOs: Continue the label pass through other London scenes and verify legacy label leads’ missing roster-scale fields from official sources.
+
+## 2026-09-07 03:30
+
+- What changed: Added Tremolo Studios, Blimp Studios, Rising Tide and Theatre Deli Hackney Central to the rehearsal-space directory and covered them with the existing rehearsal smoke-check set.
+- Why: Current official operator pages verify four distinct Hackney routes: commercial hourly full-band rehearsal, membership-only long-term access, charity/youth/community access, and music-suitable low-backline development rooms.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the systematic rehearsal-space pass through Dalston / Stoke Newington and Shoreditch / Hoxton, avoiding already-represented operator aliases and recording-only services.
+
+## 2026-09-07 03:40
+
+- What changed: Added 4AD, Fire Records and Planet Mu as fully classified independent-label records.
+- Why: Official pages verify a London base, active label catalogue and evidence-led submission status across landmark alternative, art-pop and electronic labels.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the label audit through remaining London scenes and refresh incomplete legacy label fields from official sources.
+
+## 2026-09-07 05:00
+
+- What changed: Completed the Soho / West End venue-discovery module. Added Crazy Coqs, Phoenix Arts Club, CellarDoor, Alfie's Jazz Club, The Piano Bar (Soho Live), and the Discovery Stage at Jack Solomons Club. Replaced the former Phoenix Arts Club exclusion assertion with an affirmative completeness check.
+- Why: Current official operator pages establish distinct live-music programmes and practical contact or hire routes for all six rooms. The Soho Live rooms are recorded separately because the operator identifies separate spaces with distinct live formats.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` passed; `node trials/verify-scene-update.js` passed; targeted root and venue-repository `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Await confirmation before beginning the City / Clerkenwell geographic module. Remaining Soho discovery candidates were either already represented, theatrical/hospitality-led without an evidenced recurring live-music programme, or require a later current-source check.
+
+## 2026-09-07 05:15
+
+- What changed: Completed the City / Clerkenwell venue-discovery module. Added Barbican Centre, Milton Court Concert Hall, LSO St Luke's, Fidelio Cafe and St Bartholomew the Great.
+- Why: Current operator pages establish distinct music programming and practical contact or hire routes spanning major concert halls, specialist community music, an intimate cafe-concert space and sacred/church music. The Slaughtered Lamb was already checked through its existing detail update, so no duplicate was added.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and targeted `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue directly with Camden under the approved no-pause audit workflow.
+
+## 2026-09-07 05:25
+
+- What changed: Completed the Camden venue-discovery module without data additions.
+- Why: The existing directory already covers Camden's current dedicated, grassroots, specialist, pub-room and major concert venues. The only new candidate surfaced, The Camden Eye, describes support for live music but does not publish a recurring programme or practical band route sufficient for inclusion.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and targeted `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue directly with Islington / King's Cross.
+
+## 2026-09-07 05:35
+
+- What changed: Completed the Islington / King's Cross venue-discovery module and added Booking Office 1869.
+- Why: Existing records already cover the area's dedicated music rooms, concert venues, pub stages, specialist clubs and seasonal King’s Cross activity. Booking Office 1869 is a distinct hospitality-led route with a current weekly Sunday live-jazz band programme.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and targeted `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue directly with North London.
+
+## 2026-09-07 05:45
+
+- What changed: Completed the North London venue-discovery module. Added Hornsey Town Hall, Mum's Bistro / Bowes Park Folk Club and The Boogaloo.
+- Why: Current operator and council pages verify a year-round multi-artform hall, a recurring volunteer-run folk route and regular pub-band programming. Crossover Jazz Room is represented through Hornsey Town Hall rather than as a duplicate venue building.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and targeted `git diff --check` commands passed (standard CRLF warnings only).
+- Follow-ups / TODOs: Continue directly with North-East London.
+
+## 2026-09-07 05:10
+
+- What changed: Fully classified No Nothing Records with its verified genre, developing roster scale, label-promoter operation, no-public-submission route and current check date; added smoke-test coverage for those fields.
+- Why: A current official Finsbury listing establishes active London self-presented bills, while current releases evidence an emerging alternative-label operation. No current official label contact or submissions route was found, so the record does not imply unsolicited demos are accepted.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue discovery across uncovered London label ecosystems. Right Track Records remains preserved as a legacy lead pending current first-party release evidence.
+
+## 2026-09-07 05:20
+
+- What changed: Added Mute as a fully classified label card with its London-office connection, landmark experimental roster and explicit current demo route; added it to the official-label smoke-check matrix.
+- Why: Mute’s current official about page confirms its London office, studio and active roster, while its current contact page provides a clear submission policy.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the geographic and scene-led label pass; do not infer missing submission routes from generic contact pages.
+
+## 2026-09-07 05:30
+
+- What changed: Added Upset The Rhythm, Acid Jazz, Lo Recordings and Hyperdub as fully classified London label cards, with official-source URLs and smoke-test coverage.
+- Why: Their current official pages establish active release operations and meaningful London connections across the experimental/DIY, jazz/soul/global and electronic scenes. Only Upset The Rhythm explicitly accepts demo-submission enquiries; the remaining public contacts are correctly marked as policy unstated.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue systematic candidate discovery through the remaining geographic and genre passes; retain unverified legacy records unchanged until first-party evidence is found.
+
+## 2026-09-07 07:10
+
+- What changed: Added St Luke’s Music Society as a current South London independent concert-series presenter, with promoter smoke-test coverage.
+- Why: Its official calendar lists public concerts from October 2026 to February 2027 and independently identifies the annual series’ classical, jazz, poetry and chamber-music remit. The card captures its specific specialist route without treating St Luke’s Church as the presenter.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js`, and direct promoter audit passed (235 active cards, zero duplicate promoter IDs). The shared smoke test no longer reports the previous `angel-of-bow` duplicate; it now reaches a separate concurrent venue assertion and fails because `Peckham Arches` is missing from the expected casual-live-music-pub classification. This promoter batch does not alter venue taxonomy.
+- Follow-ups / TODOs: Preserve the St Luke’s Music Society card. Resume the full shared smoke test after the venue owner resolves the Peckham Arches classification mismatch, while continuing source-only promoter discovery.
+
+## 2026-09-07 07:00
+
+- What changed: Added Notting Hill Carnival as the distinct landmark organiser of the Caribbean-culture, sound-system and live-music festival, with promoter smoke-test coverage.
+- Why: Notting Hill Carnival Ltd’s own 2026 programme confirms Panorama, steelpan, Brazilian bands, sound systems, live stages and a continuing community-events programme. One organiser card avoids incorrectly treating its many constituent bands and sound systems as duplicates.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` and a direct promoter audit passed (234 active cards, zero duplicate promoter IDs). `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. The shared `node trials/verify-scene-update.js` currently fails before promoter assertions because the concurrent scene-data worktree has duplicate venue ID `angel-of-bow`; this batch does not alter venue data and it must be resolved by the owning venue/rehearsal work before the shared smoke test can pass.
+- Follow-ups / TODOs: Preserve the current Notting Hill Carnival card. West London research also identified Edge West as an organiser lead, but its only retrieved 2026 session had already passed; refresh only after a future official date is announced. Continue through remaining geography/genre passes after the unrelated duplicate venue identity is reconciled.
+
+## 2026-09-07 06:50
+
+- What changed: Added Music in the Village as a current Walthamstow chamber-music and new-work concert-series presenter, with promoter smoke-test coverage.
+- Why: Its official source establishes an independent not-for-profit series founded in 2002, a September 2026 future concert, published access details and direct organiser contact. It gives North-East London a distinct small-format specialist route rather than another venue card.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 233 active promoter cards and zero duplicate active IDs.
+- Follow-ups / TODOs: The North/North-East scan did not refresh the existing Fourth Act or Leytonstone Festival cards because retrieved 2026 event pages were past-dated with no clearly announced future edition. Refresh those only when future official activity appears.
+
+## 2026-09-07 06:40
+
+- What changed: Added Old Skool Brunch as a current London R&B, garage, house and dancehall party presenter, with promoter smoke-test coverage.
+- Why: Its official site identifies a distinct collective of DJs, hosts and event planners and lists current 2026 Walthamstow dates, alongside wider London party and boat-event activity. This is an organiser identity, not a venue listing.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 232 active promoter cards and zero duplicate active IDs.
+- Follow-ups / TODOs: North-East London pass left venue-led listings and unverified named party nights as leads. Continue with only organiser-owned current sources in the remaining areas and genre passes.
+
+## 2026-09-07 06:30
+
+- What changed: Added the London International Festival of Early Music (LIFEM) as a current Blackheath specialist festival presenter, with promoter smoke-test coverage.
+- Why: The official LIFEM site confirms the 11–14 November 2026 four-day Blackheath programme, a distinct festival identity, public ticketing and a direct organiser contact. It is therefore separate from the Blackheath venues that host music.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 231 active promoter cards and zero duplicate active IDs.
+- Follow-ups / TODOs: Greenwich / Woolwich scan left Woolwich Works' own programme, Woolwich Singers, and individual venue residencies unadded because they are not distinct qualifying presenter organisations. Continue remaining geographic and genre passes.
+
+## 2026-09-07 06:20
+
+- What changed: Added City Music Society as a current City of London chamber-music and young-artist concert presenter, with promoter smoke-test coverage.
+- Why: Its official current programme documents the Autumn 2026 Young Artists Series and its own history identifies it as the City of London's chamber-concert promoter since 1943. It is a distinct external organiser, rather than St Bartholomew the Great's venue programme.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 230 active promoter cards and zero duplicate active IDs.
+- Follow-ups / TODOs: City / Clerkenwell source pass excluded historic London Musicians' Collective (its programme ceased in 2008) and venue/civic programmes without a qualifying independent organiser. Continue the remaining targeted geographic and genre passes.
+
+## 2026-09-07 06:10
+
+- What changed: Recorded a promoter-discovery handoff after the current folk/roots, community, accessibility-led and East London passes. No new discovery card was added in this handoff entry.
+- Verified additions in this continuation:
+  - `folklore-productions` / Folklore: independent live-and-label artist platform. Official current programme (`https://folkloreuk.com/`) listed September, October and December 2026 London events; classified `alternative`, `established`, `promoter-label`, `public-contact`.
+  - `the-goose-is-out` / The Goose Is Out: independent South-East London folk concerts and singarounds. Official site (`https://www.thegooseisout.com/`) confirms regular Ivy House concerts, Castle singarounds and August–November 2026 dates; classified `jazz-soul-global`, `developing`, `promoter-club-community`, `public-contact`.
+  - `drake-music` / Drake Music: Disabled-led accessible music presenter and artist-development organisation. Official Artist Showcase page (`https://www.drakemusic.org/news/drake-music-artist-showcase-2026/`) confirms the 24 October 2026 LSO St Luke's public showcase and access provision; classified `mixed`, `established`, `promoter-club-community`, `public-contact`.
+  - `girls-like-rnb` / Girls Like R&B: women-centred R&B, soul and slow-jams club-event presenter. Official site (`https://www.girlslikernb.co.uk/`) and organiser Linktree (`https://linktr.ee/girlslikernb`) list current 2026 London events including LDN East; classified `jazz-soul-global`, `developing`, `promoter-club-community`, `public-contact`.
+- Verified exclusions / reconciliations:
+  - One Room Live was found in the current Emerge East / Barking Riverside programme as the named music curator, but is already represented by the existing `one-room-live` promoter card; no duplicate was made.
+  - Reel Thing Events has current London ceilidh listings, but was not added in this continuation because the evidence retrieved centred social dancing rather than a sufficiently clear independent live-music-presenter proposition.
+  - Venue-calendar entries at LDN East (including SENSES Block Party and Back 2 93) remain leads until a distinct organiser's own current official source is verified; do not create cards from a venue listing alone.
+- Tests / audit: After every addition, `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Latest direct audit: 229 active promoter cards, zero duplicate active IDs.
+- Current state: The completed this-session targeted passes are folk/roots/community, accessibility-led presenters, and an initial East London named-organiser pass. The active goal is not complete: a systematic evidence-led pass remains for Soho / West End, City / Clerkenwell, Islington / King's Cross, North London, North-East London, Shoreditch / Hoxton, Hackney / Hackney Wick, Dalston / Stoke Newington, East London, Peckham / Nunhead, New Cross / Deptford, Greenwich / Woolwich, South London, West London and Outer London, together with targeted alternative, electronic, experimental, jazz/soul/global, reggae/dub, DIY, artist-led, youth, community, diaspora and accessibility-led searches. Earlier work has substantial coverage in many of these areas, but current-state evidence has not proved the full exhaustive audit.
+- Restart procedure: Re-read the attached promoter objective, `PROJECT_LOG.md`, `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, and both repository statuses before editing. Preserve concurrent work; edit only promoter data and smoke coverage; use `apply_patch`; run the three required checks and append a timestamped log entry after every verified batch.
+
+## 2026-09-07 06:00
+
+- What changed: Added Girls Like R&B as a current women-centred R&B, soul and slow-jams club-event presenter, with promoter smoke-test coverage.
+- Why: Its own current programme and organiser Linktree verify independent London events in 2026, including the LDN East open-air date. One Room Live was checked in the same East London pass and deliberately not duplicated because it already has a current promoter card.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 229 active promoter cards and zero duplicate active IDs.
+- Follow-ups / TODOs: Continue systematically through East and Outer London independent presenters; retain only named organiser identities rather than venue calendars or one-off event titles.
+
+## 2026-09-07 05:50
+
+- What changed: Added Drake Music as an accessibility-led music presenter, with promoter smoke-test coverage.
+- Why: Its current official October 2026 Drake Music Collective Artist Showcase proves a public live-performance and artist-development route for Disabled early-career musicians. The card describes its substantial published access provision without misrepresenting a general contact route as open submissions.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 228 active promoter cards and zero duplicate active IDs.
+- Follow-ups / TODOs: Continue the East/Outer London and accessibility-led presenter pass; exclude educational providers that do not independently present current public live music.
+
+## 2026-09-07 05:40
+
+- What changed: Added On-U Sound as a fully classified reggae/dub label card, with its current official catalogue, London registered office and public contact route; extended the label smoke-check matrix.
+- Why: The official source confirms an active, independent, internationally influential London label with current releases as well as catalogue activity. The public email is classified as submission policy unstated because it does not invite demos.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue discovery for other verified reggae/dub and catalogue labels, then cover the remaining geographic scene passes.
+
+## 2026-09-07 05:50
+
+- What changed: Added Far Out Recordings as a fully classified landmark jazz/soul/global label and extended its smoke-test coverage.
+- Why: Current official pages confirm its London founding and registered office, active 2026 release schedule, international Brazilian-music roster and public enquiries address. Its substantial reissue work is noted, but current artist releases mean it is correctly treated as a label rather than a catalogue-only operation.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the source-led global, reissue and community-label pass across the remaining London areas.
+
+## 2026-09-07 06:00
+
+- What changed: Added Full Time Hobby and Memphis Industries as fully classified established alternative-label cards and extended the official-label smoke-test matrix.
+- Why: Current official pages establish Full Time Hobby’s Dalston base, active roster and enquiry form, and Memphis Industries’ North London base, active roster and public contact route. Neither source publishes a current open-demo policy, so both are classified as policy unstated.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue remaining geographic and genre passes, prioritising active first-party catalogue and location evidence.
+
+## 2026-09-07 06:10
+
+- What changed: Added Rough Trade Records, XL Recordings and Cooking Vinyl as fully classified landmark London independent-label cards, with official-source links and smoke-test coverage.
+- Why: Current official catalogues and company/contact pages confirm their London connection and active release operations. XL and Cooking Vinyl have usable published contacts but no stated demo policy; Rough Trade’s current official sources lack a usable public label-contact route and is therefore correctly marked no public route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue candidate discovery across the remaining scenes and areas; maintain the distinction between a real contact route and permission to submit demos.
+
+## 2026-09-07 06:20
+
+- What changed: Added Fierce Panda and Sonic Cathedral as fully classified alternative-label cards, including their live/community operating models and smoke-test coverage.
+- Why: Current official pages verify Fierce Panda’s Islington base, releases, gigs and explicit demo route, and Sonic Cathedral’s active 2026 catalogue, public contact route and sustained London events/community activity.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the remaining source-led geographic and genre passes, including artist-run and specialist imprints.
+
+## 2026-09-07 06:30
+
+- What changed: Added Soundway Records and Wah Wah 45s as fully classified jazz/soul/global label cards and extended the official-label smoke-test matrix.
+- Why: Current official sources confirm Soundway’s London office, global-music catalogue and contemporary releases, plus Wah Wah 45s’ continuing London-rooted label and live-show activity. Their published contact routes are correctly not treated as open submissions.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue remaining geographic discovery, with particular attention to artist-run imprints and genuinely active local labels.
+
+## 2026-09-07 06:40
+
+- What changed: Added Houndstooth, INH Records, Hooversound Recordings, Soul In Motion Records, Slowfoot Records, Cherry Red Records and Peer Pressure Records as fully classified London label cards, with smoke-test coverage.
+- Why: Their current official Bandcamp pages verify a London base, active 2026 catalogues and public contacts across electronic, jungle/drum-and-bass, alternative, experimental and catalogue/reissue work. No card treats a generic public contact as permission to submit demos.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue systematic discovery for still-unrepresented London scenes and keep the ambiguous Right Track Records legacy lead unchanged without a verified active label catalogue.
+
+## 2026-09-07 06:50
+
+- What changed: Added Critical Music as a fully classified landmark electronic label-and-community card, with explicit demo-route and smoke-test coverage.
+- Why: Current official pages verify its North London origin, international drum-and-bass roster, Critical Sound live platform and open demo-submission process.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue London D&B/jungle discovery only where a current official London connection is documented; Shogun Audio remains excluded from this pass because its official address is Brighton.
+
+## 2026-09-07 07:00
+
+- What changed: Added Hospital Records as a fully classified landmark electronic label-and-community card, with official-label smoke-test coverage.
+- Why: Current official pages confirm its London registered office, active roster and releases, and its Hospitality event ecosystem. Its published address is a public contact route, not evidence that unsolicited demos are accepted.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the systematic label pass across remaining specialist scenes; do not add Metalheadz until a current official London connection and public contact route are independently evidenced.
+
+## 2026-09-07 07:10
+
+- What changed: Added Metalheadz as a fully classified landmark electronic label-and-community card, with explicit demo route and smoke-test coverage.
+- Why: Official Bandcamp and SoundCloud pages now establish its current London base, active 2026 releases, ongoing events and public demo address.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue geographic and scene-led discovery; avoid conflating distributor or shop support contacts with label demo permission.
+
+## 2026-09-07 05:20
+
+- What changed: Added Muzik Millennium Leyton Studios to the North-East London rehearsal-space directory.
+- Why: Its current official service page verifies a distinct £10/hour music-rehearsal offer in Leyton; its public backline specification is incomplete, so the card explicitly requires confirmation rather than inventing equipment details.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue remaining geographic evidence passes, then run the final rehearsal-directory coverage and duplicate audit.
+
+## 2026-09-07 04:50
+
+- What changed: Completed a full recording-card schema audit and added a legacy access-field normalizer plus smoke-test coverage for the complete recording-studio corpus.
+- Why: The audit found no duplicate recording IDs but found that older cards predated the access field. Their already-published booking route is now surfaced as explicit access guidance without replacing the original data, and future regressions are prevented by a whole-corpus schema check.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed. A VM schema check found 143 recording cards with access guidance after normalization and no duplicate IDs.
+- Follow-ups / TODOs: Continue primary-source discovery and reconcile remaining leads; the GLA map service is reachable but parameterised layer extraction remains blocked by this browser sandbox.
+
+## 2026-09-07 05:05
+
+- What changed: Added Spy-da Productions to the recording-studio directory and its geographic smoke-check set.
+- Why: Its current official site confirms active attended recording, production, mixing and mastering services with an app-only booking model introduced in January 2026. The card uses its current Brayford Square London address and does not rely on contradictory stale third-party Brentford listings.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue remaining current-source reconciliation and document unresolved current-location ambiguity rather than inferring it from stale directories.
+
+## 2026-09-07 05:30
+
+- What changed: Added artsHouse Camden Music Rooms to the rehearsal-space directory after completing the Camden and Islington / King’s Cross pass.
+- Why: The operator currently distinguishes three bookable music rooms from its dance spaces and explicitly supports music practice and teaching; their piano-only, small-format specification is recorded rather than overstating them as band rooms.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Complete the remaining systematic area refreshes, then run a whole-directory rehearsal schema, duplication and coverage audit.
+
+## 2026-09-07 05:20
+
+- What changed: Added four explicitly documented unresolved or excluded recording-studio leads to the shared review queue and covered the unresolved subset with smoke tests.
+- Why: Music Evolution Studios and Bexley Audio Services confirm services but not a facility address; Little House Studio has only a third-party listing; Mark Angelo Studios and The Oven Studios surface only historical material, while Fluid Mastering states that it left London. This preserves discovery evidence without adding guessed or stale cards.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue current-source reconciliation when an official location becomes public; retain these leads as audit evidence rather than duplicating or inferring cards.
+
+## 2026-09-07 05:40
+
+- What changed: Added a whole-directory rehearsal-space schema and duplicate-ID assertion to the smoke test.
+- Why: The final audit currently finds 80 rehearsal records (79 active), no duplicate IDs and complete practical/evidence fields across every card; the test now preserves that standard as the directory grows.
+- Files touched: `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Finish the remaining geographic pass evidence and review source freshness / aliases before treating the rehearsal goal as complete.
+
+## 2026-09-07 05:50
+
+- What changed: Completed the rehearsal-space directory geographic, schema, duplicate and filter-coverage audit.
+- Why: The active directory contains 79 current rehearsal cards (80 including one archived legacy card). All 16 public filter areas have at least two active routes; the full corpus has no duplicate IDs or missing practical/evidence fields, and all active cards were checked on 2026-09-06 or 2026-09-07.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Extracted the dashboard’s actual `venueArea` mapping to verify every public area is populated; `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and the targeted `git diff --check` passed.
+- Follow-ups / TODOs: Future work should be incremental source refreshes or newly surfaced facilities; preserve the full-corpus smoke checks when adding or retiring cards.
+
+## 2026-09-07 07:20
+
+- What changed: Added Ariwa Sounds as a fully classified landmark reggae/dub label-and-community card, with official-label smoke-test coverage.
+- Why: Ariwa's current official site identifies an active South London label-and-studio operation, current artist work, and a usable public contact route. No published open-demo policy was found, so the card does not imply one.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue systematic label discovery across the remaining London scenes and areas; retain only current official evidence.
+
+## 2026-09-07 07:30
+
+- What changed: Added AD 93 and The Trilogy Tapes as fully classified London electronic-label cards, with official-label smoke-test coverage.
+- Why: Their current official Bandcamp pages establish London bases, active multi-artist catalogues and usable public contact routes. Neither publishes an explicit open-demo policy, so neither card implies one.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue systematic label discovery across remaining areas and genres; retain only current official evidence.
+
+## 2026-09-07 07:50
+
+- What changed: Added PRAH Recordings as a fully classified established London experimental-label card, with official-label smoke-test coverage.
+- Why: Its current official Bandcamp confirms a London base, active 2026 multi-artist releases and a usable contact route. The card does not misrepresent that contact route as open demo submission.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue systematic label discovery across remaining areas and genres; retain only current official evidence.
+
+## 2026-09-07 07:40
+
+- What changed: Added Domino Recording Company as a fully classified landmark London independent-label card, with official-label smoke-test coverage.
+- Why: Domino's current official site confirms an active multi-artist release operation and contact route, while its official group information identifies its London registered office. The public contact route is not presented as a demo-submission route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue systematic label discovery across remaining areas and genres; retain only current official evidence.
+
+## 2026-09-07 08:00
+
+- What changed: Added Soul Jazz Records as a fully classified landmark Soho catalogue/reissue-label card, with official-label smoke-test coverage.
+- Why: Its official label shop lists current 2026 releases and its official Bandcamp confirms the London identity and public contact route. The card distinguishes the active release label from the associated shop and does not imply open demos.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue systematic label discovery across remaining areas and genres; retain only current official evidence.
+
+## 2026-09-07 08:10
+
+- What changed: Added NMC Recordings, Saxon Records, Silent Force Recordings, Earth Recordings, Depths, and life is beautiful records as fully classified current London-label cards, with smoke-test coverage.
+- Why: Each has a current official London-identifying page and active catalogue. Depths explicitly invites demos; the other five are conservatively recorded as public contact routes without inferring demo acceptance. Saxon and life is beautiful are classified as community platforms only because their own pages establish that wider activity.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue geographic and scene-led discovery, retaining only current official evidence and separate label identities.
+
+## 2026-09-07 08:20
+
+- What changed: Added More Time as a fully classified established London electronic-label card, with official-label smoke-test coverage.
+- Why: Its current official Bandcamp establishes its London base, artist-founded identity and active 2026 multi-artist catalogue. The usable contact route is recorded without inferring an open-demo policy.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue geographic and scene-led discovery, retaining only current official evidence and separate label identities.
+
+## 2026-09-07 08:30
+
+- What changed: Added Expansion as a fully classified established London soul-label card, with official-label smoke-test coverage.
+- Why: Its current official Bandcamp establishes its London identity, wide current artist roster and multiple 2026 releases. The usable contact route is recorded without inferring an open-demo policy.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue geographic and scene-led discovery, retaining only current official evidence and separate label identities.
+
+## 2026-09-07 08:40
+
+- What changed: Added Bella Union as a fully classified landmark London alternative-label card, with official-label smoke-test coverage.
+- Why: Its current official site and Bandcamp establish an active international roster, release catalogue and public contact route. The card does not imply open submissions.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue geographic and scene-led discovery, retaining only current official evidence and separate label identities.
+
+## 2026-09-07 08:50
+
+- What changed: Added All Centre as a fully classified developing London electronic-label card, with official-label smoke-test coverage.
+- Why: Its current official Bandcamp establishes a London, artist-run label identity and active 2026 release catalogue. The public contact route is not represented as open demo submission.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue geographic and scene-led discovery, retaining only current official evidence and separate label identities.
+
+## 2026-09-07 09:00
+
+- What changed: Added Blah Records as a fully classified established London-rooted alternative-rap label-and-promoter card, with official-label smoke-test coverage.
+- Why: Its current official site and Bandcamp establish an active release operation, a London artist roster and recent label-promoted London activity. The public contact route is not represented as open demo submission.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue geographic and scene-led discovery, retaining only current official evidence and separate label identities.
+
+## 2026-09-07 09:10
+
+- What changed: Added a whole-directory labels schema and duplicate-ID guard to the smoke test.
+- Why: The audit confirms 73 label cards with no duplicate IDs and 72 complete public filter/source records. Right Track Records is deliberately retained as the sole explicitly incomplete legacy lead, and the test now prevents that exception from silently spreading.
+- Files touched: `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue geographic and scene-led discovery, retaining only current official evidence and separate label identities.
+
+## 2026-09-07 09:20
+
+- What changed: Added Anjunadeep as a fully classified landmark London electronic label-and-community card, with official-label smoke-test coverage.
+- Why: Its current official site directly identifies an independent London label with an active large catalogue, global roster and recurring showcase programme. The public contact form is not represented as open demo submission.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue geographic and scene-led discovery, retaining only current official evidence and separate label identities.
+
+## 2026-09-07 09:30
+
+- What changed: Added Some Action as a fully classified developing London independent-label card, with official-label smoke-test coverage.
+- Why: Its official site directly establishes a current London label identity, roster and public contact address. The contact route is not represented as open demo submission.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the geographic sweep through the remaining areas, retaining only current official evidence and separate label identities.
+
+## 2026-09-07 09:40
+
+- What changed: Added Rucktion Records, Hassle Records and Sweat Entertainment as fully classified current London-label cards, with smoke-test coverage.
+- Why: Current official sources establish active release operations for all three. Rucktion also shows current label-promoted London bills, while Hassle and Sweat are retained as label-only operations. Public contact routes are not represented as open demo submission.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the geographic sweep through remaining areas, retaining only current official evidence and separate label identities.
+
+## 2026-09-07 09:35
+
+- What changed: Added Tensor Studios as a fully classified Vauxhall rehearsal-space card. Confirmed Pulse Rehearsal Studios was already present in the live directory.
+- Why: Tensor's current official site and online booking calendar establish two directly bookable band rooms at £20/hour and its Arch 14, Miles Street location. No duplicate Pulse card was created.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Retain the source-specific distinction between Tensor's £20/hour rehearsal rooms and its separately priced Backstage event space.
+
+## 2026-09-07 09:45
+
+- What changed: Added East Side Jazz Club at Leytonstone Social Club and The Vestry Sessions at St Mary's Church to the North-East London venue directory.
+- Why: Each has a current specialist live-music programme and a direct public presenter or ticket route; neither duplicates the existing Walthamstow, Leyton or Tottenham venue cards.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git -C research/scene-and-venues diff --check -- data/scene-data.js`, and `git diff --check -- trials/verify-scene-update.js` passed (the expected Git CRLF notice was informational only).
+- Follow-ups / TODOs: Continue the remaining geographical sweep, retaining only presently evidenced live-music routes.
+
+## 2026-09-07 09:50
+
+- What changed: Added Zeromileage and Origins Inconclusive as fully classified current South-London-connected label cards, with smoke-test coverage.
+- Why: Their current official sites establish active label identities, current release/roster information and usable public contact routes. Neither route is represented as open demo submission.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the label geographic sweep through West and Outer London, retaining only current official evidence.
+
+## 2026-09-07 10:00
+
+- What changed: Added 5dB, CoOp Presents, Format Music DnB, All Saints Records, Trestle Records, Soulvent Records and flurt. as fully classified current East/West London label cards, with smoke-test coverage.
+- Why: Each has a current official label or catalogue source establishing its London connection, active multi-artist releases and a public or explicit demo route. Candidates without equivalent current catalogue evidence were excluded.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Complete the Outer-London pass and run a final duplicate/source/completeness audit before treating the directory as a bounded researched baseline.
+
+## 2026-09-07 10:00
+
+- What changed: Completed the continued live-venue sweep by adding two North-East London specialist programmes, two East/Hackney venues, and four South/West/Outer London venues. Duplicate candidates already represented in the directory were not re-added.
+- Why: Each new record has current first-party programme evidence and a practical ticket, presenter or contact route; DJ-only and historical-only candidates were excluded.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git -C research/scene-and-venues diff --check -- data/scene-data.js`, and `git diff --check -- trials/verify-scene-update.js` passed (the Git CRLF notice was informational only).
+- Follow-ups / TODOs: Review the final working-tree diff before committing; preserve unrelated user changes.
+
+## 2026-09-07 10:10
+
+- What changed: Completed the labels geographic pass and whole-directory audit.
+- Why: The audited directory contains 87 label cards: 86 complete current-source records across all public filter values, plus the explicitly incomplete Right Track legacy lead. Duplicate IDs and invalid public classifications are now blocked by the smoke test. Outer-London candidates without current official multi-artist catalogue evidence were deliberately not added.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Count/classification audit completed; `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Refresh individual label sources incrementally as sites, rosters and submission policies change; do not infer demo acceptance from public contact details.
+
+## 2026-09-07 10:20
+
+- What changed: Added Monotreme Records, Eastcote Recordings, Gate Breaker Records and Ai Records as fully classified current London-label cards, with smoke-test coverage.
+- Why: A renewed official-site sweep found current direct evidence that was absent from the earlier audit: each candidate operates an active music-release catalogue and has a meaningful London connection. Gate Breaker alone publishes a dedicated demo route; public contact details for the other cards are not represented as open submissions.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue source refreshes and include only current official evidence; previous directory counts are superseded by this verified batch.
+
+## 2026-09-07 10:30
+
+- What changed: Added Dirty Hit, Ghost District Records, SelectA Rec., Music For People, Orbital London, Going Good Records, Orbital Chaos Records, Sakura Selections, C.R.A.P Records, Wareham Music Group and Scandal Sounds as fully classified current London-label cards, with smoke-test coverage.
+- Why: A scene-led official-source pass found distinct active release operations across alternative, house, bass, rave, soul and artist-community scenes. Only explicit demo routes are marked as open submissions; all remaining direct contacts retain the conservative public-contact status.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue genre-led source verification and retain only independently evidenced current labels; earlier directory counts are superseded by this batch.
+
+## 2026-09-07 10:40
+
+- What changed: Added DeepMatter Records, Creation Rebel Sound System, Channel One Sound System, Jet Star Music, Matsuli Music and Numen Records as fully classified current label cards, with smoke-test coverage.
+- Why: Current official catalogues confirm distinct London or London-connected release operations across jazz/soul/global, reggae/dub, archival catalogue and experimental music. Only DeepMatter publishes an explicit demo route; every other contact is conservatively recorded as submission policy unstated.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue current-source discovery across under-represented genres and retain only separately evidenced active label identities.
+
+## 2026-09-07 10:50
+
+- What changed: Added sly-tone and Discrepant as fully classified current London-label cards, and refreshed Orbital Chaos Records from public-contact to explicit open submissions.
+- Why: Current official pages establish the two distinct active alternative/experimental label operations and their demo routes. Orbital Chaos's current site now explicitly invites bass-music demos, so its former conservative public-contact classification was no longer accurate.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue source refreshes and retain the exact distinction between a named demo route and a general contact route.
+
+## 2026-09-07 11:00
+
+- What changed: Added No Fuss Records and Slow Worm Records as fully classified current Outer/North London label cards, with smoke-test coverage.
+- Why: Current official sites show No Fuss's active Barnet roster and release catalogue, and Slow Worm's current multi-artist 2026 London folk/experimental catalogue plus label concerts. Slow Worm has no usable public submission/contact route on its verified source, which is stated rather than inferred.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Re-run a whole-directory count/classification audit after this last named-area pass; retain only current official evidence in future refreshes.
+
+## 2026-09-07 11:10
+
+- What changed: Completed the labels corpus count, classification and duplicate audit after the final named-area pass.
+- Why: The directory now has 112 label cards: 111 complete current-source records spanning every public genre, scale, operation and submission-route option, plus the intentionally preserved incomplete Right Track legacy lead. The named geographic passes and genre-led passes were searched; candidates without active official release evidence were excluded.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Corpus audit confirmed 20 alternative, 31 electronic, 16 experimental, 19 jazz/soul/global, 6 reggae/dub and 19 broad/multi-genre labels; `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Maintain through incremental source refreshes; public contact must remain distinct from an explicit demo-submission route.
+
+## 2026-09-07 11:20
+
+- What changed: Completed the remaining rehearsal-lead cleanup. Tensor Studios was already added in the preceding pass; K-Town Studios was removed as a non-London lead, and Apollo Studio was retained in the visible research queue rather than incorrectly treated as an active card.
+- Why: K-Town's official site identifies a Kingston, New York post-production facility. Apollo and Sic Lick have credible third-party London listings but no current operator-owned public booking source with complete comparable evidence; Brixton House confirms creative rehearsal hire but not a standard amplified-band offer or comparable band rate.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/operations-data.js trials/verify-scene-update.js` passed. The remaining rehearsal leads are Apollo Studio, Sic Lick Studio, Brixton House and the GLA inventory.
+- Follow-ups / TODOs: Add Apollo or Sic Lick only if a current operator-owned booking/contact route and usable rate evidence appears; retain Brixton House as a performance-space lead unless it publishes an explicit amplified-band offer.
+
+## 2026-09-07 11:35
+
+- What changed: Began the source-verified jam-session refresh. Updated Ronnie Scott's Monday Jazz Jam, Vortex Midweek Downstairs Jam, and Down With It! Jam Session from current official listings; added the current Monday Late Late Soul Sessions Upstairs series. Added whole-directory jam-card schema, duplicate-ID and venue-resolution smoke coverage.
+- Why: Current official pages confirm the Vortex Tuesday recurrence/free entry, Down With It!'s house-band-to-open-jam format, Ronnie's current pricing and a distinct Monday house-band/open-stage soul series. A concurrent Vocal Jazz Jam card already contained the more precise 10:45pm schedule, so its duplicate was removed rather than overwritten.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. The active directory has 44 distinct jam-session cards.
+- Follow-ups / TODOs: Continue the existing-card refresh by area and format, then run geographic/scene gap discovery. Keep the Vortex and Ronnie user-agreed level placements unless stronger evidence warrants discussion.
+
+## 2026-09-07 11:35
+
+- What changed: Reworked the Promoters directory around public genre, promoter scale, promoter model and contact-route filters. Normalized every existing promoter card into those fields, retained evidence route internally, and merged three duplicate import records into their corresponding identities.
+- Why: The old single "Promoter standing" filter mixed practical scale, venue association and ticket-target concerns. The new model keeps public contact distinct from an explicit open-submission route while preserving card notes, source links and venue relationships.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Audit: 170 unique promoter IDs and no card missing the six normalized research fields.
+- Follow-ups / TODOs: Complete a fresh official-source verification and geographic discovery pass before treating all inherited promoter records as current; external web access is still awaiting explicit approval.
+
+## 2026-09-07 11:40
+
+- What changed: Kept four historic, identity-unconfirmed or non-live-promoter records in the research source but excluded them from the public Promoters directory.
+- Why: The records for Live in London, London AAA Live, Absent Kelly and Radar Music Group explicitly lack current live-promotion evidence in their own notes, so they do not meet the active-directory threshold.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Audit: 166 active public promoter cards; four excluded research records.
+- Follow-ups / TODOs: Perform the pending official-source refresh and geographic discovery pass once web access is explicitly approved.
+
+## 2026-09-07 11:45
+
+- What changed: Added source URLs to every active promoter card, using the promoter's official URL where present or its documented venue-relationship evidence as a fallback. Existing relationship evidence now upgrades internal provenance to `current-bill` and supplies a missing check date when available.
+- Why: The public directory now visibly meets the source-link requirement without exposing internal evidence categories; inherited records remain explicitly identifiable for the later current-source pass.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Audit: 166 active cards all have a source URL; 163 use current-bill provenance; Tripples, Loud in London and More Live await fresh verification; The Pad Presents and Boomerang Club London lack a recorded check date.
+- Follow-ups / TODOs: Use fresh official pages and current bills to resolve the five named provenance/date gaps and complete the geographic discovery pass once web access is explicitly approved.
+
+## 2026-09-07 11:50
+
+- What changed: Added Promoters-tab rendering coverage to the shared smoke test.
+- Why: The test now proves the four public filters and source links render, while internal evidence-route text and excluded research records do not appear in the public directory.
+- Files touched: `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Complete external official-source verification and geographic discovery when web access is approved.
+
+## 2026-09-07 11:55
+
+- What changed: Excluded Loud in London from the active public promoter directory while retaining its research record.
+- Why: Its own inherited contact note says the official site is historic and no current direct route is confirmed, so it fails the current-active-promotion threshold.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Audit: 165 active public cards and five excluded historical/unclear/non-promoter research records.
+- Follow-ups / TODOs: Obtain explicit web-access approval for current official-source checks and the required geographic discovery pass.
+
+## 2026-09-07 12:05
+
+- What changed: Refreshed the inherited evidence/date gaps with current official sources. More Live is now explicitly recorded as an open artist-submission route; The Pad and Boomerang Club have current official programme evidence and check dates; Triples is retained internally but hidden because its verified profile lists previous events only.
+- Why: The active directory now contains only records with current or official-site provenance and a recorded check date. A visible public contact is no longer confused with an open submission policy.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Audit: 164 active cards; no missing check dates and no inherited-only provenance.
+- Follow-ups / TODOs: Continue the approved systematic official-source discovery pass across the named London areas and under-represented genres.
+
+## 2026-09-07 12:15
+
+- What changed: Added HOLLOW.MOON.LDN and London Metalfest as fully classified current Camden promoter cards, with dedicated smoke-test coverage.
+- Why: Their official sites identify distinct independent heavy-music promotion/festival operations. HOLLOW.MOON.LDN has a public promoter contact; London Metalfest explicitly accepts artist applications with an EPK.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Audit: 166 active cards and no duplicate active IDs.
+- Follow-ups / TODOs: Continue the approved geographic discovery pass, next covering the remaining central, east/Hackney and south-London gaps with official current sources.
+
+## 2026-09-07 12:25
+
+- What changed: Added Soho Calling as a fully classified Soho / West End promoter card, with smoke-test coverage.
+- Why: Its official site confirms a distinct fourth-edition, seven-venue 2026 new-music showcase and announces its February 2027 return, making it a current recurring presenter rather than a venue programme.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Audit: 167 active cards and no duplicate active IDs.
+- Follow-ups / TODOs: Continue the central/east/south geographic and specialist-genre passes; venue-owned programmes and expired one-off events remain excluded.
+
+## 2026-09-07 12:35
+
+- What changed: Added The Soulstice Collective and Rhythm Section as fully classified East/Hackney Wick and Peckham promoter cards, with smoke-test coverage.
+- Why: Their official sites document distinct, ongoing music-event operations rather than venue programmes: Soulstice runs Colour Factory and festival events with a community remit; Rhythm Section combines a Peckham label, radio show, club night and concert series with more than 150 London events.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Audit: 169 active cards and no duplicate active IDs.
+- Follow-ups / TODOs: Continue through North, North-East, Greenwich/Woolwich, West and Outer London, plus specialist community, global and reggae/dub discovery passes.
+
+## 2026-09-07 12:45
+
+- What changed: Added OGAM Music / Shake The High Road as a fully classified North-East London promoter card, with smoke-test coverage.
+- Why: OGAM's official page identifies it as the continuing independent curator of Leytonstone's multi-venue festival, records the 2026 edition and confirms its May 2027 return, with a direct public organiser route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Audit: 170 active cards and no duplicate active IDs.
+- Follow-ups / TODOs: Continue Greenwich/Woolwich, West and Outer London discovery, then finish remaining targeted genre and community/DIY passes.
+
+## 2026-09-07 11:45
+
+- What changed: Completed the Tuesday specialist/community jam refresh. Updated The Hum, all four Toulouse Lautrec Tuesday jams and the two existing Skehan's cards; added Skehan's Monday Jam Sessions and Wednesday Writers Circle.
+- Why: Current official pages verify The Hum's 8pm free-entry house-band-to-open-jam format, Toulouse's four-week house-band/open-stage cycle, and Skehan's exact permanent weekly programme. The Skehan's additions meet the participatory threshold because musicians are explicitly invited to bring instruments, write, play and collaborate.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. The active directory has 46 distinct jam-session cards.
+- Follow-ups / TODOs: Continue source refresh by geographic/format group. Keep Skehan's Sunday Folk Session unlisted until a current source confirms musician participation rather than attendance only.
+
+## 2026-09-07 11:55
+
+- What changed: Refreshed the Blues Kitchen Camden and Magic Garden blues-jam cards; removed the Blues Kitchen Shoreditch Sunday Jazz Jam card from the participatory directory.
+- Why: Official Camden and Magic Garden listings explicitly invite musician sign-up/joining, publish their recurrence and confirm free entry. The current Shoreditch listing describes two sets by Late Service with no participant route, so it fails the directory’s participatory requirement despite its event title.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. The active directory has 45 distinct jam-session cards.
+- Follow-ups / TODOs: Continue the existing-card refresh and identify similar passive-performance false positives before the geographic discovery pass.
+
+## 2026-09-07 12:10
+
+- What changed: Refreshed Orii East, Orii South, Jazz Jam with Stratos and Not The Usual Jam from their current official organiser and venue sources. The four cards now state the actual participation format, current timings and any confirmed free musician/entry route.
+- Why: Orii explicitly separates its instrumental jam from its vocalist/rapper/poet open mic, while Grow explicitly confirms the house-band-to-open-jam handover and the first-Sunday open-format participation route. This makes the directory practically actionable without inferring access conditions.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the East/Hackney existing-card refresh, especially sessions whose current public material may be a passive-performance listing rather than a verified musician-participation route.
+
+## 2026-09-07 12:25
+
+- What changed: Refreshed Dancefloor Education at Bricks from its current official event page, explicitly recording its musician-open community jam and free entry. Removed the two Jago jam cards from the active directory.
+- Why: Bricks confirms a weekly Thursday open stage/community jam for musicians. The current official Jago events page shows one dated Sunday band/DJ event but no recurring participatory Sunday or Thursday jam, so retaining either card would misrepresent a live listing as a verified recurring session.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue current-source review of Haggerston, PATTERNS, Muddy Puddle and other cards whose historic descriptions may not prove an active participatory route.
+
+## 2026-09-07 12:35
+
+- What changed: Refreshed both El Charquito Lounge Jam cards at The Muddy Puddle from the current official venue programme, adding its all-instruments, all-level, all-genre participation description.
+- Why: The official venue page directly confirms Thursday and Sunday recurrence, the 4pm–11pm timing, relaxed participatory format and £5 entry. The two day-specific cards remain separate because they offer distinct weekly attendance opportunities.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue verifying or removing Haggerston and PATTERNS; their available sources still need a current, explicit public participation route.
+
+## 2026-09-07 12:50
+
+- What changed: Added Highams Park Jazz Club at All Saints Church and its linked monthly Sunday jazz jam card, with the existing North-East London filter and specialist venue type.
+- Why: A current official ticketing page confirms monthly sessions resumed in September 2026, with a guest artist and house band followed by a participatory jam, plus a distinct £5 on-stage musician ticket. This is a separately bookable specialist programme, not a generic church listing.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the current-source audit of the existing MAP, Haggerston and PATTERNS cards before the broader geographic discovery pass.
+
+## 2026-09-07 05:40
+
+- What changed: Added two verified current presenter cards: Folklore and The Goose Is Out. Added promoter smoke-test coverage for their public filter classifications and source fields.
+- Why: Folklore's official programme establishes an active independent live-and-label platform with 2026 London dates, while The Goose Is Out's official programme establishes a distinct recurring South-East London folk-concert and singaround presenter. Both retain `public-contact` because their public routes do not explicitly solicit artist submissions.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 227 active promoter cards and zero duplicate active IDs.
+- Follow-ups / TODOs: Continue targeted current-source discovery for folk, roots, community and accessibility-led presenters, especially in uncovered Outer London and East London areas.
+
+## 2026-09-07 13:05
+
+- What changed: Refreshed Ronnie Scott’s Vocal Jazz Jam from its current September official page. Removed the active Jazz at MAP, Haggerston Sunday Jazz Jam and PATTERNS cards.
+- Why: Ronnie’s explicitly confirms an ongoing Wednesday vocal open-stage series. Jazz at MAP’s current organiser page displays no events; the Haggerston source gives no current official recurrence or participation route; and the PATTERNS collection only establishes past spring/summer dates rather than a current session. The three removals prevent historical or passive listings being represented as current participatory jams.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Verify the remaining older open-mic and special-format cards, then begin broader geographic gap discovery from current official programmes.
+
+## 2026-09-07 13:20
+
+- What changed: Added Tea House Theatre as a Vauxhall / South London hospitality-led venue with two linked recurring participatory cards: The Vauxhall Jazz Jam and SE11 Sessions. Added Vauxhall to the existing South London area matcher.
+- Why: The venue's official current programme confirms a second-Tuesday house-band jazz jam, free musician entry and future dates through December; it also confirms a distinct last-Saturday jazz/soul/funk house-band session that opens to musicians. These are separately recurring formats at one venue, not duplicate cards.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. The shared area-matcher smoke assertion was updated to cover the new Vauxhall branch.
+- Follow-ups / TODOs: Search the remaining South London and West London gaps for current official recurring participatory sessions; leave isolated historical events out of the public directory.
+
+## 2026-09-07 13:35
+
+- What changed: Added Ram Jam Records' current Wednesday open-mic-plus-jam card and The George & Dragon, Acton with its linked free Thursday Jazz Jam card.
+- Why: Ram Jam's official listing publishes in-person sign-up, a clear open-mic window and a distinct after-midnight jam. The George & Dragon's official weekly programme explicitly welcomes instruments and singers to its Thursday jazz jam. The two cards cover genuinely separate Outer and West London access routes.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue targeted current-official discovery in Greenwich/Woolwich and City/Central areas, then return to remaining inherited cards that still have pre-refresh dates.
+
+## 2026-09-07 13:50
+
+- What changed: Added Villages Brewery Taproom, Deptford and its linked NU Sessions Monthly Jam card.
+- Why: NU Sessions' current organiser listing explicitly confirms a monthly, open, ego-free all-level participatory jam at the taproom. The card uses “Selected Thursdays” rather than inventing a fixed monthly date.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: 46 active jam cards; the new card resolves to the existing Deptford / New Cross area filter.
+- Follow-ups / TODOs: Continue targeted current-official discovery in Greenwich/Woolwich and City/Central areas; retain the session only while an active recurring participation route remains publicly evidenced.
+
+## 2026-09-07 14:05
+
+- What changed: Added TAM's Open Room: Community Jam Session as a separate linked Sunday card at the existing Elephant and Castle venue.
+- Why: TAM's own current multi-date Eventbrite listing explicitly invites musicians of any level to play or sing in a relaxed community jam. It is distinct from TAM's Saturday blues jam.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: 47 active jam cards; the new card retains its existing Elephant and Castle venue identity.
+- Follow-ups / TODOs: Continue City/Central and Greenwich/Woolwich discovery. Keep sYp and Craterspace as leads until a direct current official source proves both ongoing recurrence and musician participation.
+
+## 2026-09-07 14:20
+
+- What changed: Added sYp, Aldgate as a City / Clerkenwell hospitality-led jazz venue with its linked Monday Night Jazz Jam.
+- Why: sYp's own current programme identifies the Monday jazz-jam series, and its official dated listing confirms a 7pm resident house-band set followed by an 8pm open jazz jam. It is shown as Open rather than professional-only because the documented format is a public jam.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: 48 active jam cards; the new venue resolves to the existing City / Clerkenwell area filter.
+- Follow-ups / TODOs: Continue City/Central and Greenwich/Woolwich discovery. Keep Craterspace as a lead until its official source establishes a recurring schedule rather than just the currently listed date.
+
+## 2026-09-07 14:35
+
+- What changed: Refreshed Troy Bar’s Tuesday, Wednesday and Thursday participatory cards, plus the Vortex Sunday Jam, from their current official programmes.
+- Why: Troy’s official page confirms its precise weekly schedule and separates the singer-led Tuesday/Thursday formats from the experienced-player Wednesday jam. Vortex confirms its Sunday rotation, timing and free participating-musician entry.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue reviewing the remaining pre-7 September cards, then resume geographic discovery for any still-empty areas.
+
+## 2026-09-07 14:50
+
+- What changed: Refreshed the existing Friends of Music and Life, Saturday Jam at Fabwick, and Donut Jam cards from current official series pages.
+- Why: SET confirms its all-level, last-Saturday, free community format; Accelerando Records’ current multi-date listing replaces Fabwick’s old third-party source; Staffordshire St confirms Donut Jam remains a monthly live-art/music event with a reserved open-jam section.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: 10 legacy-date cards remain out of 48 active jam cards.
+
+## 2026-09-07 15:05
+
+- What changed: Refreshed the No Frills Folk Club card from Windmill Brixton's current official listings.
+- Why: The venue lists the session across upcoming September and October dates, confirming its second-Sunday, 7pm, free, open round-the-table folk format.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue reviewing the remaining pre-7 September cards, especially Sucre, Ain't Nothin' But, Stonemountain, NYJO, Jazz on the Lane and Jam in a Jar.
+
+## 2026-09-07 15:15
+
+- What changed: Refreshed NYJO @ Levels Open Jam from Peckham Levels’ official recurring-residency page.
+- Why: The official page explicitly states that NYJO’s first-Friday monthly residency ends with a lively open jam after its guest-artist and resident-musician set.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: eight pre-refresh-date cards remain, all now isolated for source-by-source review.
+- Follow-ups / TODOs: Continue reviewing the remaining pre-7 September cards, with targeted participation verification for Sucre, Ain't Nothin' But, Stonemountain, Jazz on the Lane and Jam in a Jar.
+
+## 2026-09-07 15:30
+
+- What changed: Refreshed TAM’s Great British Blues Jam and The Cavern Freehouse’s Bluesday Tuesdays Jam. Removed Jazz on the Lane from the participatory jam directory.
+- Why: Current official pages confirm TAM’s weekly musician-open Saturday blues jam and Cavern’s Tuesday open jam with provided backline. Current Jazz on the Lane listings describe two live sets, not an artist-participation route, so its former card no longer meets the directory threshold.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: 47 active jam cards; five legacy-date cards remain for source-by-source resolution.
+- Follow-ups / TODOs: Resolve the remaining evidence gaps for Finsbury, Sucre, Ain't Nothin' But, Stonemountain and Jam in a Jar.
+
+## 2026-09-07 15:45
+
+- What changed: Removed the Finsbury Dad’s Mood open mic, Sucre Jam, Stonemountain Collective Jam and Jam in a Jar Community Jam cards; updated the jam smoke test to stop expecting the removed Jam in a Jar card.
+- Why: None had a current official recurring participatory route available: the Finsbury evidence was a single dated open mic, Sucre’s official programme only confirms passive live music, Stonemountain’s latest official ticketed event had ended, and Jam in a Jar’s official event page was inaccessible while only third-party listings remained.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: 43 active jam cards; only Ain’t Nothin’ But retains a pre-refresh check date.
+- Follow-ups / TODOs: Verify or remove Ain’t Nothin’ But from a current official source, then resume geographic gap discovery.
+
+## 2026-09-07 16:00
+
+- What changed: Refreshed Ain’t Nothin’ But’s Monday Blues Jam from its current official programme.
+- Why: The venue explicitly identifies Monday-night jams and invites musicians to bring an instrument, satisfying both recurrence and participation requirements.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: all 43 active jam cards now have the current 7 September 2026 check date.
+- Follow-ups / TODOs: Resume systematic geographic and scene discovery, beginning with areas still under-represented after the card refresh.
+- Follow-ups / TODOs: Continue reviewing the remaining pre-7 September cards, especially Sucre, Windmill, Ain’t Nothin’ But, Stonemountain, NYJO and Jazz on the Lane.
+
+## 2026-09-07 16:15
+
+- What changed: Added Orleans Bar, Finsbury Park and its linked weekly Thursday Living Sounds Open Mic Jam Session. Added the existing Jamboree venue's recurring Flotsam Folk Sessions workshop-plus-jam card.
+- Why: Current official sources establish that both formats are recurring and participatory: Orleans explicitly invites musicians to play alongside its house band, while Flotsam explicitly welcomes instruments or voice after its folk workshop. The Wednesday Orleans listing remains excluded because it only invites listeners.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: 45 active jam cards.
+- Follow-ups / TODOs: Continue systematic geographic discovery, prioritising currently sparse Greenwich / Woolwich, North London, East London and Friday/Saturday session coverage.
+
+## 2026-09-07 16:30
+
+- What changed: Added Up The Creek, Greenwich with its current Craterspace alternative open-jam card, and Off The Cuff Music Bar, Herne Hill with its organiser-confirmed Monday Heads Up Jazz Jam card.
+- Why: Up The Creek's current official listing confirms the active Craterspace date, while the series' official venue page establishes the house-band-to-open-floor format. Roger Humbles' current official page explicitly lists Heads Up every Monday and welcomes players and singers.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: 47 active jam cards.
+- Follow-ups / TODOs: Continue systematic geographic and format discovery, prioritising verified Friday/Saturday participation routes and still sparse East London / Greenwich coverage.
+
+## 2026-09-07 16:45
+
+- What changed: Added two current, recurring Spice of Life participatory cards: Jazz Notes Jazz Jam on Sundays and the Dove Jones Connection Blues & Jazz Jam Party on Mondays.
+- Why: The venue's current official programme establishes the weekly recurrence. The current Jazz Notes series explicitly welcomes instrumentalists and singers, while the current Dove Jones residency documents door sign-up, limited guest slots and free musician entry before 8pm.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. A focused node lookup also confirmed both new cards. Audit: 49 active jam cards.
+- Follow-ups / TODOs: Continue systematic discovery; Friday and Saturday remain the priority gap, while Room 43 is retained as an unlisted lead because its current official text does not yet explicitly invite walk-in musician participation.
+
+## 2026-09-07 17:00
+
+- What changed: Added Three Compasses Hornsey and its linked weekly Thursday Blues Jam.
+- Why: The venue's current official programme explicitly confirms a free 8:30pm house-band blues jam every Thursday and says local musicians can sign up to join in.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. A focused node lookup confirmed the new card. Audit: 50 active jam cards.
+- Follow-ups / TODOs: Continue the geographic/format pass, with Friday/Saturday and deeper East/Greenwich coverage still prioritised.
+
+## 2026-09-07 17:15
+
+- What changed: Added The George Inn, Borough and its linked London Cajun Jammers monthly card.
+- Why: London Cajun Jammers' own page explicitly says everyone can join in and identifies most third Mondays at the George Inn; its current public diary confirms a September 2026 date.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: 51 active jam cards.
+- Follow-ups / TODOs: Continue the geographic/format pass, with Friday/Saturday and deeper East/Greenwich coverage still prioritised.
+
+## 2026-09-07 17:30
+
+- What changed: Added The Drayton Court Hotel, The Lord Nelson Brentford, and their two linked Stone Mountain Collective Jam Session Night cards.
+- Why: Stone Mountain Collective's current official page explicitly describes its semi-curated house-band format, the guest-musician/vocalist participation route, its second-Friday Drayton Court residency, and separate monthly Lord Nelson residency.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: 53 active jam cards.
+- Follow-ups / TODOs: Continue the systematic geographic and format pass, focusing on current Friday/Saturday and East London participation routes.
+
+## 2026-09-07 17:45
+
+- What changed: Added BOXPARK Croydon and its linked monthly Groove Kitchen open-mic jam card.
+- Why: BOXPARK's current official event page and repeated 2026 event dates evidence an active Blue Revolutions house-band jam, free registration, a performer-email route, and the stated no-acoustic-guitars constraint.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: 54 active jam cards.
+- Follow-ups / TODOs: Continue the systematic geographic and format pass, focusing on current Friday/Saturday and East London participation routes.
+
+## 2026-09-07 18:00
+
+- What changed: Added Barnes Home Guard Association Clubhouse, East Sheen and its linked Sheen Live Jam card.
+- Why: The organiser's current 2026 programme lists future second-Thursday dates through December, an open-mic/jam/open-mic sequence, direct performance contact, and a clear guest/member entry policy.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: 55 active jam cards.
+- Follow-ups / TODOs: Continue systematic folk, community and specialist-scene discovery, retaining the same current-source and direct-participation standard.
+
+## 2026-09-07 18:15
+
+- What changed: Added Ram Jam Records' distinct monthly `Beats to the Rhyme` hip-hop participation card.
+- Why: Current published September–December 2026 listings confirm third-Thursday recurrence, free entry, 7pm limited-slot sign-up, and a Tune Squad house-band route for lyricists and freestylers.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: 56 active jam cards.
+- Follow-ups / TODOs: Continue geographic and specialist-scene discovery; seek current venue/organiser sources for still-unverified historic folk and community leads.
+
+## 2026-09-07 18:30
+
+- What changed: Enriched the Drayton Court Stone Mountain card with the venue's own session page, exact timings, sign-up phase and free-entry status.
+- Why: The venue source is stronger and more actionable than the general organiser page for this specific residency.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue geographic and specialist-scene discovery; seek current venue/organiser sources for still-unverified historic folk and community leads.
+
+## 2026-09-07 18:45
+
+- What changed: Added Tropics 68, Thornton Heath and its linked weekly Tuesday Jazz Jam card.
+- Why: Tropics 68's own current multi-date Eventbrite series proves weekly recurrence, the beginner / semi-pro-pro / all-comer participation sequence, supplied backline and PA, and the late-entry charge.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: 57 active jam cards.
+- Follow-ups / TODOs: Continue systematic outer-London and specialist-scene discovery; retain exact access constraints where a session serves several ability levels.
+
+## 2026-09-07 19:00
+
+- What changed: Added The Roxy, Soho and its linked twice-monthly Battle Jam card.
+- Why: Accelerando Records' current multi-date ticketing page confirms the musician/rapper/singer house-band battle format, free entry and the material access constraint that an instrument ticket must also be Instagram-confirmed and checked in to secure a performance slot.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. Audit: 58 active jam cards.
+- Follow-ups / TODOs: Continue systematic geographic and scene discovery, preserving clearly stated participant constraints rather than treating every public jam as an unrestricted walk-in.
+
+## 2026-09-07 17:35
+
+- What changed: Reclassified Crazy Coqs as a venue-led specialist jazz and vocal-music room, and clarified that cabaret is a separate programme strand.
+- Why: Its current official programme supports a curated jazz/listening-room route rather than a general cabaret or band-booking classification.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git -C research/scene-and-venues diff --check -- data/scene-data.js`, and `git diff --check -- trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Retain its classification as curated venue-led programming when reviewing the remaining Soho cards.
+
+## 2026-09-07 17:40
+
+- What changed: Removed Phoenix Arts Club from the live-music venue directory and added it to the explicit exclusion smoke check.
+- Why: Manual review concluded that its programme is principally cabaret and performance rather than a sufficiently relevant recurring live-music route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git -C research/scene-and-venues diff --check -- data/scene-data.js`, and `git diff --check -- trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the manual review of the remaining Soho additions using the same live-music threshold.
+
+## 2026-09-07 17:45
+
+- What changed: Refined Alfie's Jazz Club as a venue-led specialist jazz listening room, and removed CellarDoor from the live-music directory.
+- Why: Alfie's is a curated jazz route; CellarDoor's current programme is cabaret and participatory piano-bar entertainment rather than a sufficiently relevant live-music route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git -C research/scene-and-venues diff --check -- data/scene-data.js`, and `git diff --check -- trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue manual review of the remaining Soho additions.
+
+## 2026-09-07 13:05
+
+- What changed: Added four current promoter cards: New Gen Festival, Hanwell Hootie, Remedy Events and Roots On The Corner. Extended the promoter smoke-test assertions for their public filter classifications and source fields.
+- Why: This completes a verified West London, Outer London and reggae/dub discovery batch with two public artist-application routes and two current Caribbean/roots-reggae organisers, without treating venue-owned programming as separate promoters.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Promoter audit: 174 active cards, zero duplicate IDs.
+- Follow-ups / TODOs: Continue the documented area/genre sweep, prioritising Greenwich/Woolwich and remaining City, Islington, North, Shoreditch, Hackney, Dalston, East, Peckham, New Cross and South gaps. Record negative searches as well as qualifying additions.
+
+## 2026-09-08 04:30
+
+- What changed: Refreshed Beyond The Grave Promotions and added Another Sky Festival plus Como No / La Linea Festival as current source-verified promoter identities. Extended promoter smoke coverage for all three public classifications.
+- Why: Beyond The Grave has multiple current London metal bills and forthcoming festival activity; Another Sky has a current experimental-music programme and explicitly invites artists to share music; Como No has current London shows, a 2027 La Linea programme and an eligibility-based artist call-out. The work refreshes the legacy metal record and avoids duplicating parent/promoter brands.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 247 active promoter cards, zero duplicate IDs.
+- Follow-ups / TODOs: Continue the final official-source Outer London and category-balance pass; do not add one-off events without evidence of a recurring presenter identity.
+
+## 2026-09-08 04:10
+
+- What changed: Refreshed the existing Beyond The Grave Promotions promoter card with current official programme evidence and complete public filter fields; added its classification to promoter smoke coverage.
+- Why: Its official Linktree now lists multiple September-November 2026 London extreme-metal bills, Capital Death Fest in November and Beyond The Grave Volume 6 in March 2027. The existing legacy identity was enriched rather than duplicated.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 245 active promoter cards, zero duplicate IDs.
+- Follow-ups / TODOs: Continue the final official-source Outer London and category-balance pass; refresh existing identities where stronger current evidence exists rather than creating duplicates.
+
+## 2026-09-08 04:20
+
+- What changed: Added Another Sky Festival as a verified London experimental-music and SWANA-diaspora festival presenter, with explicit artist-sharing/submissions classification and promoter smoke coverage.
+- Why: Its official site confirms the third 2026 edition of the London platform and explicitly invites artists to share music; Cafe OTOâ€™s current programme independently confirms its September 2026 two-day London presentation. It is a distinct external identity, not a Cafe OTO house programme.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 246 active promoter cards, zero duplicate IDs.
+- Follow-ups / TODOs: Continue the final official-source Outer London and category-balance pass; do not add one-off events without evidence of a recurring presenter identity.
+
+## 2026-09-08 06:05
+
+- What changed: Added the verified A.A. Williams London-scene card and placed it near the top of the establishment ordering. Corrected batch 05's capture manifest after inspecting the profile images.
+- Why: Spotify captured the exact A.A. Williams profile at 28,544 monthly listeners. The initially queued @aawilliams Instagram address was a private unrelated account, so it was explicitly rejected rather than displayed.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-05.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html research/scene-and-venues/scripts/artist-discovery-batch-05.json docs/ARTIST_DISCOVERY_LEDGER.md trials/verify-scene-update.js PROJECT_LOG.md` passed.
+- Follow-ups / TODOs: Continue the source-led London discovery loop. Resolve social profiles only when an exact official route can be verified.
+
+## 2026-09-08 06:15
+
+- What changed: Recorded batch 06's negative live-circuit sweep in the artist-discovery ledger; no artist card or capture manifest was created.
+- Why: Current/recent Resident Advisor results did not supply an artist that simultaneously met the London-base, current-activity, sonic-relevance and independently-supported thresholds.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Source review only; no application code changed.
+- Follow-ups / TODOs: Continue with independent-label, specialist press and grassroots-venue bill sources rather than recycling this inconclusive result set.
+
+## 2026-09-08 06:35
+
+- What changed: Added the fully audited The Draize result to discovery batch 07, but created no dashboard card.
+- Why: The candidate initially met the London, current-release, sonic-fit and independent-source requirements. Visible Chrome captures confirmed the exact Instagram and Spotify profiles (70 Spotify monthly listeners), but the official Instagram's pinned statement says the band has ended. It therefore fails the active-project requirement.
+- Files touched: `research/scene-and-venues/scripts/artist-discovery-batch-07.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`. Screenshots retained: `the-draize-instagram.png`, `the-draize-spotify.png`.
+- Commands/tests run + results: Ran `capture_profile_queue.ps1 -BatchFile artist-discovery-batch-07.json -WaitSeconds 7`; both visible-browser captures succeeded and were individually inspected. No application code changed, so no code test was required.
+- Follow-ups / TODOs: Continue current label, specialist-press and support-bill discovery; screen profile bios and pinned notices before creating a card.
+
+## 2026-09-08 06:50
+
+- What changed: Added Art School Girlfriend as the seventeenth reviewed London-scene artist card and placed it second in the editorial establishment order, after Night Tapes and before A.A. Williams.
+- Why: Official and independent sources establish a London-based, active, shoegaze-informed artist-producer with a current third album on Fiction Records. The visible Spotify capture verified the exact profile at 131,132 monthly listeners. No unverified Instagram handle was added.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-08.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `capture_profile_queue.ps1 -BatchFile artist-discovery-batch-08.json -WaitSeconds 7` captured and logged the exact Spotify profile. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and the scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue systematic source-led discovery. Preserve the unresolved Instagram entry unless an official exact route becomes available.
+
+## 2026-09-08 04:00
+
+- What changed: Added African Heritage Festival London as a current Peckham African-diaspora music, performance and cultural festival organiser, with promoter smoke-test coverage.
+- Why: Its official October 2026 programme confirms live African performance, music programming, public music-and-dance activity and a festival gala at Mountview and CLF Art Lounge. The public telephone is recorded as a contact route without implying an artist-submission policy.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 245 active promoter cards and zero duplicate promoter IDs.
+- Follow-ups / TODOs: Continue systematic passes in the remaining named areas and specialist genres; retain generic cultural events only where a current distinct live-music presentation is directly documented.
+
+## 2026-09-08 03:50
+
+- What changed: Added Spitalfields Music as a current landmark East London festival, new-music and artist-development presenter, with promoter smoke-test coverage.
+- Why: Its official site establishes an active East London creative charity producing performances, development and community work, while the 2026 fiftieth-anniversary programme provides current source evidence of its festival-scale commissioning and presentation.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 244 active promoter cards and zero duplicate promoter IDs.
+- Follow-ups / TODOs: Continue the remaining named geographic and specialist-genre passes; retain the difference between a general organisational contact and an open artist-submission policy.
+
+## 2026-09-08 03:40
+
+- What changed: Refreshed the existing Baba Yaga's Hut promoter identity with current public classifications, September/October 2026 ticketing evidence and promoter smoke-test coverage.
+- Why: Current official ticket listings directly identify Baba Yaga's Hut as the organiser of continuing London experimental concert bills. The existing legacy record was upgraded with `Object.assign` rather than duplicated.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 243 active promoter cards and zero duplicate promoter IDs.
+- Follow-ups / TODOs: Continue remaining geographic and specialist-genre passes; refresh existing identities where stronger current official evidence is found rather than adding aliases.
+
+## 2026-09-08 03:30
+
+- What changed: Added Daylight Music as a current East London independent experimental, new-music and all-ages concert-series presenter, with promoter smoke-test coverage.
+- Why: Arctic Circle's official autumn 2026 programme lists four forthcoming Daylight Music concerts at St John's Leytonstone, and its own series description establishes a seventeen-year, 400-plus-outing public concert identity with a published organiser email.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 243 active promoter cards and zero duplicate promoter IDs.
+- Follow-ups / TODOs: Continue remaining geographic and specialist-genre passes; distinguish the series' public organiser email from an artist-submission guarantee.
+
+## 2026-09-08 03:20
+
+- What changed: Added Church of Sound as a current East London DIY jazz, improvised-music and songbook-series presenter, with promoter smoke-test coverage.
+- Why: The official EFG London Jazz Festival 2026 programme identifies the distinct organisation as a ten-year East London DIY community and confirms its future Barbican concert. The card uses `no-public`; its clickable programme is evidence only, not a claimed organiser-contact route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 242 active promoter cards and zero duplicate promoter IDs.
+- Follow-ups / TODOs: Continue systematic geographic and specialist-genre passes; use only current official programme evidence when assessing further small organisers.
+
+## 2026-09-08 03:10
+
+- What changed: Added Balamii as a current London independent radio, live-performance and emerging-artist platform, with promoter smoke-test coverage.
+- Why: Its official 2026 platform documents current filmed live sessions, community-event activity and an explicit show-submission route; its official event links include a future 2026 Balamii IRL event. The entry does not imply that a submission guarantees live-bill booking.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 241 active promoter cards and zero duplicate promoter IDs.
+- Follow-ups / TODOs: Continue systematic North, Islington/King's Cross, East/North-East, Shoreditch/Hoxton, Hackney/Hackney Wick and remaining genre passes.
+
+## 2026-09-08 04:50
+
+- What changed: Created the reversible London-scene artist discovery ledger and added a first verified batch: Night Tapes and Velveteen. Added a four-profile capture manifest and corrected the capture wrapper so successful PowerShell capture calls do not display false failures.
+- Why: The artist workflow now records discovery source, qualification decision, exact profile URLs and capture evidence before a dashboard card is created. Night Tapes has sustained South-East London and international activity; Velveteen has a current London shoegaze/noise-rock EP and live presence. Planet 1999 remains unresolved for current activity, and Whitelands is excluded as disbanded.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-01.json`, `research/scene-and-venues/scripts/capture_profile_queue.ps1`, `research/scene-and-venues/screenshots/inbox/*`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Inspected all four visible Chrome captures: Velveteen (481 Instagram followers; 8,182 Spotify listeners) and Night Tapes (39.6K; 1,575,508). `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, wrapper `-WhatIf`, and `git diff --check` passed. The corrected live wrapper recaptured all four profiles with no false failure warnings.
+- Follow-ups / TODOs: Continue in similarly ledgered batches from current London venue, promoter, label and specialist live-circuit sources; retain an unresolved decision rather than guessing a profile or current activity.
+
+## 2026-09-08 05:05
+
+- What changed: Completed artist-discovery batch 02 and added Ghost Patterns. Recorded Colour Me Blood Red and Glisten Trick as unresolved adjacent-circuit leads instead of adding cards.
+- Why: Ghost Patterns has a direct official London psychedelic-shoegaze identity, current 2026 release plan, independent current UK-shoegaze playlist support and a visually verified Spotify profile (244 monthly listeners). Its Instagram remains intentionally absent because no exact official URL was found. The other two candidates do not yet meet the directory’s direct-fit / London-presence threshold.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-02.json`, `research/scene-and-venues/screenshots/inbox/ghost-patterns-spotify.png`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome capture of Ghost Patterns’ exact Spotify page completed and was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check` passed.
+- Follow-ups / TODOs: Continue venue-bill, label, community-radio and specialist-playlist discovery. Only add an Instagram capture when the profile URL is directly evidenced, not inferred from the artist name.
+
+## 2026-09-08 05:20
+
+- What changed: Completed artist-discovery batch 03 and added Mesadorm as an explicitly adjacent London art-rock/dream-pop peer. Recorded Electric Café as unresolved and excluded Waves Crashing as a non-London act despite a London date.
+- Why: Mesadorm meets the full evidence threshold: official London Bandcamp page, current 2026 third album and show, independent coverage, direct verified Instagram/Spotify capture and an independently operated label. The card notes its adjacent rather than pure-shoegaze fit.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-03.json`, `research/scene-and-venues/screenshots/inbox/mesadorm-*.png`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome captures were inspected: Mesadorm has 2,644 Instagram followers and 3,819 Spotify monthly listeners. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check` passed.
+- Follow-ups / TODOs: Continue the systematic live-circuit, label and specialist-playlist pass. Revisit only unresolved candidates with new direct evidence; no pending candidate should become a card without it.
+
+## 2026-09-08 05:35
+
+- What changed: Completed artist-discovery batch 04 and added heavy wild. Recorded Ascension and Scouts as unresolved rather than guessing an ambiguous Spotify profile or adding a pre-release act.
+- Why: heavy wild has official London identity evidence, independent current 2026 reporting, a current label signing and London headline dates, plus reviewed captures of the exact profiles. The card is placed beneath Night Tapes and Wyldest on sustained current profile, active label/live development and audience scale.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-04.json`, `research/scene-and-venues/screenshots/inbox/heavy-wild-*.png`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome captures were inspected: heavy wild has 20.1K Instagram followers and 16,068 Spotify monthly listeners. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check` passed.
+- Follow-ups / TODOs: Continue the remaining current venue, promoter, label, shop, radio, playlist, festival and local-press routes. Keep matching-profile ambiguity in the ledger until resolved from an official artist route.
+
+## 2026-09-08 03:00
+
+- What changed: Added Steam Down as a current London Afro-diaspora improvised-music collective and weekly community presenter, with promoter smoke-test coverage.
+- Why: Its own current #SDWEEKLY page verifies the ongoing weekly live-improvisation event founded to connect musicians and producers, and its contact page publishes the organisation's public general and booking routes.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 240 active promoter cards and zero duplicate promoter IDs.
+- Follow-ups / TODOs: Continue the systematic East/North-East, Shoreditch/Hoxton and remaining genre passes; do not treat its public organiser contact as an open artist-submission policy.
+
+## 2026-09-08 04:20
+
+- What changed: Added The Premises Studios, Hackney Road and The Hackney Jam's selected-Saturday participatory session. Refreshed Grow Hackney's Not The Usual Jam from an incorrect fixed first-Sunday claim to the organiser's currently published selected-Sunday dates.
+- Why: The Hackney Jam's active organiser page documents a current 26 September session plus a substantial past series, pre-booked song selection, practical instrument/backline arrangements and participant cost. The Premises' official site confirms the studio location. The Grow correction avoids inventing a recurrence contradicted by its current programme.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the Hackney / Hackney Wick geographic pass, then close its documented negative results before moving to Dalston / Stoke Newington.
+
+## 2026-09-08 04:35
+
+- What changed: Added Mezzo’s Corner at Grow, Hackney as a selected-Wednesday, three-month returning jam residency.
+- Why: Grow’s current official listing explicitly describes the returning series, its three-month residency, house band and rotating floor-open format for musicians and vocalists. It is represented as selected-date rather than a permanent weekly session, and retains the published 18+ ticket basis.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Complete the Hackney / Hackney Wick negative-audit pass, then move to the distinct Dalston / Stoke Newington pass.
+
+## 2026-09-08 04:50
+
+- What changed: Completed the first current-source Hackney / Hackney Wick sweep without adding further cards beyond The Hackney Jam and Mezzo’s Corner.
+- Why: Current primary programmes reaffirm the existing Grow, Orii and EMOM routes. The remaining apparent hits were either an old Colour Factory Orii takeover, DJ/open-decks events, comedy or poetry open mics, a passive live showcase, or lacked a current organiser/venue recurrence source. Total Impro at The Jago is a credible future lead, but the available detailed listing is for July and no current official event page was found, so it is deliberately not added yet.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: No code change in this audit-only entry; the preceding verified batch's `node --check`, smoke test and whitespace check passed.
+- Follow-ups / TODOs: Continue the separate Dalston / Stoke Newington pass; refresh its existing Jago, Vortex, IMC and Three Compasses cards only where current official sources materially improve them.
+
+## 2026-09-08 05:05
+
+- What changed: Completed the current-source Dalston / Stoke Newington pass without adding another active series.
+- Why: Official current listings reaffirm the existing Vortex Sunday Jam, IMC Jams, Jago series and Three Compasses monthly open mic. Vortex's `Future Standards & Downstairs Jam` is a single listed 13 September event rather than an evidenced recurring series. The detailed Total Impro result remains July-only and non-primary; the Next Door soul/R&B result is April-only; the other hits were selected acoustic showcases, comedy, poetry or DJ events.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: No data/code edit in this audit-only pass. The preceding jam-data batch passed syntax, smoke and whitespace checks.
+- Follow-ups / TODOs: Continue the East London pass, then Peckham / Nunhead and the broader South, West and Outer London passes.
+
+## 2026-09-08 05:20
+
+- What changed: Added The Gallery Cafe at St Margaret’s House, Bethnal Green / Mile End and its monthly last-Thursday all-arts open mic.
+- Why: The charity venue’s current official event page confirms an ongoing recurrence, free entry, musician eligibility, eight short performance slots split between advance and door sign-up, no-full-backline constraint and a current September 2026 date. It is categorised as a community route, not as a commercial live-room booking proposition.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the East London source pass; assess community/music-development programmes only when their published participation mechanism supports a true recurring session card.
+
+## 2026-09-08 05:40
+
+- What changed: Added The Coppermill Pub, Walthamstow and its changeable selected-Tuesday open mic, plus Ye Olde Rose & Crown Theatre Pub and Walthamstow Folk Club’s selected-Sunday singarounds.
+- Why: The Coppermill organiser’s current guide gives the participation mechanics but expressly warns that dates can move, so the card uses selected-Tuesday wording and directs users to check first. Walthamstow Folk Club’s official current programme distinguishes occasional free singarounds, where anyone may sing/play/join choruses, from its usual curated concert Sundays.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue East London / North-East London geographic discovery, then record a complete negative audit for the areas where current sources yield no further eligible sessions.
+
+## 2026-09-08 05:55
+
+- What changed: Added Links Studios, Canning Town and two distinct recurring youth participation cards: Friday Live Jamming Workshop and Tuesday Vocal Cypher.
+- Why: Links Studios’ own current programme explicitly lists both formats as recurring and gives their participation purpose. They are not generic workshops: one is a live-play session for musicians to meet and play with new people; the other is a freestyle creative-expression route for rappers, singers, poets and spoken-word performers. Both retain the 11–19 age constraint and registration route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue East London current-source checks; exclude isolated child/family workshops, passive showcases and unrefreshed historical open mics.
+
+## 2026-09-08 06:10
+
+- What changed: Completed the Peckham / Nunhead current-source pass without adding a further card.
+- Why: Current official sources reaffirm the existing Friends of Music and Life monthly jam, Folk of the Round Table weekly session, NYJO first-Friday showcase-followed-by-jam, Donut Jam and Skehan’s four distinct musician formats. Steam Down's current official page proves an active weekly improvisation event but does not invite public musicians to sit in, so it remains a presenter lead rather than a jam card. Other apparent results were DJ events, isolated showcases, poetry-only open mics or one-off editions.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: No code/data edit in this audit-only pass. The current cards named above are already covered by existing smoke assertions and the preceding jam-data batch passed all required checks.
+- Follow-ups / TODOs: Continue the broader South London pass, beginning with Brixton, Camberwell, Streatham, Tooting and Croydon-area current organiser/venue sources.
+
+## 2026-09-08 02:50
+
+- What changed: Added the Black British Folk Collective as a current Black and Global Majority folk-music collective and participatory presenter, with complete promoter smoke-test coverage.
+- Why: Official current EFDSS programmes name the collective as co-presenter of the October Black British Folk Takeover and December BPOC / Global Majority Folk Club. Its card remains `no-public`: the clickable route is official programme evidence, not an invented collective contact channel.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 239 active promoter cards and zero duplicate promoter IDs.
+- Follow-ups / TODOs: Continue remaining geographic and specialist-genre passes; retain Block Power Music as a lead until an organiser-owned current programme and contact route are available.
+
+## 2026-09-08 02:40
+
+- What changed: Added Lewisham Music as a current independent youth-music charity and community-gig presenter, with promoter smoke-test coverage.
+- Why: Its own 2026 programme confirms a young-vocalist concert series and community music-takeover gig, while its official profile establishes independent borough-wide youth music provision and public performance opportunities.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 238 active promoter cards and zero duplicate promoter IDs.
+- Follow-ups / TODOs: Continue the systematic South London and remaining area/genre passes. Do not treat a public radio-recording invitation as a general live-performance submission route.
+
+## 2026-09-08 02:30
+
+- What changed: Added Deptford Northern Soul Club as a current independent northern-soul club-night presenter, with promoter smoke-test coverage.
+- Why: The organiser's official current programme lists September-December 2026 London dates and its tenth-anniversary Albany event; its official press page supplies a direct public contact email. This establishes a distinct presenter identity rather than venue-owned programming.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 237 active promoter cards and zero duplicate promoter IDs.
+- Follow-ups / TODOs: Keep Block Power Music as an internal lead until an organiser-owned current programme and contact route are found. Continue remaining geographic and specialist-genre passes.
+
+## 2026-09-08 02:20
+
+- What changed: Added Heart n Soul as a current Deptford accessibility-led music, club-night and artist-development presenter, with smoke-test coverage for its public classifications.
+- Why: Heart n Soul's official current programme verifies recurring 2026 music, DJing and digital-music activity at The Albany, including public performance activity, and its official pages establish a distinct learning-disabled and autistic artist community rather than generic venue programming.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 236 active promoter cards and zero duplicate promoter IDs.
+- Follow-ups / TODOs: Continue the New Cross / Deptford pass. Deptford Northern Soul Club and Block Power Music remain leads pending current organiser-owned programme and contact evidence; do not add Deptford Junction without proof of a separate presenter identity.
+
+## 2026-09-08 02:35
+
+- What changed: Completed a current-source Greenwich / Woolwich jam-session discovery screen without adding a new card.
+- Why: The current Greenwich results reconfirmed the already-listed Craterspace series. The apparent Castle Greenwich "Jam Session" is a single Summer Edition rather than an evidenced recurring programme; Global Generation's Communicate Jam was explicitly its last summer session; other hits were one-off, outside the area, or not demonstrably participatory recurring sessions. They are therefore excluded rather than inflating the directory with weak leads.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Direct current-source search completed; the existing session list was checked for duplicates before the negative result was recorded. No dashboard-data code changed in this batch.
+- Follow-ups / TODOs: Continue the next thin geographic pass with the same standard, then record its qualifying additions or negative result.
+
+## 2026-09-08 02:50
+
+- What changed: Added Balfour St Barts, City / Clerkenwell and UK Open Mic at Balfour St Barts, its weekly Monday performer-facing open-mic card. Added the venue to the hospitality-led display mapping and smoke-test coverage.
+- Why: UK Open Mic's current organiser page gives explicit Monday recurrence, booking/walk-up rules, start time, slot length and all-styles participation; Balfour's own current site confirms the venue, address, live-music programme and public contact route. The card is accurately labelled an open mic, not a jam.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the documented North London / East London geographic screens; retain one-off Barbican open-jam events as excluded leads unless a recurring series is published.
+
+## 2026-09-08 03:05
+
+- What changed: Completed a North London jam-session discovery screen without adding a new card.
+- Why: The Wooden Cross Crouch End open-mic and blues-jam claims are currently substantiated only by third-party directories, not the venue or organiser. Jam in a Jar's Monday Community Jam remains without a current primary organiser source, and the surfaced Flotsam Walthamstow season is historical. These remain leads rather than being added as current verified facts.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Direct and current-source search completed; the existing jam roster was checked for duplicate identities before recording the exclusions. No dashboard-data code changed in this batch.
+- Follow-ups / TODOs: Continue the East London screen, then revisit North London only if a primary organiser or venue programme becomes available.
+
+## 2026-09-08 03:20
+
+- What changed: Added The Angel of Bow's weekly Wednesday Open Mic Night to the Jam Sessions tab, reusing the already-present Angel of Bow venue identity. Extended the pub-type and jam smoke assertions so both its established venue mapping and new participation route are covered.
+- Why: The venue's own current page confirms that every Wednesday from 7pm is an inclusive performer-facing open mic, welcoming singing, piano, spoken word and other performance, with a walk-in route. The addition is therefore a clearly evidenced recurring open mic rather than an inferred jam.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. The initial duplicate-venue smoke-test failure was corrected by retaining the pre-existing Angel of Bow venue card rather than adding a second one.
+- Follow-ups / TODOs: Continue East London discovery for additional direct-source routes, then progress to New Cross / Deptford and the remaining listed geographic passes.
+
+## 2026-09-08 03:35
+
+- What changed: Added New Cross Inn's distinct weekly Tuesday Open Mic card, linked to the existing New Cross Inn venue identity and covered by a dedicated smoke assertion.
+- Why: The Musicians' Union's current Fair Play venue profile explicitly confirms the recurring all-format musician route, including acoustic acts, full bands and spoken word, and publishes the dedicated `openmic@newcrossinn.com` contact. It is a useful direct access route separate from the venue's usual promoter-led bills.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the remaining East / North and broad South / West / Outer London passes, retaining third-party-only listings as leads unless a current primary source is found.
+
+## 2026-09-08 03:50
+
+- What changed: Added The Alwyne Castle, Highbury / Islington and its weekly Wednesday UK Open Mic card. Added its pub-type display mapping and dedicated smoke-test coverage.
+- Why: UK Open Mic's active current booking page documents the weekly all-styles performer route, advance and walk-up sign-up, time and slot rules; the venue's own current website confirms the matching Highbury address and venue contact. A conflicting older third-party directory entry was not used as evidence.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue Islington / King’s Cross screening for independent current routes, then complete the remaining broad South, West and Outer London screens.
+
+## 2026-09-08 04:05
+
+- What changed: Completed a Shoreditch / Hoxton jam-session discovery screen without adding a new card.
+- Why: Old Street Records' current official programme does not publish the formerly advertised Common People open mic; one current third-party directory marks it closed. Folklore Hoxton's surfaced page is not a reliable London venue listing, Hoxton Cabin's weekly open decks are DJ rather than musician participation, and the remaining results were either existing Troy Bar routes or unverified third-party leads.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Current official venue/organiser searches completed and existing session identities checked for duplication. No dashboard-data code changed in this batch.
+- Follow-ups / TODOs: Continue Hackney / Hackney Wick screening; retain Old Street Records as a future lead only if its own calendar restores a current recurring performer route.
+
+## 2026-09-08 04:35
+
+- What changed: Ran one interactive Chrome profile-capture integration test against deary's official Instagram profile; retained the resulting screenshot in the inbox for review.
+- Why: This confirms the current permission configuration lets the agent operate the visible Chrome capture workflow directly, so future verified profile batches do not require manual script execution by the user.
+- Files touched: `research/scene-and-venues/screenshots/inbox/interactive-test-deary-instagram.png`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `capture_visible_browser.ps1` completed successfully. Visual inspection confirmed the verified `instagram.com/dearyband/` profile and 7,425 visible followers.
+- Follow-ups / TODOs: Use the same interactive capture path for future candidate batches; retain captures in the inbox until their metrics and profile identity are reviewed.
+
+## 2026-09-07 05:30
+
+- What changed: Added Whirl-Y-Gig as a fully classified landmark London alternative/electronic club-night presenter, with promoter smoke-test coverage.
+- Why: Its official current site confirms 45 years of London alternative clubbing, an upcoming October 2026 event and a continuing annual Whirl-y-Fayre identity. It is recorded as a public event route rather than a submissions route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue source-led presenter discovery and retain the duplicate-ID smoke guard for all new cards.
+
+## 2026-09-07 05:20
+
+- What changed: Strengthened the promoter smoke test with a duplicate-ID assertion and corrected its generic error wording from “Camden promoter discovery card” to “promoter discovery card”.
+- Why: A just-caught transient duplicate showed that card-level classification assertions alone were insufficient. The verifier now permanently protects the canonical one-card-per-promoter invariant across every discovery batch.
+- Files touched: `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Keep the expanded schema and identity guard in place while refreshing source evidence; continue area/genre searches rather than relying on legacy record completeness.
+
+## 2026-09-07 05:10
+
+- What changed: Added Cool For Cats Live and refreshed the pre-existing Decolonise Fest card with stronger current official October 2026 evidence; deliberately removed a transient duplicate Decolonise Fest record created during the refresh.
+- Why: Cool For Cats Live is a current independent grassroots alternative presenter with a November 2026 London show. Decolonise Fest was already an established directory identity, so updating it preserves a single canonical card while adding its current non-profit punk-festival evidence.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a direct unique-promoter-ID audit (`230` IDs, no duplicates), and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue source-led discovery while checking the canonical promoter record before adding any new identity; retain the distinct sound-system presenter cards added in the preceding batch because neither had a promoter record.
+
+## 2026-09-07 05:00
+
+- What changed: Added Channel One Sound System and Saxon Sound System as distinct active reggae/dub live-presenter identities, separate from their existing label entries, with promoter smoke-test coverage.
+- Why: Channel One’s official site confirms active regular residencies and an October 2026 London date. Saxon Records’ official Bandcamp identifies the Sound System and lists recurring September and December 2026 London shows. Both are established public event identities, not just recorded-music labels.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the remaining source-led area and genre refreshes, retaining separate label and live-presenter cards only where each identity has distinct current evidence.
+
+## 2026-09-07 04:50
+
+- What changed: Added London Contemporary Music Festival (LCMF) and music we’d like to hear as current independent experimental-music presenters, and added promoter smoke-test coverage for both.
+- Why: LCMF’s official site confirms its full winter 2026 festival after a sustained multidisciplinary programme since 2013. music we’d like to hear’s official site confirms a 2026 summer concert series at St Mary-at-Hill and its continuing not-for-profit collective. Both retain public-contact routes because neither publishes open artist applications.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the sparse experimental and reggae/dub pass with current official organiser evidence, avoiding venue-owned programmes and past-only concert series.
+
+## 2026-09-07 04:40
+
+- What changed: Added KULA Collective, a current diaspora-led Hackney music and culture event-series presenter, with fully classified public fields and promoter smoke-test coverage.
+- Why: Grow Hackney's official September 2026 listing names KULA as a distinct London event series/platform and documents its founder, current event, and broken-beat, soul, house and global-groove focus. No artist policy is claimed beyond its public event route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue access-led, diaspora and community discovery using current official organiser or named-presenter evidence; avoid generic venue bills.
+
+## 2026-09-07 04:30
+
+- What changed: Added Regent's Park Music Festival as a current independent outdoor community music-festival presenter, with promoter smoke-test coverage.
+- Why: Its official programme verifies the active June–September 2026 tenth-anniversary season, 45 bands, regular jazz and bandstand programming, and planning for 2027. The card remains a public-information route because no artist application policy is published.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue remaining area and specialist-genre passes with current official sources; distinguish independent presenters from park and venue operator programming.
+
+## 2026-09-07 04:20
+
+- What changed: Added Bloomsbury Festival, including a source-verified Central London live-music and emerging-musician festival route, with smoke-test coverage.
+- Why: The festival's official current site confirms its 20th-anniversary October 2026 programme with music and performance across more than 40 venues. Its former New Wave music proposal call is explicitly closed, so the public card correctly uses `public-contact` rather than suggesting applications are open.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue remaining area and specialist-genre passes with current official sources; retain only active distinct presenters.
+
+## 2026-09-07 04:10
+
+- What changed: Added Select Radio's current London Open Decks and event-presenter route, with an explicit DJ-application classification and promoter smoke-test coverage.
+- Why: Select Radio's official 2026 pages verify its July–September monthly Open Decks at Peckham Levels, broader London event programme, and an official invitation for DJs to apply to perform. It is limited on the card to DJ/electronic relevance rather than being presented as a full-band route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue targeted current-source searches in remaining geographic and genre gaps; reject unverified event-platform profiles, venue-owned programming and historic-only collectives.
+
+## 2026-09-07 04:05
+
+- What changed: Added SPF, a current independent London R&B, hip-hop and bashment club-night presenter, with a fully classified promoter card and smoke-test coverage.
+- Why: SPF's official 2026 programme verifies several distinct current London music events. It fills a community-led urban club-presenter gap without treating its public event information as an artist-submission policy.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue targeted current-source searches in the remaining City, North-East and specialist experimental/reggae gaps; exclude venue-owned programmes and historic-only collectives.
+
+## 2026-09-08 00:20
+
+- What changed: Replaced the fixed profile-capture batch with a queue-driven launcher. `run_profile_capture.cmd` now reads direct verified Instagram and Spotify artist URLs from the active artist `reviewQueue`; a Node extractor rejects guessed handles and Spotify track links, and the PowerShell runner reports items it cannot safely capture.
+- Why: The prior launcher embedded an obsolete, partial list, so it could not reflect the actual pending artist work. The new flow makes the live research queue the single source of truth while preserving the existing visible-browser capture helper.
+- Files touched: `research/scene-and-venues/scripts/build_profile_capture_queue.js`, `research/scene-and-venues/scripts/capture_profile_queue.ps1`, `research/scene-and-venues/scripts/run_profile_capture.cmd`, `research/scene-and-venues/README.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed; the queue extractor emitted only The Youth Play, adele dazeem and Neighbour Club Instagram profiles; PowerShell `-WhatIf` printed those three intended captures without opening Chrome; `node trials/verify-scene-update.js` and `git diff --check` passed.
+- Follow-ups / TODOs: Add only exact verified Spotify artist URLs to the artist record. They will then be automatically included on the next queue-run capture.
+
+## 2026-09-08 00:30
+
+- What changed: Restored the documented profile snapshots at render time for deary (7,392 Instagram followers and 36,357 Spotify monthly listeners) and The Youth Play (3,764 Instagram followers), without rewriting the source-led data file. Added a separate five-new-artist capture manifest and launcher for Speedial, hazy waters, Rainsong, sadplanet and Wyldest; the existing artist follow-up queue remains independent.
+- Why: The original figures were documented as reviewed screenshots but had been replaced by generic profile-link labels during later card work. The requested next step is a new discovery batch, not reprocessing the five existing cards.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/capture_profile_queue.ps1`, `research/scene-and-venues/scripts/new_artist_capture_batch.json`, `research/scene-and-venues/scripts/run_new_artist_capture_batch.cmd`, `research/scene-and-venues/README.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Manifest check confirmed five distinct artists and ten captures; metric overlay check confirmed all three documented values; both PowerShell `-WhatIf` routes emitted their intended separate batches; `node trials/verify-scene-update.js` and `git diff --check` passed.
+- Follow-ups / TODOs: The new manifest is ready for a visible interactive desktop session. Review each inbox screenshot before creating any new artist card or recording its dated metrics.
+
+## 2026-09-08 04:15
+
+- What changed: Added five screenshot-verified London-scene artist cards: Wyldest, hazy waters, Speedial, sadplanet and Rainsong. Added their direct Instagram/Spotify metrics captured on 2026-09-07 and a deliberate London-scene display order: Wyldest, deary, hazy waters, Speedial, sadplanet, Rainsong, then the less established existing records.
+- Why: The user completed the new-five visible-browser capture batch. Each screenshot confirms the exact account/profile and current public metric; the display order now reflects sustained public profile and current activity rather than data insertion date. No current label is asserted without a direct public confirmation, so all five show `/`.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: All ten screenshots were visually reviewed. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a five-card presence check, an explicit scene-order check and `git diff --check` passed.
+- Follow-ups / TODOs: Keep the captures in `screenshots/inbox/` until a separate archival decision; refresh metrics only through a new dated profile capture.
+
+## 2026-09-08 00:15
+
+- What changed: Researched five potential London-scene artist cards for a profile-capture pilot: Speedial, hazy waters, Rainsong, sadplanet and Wyldest. No dashboard data was changed and no screenshots were created.
+- Why: Each candidate has current/recent activity, a compatible alternative/shoegaze context and confirmed direct Instagram and Spotify profile URLs. The capture helper cannot access the interactive desktop from this execution session, so it correctly aborted before claiming profile metrics.
+- Files touched: `PROJECT_LOG.md` only.
+- Commands/tests run + results: Ran `capture_visible_browser.ps1` for Speedial Instagram. It failed cleanly with `Could not determine the foreground browser window for capture`; a follow-up inbox check found no partial pilot screenshots.
+- Follow-ups / TODOs: Run the ten-profile capture batch from an interactive local PowerShell/Chrome desktop, then inspect the saved images and only add candidates whose profiles and dated metrics are visible.
+
+## 2026-09-08 01:20
+
+- What changed: Added East Finchley Festival as a source-verified North London independent community music-festival presenter, with promoter filter classifications and smoke-test coverage.
+- Why: Its current official festival page identifies the CIC-run annual free event, two live-music stages, independent local funding and a future-performer interest route. That route is correctly represented as public contact rather than an open artist-submission process.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 205 active promoter cards, zero duplicate IDs, and complete required public/evidence fields on the new card.
+- Follow-ups / TODOs: Continue the systematic community and specialist-presenter pass through Greenwich/Woolwich, City, Islington, North-East London, Shoreditch, Hackney, Dalston, East, Peckham, New Cross and South London; keep one-off events and venue-owned programming out unless they evidence a distinct recurring promoter identity.
+
+## 2026-09-08 01:40
+
+- What changed: Added Real Sounds and Snap, Crackle & Pop (SC&P) as source-verified active independent London promoters, with explicit filter classifications and smoke-test coverage.
+- Why: Real Sounds has a multi-venue London programme continuing into January 2027. SC&P's own site identifies a distinct DIY electronic, post-punk and leftfield promoter with current live-event, radio and release activity. Neither official source publishes an open artist-submission policy.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 208 active promoter cards and zero duplicate IDs.
+- Follow-ups / TODOs: Continue source-led coverage of the remaining named geographic passes, prioritising distinct community, specialist and diaspora organisers rather than venue calendars or isolated one-off events.
+
+## 2026-09-08 01:50
+
+- What changed: Added Islington Festival of Music and Art as a verified independent community music and arts festival presenter, with filter classifications and smoke-test coverage.
+- Why: Its official current site documents a 2026 multi-venue Islington programme and confirms a 2027 live fundraising concert. Kings Place programming and King’s Cross Summer Sounds were reviewed but not duplicated because they are venue- or place-owner-led programmes.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 209 active promoter cards, zero duplicate IDs and complete required fields on the new card.
+- Follow-ups / TODOs: Continue the North-East London, Shoreditch, Hackney, Dalston, East, Peckham, New Cross and South London passes; retain the organiser-versus-venue distinction.
+
+## 2026-09-08 02:00
+
+- What changed: Added We Can Be Heroes CIC as a verified Walthamstow youth community live-music presenter, with its age restriction and advance-registration route retained in the card and smoke-test coverage.
+- Why: The current official Waltham Forest service page verifies an active CIC offering under-19 musicians a live stage, equipment and professional sound support across popular-music styles. This closes a youth-access gap without misrepresenting the restricted route as a general adult booking opportunity.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 210 active promoter cards, zero duplicate IDs and complete required fields on the new card.
+- Follow-ups / TODOs: Continue North-East, Shoreditch, Hackney, Dalston, East, Peckham, New Cross and South London discovery; use official organiser evidence before adding locally advertised events.
+
+## 2026-09-08 02:10
+
+- What changed: Added Priory Live as a verified Outer South-East London family music-festival presenter, with promoter filter classifications and smoke-test coverage.
+- Why: Its official current site establishes a recurring Orpington Priory Gardens festival with bands, DJs, live PAs and emerging-artist programming. On the Rye Festival was researched but left unadded: its official source confirms a 2026 live-music event but does not yet establish a recurring presenter programme.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 211 active promoter cards, zero duplicate IDs and complete required public/evidence fields on the new card.
+- Follow-ups / TODOs: Continue the New Cross/Deptford, South London, East London and remaining Hackney/Shoreditch passes; retain On the Rye as a future recheck when a subsequent edition is published.
+
+## 2026-09-08 02:20
+
+- What changed: Added Deptford Folk as a verified monthly folk-club and guest-act presenter, with promoter filter classifications and smoke-test coverage.
+- Why: Its own current site confirms a September 2026 return after a scheduled August pause, recurring guest-act bills and musician floor spots. Decolonise Fest was refreshed through its current official 2026 page but not duplicated because it is already represented in the directory.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 212 active promoter cards, zero duplicate IDs and complete required fields on the new card.
+- Follow-ups / TODOs: Continue South London and East London discovery, then assess remaining geographic and filter-category thin spots with the same official-source threshold.
+
+## 2026-09-08 02:30
+
+- What changed: Added Herne Hill Music Festival as a verified South London community music-festival presenter, with filter classifications and smoke-test coverage.
+- Why: Its official current programme establishes two October 2026 festival weekends with jazz, Latin, choral, family and late-night live music across neighbourhood venues. One-off anniversary events and venue-owned programming remain excluded.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 213 active promoter cards, zero duplicate IDs and complete required fields on the new card.
+- Follow-ups / TODOs: Continue the remaining East London, Hackney/Shoreditch and category-gap passes; periodically re-check excluded organisers when an official future programme appears.
+
+## 2026-09-08 02:40
+
+- What changed: Added UGFestival as a verified Newham Ugandan and African music-festival presenter, with its explicit performer-enquiry route and smoke-test coverage.
+- Why: Its official current site establishes an annual East London community festival with African diaspora live music and a published route for artists, DJs, bands and performers.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 214 active promoter cards and zero duplicate IDs.
+- Follow-ups / TODOs: Complete final Hackney/Shoreditch and category-balance review before treating the promoter discovery goal as complete.
+
+## 2026-09-08 01:15
+
+- What changed: Added Morocco Bound, Bermondsey and its distinct Bookshop Sessions: Folk Night jam-session card. Mapped the new venue to the existing specialist venue type so its public card remains filterable without adding a new type.
+- Why: The venue's own description confirms its recurring folk-session programme, while its current DICE venue programme shows active September Bookshop Sessions dates. The jam card is deliberately labelled Selected Thursdays rather than given an unsupported fixed weekly cadence; it records the published instrument participation and current ticket basis.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a targeted Node venue/session-link assertion, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue source-led discovery for current specialist folk, global, community and musician open-stage sessions. Do not add passive live-music series or dated one-offs without current recurring participation evidence.
+
+## 2026-09-08 01:30
+
+- What changed: Added The Blues Kitchen, Shoreditch's distinct weekly Thursdays Unheard open-mic card.
+- Why: The venue's current official programme explicitly describes Thursdays Unheard as a free, every-Thursday, house-band-backed open mic and publishes an application route for performers. The card is intentionally separate from the venue's Sunday Jazz Jam, whose official page describes a passive improvised performance rather than musician participation.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a targeted Node session-link assertion, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. The jam-session corpus now contains 91 active cards.
+- Follow-ups / TODOs: Continue source-led discovery for recurring participatory musician routes, and retain the distinction between performer-facing jams/open mics and listener-only live sessions.
+
+## 2026-09-08 01:40
+
+- What changed: Added Three Colts Tavern, Bethnal Green and its fortnightly Brazilian Choro Jam card.
+- Why: The venue's own current listings show multiple September and October 2026 dates and describe the series as a fortnightly musician-led choro roda. The card retains the explicitly published 7pm start, does not invent a fixed finish time or cost, and keeps the focused Brazilian/Latin format visible.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a targeted Node venue/session-link assertion, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. The jam-session corpus now contains 92 active cards.
+- Follow-ups / TODOs: Continue the source-led global, folk and community-session pass; retain festival-only rodas as excluded unless a genuinely recurring standalone route is evidenced.
+
+## 2026-09-08 00:10
+
+- What changed: Strengthened promoter-card normalisation so a current relationship-evidence source becomes the organisation and contact click-through fallback only when legacy research lacks separate URLs. Extended the smoke test to require every active promoter to retain both links.
+- Why: The public directory now gives users a functional route from every active promoter card without incorrectly labelling that route as an invitation to submit music.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Promoter link audit: 196 active cards; zero missing source URLs, organisation URLs or public click-through routes.
+- Follow-ups / TODOs: Continue the source-verified geographic and genre discovery sweep; only add organisers with a distinct identity and current official live-promotion evidence.
+
+## 2026-09-08 00:20
+
+- What changed: Added PARABLE as an established independent electronic-music promoter, with current official-programme evidence and public contact route.
+- Why: PARABLE's own Linktree lists multiple announced October and November 2026 London events at E1, Ministry of Sound, Unlocked and EartH; its own event page separately identifies PARABLE as co-presenter of an East London electronic show. It fills a remaining cross-venue East/central electronic-promoter gap without duplicating a venue or event-level card.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 197 active promoter cards and no duplicate promoter IDs.
+- Follow-ups / TODOs: Continue the source-verified geographic and genre discovery sweep, particularly current specialist reggae/dub, experimental and outer-London organiser programmes.
+
+## 2026-09-08 00:30
+
+- What changed: Added London Roots Festival, The London International Ska Festival and Anti Social Camp UK as verified current presenter cards. Extended promoter smoke coverage for their public classifications and evidence fields.
+- Why: The official London Roots programme lists multiple October–December 2026 London concerts; the Ska Festival lists current 2026 London dates and a 39th-anniversary 2027 edition; Anti Social Camp's own site confirms its November 2026 Tileyard London edition and explicit artist application route. This fills folk/roots, ska/reggae and artist-development festival gaps without adding generic event listings or venue-owned programming.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: all three records have complete public/evidence fields; 200 active promoter cards.
+- Follow-ups / TODOs: Continue the source-verified geographic sweep, prioritising distinct current presenters in remaining outer-London, Greenwich/Woolwich and specialist experimental programmes.
+
+## 2026-09-08 00:40
+
+- What changed: Added CTM Festival as an established experimental-music festival presenter and added its smoke-test classification assertion.
+- Why: CTM's official programme confirms a distinct external festival identity returning to London for its fourth ICA collaboration on 24–25 September 2026, presenting experimental composition, electronics, punk and performance. It is not a duplicate of ICA's own venue programme.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 201 active promoter cards, including 8 experimental-music presenters.
+- Follow-ups / TODOs: Continue the source-verified geographic sweep, with priority on distinct current presenters in Outer London and Greenwich/Woolwich; exclude venue-owned and one-off-only identities.
+
+## 2026-09-08 00:50
+
+- What changed: Added City Splash as a current Caribbean and African music festival presenter; extended its promoter smoke-test assertion.
+- Why: City Splash's official site confirms a 31 May 2027 London return and documents its specialist reggae, dub, dancehall, jungle, garage, Afrobeats and amapiano programme with a public festival contact route. Stoomfest was reviewed in the same pass but deliberately not added because its existing card and current relationship were already present.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 202 active promoter cards and 7 reggae/dub cards.
+- Follow-ups / TODOs: Continue the source-verified geographic sweep, prioritising distinct current presenters in Outer London and Greenwich/Woolwich; retain duplicate prevention for already represented festival identities.
+
+## 2026-09-08 01:00
+
+- What changed: Added Livestock Events CIC as a developing Enfield community music-festival and concert presenter; extended promoter smoke coverage for its classification and evidence fields.
+- Why: Its official programme lists a current 12 September 2026 Black Barn concert at Forty Hall Farm and its year-round volunteer-backed festival activity. This creates a genuine Outer London community-presenter route without treating Forty Hall Farm itself as the promoter.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 203 active promoter cards.
+- Follow-ups / TODOs: Continue current-source review of Outer London, Greenwich/Woolwich and specialist community presenters; retain only independent organiser identities with direct music evidence.
+
+## 2026-09-08 01:10
+
+- What changed: Added Reggae Roast as an established London reggae/dub sound-system promoter collective and added its promoter smoke-test classification assertion.
+- Why: Reggae Roast's own 2026 East London event page documents a decade-plus soundsystem crew that runs London reggae parties and festival stages. Dub Vendor's forthcoming 50th-anniversary event was assessed but excluded: current evidence establishes a significant one-off celebration, not a recurring separate promoter programme.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Direct audit: 204 active promoter cards, including 8 reggae/dub cards.
+- Follow-ups / TODOs: Continue the source-verified geographic sweep and identify additional qualifying current experimental and community presenters; do not turn one-off artist or anniversary events into recurring organiser cards without evidence.
+
+## 2026-09-08 00:40
+
+- What changed: Completed another direct-source geographic gap screen without adding duplicate or insufficiently evidenced cards.
+- Why: Confirmed that recently surfaced routes at Grow, Bricks, Drayton Court, Station Ten, Skehanâ€™s, Orleans, SET Social, Vortex, Tropics 68, BOXPARK Croydon and the Fox & Firkin are already represented. Excluded one-off, historic or weakly evidenced leads including Bugle Hornâ€™s stale date, The Fusion Jam, one-off workshop/showcase formats and generic venue listings without a current recurring musician-participation route.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue next with direct organiser and official venue checks for outer-London, folk/global and community formats not already represented.
+
+## 2026-09-08 00:50
+
+- What changed: Completed a fresh current-calendar and ticketing-platform screen; no new cards were added.
+- Why: The scan confirmed all qualifying recurring routes it surfaced are already represented. Oliverâ€™s Jazz Bar, Greenwich is now a recorded unresolved lead: its official site has an active public calendar and third-party calendars list Monday Singing Jam and Wednesday Jam dates, but no current readable official source establishes the actual musician participation route. It remains excluded rather than treating the word “jam” as sufficient proof.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: No production-data change in this pass; current shared data remained syntax-valid and the previously run jam smoke checks passed.
+- Follow-ups / TODOs: Seek direct organiser or venue confirmation for the Oliverâ€™s formats and continue current recurring-session discovery in remaining area/scene gaps.
+
+## 2026-09-08 01:00
+
+- What changed: Added The Night Owl, Finsbury Park and Bukky Leoâ€™s recurring Silver Bullet Jazz Jam.
+- Why: Bukky Leoâ€™s current official page confirms the historic Silver Bullet Jazz Jam continues at The Night Owl under new management and that its resident professional players welcome other musicians. The card deliberately leaves door price and exact arrival time unset because the current official page does not publish comparable details.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` and a focused VM verification for the new venue/session passed; `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed. The full `node trials/verify-scene-update.js` smoke test currently fails on unrelated concurrent promoter card `flash-delirium`, which lacks public `url` and `contactUrl` fields; that unrelated promoter data was not modified.
+- Follow-ups / TODOs: Re-run the full smoke suite once the concurrent promoter change is completed; continue current source-led discovery in the remaining area and genre gaps.
+
+## 2026-09-08 00:30
+
+- What changed: Added Bricksâ€™ weekly Wednesday *We Are Many* open-jam card.
+- Why: The current event-series listing verifies a separate free Wednesday format with Soothsayers/Youthsayers, rotating live bands and an open jam. It is kept separate from the venueâ€™s Thursday Dancefloor Education musician route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the geographic and scene gaps pass; retain direct official, organiser or current-ticketing evidence for every card.
+
+## 2026-09-08 00:10
+
+- What changed: Added Jamboree, Kingâ€™s Crossâ€™s recurring Klezmer Jam! card.
+- Why: Jamboreeâ€™s current programme and the Klezjammersâ€™ own organiser page independently confirm a free, led, last-Saturday-of-the-month participatory klezmer session from 2pmâ€“5pm. The nearby Celtic session was not added because its current venue description establishes a listening programme rather than a public musician sit-in route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue direct-source discovery across the remaining folk, global, community and open-stage gaps.
+
+## 2026-09-08 00:20
+
+- What changed: Added Vortex Jazz Clubâ€™s distinct Future Standards & Downstairs Jam card.
+- Why: The Vortexâ€™s current official programme lists this participatory afternoon session on multiple forthcoming selected Sundays, including September and December. It is deliberately separate from the venueâ€™s weekly Sunday professional jam and Tuesday Downstairs Jam: this one is a free, accessible standards-based jam from 3pm with a house band.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue source-led geographic and scene sweeps, retaining only current, genuinely participatory sessions.
+
+## 2026-09-07 15:20
+
+- What changed: Added One Room Live as a distinct Barking & Dagenham community music and arts collective promoter card, with smoke-test coverage for its public classifications and source fields.
+- Why: Emerge East’s current official 2026 programme explicitly identifies One Room as the returning curator of its East London music journey and DJ programme. This fills an Outer London community-presenter gap without mistaking the festival itself for the collective or inventing an artist-submission route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue source-led discovery through the remaining Outer London borough and specialist genre passes; retain excluded civic or venue-owned programmes as negative-search notes where they prevent duplication.
+
+## 2026-09-07 15:30
+
+- What changed: Added Thamesmead Festival as a distinct community-led live-music festival presenter, with promoter classification/source smoke-test coverage.
+- Why: The official 2026 festival report confirms a current free community programme, local resident programmers and live music across four stages. The separate Three Rivers project was assessed but not added: the available evidence supports a commissioned stage, rather than a recurring independent music-presenter identity.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue Outer London borough and access-led presenter discovery, preserving the distinction between genuine presenter identities and individual commissioned programmes.
+
+## 2026-09-07 15:40
+
+- What changed: Added Redbridge Music Lounge as a public-facing, non-profit community live-music presenter, with promoter smoke-test coverage.
+- Why: Its own site confirms the distinct non-profit music organisation and contact route; Redbridge’s official 2026 cultural programme separately names its acoustic live performances. TARACC and Ionian Music Events were researched but retained as non-card leads because the available current material does not yet establish a qualifying recurring live-music presenter programme.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the Outer London verification pass, with particular care to distinguish an individual music event from a persistent presenter identity.
+
+## 2026-09-07 15:50
+
+- What changed: Added Niburu Live as a separate Enfield grassroots live-session and artist-development presenter, with promoter smoke-test coverage.
+- Why: Its current official project page documents a free emerging-artist platform built around multi-song live sessions, interviews and regular releases. The card explicitly distinguishes this filmed-live development route from a conventional public-gig promoter and from the separate Niburu recording-studio operation.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue Enfield/Havering source-led discovery, excluding council-owned programmes and one-off events unless a distinct recurrent presenter identity is evidenced.
+
+## 2026-09-07 16:00
+
+- What changed: Added Richmond Promoz as a Newham-based East and Central African diaspora concert promoter, with promoter smoke-test coverage.
+- Why: Its current official site documents continuing activity since 2010, direct public contact and a 2026 London Afrigo Band event. Although its name includes Richmond, it is explicitly described as Newham/London activity and is not a Richmond borough card.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue targeted diaspora and accessibility-led presenter discovery while retaining the current official-source threshold.
+
+## 2026-09-07 16:10
+
+- What changed: Added Deaf Rave CIC as a London D/deaf, disabled and neurodivergent accessible-music presenter, with promoter smoke-test coverage.
+- Why: The organisation’s current official 2026 festival page establishes a distinct, recurring accessible music-presentation identity with Deaf DJs, sign-song/sign-language rap and multi-sensory access. Accessibility is described as the programme’s access model, not incorrectly treated as a musical genre.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue source-led checks of experimental and disability-led presenters, retaining only identities that demonstrably present current music rather than support the sector generally.
+
+## 2026-09-07 16:20
+
+- What changed: Added Standard Issue as a London artist-led experimental and contemporary-music presenter, with promoter smoke-test coverage.
+- Why: The collective’s official site identifies its curator/commissioner role and its official 2026 calendar documents multiple London concert presentations. The card makes clear that this is an artist-led new-music route, not a general-purpose external booking agency.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the experimental and access-led search with current official programme evidence; assess performing ensembles separately from presenter identities.
+
+## 2026-09-07 16:30
+
+- What changed: Added Busspepper as a current London Caribbean music and diaspora event promoter, with promoter smoke-test coverage.
+- Why: Its official 2026 events page confirms a multi-event programme across London—including a live-performer bill at 229 and Carnival events at Electric Brixton and Steel Yard—plus a direct public promoter contact route. Real Roots and Unit 137 were researched but not added because their available current evidence did not establish as clear a London event programme.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the systematic specialist-genre sweep, keeping sound-system collectives only where current presentation activity is clearly evidenced.
+
+## 2026-09-07 16:40
+
+- What changed: Added Mopomoso and eavesdropping as distinct experimental-music presenters, with promoter smoke-test coverage for both.
+- Why: Mopomoso’s own current site confirms its September 2026 free-improvisation concert and its landmark long-running specialist-series identity. eavesdropping’s own current site documents the completed 2026 festival and its continuing experimental-music, forum, podcast and artist-development platform. Neither record is conflated with Cafe OTO, Vortex Jazz Club or another host venue.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue targeted discovery of current experimental presenters and reassess the thin genre-filter distribution after the next verified batch.
+
+## 2026-09-07 16:50
+
+- What changed: Added Windrush 78 Festival as an East London community music-and-culture festival presenter, with promoter smoke-test coverage.
+- Why: Its official 2026 page explicitly invites music and other acts to apply, including for an open platform, and documents a sustained performance history since 2018. This is a genuine recurring community festival identity, not a one-off civic heritage event.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the East London and genre-specific discovery passes, retaining the distinction between organisations with public applications and those offering only general contact.
+
+## 2026-09-07 15:05
+
+- What changed: Added three source-verified Outer London presenter cards: Beats & Eats, Setting Da Standards and South Norwood Community Festival. Added promoter smoke-test classification coverage for all three.
+- Why: The Croydon/South Norwood search surfaced distinct independent community presenters with published live-music, artist-development or named festival programmes. Club Soda was already represented; local authority, generic creative-network and tribute-festival results were not added as new independent promoter identities.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Promoter audit: 185 active cards, zero duplicate IDs.
+- Follow-ups / TODOs: Continue remaining source-led discovery, particularly independent organisers in boroughs without a documented candidate and current accessibility-led music-presenter routes.
+
+## 2026-09-07 14:35
+
+- What changed: Completed a public promoter-corpus audit; no directory cards were added in this checkpoint.
+- Why: The audit confirms that all 182 active promoter cards have genre, scale, model, contact route, source URL and check date; there are zero active duplicate IDs. Every allowed public filter value has live coverage: genre (alternative 31, electronic 34, experimental 4, jazz/soul/global 67, mixed 41, reggae/dub 5), scale (developing 52, established 91, landmark 39), model (festival/showcase 47, independent 81, community 32, promoter-label 19, venue-linked 3), and contact route (submissions 15, public contact 164, no public 3).
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` passed; `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js PROJECT_LOG.md` passed. The direct corpus audit reported zero missing required public fields.
+- Follow-ups / TODOs: The systematic source pass remains active. Remaining work is limited to finding additional genuinely independent current organisers in areas whose searches yielded only institutional, developer-run, venue-owned or non-music-first programmes; do not dilute the corpus to make an area look populated.
+
+## 2026-09-07 13:20
+
+- What changed: Added GALA and Crouch End Festival promoter cards, with smoke-test coverage for their classifications.
+- Why: GALA’s official current programme provides a distinct independent South London music-festival route. Crouch End Festival is retained as an explicitly labelled cross-arts community-festival lead because its official fifteenth-edition source documents genuine live-band and choir programming; it is not represented as a music-only organisation.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Promoter audit: 176 active cards, zero duplicate IDs.
+- Follow-ups / TODOs: Continue systematic official-source searches for Greenwich/Woolwich, City, Islington, Shoreditch, Hackney, Dalston, East, New Cross and genre-specific organisers. Do not add generic venue programmes or cross-arts events without live-music evidence.
+
+## 2026-09-07 13:35
+
+- What changed: Added LOUD WOMEN and Blanche promoter cards, plus smoke-test coverage for both public filter classifications.
+- Why: LOUD WOMEN’s official current programme establishes an ongoing London DIY festival/community platform and a direct live-session application route. Blanche is supported by a current municipal licensing submission identifying its enduring London electronic-event identity and a current London event page; its contact route remains public-contact rather than submissions.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Promoter audit: 178 active cards, zero duplicate IDs.
+- Follow-ups / TODOs: Continue documented official-source searches across all remaining named geographic passes, including recording negative/excluded results. Revisit experimental and disability-led leads only with direct current live-promotion evidence.
+
+## 2026-09-07 13:50
+
+- What changed: Added Woodburner and Hidden Jazz Club promoter cards, and added smoke-test assertions for their filter classifications.
+- Why: Woodburner’s official 2026 page verifies a distinct, long-running Dalston weekly live-music series; Hidden Jazz Club’s official Hoxton page verifies a separate artist-run jazz promoter with future 2026 concerts. Generic venue calendars, culture newsletters and non-music-first events from the same pass were excluded.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Promoter audit: 180 active cards, zero duplicate IDs.
+- Follow-ups / TODOs: Continue current official-source discovery for Greenwich/Woolwich, City/Clerkenwell, Islington/King’s Cross, East London and the remaining specialist genre/accessibility gaps; document negative evidence in future batches.
+
+## 2026-09-07 14:05
+
+- What changed: Added UD, the East London Black-music talent-development and showcase presenter, and added a promoter smoke-test assertion for its classification.
+- Why: UD’s current official site directly confirms live-music events, active East London activity and more than twenty years of public showcase opportunities. It is a genuine community/development presenter rather than a generic studio or venue-hire lead. Greenwich/Woolwich searches produced current venue-owned festivals, general arts programmes and a single unnamed electronic series without a sufficient organisation-level public route; these were excluded.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Promoter audit: 181 active cards, zero duplicate IDs.
+- Follow-ups / TODOs: Continue source-led searches for named presenters in City/Clerkenwell, Islington/King’s Cross and outstanding genre/accessibility routes. Keep direct venue programming and one-off non-music event pages out of Promoters.
+
+## 2026-09-07 14:20
+
+- What changed: Added IKLECTIK as an experimental-music promoter/community card and added its public filter assertion to the smoke test.
+- Why: Its own current official pages prove that the organisation remains active after leaving Waterloo, now delivers its programme at Peckham Levels, and continues to present experimental music, sound art and interdisciplinary performance. City/Clerkenwell and King’s Cross searches returned civic, institutional or developer-run programmes rather than independent presenter identities, so no cards were added for those leads.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Promoter audit: 182 active cards, four experimental cards, zero duplicate IDs.
+- Follow-ups / TODOs: Continue the remaining source-led passes for any independent accessibility-led presenters and log any remaining geographic searches that yield only excluded public/institutional programming.
+
+## 2026-09-07 19:50
+
+- What changed: Kept the duplicate Dalston and obsolete Walthamstow Victoria records archived and added Soul Mama, Stratford as a hospitality-led live-music venue.
+- Why: Archived records retain research provenance without appearing in the live directory; Soul Mama has a ticketed programme distinct from the co-located Union Social restaurant/bar.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, both relevant `git diff --check` commands, and a direct classification/archival visibility assertion all passed.
+- Follow-ups / TODOs: Soul Mama's public pages indicate a planned Stratford relocation, so reconfirm its precise location before adding later-dated listings.
+
+## 2026-09-07 19:35
+
+- What changed: Reclassified the approved non-Victoria Pub-filter records into venue-led, specialist, hospitality-led, DIY/community and hire routes.
+- Why: Their regular programmes or practical booking routes are more specific than a generic pub classification.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git diff --check`, and a direct Node assertion of all 14 changed classifications passed. The effective Pub filter now has 21 cards.
+- Follow-ups / TODOs: The two archived Victoria records were intentionally left unchanged pending manual direction; assess the remaining Pub-filter cards separately if desired.
+
+## 2026-09-07 19:25
+
+- What changed: Reclassified The Social as venue-led and Oslo Hackney as established; audited the remaining effective Pub filter.
+- Why: Both run regular music programmes and should not be demoted by incidental bar wording in their descriptions.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and both relevant `git diff --check` commands passed. The audit found 34 remaining Pub-filter cards.
+- Follow-ups / TODOs: Review the reported Pub-filter cards before making any further classification changes.
+
+## 2026-09-07 21:30
+
+- What changed: Added The Bootlegger Vault, Richmond and its distinct weekly Thursday Open Jazz Jam card.
+- Why: The venue's own current page confirms the Richmond live-jazz/blues programme and contact route, while the current VisitRichmond calendar establishes the open, bring-an-instrument Thursday session through April 2027.
+- Files touched: research/scene-and-venues/data/scene-data.js, research/scene-and-venues/index.html, trials/verify-scene-update.js, PROJECT_LOG.md.
+- Commands/tests run + results: node --check research/scene-and-venues/data/scene-data.js, node trials/verify-scene-update.js, and git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js passed.
+- Follow-ups / TODOs: Continue source-verified discovery across remaining geographic and specialist-scene gaps; keep lower-evidence ticketing-only leads in the internal research queue.
+
+## 2026-09-08 09:15
+
+- What changed: Audited the George & Dragon Acton jazz jam against current comparable jazz-jam descriptions. Retained it as Entry-friendly and reclassified Tuesday Jazz Jam at Tropics 68 from Open to Entry-friendly.
+- Why: George & Dragon explicitly calls itself a friendly jazz community, says all are welcome, and invites people to bring an instrument, sing, or simply listen. Tropics 68 explicitly runs a beginner segment from 8:30pm–9:30pm before later semi-pro/pro and all-comer segments. Genre alone is not a level proxy: Hammersmith, for example, welcomes enthusiastic amateurs but remains an Open, house-trio-led session.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped whitespace checks passed.
+- Follow-ups / TODOs: When a multi-stage session explicitly contains a beginner segment, classify it Entry-friendly and keep the stage times in the schedule text.
+
+## 2026-09-08 09:00
+
+- What changed: Reverted the twelve unintended Open reclassifications and restored the prior Open/Entry-friendly allocation. Expanded the public Jam-session levels legend to define the distinction as practical participation support, not a novice-versus-capable judgement.
+- Why: The prior change incorrectly treated public sign-up and supplied equipment as evidence against Entry-friendly. Current source review confirms the original Entry-friendly cards have a low-pressure/supportive route (for example house musicians, full backline, broad performer formats, community/civic settings or short hosted slots), while Open cards remain public performance routes with greater self-reliance or stated format expectations.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped whitespace checks passed.
+- Follow-ups / TODOs: Retain the restored allocation unless an organiser’s current description materially changes; evaluate future open mics with the clarified support-versus-self-reliance rule.
+
+## 2026-09-07 22:30
+
+- What changed: Reclassified twelve current open-mic cards from Entry-friendly to Open: both Troy singer nights, Fabwick, Station Ten, Rebel Inn, Uxbridge Library, New Cross Inn, Gallery Cafe, Coppermill, Two Hats, Barley Mow and The Candlemaker.
+- Why: Their evidence establishes public sign-up, supplied equipment or a broad performer invitation, but not an explicitly beginner/all-abilities learning format. Rocking Bhajans remains Entry-friendly because its organiser says anyone can play, sing or clap.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped whitespace checks passed.
+- Follow-ups / TODOs: Apply the same evidence threshold when reviewing non-open-mic sessions; do not equate a public participation route with entry-level musical expectations.
+
+## 2026-09-07 22:20
+
+- What changed: Gave the concise Open mic card marker its own pink filled style; level tags remain the existing lime outlined style.
+- Why: Open mic is a participation format, not a playing-level assessment, so the two labels must be visually distinct.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` and scoped whitespace checks passed after correcting the smoke assertion to inspect CSS in the full HTML source.
+- Follow-ups / TODOs: Keep the card-level marker limited to open mics; Format remains available for full filtering.
+
+## 2026-09-07 22:15
+
+- What changed: Made Jam Session format filterable as a fifth same-row control: Day, Genre, Format, Level, Area. Removed universal format chips from cards; only Open mic cards retain a compact Open mic marker.
+- Why: The format filter supports quickly excluding open mics, while the card view stays uncluttered for ordinary jams and hybrids.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` and scoped whitespace checks passed.
+- Follow-ups / TODOs: Keep Format intentionally limited to Jam, Open mic and Hybrid; do not introduce genre-expectation categories unless requested separately.
+
+## 2026-09-07 22:00
+
+- What changed: Added a visible Jam Sessions format tag to every card: Jam, Open mic, or Hybrid for the two explicitly dual-format sessions.
+- Why: Format is useful alongside level—an open mic and an actual collaborative jam have different participation experiences—but the user requested no additional genre-access category or filter.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` and scoped whitespace checks passed.
+- Follow-ups / TODOs: Maintain the two explicit Hybrid overrides if their organiser descriptions change; ordinary cards derive their format from their current published name/description.
+
+## 2026-09-07 21:45
+
+- What changed: Added the Irish Cultural Centre, Hammersmith and its Friday Night Traditional Irish Music Session.
+- Why: The centre's current official future listing confirms a weekly, free, family-friendly Friday session that explicitly welcomes instruments and voices; it is a distinct specialist participation route rather than a passive concert.
+- Files touched: research/scene-and-venues/data/scene-data.js, research/scene-and-venues/index.html, trials/verify-scene-update.js, PROJECT_LOG.md.
+- Commands/tests run + results: node --check research/scene-and-venues/data/scene-data.js, node trials/verify-scene-update.js, and git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js passed.
+- Follow-ups / TODOs: Continue source-verified discovery across remaining borough and specialist-scene gaps; check distinctive folk/trad and community formats only where current organiser evidence establishes genuine participation.
+
+## 2026-09-07 22:00
+
+- What changed: Added Biddle Brothers Bar, Lower Clapton and the organiser-led first-Wednesday Old Time Session.
+- Why: The Friends of American Old Time Music and Dance current session register (updated February 2026) establishes the venue, organiser contact, inclusive participation format and occasional-date-change constraint. The pub is classified as a casual live-music setting rather than a dedicated venue.
+- Files touched: research/scene-and-venues/data/scene-data.js, research/scene-and-venues/index.html, trials/verify-scene-update.js, PROJECT_LOG.md.
+- Commands/tests run + results: node --check research/scene-and-venues/data/scene-data.js, node trials/verify-scene-update.js, and git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js passed.
+- Follow-ups / TODOs: Continue current organiser-source checks for under-represented boroughs and specialist folk/trad, global-music and community sessions.
+
+## 2026-09-07 22:15
+
+- What changed: Added UCL Jazz Society’s alternate-Monday Institute Jam and King’s Jazz Society’s fortnightly Strand Sessions, with their linked student venues.
+- Why: Current official university-society pages establish distinct, recurring house-set-to-open-jam formats. The cards retain the material term-date and society-access constraints rather than implying unrestricted public admission.
+- Files touched: research/scene-and-venues/data/scene-data.js, trials/verify-scene-update.js, PROJECT_LOG.md.
+- Commands/tests run + results: node --check research/scene-and-venues/data/scene-data.js, node trials/verify-scene-update.js, and git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js passed.
+- Follow-ups / TODOs: Continue current organiser-source checks for under-represented boroughs and specialist folk/trad, global-music, community and educational sessions.
+
+## 2026-09-07 22:45
+
+- What changed: Added Save The World Club, Kingston upon Thames and its free weekly Friday public-studio jam.
+- Why: The charity’s official multi-date calendar establishes a genuine recurring participatory route with free access and RSVP, not a one-off community event. It is intentionally classified beginner-friendly and community-led.
+- Files touched: research/scene-and-venues/data/scene-data.js, research/scene-and-venues/index.html, trials/verify-scene-update.js, PROJECT_LOG.md.
+- Commands/tests run + results: node --check research/scene-and-venues/data/scene-data.js, node trials/verify-scene-update.js, and git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js research/scene-and-venues/index.html passed.
+- Follow-ups / TODOs: Continue organiser-source passes for borough gaps and less-visible scene formats; retain single-date or cancelled sessions only as unresolved leads.
+
+## 2026-09-07 22:30
+
+- What changed: Added IMC Jams at Pirate Studios, Dalston, including its linked community venue card.
+- Why: The organiser’s current official page confirms frequent 2026 sessions and a distinct screened intermediate-and-above access model. The card is therefore classified Skilled and records registration-first access and the published £12 price rather than presenting it as a general walk-in jam.
+- Files touched: research/scene-and-venues/data/scene-data.js, research/scene-and-venues/index.html, trials/verify-scene-update.js, PROJECT_LOG.md.
+- Commands/tests run + results: node --check research/scene-and-venues/data/scene-data.js, node trials/verify-scene-update.js, and git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js research/scene-and-venues/index.html passed.
+- Follow-ups / TODOs: Continue current organiser-source checks for under-represented boroughs and specialist folk/trad, global-music, community and educational sessions.
+
+## 2026-09-07 18:50
+
+- What changed: Retained the active CLF Art Lounge Pop Up card and removed the future CLF main-room card, Kindred Hammersmith and Rose Theatre Kingston from the live-music directory.
+- Why: The Pop Up is the currently programmed ground-floor space; the roof-garden/main room remains a future opening. Kindred is hospitality-led and Rose is principally a theatre, neither meeting the revised venue threshold.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, both relevant diff checks, and a remaining-card check passed: only `clf-art-lounge-pop-up` remains.
+- Follow-ups / TODOs: Continue manual review of the remaining geographical-audit venue cards.
+
+## 2026-09-07 18:45
+
+- What changed: Reclassified Peckham Arches as a bar and casual live-music stage and added an explicit pub-filter mapping.
+- Why: Its recurring Sunday programme is sufficient to retain it, but its primary identity is a bar/terrace rather than a venue-led music room.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git -C research/scene-and-venues diff --check -- index.html data/scene-data.js`, and `git diff --check -- trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Resolve the now-overlapping CLF Art Lounge Pop Up and current CLF Art Lounge cards.
+
+## 2026-09-07 18:40
+
+- What changed: Removed UD Talent House from the live-music venue directory and retained its pre-existing Talent House Live Room rehearsal/recording-facility card.
+- Why: Talent House is principally an artist-development, studio and rehearsal hub rather than a public concert venue; no duplicate operations record was required.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git -C research/scene-and-venues diff --check -- index.html data/scene-data.js`, and `git diff --check -- trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Review whether Peckham Arches' recurring Sunday programme meets the venue threshold.
+
+## 2026-09-07 18:35
+
+- What changed: Reclassified The Vestry Sessions at St Mary's Church as a venue-led specialist world, experimental and acoustic listening series and added it to the specialist filter.
+- Why: Manual review identified a clear curated niche listening programme rather than a generic church-concert listing.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git -C research/scene-and-venues diff --check -- index.html data/scene-data.js`, and `git diff --check -- trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Resolve whether Angel of Bow has sufficiently current programme evidence for retention.
+
+## 2026-09-07 18:30
+
+- What changed: Clarified East Side Jazz Club as a venue-led specialist jazz club and added it to the dashboard's specialist venue filter.
+- Why: Its curated programme is exclusively jazz-focused; its social-club host setting should not make it appear promoter-dependent or generic.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git -C research/scene-and-venues diff --check -- index.html data/scene-data.js`, and `git diff --check -- trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue manual classification review of the remaining geographical-audit venue entries.
+
+## 2026-09-07 18:25
+
+- What changed: Retained and refreshed the original The Boogaloo record, removed the duplicate later record, and added a duplicate-venue-ID smoke guard.
+- Why: The original record preserves the established data position; the later audit supplied more precise current area and programme detail. The guard prevents duplicate IDs from silently corrupting dashboard filtering.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, both diff checks, and an ID audit passed: 241 venue IDs and 241 unique IDs.
+- Follow-ups / TODOs: Continue manual review of the remaining geographical-audit venue entries.
+
+## 2026-09-07 18:20
+
+- What changed: Removed Mum's Bistro / Bowes Park Folk Club from the live-music venue directory and added it to the exclusion smoke check.
+- Why: The restaurant setting does not meet the revised venue-led live-music threshold, despite its hosted folk-club activity.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git -C research/scene-and-venues diff --check -- index.html data/scene-data.js`, and `git diff --check -- trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue applying the revised threshold to the remaining review records.
+
+## 2026-09-07 18:15
+
+- What changed: Removed Booking Office 1869 from the live-music venue directory and added it to the exclusion smoke check.
+- Why: Although its official site documents Sunday jazz, the underlying hotel-restaurant offer does not meet the directory's venue-led live-music threshold.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git -C research/scene-and-venues diff --check -- index.html data/scene-data.js`, and `git diff --check -- trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue applying the venue-led threshold to the remaining review records.
+
+## 2026-09-07 18:10
+
+- What changed: Removed St Bartholomew the Great from the live-music venue directory and added it to the exclusion smoke check.
+- Why: Manual review set the threshold against including churches simply because they host occasional choir or concert activity.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git -C research/scene-and-venues diff --check -- index.html data/scene-data.js`, and `git diff --check -- trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Apply the same threshold to comparable church-only candidates in the remaining review.
+
+## 2026-09-07 18:05
+
+- What changed: Reclassified Fidelio Cafe as a venue-led specialist classical, chamber and jazz listening room and added it to the dashboard's specialist venue filter.
+- Why: Its current ticketed programme demonstrates a sustained curated music series; restaurant service and separate private hire should not determine its practical music-route classification.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git -C research/scene-and-venues diff --check -- index.html data/scene-data.js`, and `git diff --check -- trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue manual review of the remaining geographical-audit venue classifications.
+
+## 2026-09-07 18:00
+
+- What changed: Classified Barbican Centre as an established venue in the dashboard's practical venue-route filter.
+- Why: Its permanent public music programme and built-in audience should take precedence over its separate promoter-hire facility.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git -C research/scene-and-venues diff --check -- index.html data/scene-data.js`, and `git diff --check -- trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue manual review of newly added venue classifications.
+
+## 2026-09-07 17:55
+
+- What changed: Reclassified Discovery Stage at Jack Solomons Club as a venue-led specialist jazz and emerging-musician stage, operated by Soho Live Music Club.
+- Why: Manual review confirmed that Soho Live is the appropriate umbrella operator and that the separate late-night DJ sessions should not determine the venue classification.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git -C research/scene-and-venues diff --check -- data/scene-data.js` passed.
+- Follow-ups / TODOs: Continue manual review of the remaining geographical-audit venue additions.
+
+## 2026-09-07 19:15
+
+- What changed: Added LCCM Music Box, Waterloo and its distinct monthly BOX JAM and Rap Jam cards; added Orleans Bar's separate Wednesday Live Cellar Sessions & Late Jam card.
+- Why: LCCM's current official Eventbrite organiser programme proves two separate participatory formats at the same venue, while Orleans' current official events page distinguishes its free Wednesday late jam from the existing paid Thursday Living Sounds open-mic jam.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Pending the scoped jam smoke-test suite.
+- Follow-ups / TODOs: Continue systematic geographic and specialist-scene discovery; retain separate cards only where schedule or participation format is genuinely distinct.
+
+## 2026-09-07 19:30
+
+- What changed: Added The Magic Garden's FunkShyBeats Showcase and Jam Session as a separate recurring card.
+- Why: The venue's current future programme confirms an all-player, house-band-backed funk-and-soul jam every last Thursday, free to attend; it is a distinct recurring format from the venue's Blues Jam.
+- Files touched: research/scene-and-venues/data/scene-data.js, trials/verify-scene-update.js, PROJECT_LOG.md.
+- Commands/tests run + results: node --check research/scene-and-venues/data/scene-data.js, node trials/verify-scene-update.js, and git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js passed. Audit: 62 active jam cards.
+- Follow-ups / TODOs: Continue source-verified geographic and specialist-scene discovery; do not add Mood Jam until its exact current recurrence can be substantiated.
+
+## 2026-09-07 19:45
+
+- What changed: Added Station Ten, Sydenham and two distinct public participation cards: The Jazz Approach Sunday Jazz Jam and Open Mic Saturdays.
+- Why: ST10 Events' current official ticketing series confirms both the recurring Sunday open jazz jam with supplied rhythm section/in-house instruments and musician-free entry, and the separate last-Saturday monthly open-mic route with PA support.
+- Files touched: research/scene-and-venues/data/scene-data.js, trials/verify-scene-update.js, PROJECT_LOG.md.
+- Commands/tests run + results: node --check research/scene-and-venues/data/scene-data.js, node trials/verify-scene-update.js, and git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js passed. Audit: 64 active jam cards and zero unresolved jam-to-venue links.
+- Follow-ups / TODOs: Continue source-verified geographic and specialist-scene discovery.
+
+## 2026-09-07 20:00
+
+- What changed: Added The Magic Garden's distinct Mood Jam - Open Jam Night card.
+- Why: The venue's current October programme now directly establishes a first-Thursday recurring open-jam format, with free entry and a nu-jazz/fusion-oriented musician safe-space/showcase route.
+- Files touched: research/scene-and-venues/data/scene-data.js, trials/verify-scene-update.js, PROJECT_LOG.md.
+- Commands/tests run + results: node --check research/scene-and-venues/data/scene-data.js, node trials/verify-scene-update.js, and git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js passed. Audit: 65 active jam cards.
+- Follow-ups / TODOs: Continue source-verified geographic and specialist-scene discovery.
+
+## 2026-09-07 20:15
+
+- What changed: Added The T.E Dingwall Building, Camden and Accelerando Records' weekly Wednesday original-artist open-mic card.
+- Why: The promoter's current multi-date official listing verifies a genuine recurring musician participation route and specifies check-in, backing-track handling, free entry and the material audience-vote competition constraint.
+- Files touched: research/scene-and-venues/data/scene-data.js, trials/verify-scene-update.js, PROJECT_LOG.md.
+- Commands/tests run + results: node --check research/scene-and-venues/data/scene-data.js, node trials/verify-scene-update.js, and git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js passed. Audit: 66 active jam cards and zero unresolved jam-to-venue links.
+- Follow-ups / TODOs: Continue source-verified geographic and specialist-scene discovery.
+
+## 2026-09-09 07:35
+
+- What changed: Completed the artist-card label audit’s verified additions: added eleven further labels (Fuzzed Up & Astromoon, Babylegs, Nuclear Blast, Floodlit, The Leaf, Panache, Devil Dog, Engineer, The Delphi Label, The Weird Beard and US Broke Records). The Labels tab now filters by Base (London, Elsewhere in the UK, International) alongside Genre, Roster scale, Operation and Submission route; internal evidence provenance is no longer constructed in public UI.
+- Why: Artist cards can now lead to verified release-context labels outside London without presenting them as London operations. The US Broke Records card explicitly avoids conflating it with an unrelated legacy London label of the same name.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, duplicate-ID/base audit and scoped `git diff --check` passed. Labels total 136: 122 London/default, 7 elsewhere in the UK and 7 international.
+- Follow-ups / TODOs: Venner Records, Shake! Shake! Records and Spider 7 Records remain excluded from the Labels directory: artist-card credits exist, but no current independently verifiable label operator/source was found. Add only if a current official route or authoritative trade source resolves each identity.
+
+## 2026-09-07 20:30
+
+- What changed: Added Bikesoup, Westfield and Accelerando Records' distinct weekly Tuesday cover-song open-mic card.
+- Why: The promoter's current multi-date official listing verifies the separate venue, 7pm check-in, cover-song-only rule, backing-track protocol, free entry and audience-vote competition constraint.
+- Files touched: research/scene-and-venues/data/scene-data.js, trials/verify-scene-update.js, PROJECT_LOG.md.
+- Commands/tests run + results: node --check research/scene-and-venues/data/scene-data.js, node trials/verify-scene-update.js, and git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js passed. Audit: 67 active jam cards and zero unresolved jam-to-venue links.
+- Follow-ups / TODOs: Continue source-verified geographic and specialist-scene discovery.
+
+## 2026-09-09 07:45
+
+- What changed: Added optional city-level `baseDetail` values to the Elsewhere-in-the-UK label cards and rendered that value on cards while retaining the broad Base filter. Noon, Babylegs, Floodlit, The Leaf and Engineer now show Sheffield, Bristol, Manchester, Leeds and Ticehurst/East Sussex respectively. Devil Dog and The Weird Beard state that their city is not published.
+- Why: The directory can be geographically specific where its evidence supports it without manufacturing a local base for labels that only publish a UK identity.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Data syntax, dashboard smoke, direct UK-base output audit and scoped diff checks passed.
+- Follow-ups / TODOs: Replace either `city not published` value only if a current official label source gives an unambiguous city or address.
+
+## 2026-09-07 20:45
+
+- What changed: Added CARAVAN Social Jam Night at The Jago as a current, selected-Thursday participation card.
+- Why: A current promoter ticketing page directly confirms the distinct open fusion format for musicians, singers, dancers and artists. This is stronger evidence than the older, removed generic Jago leads, which remain excluded.
+- Files touched: research/scene-and-venues/data/scene-data.js, trials/verify-scene-update.js, PROJECT_LOG.md.
+- Commands/tests run + results: node --check research/scene-and-venues/data/scene-data.js, node trials/verify-scene-update.js, and git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js passed. Audit: 68 active jam cards and zero unresolved jam-to-venue links.
+- Follow-ups / TODOs: Continue source-verified geographic and specialist-scene discovery.
+
+## 2026-09-09 08:00
+
+- What changed: Labels now sort by roster scale (Landmark/international, Established professional, Developing/emerging) and alphabetically within each scale. Each card displays its roster scale as the top-right tag. Removed the obsolete evidence-control implementation comment.
+- Why: The directory now foregrounds the public scale already documented in each card without treating source insertion order as a recommendation.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Data syntax, dashboard smoke, direct ordering audit and scoped diff checks passed.
+- Follow-ups / TODOs: Similar-artists Label status intentionally remains a separate, coarse artist-level infrastructure field; it must not be inferred mechanically from a label roster-scale card.
+
+## 2026-09-09 08:15
+
+- What changed: Corrected the Labels roster-scale display order to Landmark/international, then Established professional, then Developing/emerging. Resolved Right Track Records from its incomplete legacy Finsbury-bill lead into an active London label/distribution card with complete filter fields.
+- Why: The previous order accidentally followed the filter vocabulary (Developing first), reversing the requested prominence order. Current Companies House and music-trade/current-release evidence supports a complete, cautious Right Track classification without presenting its general contact as an open demo route.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Data syntax, dashboard smoke, ordering audit, complete-roster-scale audit and scoped diff checks passed. All 136 label cards now have a roster scale.
+- Follow-ups / TODOs: Revisit Right Track only if its own official site returns and gives a current roster or explicit submission policy; retain `public-contact` until then.
+
+## 2026-09-09 08:30
+
+- What changed: Restored the original top-level tab order after an interrupted navigation edit, then reordered only the Labels filters: Roster scale, Genre, Base, Operation, Submission route.
+- Why: Roster scale is the primary prominence dimension and now appears first, while the established tab navigation remains unchanged.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Data syntax, dashboard smoke and scoped diff checks passed.
+- Follow-ups / TODOs: None for this filter-order correction.
+
+## 2026-09-09 08:45
+
+- What changed: Refined the public Promoters directory: filters now run Promoter scale, Genre, Promoter model and Contact route on one desktop row; cards show their scale as a top-right tag; results sort Landmark/international, Established, Developing/emerging and alphabetically within each tier.
+- Why: This matches the completed Labels browse pattern and makes the directory’s practical reach classification visible before a user opens individual cards.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Operations-data and scene-data syntax checks, dashboard smoke, direct promoter-order audit and scoped diff checks passed.
+- Follow-ups / TODOs: Keep Promoter scale independent from an artist’s label status; do not add an area filter until a complete multi-venue geography model exists.
+
+## 2026-09-08 19:00
+
+- What changed: Removed The Groove Kitchen jam card and the BOXPARK Croydon venue card, and updated the jam provenance ledger to 135 current cards, 103 additions, 12 retired/reconciled identities and net +92 from the 43-card baseline.
+- Why: The event-specific BOXPARK URL now returns 404; BOXPARK's own current programme has no Groove Kitchen listing; and a final organiser/ticketing/social search produced no later current date. Historic 2026 listings describe a participatory house-band open mic, but do not establish an active recurring session today.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a focused removal-integrity audit, and scoped `git diff --check` all passed.
+- Follow-ups / TODOs: Reconsider only if BOXPARK or Blue Revolutions publishes a current future Groove Kitchen date.
+
+## 2026-09-08 19:15
+
+- What changed: Removed Singing Village Labs and its Lynton Gardens venue card from the public Jam Sessions directory; retained the source records non-destructively behind an exclusion filter. Updated the jam provenance ledger and the exclusion smoke check.
+- Why: The organiser describes a facilitator-led co-improv learning and practice laboratory using games, guided explorations and structured prompts, rather than a participatory jam-session format.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a direct active-data audit (`134` cards; neither Singing Village record present), and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Retain Singing Village only as a possible future vocal-improvisation-training resource, unless the site develops a clearly participatory jam format.
+
+## 2026-09-08 19:30
+
+- What changed: Added two current Accelerando Records participatory series: Friday Open Mic at The Craft Beer Co., Covent Garden, and Saturday Open Mic at Bishops, Fulham. Corrected the Cosmic Fusion card's venue label to plain ASCII so Upstairs at Ronnie's no longer renders mojibake.
+- Why: The current organiser catalogue makes the two weekly music open mics distinct from the existing Battle Jam, Tuesday and Wednesday series. The other current items at the end of the organiser's Eventbrite page are a dance audition or curated live-music offer, not separate musician-participation jam formats.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, direct active-data audit (`136` jam cards), and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Treat past Battle Jam editions at other venues as historical duplicates unless their organiser publishes a current recurring route.
+
+## 2026-09-08 19:45
+
+- What changed: Replaced the login-gated individual event URL on the Phineas Bar jazz-jam card and venue card with UCL's public Phineas page. Clarified that the Tuesday series operates during UCL term time.
+- Why: The public UCL page verifies Jazz Jammin' on Tuesdays, while the individual event page only requires login to register a free ticket. The card should remain inspectable without an account and not imply a year-round weekly schedule.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, direct resolved-record audit, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Refresh the exact Tuesday date/time from UCL Jazz Society when its next term calendar is published.
+
+## 2026-09-08 20:00
+
+- What changed: Reclassified Late Late Soul Sessions Upstairs with SAHRA from Open to Skilled, corrected its venue relationship to Upstairs at Ronnie's, and replaced the generic Ronnie's URL with the direct official session page. Added ticket price and selective sit-in conditions.
+- Why: Ronnie Scott's states that the first half is the SAHRA house-band set and only selected singers/musicians who register interest on arrival may be invited on stage in the second half; it is not a walk-up open jam.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, direct resolved-card audit, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Apply the same selected-sit-in standard to future Ronnie's Late Late entries rather than inferring openness from the word “jam”.
+
+## 2026-09-08 20:10
+
+- What changed: Reclassified Bukky Leo's Silver Bullet Jazz Jam at The Night Owl from Open to Skilled and updated its smoke assertion.
+- Why: The current organiser describes a professional house band welcoming musicians but does not present beginner/all-level access. The long-running standards-led jazz sit-in should not be represented as entry-level simply because it is participatory.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, direct level audit, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Revisit only if Bukky Leo or the venue explicitly advertises beginner/all-level participation.
+
+## 2026-09-08 20:20
+
+- What changed: Removed the retired UK Open Mic routes at Balfour St Barts and Hagen & Hyde, together with their dedicated venue cards, from the public Jam Sessions directory. Added durable exclusions and regression checks.
+- Why: Both former organiser URLs now return HTTP 410 Gone, establishing that the series have been retired; no current replacement programme was found.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, direct active-data audit (`134` cards; all four retired records absent), and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Only restore either route if UK Open Mic or the relevant venue publishes a new current participatory programme.
+
+## 2026-09-07 21:45
+
+- What changed: Replaced Angel of Bow’s obsolete event-detail links with its current official homepage and direct public email; reduced the jam card to the recurrence currently evidenced there and reclassified it from Beginner-friendly to Open.
+- Why: The old `/events/openmic` and `/events/livemusic` paths return 404. The homepage still lists a Wednesday Open Mic, but no longer publishes the former detail/host and inclusivity claims.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Syntax, dashboard smoke and scoped whitespace checks pass.
+- Follow-ups / TODOs: Re-enrich the card only when the venue publishes a current event-detail page or explicit performer information.
+
+## 2026-09-07 21:35
+
+- What changed: Retired The Alwyne Castle and its Wednesday UK Open Mic from the active venue and Jam Sessions views while preserving their original source records in the data file.
+- Why: The live route now displays UK Open Mic’s explicit “This page has been retired” notice. An earlier cached search result was incorrectly treated as current evidence.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Syntax, dashboard smoke and scoped whitespace checks pass.
+- Follow-ups / TODOs: Do not retain cached search snippets as evidence when a live page supplies an explicit retirement notice.
+
+## 2026-09-07 21:25
+
+- What changed: Reclassified The Three Compasses, Dalston monthly open mic from Beginner-friendly to Open.
+- Why: Its current official programme describes an “excellent standard of performance” alongside a welcoming, broad performer format. That is an open stage, but not an explicit beginner-specific session.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Syntax, dashboard smoke and scoped whitespace checks pass.
+- Follow-ups / TODOs: Keep Entry-friendly only where the organiser explicitly frames the session as beginner-oriented or all-ability with a low-barrier learning emphasis.
+
+## 2026-09-07 21:15
+
+- What changed: Reclassified Save The World Club’s Friday Jam Sessions from Beginner-friendly to Open.
+- Why: Its own current multi-date listing explicitly calls it an “open jam session” for members of the public; free community access alone is not evidence for an entry-level classification.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; scoped whitespace check passed.
+- Follow-ups / TODOs: The Alwyne Castle and The Angel of Bow remain current: their active organiser/venue pages continue to advertise their Wednesday performer routes.
+
+## 2026-09-08 10:00
+
+- What changed: Replaced the Jam-session single-genre matcher with multi-genre matching. The one Genre dropdown now includes a session whenever its evidenced genre list contains the selected value.
+- Why: Hip-hop mentions should not displace the jazz, funk or soul routes of genuinely mixed jams. BOX JAM now appears under Jazz, Nu-jazz / fusion, Soul / R&B and Hip-hop / rap, while the Links Vocal Cypher remains Hip-hop / rap only.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped whitespace checks passed. The smoke test evaluates the production matcher against BOX JAM and Links Studios.
+- Follow-ups / TODOs: Add future jam genres to the multi-genre matcher rather than assigning a forced single filter category.
+
+## 2026-09-08 09:30
+
+- What changed: Added a dedicated `Hip-hop / rap` Jam-session genre filter and routed rap/cypher/grime metadata to it before the jazz-adjacent matching rule.
+- Why: The Links Studios Vocal Cypher was correctly recorded as hip-hop/rap in the data but the previous UI mapper incorrectly grouped it under `Nu-jazz / fusion`.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped whitespace checks passed.
+- Follow-ups / TODOs: Preserve the dedicated hip-hop route for future cyphers, rap jams and grime formats; retain `Nu-jazz / fusion` for genuinely jazz-adjacent sessions.
+
+## 2026-09-08
+
+- What changed: Added checked venue cards for The Elephant’s Head and The Dark Horse, Camden, with official listing/contact routes and their corresponding dashboard classifications. The Elephant’s Head is classified as a venue-led grassroots route; The Dark Horse is classified as hospitality-led because its live programme is curated alongside pub/restaurant activity. Added smoke-test coverage for both cards.
+- Why: The two distinct Camden venues have active official live-music evidence and practical public contacts. The user-supplied Grey Horse was resolved as the Kingston parent pub of existing Ram Jam Records, so no duplicate Grey Horse gig card was created; Ram Jam remains the separate actionable live-room record.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Recheck the venues’ current bill/promoter before pitching; The Dark Horse’s active live programme is broad but its current public material emphasises curated hospitality programming rather than a standing artist-submission system.
+
+## 2026-09-08
+
+- What changed: Removed the active The Dark Horse, Camden venue card, its hospitality filter mapping, and its dedicated regression assertion.
+- Why: The user requested that all Dark Horse entries be removed. The Croydon Dark Horse was researched but never added, so no other active Dark Horse card remained to remove. The Elephant’s Head remains a separate verified Camden venue.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js`, and a scoped `dark-horse` search all passed with no active code/data references remaining.
+- Follow-ups / TODOs: Re-add a Dark Horse only upon an explicit request tied to a specific venue identity and intended use.
+
+## 2026-09-08
+
+- What changed: Added Surrey destination venue cards for Fiery Bird (Woking), The Boileroom (Guildford), The Star Inn (Guildford) and The Holroyd Arms (Guildford). The first two are venue-led grassroots cards; The Star is a checked pub live-music route; Holroyd is visibly retained as a candidate because its current concert calendar is third-party rather than venue-published. Added destination-filter and evidence-route smoke coverage.
+- Why: The user requested the closest practical Woking/Guildford options. Each card preserves the precise Surrey town under the existing `Outside London / destination` filter rather than misclassifying it as a London area. The Boileroom card makes its 10-mile local-support criterion explicit; Holroyd’s call-first status avoids overstating its current booking route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, scoped `git diff --check`, and a direct four-card area/status audit passed.
+- Follow-ups / TODOs: Recheck The Star’s current booker before pitching. Promote Holroyd from candidate only after a direct venue confirmation or current official programme page establishes the live-booking route.
+
+## 2026-09-08 12:10
+
+- What changed: Completed an audience-evidence audit for Fiery Bird, The Boileroom, The Star Inn and The Holroyd Arms. Reclassified the Star as its dedicated Back Room venue (100 capacity, bar, lighting and sound), and resolved Holroyd from candidate to checked based on the active Suburbs@theholroyd ticketed programme. All four now use the venue-led/built-in-crowd dashboard classification.
+- Why: The shortlist should distinguish a genuine recurring music audience from a pub that merely permits occasional live music. Holroyd has no public artist-submission page, so its card retains a specific organiser-first route rather than promising direct booking.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a direct four-card classification audit, and scoped `git diff --check` passed. The smoke test compiles the dashboard's embedded script; a separate `node --check index.html` was not used because Node correctly does not accept `.html` as a JavaScript input.
+- Follow-ups / TODOs: Before an actual pitch, check the current bill and confirm the individual promoter/booker, slot format and commercial terms; venue audience evidence is not a booking or ticket-sales guarantee.
+
+## 2026-09-08 12:25
+
+- What changed: Rewrote The Camden Club card as a venue-led multi-genre live-music club and event room, replacing the terse genre list with its documented mix of original/emerging artists, guitar-based alternative, post-rock/prog, soul/funk/jazz, tribute and cultural events. Its route now identifies original guitar/alternative, post-rock/prog and emerging-artist bills as the relevant pitch lanes.
+- Why: The former wording technically named some programme formats but understated the breadth of the active calendar and did not make the practical band fit legible.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a direct Camden Club field audit, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Treat the Camden Club as a multi-genre room; confirm the individual presenter and bill format before pitching a date.
+
+## 2026-09-08 12:40
+
+- What changed: Corrected the audience-source model for The Black Heart and Barfly Camden. The Black Heart is now a specialist-community/partial-spillover route: its separate upstairs room can benefit from the downstairs heavy-music community, but it does not guarantee a house audience. Barfly is now promoter-led/artist-draw dependent because its ticketed upstairs shows are separate from its downstairs bar. Added the visible specialist-community filter and regression coverage.
+- Why: A live-music programme or a recognisable venue identity does not mean an unknown band can rely on venue-supplied attendance. The dashboard now separates community spillover from promoter/artist-draw dependence for these two materially different situations.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Apply the same strict audience-source test to further priority venues before treating any of them as a low-risk first gig route.
+
+## 2026-09-08 13:00
+
+- What changed: Added The Good Mixer, Camden as a checked grassroots live-music pub card and classified it under specialist community/partial audience spillover. The card records its free-entry Thursday/Sunday band nights, weekly DJs, current multi-band calendar and public contact route, while explicitly warning that pub-floor traffic is not a guaranteed gig audience.
+- Why: It is a nearby, materially different option from separated ticketed rooms: active pub-floor programming can create ambient audience exposure, but the dashboard must not overpromise turnout.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed. The first smoke run caught the intentionally expanded community set in a prior one-item assertion; the assertion was updated and the complete rerun passed.
+- Follow-ups / TODOs: Ask the pub whether it is currently taking full-band originals for its Thursday/Sunday bills and who books those dates before pitching Foreign Logic.
+
+## 2026-09-08 13:15
+
+- What changed: Removed the extra `Specialist community / partial audience spillover` venue type after it was found to cut across the intended dashboard taxonomy. The Black Heart now uses the existing promoter-led/audience-dependent type. The Good Mixer now uses venue-led/built-in crowd, supported by its free recurring full-band programme in a two-room pub arranged around a shared central bar; its card retains the explicit no-guaranteed-turnout caveat.
+- Why: The venue filter should make the core practical distinction only: venue-led/built-in audience, promoter-led bill/artist draw, or pub/casual live music. Card text can preserve nuance without creating a competing top-level filter.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Use The Good Mixer’s Thursday/Sunday slots as a first venue-led Camden approach, but ask the booker about the current expected audience and deal for a particular date.
+
+## 2026-09-08 13:30
+
+- What changed: Renamed the Star of Kings card to `Behind the Bookcase at The Star of Kings` while retaining its stable ID and existing promoter relationships. Updated the card to describe the separate basement room, its 120-standing/roughly 60-theatre capacity, distinct facilities and promoter/private-hire audience route.
+- Why: The directory card is intended to represent the actual live-music venue beneath the pub, not imply that the upstairs pub itself is a gig room or supplies a basement-show audience.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed. The first smoke run exposed a stale one-item promoter-set assertion; it was expanded for the retained Black Heart and new Behind the Bookcase classifications, then the full rerun passed.
+- Follow-ups / TODOs: Retain Star of Kings only as the parent location in searches and relationships; pitch the separate Behind the Bookcase room through its private-hire page or named active promoter.
+
+## 2026-09-08 13:45
+
+- What changed: Replaced the misleading generic Star of Kings “Open listings” link on the Behind the Bookcase card with the basement-specific room-details brochure, while retaining the official parent private-hire page as the booking contact. Added optional per-card link labels so a room without a public events calendar is not falsely presented as having listings.
+- Why: Behind the Bookcase is a separate basement room, but no verified dedicated public listings calendar was available; its card should link to an accurate room-specific source.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js PROJECT_LOG.md` all passed (Git reported only the repository’s normal line-ending warning for `PROJECT_LOG.md`).
+- Follow-ups / TODOs: Confirm any future public event calendar before replacing the room-details link.
+
+## 2026-09-07 21:00
+
+- What changed: Added TAOSOL: Live + Electro Jam at The Jago as a selected-Wednesday card.
+- Why: The Jago's current September calendar re-confirms TAOSOL as active, while its current event description documents the distinct live/electronic open-jam, singer/musician and DJ open-deck participation format. The card deliberately avoids claiming a fixed recurrence that is not currently published.
+- Files touched: research/scene-and-venues/data/scene-data.js, trials/verify-scene-update.js, PROJECT_LOG.md.
+- Commands/tests run + results: node --check research/scene-and-venues/data/scene-data.js, node trials/verify-scene-update.js, and git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js passed. Audit: 69 active jam cards and zero unresolved jam-to-venue links.
+- Follow-ups / TODOs: Target the Friday geographic/genre gap using current venue and organiser calendars.
+
+## 2026-09-07 21:15
+
+- What changed: Added Mildmay Community Centre and its multi-date Tap Shoe Library: Tap Dancing & Jamming Sessions card.
+- Why: The organiser's current multi-date listing confirms an all-level, all-ages participatory music/rhythm format: tap shoes are provided and musicians may bring instruments to join the shared jam. It is kept under the existing cross-genre community filter rather than creating a one-card genre.
+- Files touched: research/scene-and-venues/data/scene-data.js, trials/verify-scene-update.js, PROJECT_LOG.md.
+- Commands/tests run + results: node --check research/scene-and-venues/data/scene-data.js, node trials/verify-scene-update.js, and git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js passed. Audit: 70 active jam cards and zero unresolved jam-to-venue links.
+- Follow-ups / TODOs: Continue source-verified discovery, particularly current Friday routes and directly organiser-confirmed specialist series.
+
+## 2026-09-07 19:16
+
+- What changed: Verified the LCCM and Orleans jam-session batch after insertion.
+- Why: The shared dashboard data must keep every jam linked to an existing venue and retain the distinct Wednesday/Thursday Orleans formats.
+- Files touched: PROJECT_LOG.md.
+- Commands/tests run + results: node --check research/scene-and-venues/data/scene-data.js, node trials/verify-scene-update.js, and git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js passed. Reconciliation audit: 61 active jam cards and zero unresolved jam-to-venue links.
+- Follow-ups / TODOs: Continue systematic geographic and specialist-scene discovery; retain separate cards only where schedule or participation format is genuinely distinct.
+
+## 2026-09-07 17:50
+
+- What changed: Reclassified The Piano Bar (Soho Live) as a venue-led specialist jazz and piano listening room.
+- Why: Manual review requires its entry to represent the curated jazz/piano route rather than a general live-music room.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git -C research/scene-and-venues diff --check -- data/scene-data.js` passed.
+- Follow-ups / TODOs: Continue manual review of the remaining Soho additions.
+
+## 2026-09-07 23:00
+
+- What changed: Added Phineas Bar, UCL and its distinct weekly UCL Jazz Society `Jazz Jammin’ in Phineas` card.
+- Why: The current Students Union UCL 2025/26 programme and March 2026 event listing confirm that this is a separate Tuesday house-band-to-open-jam route, rather than a duplicate of the existing alternating-Monday Institute Bar session. The card preserves the published ID, guest sign-in and capacity constraints.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue current official-source discovery for under-represented geographic and specialist-scene session routes; retain the unresolved Monday Musicians lead until a current primary organiser source confirms its 2026 schedule.
+
+## 2026-09-07 23:20
+
+- What changed: Made Influences the default sub-tab in the Artists section.
+- Why: Influences is visually first, so the initially displayed content now matches the tab order.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` and relevant `git diff --check` commands passed.
+- Follow-ups / TODOs: None for this UI-default adjustment.
+
+## 2026-09-07 23:25
+
+- What changed: Restored London scene as the default Artist view and moved its button before Influences.
+- Why: The requested behaviour is for the default content and the first visible sub-tab to match.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` and relevant `git diff --check` commands passed.
+- Follow-ups / TODOs: None.
+
+## 2026-09-07 23:10
+
+- What changed: Reclassified Soul Mama, Stratford from hospitality-led to the broad venue-led category.
+- Why: Its public ticketed programme and music-first identity are a better fit for a venue-led route; no single-genre restriction is warranted.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, relevant `git diff --check` commands, and a direct model assertion all passed.
+- Follow-ups / TODOs: Reconfirm Soul Mama’s advertised Stratford move before relying on its current Gantry address for later-dated events.
+
+## 2026-09-07 23:10
+
+- What changed: Refreshed the existing UCL Institute Bar jazz-jam card from Students Union UCL's current October 2026 event listing.
+- Why: The stronger official source confirms the exact biweekly hours, musician jam start, free entry, ID requirement and non-student sign-in policy. This removes the older generic-term-date wording while preserving the established card identity.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue current official-source discovery for remaining geographic and genre gaps.
+
+## 2026-09-07 23:20
+
+- What changed: Added The Bull’s Head, Barnes’ separate last-Tuesday monthly open-mic card to the Jam Sessions tab.
+- Why: The venue’s current official ticketing listing directly confirms a recurring musician participation route with advance/in-person sign-up, three-song/15-minute slots, provided instruments/backline, engineer support and a no-backing-track rule. It is correctly described as an open mic, not inferred to be a generic jam.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue systematic source-led discovery, especially current recurring specialist folk, global and community-musician sessions.
+
+## 2026-09-07 23:30
+
+- What changed: Added two distinct Electronic Music Open Mic (EMOM) cards: the first-Wednesday Dublin Castle open stage and the selected-Monday EMOM x LVLS route in Hackney Wick.
+- Why: Current official organiser and venue-programme sources establish active participatory electronic/experimental formats at both locations. The Dublin Castle card retains the published pre-book/walk-in, short-set and instrument restriction details; LVLS remains selected-date rather than being given an invented fixed weekly schedule.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue source-led discovery for current specialist folk, global, community and musician open-stage sessions; retain generic venue open-mic leads only when their recurring participation details are directly published.
+
+## 2026-09-07 23:40
+
+- What changed: Added Orbit Beers Taproom, Walworth and its recurring first-Wednesday Acoustic Open Mic Night.
+- Why: Orbit’s current official September programme confirms that musicians can perform for free on the first Wednesday of every month. The card explicitly retains that the public programme does not publish a fixed start time, directing musicians to ask the named venue team rather than inventing a schedule.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the source-led sweep, including credible direct organiser sources for specialist folk and community series.
+
+## 2026-09-07 23:50
+
+- What changed: Added Folk of the Round Table’s separate weekly Sunday open-session card at SET Social, Peckham.
+- Why: SET Social’s own recurring event page verifies a free, all-abilities folk jam with clear musician participation: attendees can bring an instrument and a traditional song, story or poem. Le QuecumBar was investigated but deliberately excluded after its own page confirmed the original venue closed in 2022.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue systematic discovery of active London specialist folk, global, community and musician open-stage routes; do not revive closed-venue sessions from stale snippets.
+
+## 2026-09-08 00:00
+
+- What changed: Added The Finsbury’s first-Wednesday Open Mic Night and The Three Compasses, Dalston’s second-Monday Open Mic. Added the Dalston Three Compasses as a new venue identity.
+- Why: Both are current official venue-programme routes with direct musician access details. The new Dalston card is deliberately separate from the pre-existing Three Compasses Hornsey blues-jam venue, avoiding a same-name collision. The Finsbury listing confirms advance Instagram set requests and conditional walk-ins; the Dalston listing confirms two performance turns and provided instruments.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue direct-source discovery and reconcile any other same-name London venues before adding new session cards.
+
+## 2026-09-08 01:50
+
+- What changed: Added Ronnie Scott's Charitable Foundation's bi-monthly Saturday Jam Session workshop at Ronnie Scott's.
+- Why: The Foundation's current official page confirms the ongoing, participatory jazz-improvisation workshop, its next published September 2026 date, and the Grade 5+ young-musician threshold. It is therefore represented as a distinct skilled development route rather than being conflated with the club's Monday jazz jam.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: EC3 Live / Jam-Pact was deliberately not added because Jam-Pact's current home page states it is not currently running jam sessions.
+
+## 2026-09-08 02:05
+
+- What changed: Added Springfield (Acton) Bowls & Social Club and its recurring every-second-Sunday Acton Jazz Jam Session. Mapped the new community venue to the existing DIY/community venue type so the card does not inaccurately display as a promoter-dependent bill.
+- Why: The club's own current news confirms its continuing regular jazz-jam programme, while a current organiser-maintained listing supplies the exact recurrence, times, free entry and house-band participation format. The card retains the club/guest-access caveat rather than implying unrestricted entry.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue direct-source geographic discovery; do not add isolated open-jam events unless their ongoing recurrence is evidenced.
+
+## 2026-09-08 06:25
+
+- What changed: Added Cecil Sharp House, Camden / Primrose Hill, and Sharp’s Folk Club as a distinct selected-Tuesday recurring floor-singers session.
+- Why: EFDSS’s current autumn 2026 programme directly confirms an active performer sign-up at the door, current multi-date recurrence, time, open folk participation format and standard singer-night prices. This is a qualifying participatory session, not a passive folk concert.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js`, and a direct venue/jam linkage assertion all passed.
+- Follow-ups / TODOs: Continue the Camden negative screen (including direct London Irish Centre and Cecil Sharp House musician-session sources), then progress to City / Clerkenwell and the remaining incomplete geographic passes.
+
+## 2026-09-08 06:35
+
+- What changed: Added Monday Musicians as Cecil Sharp House’s second, distinct participatory folk-session card.
+- Why: Camden Council’s recently updated official community directory confirms the second-Monday schedule, all-musicians participation rule, English-country-dance focus and £8 cost. It is distinct from Sharp’s Folk Club’s Tuesday singer-floor format.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js`, and a direct two-session venue-linkage assertion all passed.
+- Follow-ups / TODOs: Complete the Camden direct-source negative screen, then begin City / Clerkenwell.
+
+## 2026-09-08 06:50
+
+- What changed: Completed current-source geographic screens for Camden, City / Clerkenwell, and Islington / King’s Cross; no further jam card was added after the two qualifying Cecil Sharp House sessions.
+- Why: The City results either reconfirmed Balfour St Barts and Downstairs at 180, fell outside the area, or were one-off/roaming activity. The Islington / King’s Cross results reconfirmed already-listed Slim Jim’s and Alwyne Castle routes; Tileyard and other apparent leads had only historic programme evidence, while festival and venue listings did not publish recurring musician participation.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Official-source screening completed; the preceding Cecil Sharp data batch passed `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git diff --check`, and its direct linkage assertions.
+- Follow-ups / TODOs: Begin the New Cross / Deptford current-source pass, then cover broad South London and remaining West / Outer London areas.
+
+## 2026-09-08 07:20
+
+- What changed: Added The Albany, Deptford as a distinct venue identity and Heart n Soul’s recurring `Music Jam with Robyn` selected-Wednesday card.
+- Why: Heart n Soul’s current official calendar publishes future September, October and November 2026 sessions, which are distinct from the directory’s public NU Sessions route. The card makes its participant-only access constraint explicit and avoids colliding with the existing, unrelated Albany pub in Great Portland Street.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js`, and a direct collision/linkage assertion all passed.
+- Follow-ups / TODOs: Finish New Cross / Deptford negative screening, then begin the broad South London pass.
+
+## 2026-09-08 07:40
+
+- What changed: Added Ruskin House, Croydon with Croydon Folk & Blues Club’s distinct Sunday floor-spots and selected-Monday singers-and-musicians cards. Added Worship Unplugged’s selected-monthly gospel open mic at the existing Front Room venue.
+- Why: The club’s current official September 2026 programme directly confirms both recurring musician-participation formats and their different costs. Worship Unplugged’s own current 2026 calendar confirms a separate recurring Croydon performer format. Old Dispensary’s current listing remains a lead until a venue- or organiser-owned source can be obtained.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js`, and a direct South-London jam-to-venue linkage assertion all passed.
+- Follow-ups / TODOs: Continue the South London pass through Brixton, Camberwell, Streatham, Tooting and Herne Hill, then document its negative results before opening the West London screen.
+
+## 2026-09-07 13:05
+
+- What changed: Added four current promoter cards: New Gen Festival, Hanwell Hootie, Remedy Events and Roots On The Corner. Extended the promoter smoke-test assertions for their public filter classifications and source fields.
+- Why: This completes a verified West London, Outer London and reggae/dub discovery batch with two public artist-application routes and two current Caribbean/roots-reggae organisers, without treating venue-owned programming as separate promoters.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed. Promoter audit: 174 active cards, zero duplicate IDs.
+- Follow-ups / TODOs: Continue the documented area/genre sweep, prioritising Greenwich/Woolwich and remaining City, Islington, North, Shoreditch, Hackney, Dalston, East, Peckham, New Cross and South gaps. Record negative searches as well as qualifying additions.
+
+## 2026-09-08 07:10
+
+- What changed: Added Zetra as the eighteenth reviewed London-scene artist card and placed it after heavy wild in the editorial establishment order. Logged Bloodworm as a non-London exclusion in the same batch.
+- Why: Zetra's exact Spotify capture showed 7,505 monthly listeners. Independent sources confirm its London base, dream/shoegaze and synth-goth relevance, Nuclear Blast release history and continuing live trajectory. Bloodworm's official and independent sources instead identify Nottingham as its base.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-09.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `capture_profile_queue.ps1 -BatchFile artist-discovery-batch-09.json -WaitSeconds 7` captured the exact Spotify profile; its screenshot was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue source-led discovery; do not infer an Instagram URL for Zetra unless an official exact route is later established.
+
+## 2026-09-08 07:25
+
+- What changed: Added Man/Woman/Chainsaw as the nineteenth reviewed London-scene artist card and placed it second in the establishment order, below Night Tapes and above Art School Girlfriend.
+- Why: The exact Spotify capture showed 350,041 monthly listeners. Independent sources establish the South London/Windmill identity, current Fiction Records debut and shoegaze/post-punk-adjacent sound; the official store establishes the active album route.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-10.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `capture_profile_queue.ps1 -BatchFile artist-discovery-batch-10.json -WaitSeconds 7` captured the exact Spotify profile, and its screenshot was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue source-led discovery; do not add an Instagram route until one is exactly verified.
+
+## 2026-09-08 07:45
+
+- What changed: Added deathcrash as the twentieth reviewed London-scene artist card and placed it after Zetra in the editorial establishment ordering.
+- Why: Direct profile captures verified the official Instagram at 7,601 followers and Spotify at 7,632 monthly listeners. Official Bandcamp and independent reviews confirm its current third album, London base and adjacent slowcore/post-rock sound.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-11.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `capture_profile_queue.ps1 -BatchFile artist-discovery-batch-11.json -WaitSeconds 7` captured both exact public profiles; both screenshots were inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue current London alternative/post-rock/shoegaze discovery and retain the same exact-profile capture standard.
+
+## 2026-09-08 08:00
+
+- What changed: Added Darbar Festival as a source-verified landmark London Indian-classical music festival and year-round presenter, with promoter smoke-test coverage.
+- Why: Darbar's official 2026 programme confirms its twenty-first London edition, with eighteen live events at the Barbican and Milton Court in October-November; its official project page confirms a recurring London festival and year-round presentation identity. No duplicate promoter identity existed.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the final official-source Outer London and category-balance pass; retain only distinct current organisers.
+
+## 2026-09-08 08:20
+
+- What changed: Completed a final promoter-corpus integrity and category-balance audit; no additional public cards were added in this checkpoint.
+- Why: The current Outer London Sutton and Bexley results are education/adjudication-service festivals rather than independent live-music presenters, so they were deliberately excluded. The audited corpus has 249 active promoter cards, zero duplicate IDs and zero cards missing public classifications, source URLs, contact routes or check dates.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Direct VM audit passed: 249 active cards, zero duplicate IDs and no missing required public fields. Filter coverage: alternative 35, electronic 40, experimental 13, jazz/soul/global 83, reggae/dub 11, mixed 67; developing 69, established 128, landmark 52; all five models and all three contact-route values are represented. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Treat future promoter work as periodic official-source refreshes and newly surfaced distinct organisers; retain the strict exclusion of generic, education-only, civic and one-off event leads.
+
+## 2026-09-08 08:10
+
+- What changed: Added Bromley Chamber Music Festival as a verified artist-led Outer London chamber-music festival presenter, with promoter smoke coverage.
+- Why: Its official site confirms a third annual festival on 16-18 October 2026, locally led by Raja Halder and Katherine Jenkinson at Bromley Parish Church. No matching promoter identity existed in the directory.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the final official-source Outer London and category-balance pass; retain only distinct current organisers.
+
+## 2026-09-08 08:25
+
+- What changed: Added The Distillers, Hammersmith with its current twice-monthly Hammersmith Jazz Jam, and The George IV, Chiswick with London Unplugged's current weekly acoustic open-mic route.
+- Why: The two official organiser/venue pages directly confirm distinct, active West-London musician-participation formats. The Distillers card records its resident-trio, all-comer jazz-jam model; the George IV card preserves London Unplugged's advance-booking, acoustic-only solo/duo/trio restrictions rather than treating it as a general jam.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the West-London current-source screen through remaining specialist and community routes, then complete the Outer London pass. Do not add historic or third-party-only open-mic leads.
+
+## 2026-09-08 08:15
+
+- What changed: Added mary in the junkyard as the twenty-first reviewed London-scene artist, immediately after Man/Woman/Chainsaw in the establishment order.
+- Why: A direct retry corrected the unavailable Linktree Instagram spelling to the verified `@maryinthejunkyrd` profile. Saved public-profile captures show 40K Instagram followers and 319,161 Spotify monthly listeners; independent sources establish London roots and art-rock relevance.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue the source-led London alternative live-circuit sweep, retaining exact-profile capture and visual-inspection requirements.
+
+## 2026-09-08 08:40
+
+- What changed: Added RCT Hall, Harrow and Soul Sounds' recurring Rocking Bhajans session.
+- Why: Soul Sounds' current official page directly confirms a first-Sunday monthly music session in Harrow where anyone may play, sing or clap. It is a distinct, participatory devotional/community format, so it is represented as an entry-friendly cross-genre community jam without inventing a price.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Finish the Outer-London official-source screen and then perform a geographic reconciliation audit for South, West, East and Outer London; retain only sources that establish current recurrence and participation.
+
+## 2026-09-08 08:30
+
+- What changed: Added atmos bloom as the twenty-second reviewed London-scene artist, placed after Art School Girlfriend in the establishment order.
+- Why: Current official and independent evidence establishes an active London dreamgaze project with a 2026 sophomore album and a George Tavern headline. The exact Spotify capture displays 82,555 monthly listeners. The routed Instagram URL instead redirected to unrelated Highnote content, so no Instagram link or metric was published.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-13.json`, `research/scene-and-venues/screenshots/inbox/atmos-bloom-*.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue the live-circuit sweep; retain the rejected Instagram capture as evidence of the unresolved route instead of guessing another handle.
+
+## 2026-09-08 08:55
+
+- What changed: Added Hagen & Hyde, Balham with UK Open Mic's first-Thursday open mic, and added The Rebel Inn's weekly Thursday full-backline open mic to its existing venue identity. Mapped both pub-stage identities to the existing public venue-type category.
+- Why: Current organiser- and venue-managed listings directly confirm these recurring South-London musician routes, including the Hagen & Hyde reserve/check-in requirement and The Rebel Inn’s in-house drum kit, amps and PA. These are distinct participant formats rather than generic live-music claims.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Complete the deep-East and Outer-London source screens, then run a source-quality, duplicate and stale-card reconciliation audit across every geographic area. Eleanor Arms, Bow remains a lead because no venue- or organiser-owned current source was found.
+
+## 2026-09-08 08:45
+
+- What changed: Added WILDES as the twenty-third reviewed London-scene artist, placed after Art School Girlfriend and before atmos bloom in the establishment order.
+- Why: Official and independent sources confirm a sustained London atmospheric-alternative project with a current 2026 release. The exact Spotify capture shows 67,352 monthly listeners. The plausible `@wildesmusic` Instagram route showed Instagram's unavailable-page error, so it is documented but not published.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-14.json`, `research/scene-and-venues/screenshots/inbox/wildes-*.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue exact-profile discovery, and retain the invalid Instagram capture rather than presenting an uncertain social link.
+
+## 2026-09-08 09:10
+
+- What changed: Added Uxbridge Library and Hillingdon Council’s recurring Open Mic Night as an Outer-London community-route card.
+- Why: The council’s current 11 September 2026 event page requires performers to book directly with the library events team, while its official music-history page establishes that the library hosts regular open mics. As the current source does not publish a stable cadence, the card correctly uses `Selected Fridays — check current listing`.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js research/scene-and-venues/index.html trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: The geographic discovery pass has covered the named borough groups. Next, run the cross-area audit for duplicate identities, stale session pages, relationship integrity, and weak third-party-only leads before moving to the required scene/format sweeps.
+
+## 2026-09-08 09:00
+
+- What changed: Added Black Doldrums as the twenty-fourth reviewed London-scene artist, positioned between Zetra and deathcrash in the establishment order.
+- Why: Direct public-profile captures verified 8,222 Spotify monthly listeners and 17.9K Instagram followers. Official and independent sources establish the current Fuzz Club third-album campaign and a London dark post-punk/shoegaze identity.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-15.json`, `research/scene-and-venues/screenshots/inbox/black-doldrums-*.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue the source-led sweep of current London shoegaze, dream-pop and post-punk artists; preserve exact-capture requirements.
+
+## 2026-09-08 09:25
+
+- What changed: Replaced the Highams Park Jazz Club ticketing-directory URL with the club’s own current programme, changed its schedule wording from an unsupported fixed monthly claim to selected Sundays, and refreshed Ram Jam Records to its current first-party weekly event page.
+- Why: Both cards now lead directly to their organisers’ live programme pages. Highams Park’s programme confirms current upcoming jam events but does not support a fixed monthly pattern, while Ram Jam’s official event page confirms the continuing Wednesday sign-up and midnight jam format.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and `git diff --check -- research/scene-and-venues/data/scene-data.js trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue the third-party-source reconciliation for the remaining event-directory and ticketing cards; preserve only direct or sufficiently current organiser evidence.
+
+## 2026-09-08 09:40
+
+- What changed: Refreshed `docs/JAM_SESSION_PROVENANCE.md` from the fixed Git baseline. The ledger now records 43 baseline cards, 117 current cards, 85 added identities, 11 retired/reconciled identities and a net increase of 74. It separately lists the 23 cards added after the earlier 94-card snapshot and fixes the reproduction command to use the immutable baseline commit.
+- Why: This preserves the user-requested before/during distinction and makes the count reproducible rather than dependent on memory or the moving repository head.
+- Files touched: `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: The documented comparison command returned `{ before: 43, current: 117, net: 74 }`; `git diff --check -- docs/JAM_SESSION_PROVENANCE.md` passed.
+- Follow-ups / TODOs: Continue targeted source-quality reconciliation, then conduct the remaining scene/format passes and final integrity audit.
+
+## 2026-09-08 09:55
+
+- What changed: Added The Golden Lion, Romford and Romford Ceilidh Band’s weekly Monday Open Folk Session. Refreshed the provenance ledger to 118 current cards, 86 additions, 11 retirements/reconciliations and net +75 versus the fixed 43-card baseline.
+- Why: Havering Council’s current official event page confirms a free weekly acoustic folk-tune and pub-singing session open to instrumentalists and vocalists, with sheet music, lyric sheets and beginner support. It fills a verified Outer-London folk-session gap without treating ordinary gigs as participatory events.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed. The fixed-baseline provenance command returned `{ before: 43, current: 118, net: 75 }`.
+- Follow-ups / TODOs: Continue the remaining genre/format sweeps, then complete direct-source reconciliation and the final directory integrity audit.
+
+## 2026-09-08 10:10
+
+- What changed: Added London LGBTQ+ Community Centre and its Queer Open Mic as a verified selected-date LGBTQ+ participatory open-mic route. Updated the jam provenance ledger to 119 current cards, 87 additions and net +76 against the immutable baseline.
+- Why: The Centre's official 2026 calendar shows multiple current dates and confirms that LGBTQ+ performers can take the mic, bring instruments and sign up for timed slots. Gut Level's similarly named folk-session lead was explicitly excluded after its own official page proved it is in Sheffield.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed. The fixed-baseline provenance command returned `{ before: 43, current: 119, net: 76 }`.
+- Follow-ups / TODOs: Continue remaining genre/format screens, then complete direct-source reconciliation and final integrity audit.
+
+## 2026-09-08 09:15
+
+- What changed: Recorded Kilu and Gravegonzo as unresolved negative/hold leads rather than adding uncertain London-scene cards.
+- Why: Kilu has an unresolved cross-platform name collision; Gravegonzo has an official Peckham/shoegaze description but insufficient independent support and no exact streaming identity route. This preserves the rule against guessed profiles.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: no code or data change in this negative discovery record; no code test required.
+- Follow-ups / TODOs: Continue discovery through current venue bills and label/record-shop sources, returning to these leads only if an artist-controlled cross-platform identity link appears.
+
+## 2026-09-08 09:30
+
+- What changed: Added Wildernesses as the twenty-fifth reviewed London-scene artist, placed after deathcrash in the establishment order.
+- Why: The official Linktree source resolved its exact Instagram and Spotify routes. Saved captures show 2,647 Instagram followers and 1,712 Spotify monthly listeners; official and independent sources establish the London post-gaze identity, Floodlit debut and current touring.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-17.json`, `research/scene-and-venues/screenshots/inbox/wildernesses-*.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue the current venue/label-led London alternative sweep, with Linktree source extraction used to resolve exact profile URLs when search results omit them.
+
+## 2026-09-08 10:05
+
+- What changed: Recorded Garden Slug as an unresolved current London dream-pop/shoegaze lead; no directory card was created.
+- Why: Official Bandcamp and the inspected exact Instagram profile establish a current London project (678 Instagram followers, with `Lucy` currently released), and independent London support-bill coverage supports scene relevance. However, no official or independently verifiable exact Spotify artist URL was available after checking the distributor route, playlist indexing and search results.
+- Files touched: `research/scene-and-venues/scripts/artist-discovery-batch-18.json`, `research/scene-and-venues/screenshots/inbox/garden-slug-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: the visible Chrome Instagram capture completed and the saved screenshot was visually inspected. No code or data changed, so no syntax/smoke test was required.
+- Follow-ups / TODOs: Return to Garden Slug only when an artist-controlled Spotify URL appears; continue the current live-circuit and label-led discovery sweep.
+
+## 2026-09-08 10:25
+
+- What changed: Added Dogviolet as the twenty-sixth reviewed London-scene artist, positioned after Velveteen and before Speedial in the establishment order.
+- Why: Official routes, a forthcoming Victoria release show and independent coverage establish a current London ethereal-grunge/shoegaze four-piece with sustained grassroots activity. Captures verified 83 Spotify monthly listeners and 1,460 Instagram followers. No current label is explicitly confirmed, so the card reports `/`.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-19.json`, `research/scene-and-venues/screenshots/inbox/dogviolet-*.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: public source extraction resolved `@dogvioletband` and Spotify artist ID `3S4nSwhESkAZF3PbXaeWJY`; visible Chrome captures were inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and the scoped `git diff --check` passed. The first capture attempt mistakenly passed unsupported parameter names and therefore captured three existing default-queue profiles; those were not used as Dogviolet evidence, and the corrected `-BatchFile` retry succeeded.
+- Follow-ups / TODOs: Continue the current London live-circuit and label-led discovery sweep; retain Garden Slug as unresolved until an artist-controlled Spotify route is available.
+
+## 2026-09-08 10:40
+
+- What changed: Added Fanchon as the twenty-seventh reviewed London-scene artist, positioned after Wildernesses and before deary in the establishment order.
+- Why: The official site and Bandcamp establish a current London post-grunge dream-core five-piece and 2026 debut album; independent Great Escape and album coverage confirms its active live trajectory and grungegaze/shoegaze relevance. Captures verified 786 Spotify monthly listeners and 2,515 Instagram followers. No current label is explicitly confirmed, so the card reports `/`.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-20.json`, `research/scene-and-venues/screenshots/inbox/fanchon-*.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: official-site source extraction resolved `@fanchon.band` and Spotify artist ID `5qFDMEfam5K4WRncOFdOEP`; visible Chrome captures were inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and the scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue the current London live-circuit and label-led discovery sweep; retain unresolved profile trails rather than guessing links.
+
+## 2026-09-08 10:55
+
+- What changed: Added rain cloud nine as the twenty-eighth reviewed London-scene artist, positioned after Dogviolet and before Speedial in the establishment order.
+- Why: Official Bandcamp, independent London scene coverage and a continuing 2026 release cycle establish a current London dream-punk/doom-pop project with direct shoegaze and dream-pop relevance. The exact Spotify capture verified 99 monthly listeners. No exact artist-controlled Instagram route or confirmed current label was found, so neither is displayed and the label reports `/`.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-21.json`, `research/scene-and-venues/screenshots/inbox/rain-cloud-nine-spotify.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: public Spotify album source extraction resolved artist ID `356Kzj1aGfajIrRsyVZW8R`; the visible Chrome screenshot was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and the scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue the current London live-circuit and label-led discovery sweep; retain Garden Slug and other incomplete identity trails as unresolved until exact links are available.
+
+## 2026-09-08 11:15
+
+- What changed: Added silt. as the twenty-ninth reviewed London-scene artist, positioned after deathcrash and before Wildernesses in the establishment order.
+- Why: Current independent coverage identifies Oliver Beardmore's London experimental-shoegaze project, its local live activity and forthcoming release. Artist-controlled routes and final captures verified 1,766 Spotify monthly listeners and 2,970 Instagram followers. No current label is explicitly confirmed, so the card reports `/`.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-22.json`, `research/scene-and-venues/screenshots/inbox/silt-*.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: the initial Spotify candidate ID `3G3Gdm0ZRAOxLrbyjfhii5` visibly rendered My Bloody Valentine and was rejected. An artist-controlled Linktree Spotify track resolved the correct ID `6u4cCTsK4Si23HKuXfhaqN`, whose recapture displayed silt. and 1,766 monthly listeners. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and the scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue the current London live-circuit and label-led discovery sweep; retain and repair incomplete or mismatched profile trails rather than guessing links.
+
+## 2026-09-08 11:25
+
+- What changed: Recorded spacecadetbloom as an excluded out-of-scope lead; no card or profile capture was created.
+- Why: Although it is a current, sonically relevant shoegaze act, official and independent sources consistently place it in Sunderland/the North East, rather than the London scene required by this directory.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: no code or data changed; no code test was required.
+- Follow-ups / TODOs: Continue systematic London-only venue, label and specialist-source discovery.
+
+## 2026-09-08 11:35
+
+- What changed: Recorded Void Club as an unresolved lead; no card or profile capture was created.
+- Why: The project has a current, sonically relevant release, but the official page identifies only England, UK and public results are contaminated by an unrelated Berlin venue. The evidence does not establish a London scene presence or safely resolve artist profiles.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: no code or data changed; no code test was required.
+- Follow-ups / TODOs: Revisit only if an artist-controlled source establishes a London base and direct profile links.
+
+## 2026-09-08 11:45
+
+- What changed: Recorded Shadow Flowers as an excluded out-of-scope lead; no card or profile capture was created.
+- Why: It is a current shoegaze/grunge project, but independent coverage identifies it as Southampton-based. The directory remains London-scene specific.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: no code or data changed; no code test was required.
+- Follow-ups / TODOs: Continue the London-only live-circuit and specialist-source sweep.
+
+## 2026-09-08 12:00
+
+- What changed: Added Sennen as the thirtieth reviewed London-scene artist, positioned after A.A. Williams and before Wyldest in the establishment order.
+- Why: Official Bandcamp establishes Sennen as a London act with a forthcoming Sonic Cathedral album; independent coverage documents the established quartet's post-shoegaze return after a decade. The verified Spotify capture shows 17,921 monthly listeners. No exact artist-controlled Instagram profile was verified, so no Instagram link is displayed.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-26.json`, `research/scene-and-venues/screenshots/inbox/sennen-spotify.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: visible Chrome capture was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and the scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue the London live-circuit and label-led discovery sweep, retaining an exact-profile gate for every new card.
+
+## 2026-09-08 12:15
+
+- What changed: Recorded thistle. as an excluded out-of-scope lead; no card or profile capture was created.
+- Why: It is current and relevant sonically, but official and independent sources place the act in Northampton/Manchester. Frequent London bills are insufficient for a London-scene card.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: no code or data changed; no code test was required.
+- Follow-ups / TODOs: Continue the London-only live-circuit and label-led sweep.
+
+## 2026-09-08 12:30
+
+- What changed: Added FOOLSPRING as the thirty-first reviewed London-scene artist, positioned after rain cloud nine and before Speedial in the establishment order.
+- Why: Two independent sources identify the project as a current south-east London four-piece in a direct DIY grungy-shoegaze lane. Exact public-profile captures verified 42 Spotify monthly listeners and 175 Instagram followers; no current label was explicitly named, so the card reports `/`.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-28.json`, `research/scene-and-venues/screenshots/inbox/foolspring-spotify.png`, `research/scene-and-venues/screenshots/inbox/foolspring-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: visible Chrome capture was inspected; dashboard syntax, smoke and scoped diff checks are recorded after the card update.
+- Follow-ups / TODOs: Continue London live-circuit, promoter and specialist-source discovery with the same exact-profile gate.
+
+## 2026-09-08 12:45
+
+- What changed: Added holybones as the thirty-second reviewed London-scene artist, positioned after atmos bloom and before A.A. Williams; recorded Comafields as an unresolved South London shoegaze lead.
+- Why: holybones has verified London roots, major 2025–26 live/release evidence and a visually confirmed public profile set (46,795 Spotify monthly listeners; 1,529 Instagram followers). Comafields meets the local sonic/base screen, but lacks a safely resolved exact Spotify artist page, so it was not published.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-29.json`, `research/scene-and-venues/screenshots/inbox/holybones-spotify.png`, `research/scene-and-venues/screenshots/inbox/holybones-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: visible Chrome profiles were captured and inspected; dashboard syntax, smoke and scoped diff checks are recorded after the card update.
+- Follow-ups / TODOs: Continue London grassroots-bill and specialist-source discovery; revisit Comafields only when an exact artist-controlled Spotify route is found.
+
+## 2026-09-08 10:20
+
+- What changed: Added Coach & Horses, Leyton and its first-Thursday Blues Jam; updated its public pub-type mapping and the durable jam-provenance ledger to 120 current cards, 88 additions and net +77 from baseline.
+- Why: The venue's own current What’s On page directly identifies the first-Thursday Blues Jam, its Mazza/Ray-and-rhythm-section format and all-musicians-welcome participation. It is therefore a source-qualified distinct Blues route rather than an inferred pub gig.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed. The fixed-baseline provenance command returned `{ before: 43, current: 120, net: 77 }`.
+- Follow-ups / TODOs: Continue the remaining genre/format screens, then complete direct-source reconciliation and final directory integrity audit.
+
+## 2026-09-08 14:20
+
+- What changed: Replaced The Great British Blues Jamâ€™s Eventbrite URL with TAMâ€™s own current Whatâ€™s On page, removed the unsupported comparable-price wording, and refreshed its check date.
+- Why: TAMâ€™s official listings now directly confirm the weekly Saturday 4pmâ€“7pm blues jam and open musician participation. The venue page does not substantiate the former ticket-platform price, so the card now omits it.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue replacing ticketing/directory links only where a current, more specific organiser or venue-owned source proves the same participatory route; retain official ticketing pages where no stronger public source exists.
+
+## 2026-09-08 14:15
+
+- What changed: Added wendigo to the London-scene artist directory after source-led discovery and exact public-profile capture. The card is placed after Fanchon and before the longer-running peer set, reflecting current grassroots traction rather than raw metrics alone.
+- Why: Official sources establish the active London di-gaze trio, while Voxwave independently supports its grunge/alt-rock/shoegaze relevance and current live/release momentum. Both exact profile routes were captured visibly and inspected; no current label was explicitly named.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-36.json`, `research/scene-and-venues/screenshots/inbox/wendigo-spotify.png`, `research/scene-and-venues/screenshots/inbox/wendigo-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome capture completed for both exact profiles; inspected values are Spotify 579 monthly listeners and Instagram 421 followers. Syntax, smoke and diff checks follow in this batch.
+- Follow-ups / TODOs: Continue the systematic venue-bill and specialist-source discovery sweep; retain unresolved acts in the artist ledger until exact public profile routes can be verified.
+
+## 2026-09-08 14:40
+
+- What changed: Logged Maddison Windfarm as a held London noise/post-rock candidate; no dashboard card was created.
+- Why: Official and independent sources establish the base, sound and active local circuit, but the exact Spotify artist profile remains unresolved. The workflow retains this lead rather than guessing a profile or metric.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Research-only batch; no production data changed and no code test was required.
+- Follow-ups / TODOs: Recheck Maddison Windfarm when an official release or Linktree exposes a direct Spotify artist route; continue live-circuit discovery in parallel.
+
+## 2026-09-08 14:50
+
+- What changed: Logged Oh Doom! as a capture-blocked, otherwise qualified London post-rock candidate; no dashboard card was created.
+- Why: The official embedded Spotify track resolved the exact artist route and independent coverage supports the London/Hertfordshire post-rock/shoegaze identity, but two visible-browser retries failed because Windows did not return focus to Chrome or Edge. No screenshot was saved and no listener count was inferred.
+- Files touched: `research/scene-and-venues/scripts/artist-discovery-batch-39.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Two visible Chrome capture attempts returned the same focus-handoff failure. A filesystem check confirmed no `oh-doom-spotify.png` was saved. No production data changed.
+- Follow-ups / TODOs: Retry the exact Oh Doom! artist route after a successful unrelated capture confirms the visible-browser path has recovered; continue discovery in parallel.
+
+## 2026-09-08 14:30
+
+- What changed: Added Porchlight as the thirty-seventh reviewed London-scene artist and placed it before Fanchon in the developing cohort. Recorded the supporting source trail, exact capture manifest and displayed public metrics.
+- Why: Official Bandcamp/Linktree sources establish a current London five-piece with a 2026 release sequence; independent concert-history evidence supports its repeated grassroots live activity. The exact public Spotify and Instagram profiles matched the artist identity.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-37.json`, `research/scene-and-venues/screenshots/inbox/porchlight-spotify.png`, `research/scene-and-venues/screenshots/inbox/porchlight-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome capture completed and was inspected: Spotify 1,562 monthly listeners, Instagram 2,391 followers. Syntax, smoke and diff checks follow in this batch.
+- Follow-ups / TODOs: Continue the systematic venue-bill and specialist-source discovery sweep; retain unresolved acts in the artist ledger until exact public profile routes can be verified.
+
+## 2026-09-08 14:05
+
+- What changed: Added `Cosmic Fusion Late Late Show Sit-in` at Upstairs at Ronnieâ€™s and updated the durable jam-provenance ledger to 126 active cards, 94 additions and net +83 from the 43-card baseline.
+- Why: Ronnie Scottâ€™s current official programme confirms a weekly late-night jazz-fusion residency and explicitly states that emerging musicians can sit in with the house band. A separate London Improvisation Workshop lead was reviewed but excluded because its public listing disclaims host verification.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, scoped `git diff --check`, and the baseline/venue-link/duplicate audit all passed: `{ before: 43, current: 126, net: 83, duplicates: [], invalid: [] }`.
+- Follow-ups / TODOs: Continue direct-source reconciliation and the remaining scene/format passes; retain third-party-only or self-disclaimed workshop leads outside public cards unless a current organiser or venue source becomes available.
+
+## 2026-09-08 14:00
+
+- What changed: Rechecked the prior Whitelands inactive hold against its current 2026 Sonic Cathedral campaign and retained the exclusion after direct-profile verification.
+- Why: Official sources confirm a real London album campaign, but the exact verified Instagram profile has a pinned statement that the band is disbanding. The inspected profiles displayed 7,371 Spotify monthly listeners and 7,459 Instagram followers, but those metrics are not published because the required current-activity condition is no longer met.
+- Files touched: `research/scene-and-venues/scripts/artist-discovery-batch-34.json`, `research/scene-and-venues/screenshots/inbox/whitelands-spotify.png`, `research/scene-and-venues/screenshots/inbox/whitelands-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: visible Chrome capture and direct visual inspection completed. No dashboard data changed, so no code test was required.
+- Follow-ups / TODOs: Continue label, promoter and current live-circuit discovery while retaining the direct-profile status check.
+
+## 2026-09-08 14:15
+
+- What changed: Resolved the prior Kilu identity hold and added Kilu as the thirty-fifth reviewed London-scene artist, placed after Night Tapes and before Man/Woman/Chainsaw in the establishment order.
+- Why: Two independent sources confirm the current London dream-pop `PRINT` EP. The exact Spotify and Instagram profiles match the release/artist identity and were visibly verified at 420,741 monthly listeners and 50.6K followers. No current record label was explicitly identified, so the card reports `/`.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-35.json`, `research/scene-and-venues/screenshots/inbox/kilu-spotify.png`, `research/scene-and-venues/screenshots/inbox/kilu-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: visible Chrome profiles were captured and inspected; dashboard syntax, smoke and scoped diff checks are recorded after the card update.
+- Follow-ups / TODOs: Continue systematic current London live-circuit and label/source discovery.
+
+## 2026-09-07 13:05
+
+- What changed: Added Mosaic Rooms and its weekly Sunday self-organised sonic-jam space. Updated the community-space mapping and durable jam-provenance ledger to 125 current cards, 93 additions and net +82 from baseline.
+- Why: The gallery’s current official programme directly invites participants to self-organise sonic takeovers, use its equipment or bring their own, and identifies the space as a weekly Sunday jam. The card preserves the important current constraint that all published autumn slots are already booked.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, scoped `git diff --check`, and the fixed-baseline provenance command passed: `{ before: 43, current: 125, net: 82 }`.
+- Follow-ups / TODOs: Continue direct-source jazz/soul/global and community-format discovery, then resume the final source-quality and duplicate reconciliation audit.
+
+## 2026-09-07 12:50
+
+- What changed: Added Circlesongs London as one distinct selected-Wednesday vocal-improvisation series with a rotating North-London venue identity. Updated the community-space mapping and durable jam-provenance ledger to 124 current cards, 92 additions and net +81 from baseline.
+- Why: The facilitator’s current autumn programme directly confirms monthly guided collective singing, 7pm–9pm timing, all-voices-welcome participation and the precise two-venue rotation. One series card avoids falsely multiplying the same programme into separate venue-date identities.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, scoped `git diff --check`, and the fixed-baseline provenance command passed: `{ before: 43, current: 124, net: 81 }`.
+- Follow-ups / TODOs: Continue the source-led specialist scene/format pass, then return to the cross-area source-quality and completion audit.
+
+## 2026-09-07 12:35
+
+- What changed: Added Singing Village Labs — Friday Morning, a recurring North-London guided vocal co-improvisation route, and its Lynton Gardens venue identity. Updated the public community-space mapping and durable jam-provenance ledger to 123 current cards, 91 additions and net +80 from baseline.
+- Why: The facilitator’s current September–December programme publishes seven Friday dates, exact time and location, drop-in availability, a comparable per-session starting price, and the clear experience/confidence expectation. It is a distinct participatory music practice, not a passive workshop or concert.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, scoped `git diff --check`, and the fixed-baseline provenance command passed: `{ before: 43, current: 123, net: 80 }`.
+- Follow-ups / TODOs: Finish the cross-area source-quality audit and retain only the current ticketing/directory routes that cannot be strengthened from an organiser- or venue-owned source; then continue systematic scene/format passes.
+
+## 2026-09-07 12:20
+
+- What changed: Completed the first cross-area jam audit and standardised the public lowest-level label from `Beginner-friendly` to `Entry-friendly`, while retaining the established internal data key so no current card filters or smoke-test fixtures are disrupted.
+- Why: The audit found zero duplicate jam identities, orphaned venue links, missing required public fields, stale check dates or malformed source URLs across 122 cards. The only public-schema inconsistency was the legacy displayed label; it now matches the active four-level wording on card tags, the filter and the legend.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, scoped `git diff --check`, and a direct public-label audit all passed. Two initial ad-hoc Node label-audit commands had PowerShell quoting errors and made no repository changes; the literal-safe audit then passed.
+- Follow-ups / TODOs: Resolve any weak or third-party-only source routes that can be strengthened from a current primary page, then repeat the full cross-area integrity audit before the remaining scene/format passes.
+
+## 2026-09-07 12:10
+
+- What changed: Added The General Eliott, Uxbridge and its weekly Thursday house-band-supported open mic; mapped the venue as a pub-stage route and updated the durable jam provenance ledger to 122 current cards, 90 additions and net +79 from baseline.
+- Why: Its current multi-date organiser programme confirms a recurring Thursday 8:30pm–11pm participatory open mic, instruments provided, house-band backing and free entry. This closes the last verified Outer-London geographic candidate without inferring a jam from generic live-music activity.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed. The fixed-baseline provenance command returned `{ before: 43, current: 122, net: 79 }`.
+- Follow-ups / TODOs: Complete the cross-area source-quality, duplicate, venue-link and stale-card audit, then continue the remaining scene/format passes.
+
+## 2026-09-08 13:45
+
+- What changed: Recorded Candy’s Room and Bugbear as unresolved profile-identity leads, and The Fallen Sky as inactive/insufficiently current; no cards were created.
+- Why: Candy’s Room and Bugbear have credible London-scene and sonic evidence, but their exact public Spotify profiles could not be verified without an unsafe name match. The Fallen Sky lacks current release or live evidence. The capture gate therefore prevented unverified metrics or cards.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: research-only batch; no dashboard data changed, so no code test was required.
+- Follow-ups / TODOs: Revisit held candidates only if artist-controlled Spotify routes appear; continue new venue/promoter and specialist-source screens.
+
+## 2026-09-08 13:00
+
+- What changed: Recorded two non-London outcomes from the Windmill support-bill screen: Glasshouse Red Spider Mite and SELL EVERYTHING were not added.
+- Why: Official and independent sources place Glasshouse Red Spider Mite in Brighton. SELL EVERYTHING has no verified sustained London base and its current dates centre on Ireland/Europe. A London bill alone is not enough for this directory.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: research-only batch; no dashboard data changed, so no code test was required.
+- Follow-ups / TODOs: Continue London-rooted candidate discovery and retain exact-profile requirements before capture.
+
+## 2026-09-08 13:15
+
+- What changed: Added Dog Race as the thirty-third reviewed London-scene artist, positioned after Sennen and before Wyldest; recorded Cutscene as a Manchester-based exclusion.
+- Why: Dog Race’s official London base, South London scene evidence, current 2026 London dates and verified public metrics (14,410 Spotify monthly listeners; 8,344 Instagram followers) meet the directory standard. Cutscene’s own billing is clear that it is Manchester-based.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-31.json`, `research/scene-and-venues/screenshots/inbox/dog-race-spotify.png`, `research/scene-and-venues/screenshots/inbox/dog-race-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: visible Chrome profiles were captured and inspected; dashboard syntax, smoke and scoped diff checks are recorded after the card update.
+- Follow-ups / TODOs: Continue systematic London grassroots-bill, promoter and specialist-source discovery.
+
+## 2026-09-08 13:30
+
+- What changed: Added Marina Yozora as the thirty-fourth reviewed London-scene artist, positioned after Dogviolet and before rain cloud nine in the developing tier.
+- Why: Official and independent sources establish her London base, exact profiles, current `Snow Heat` release sequence and active 2026 London shows. The inspected captures show 152 Spotify monthly listeners and 2,276 Instagram followers; no current label is confirmed, so the card reports `/`.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-32.json`, `research/scene-and-venues/screenshots/inbox/marina-yozora-spotify.png`, `research/scene-and-venues/screenshots/inbox/marina-yozora-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: visible Chrome profiles were captured and inspected; dashboard syntax, smoke and scoped diff checks are recorded after the card update.
+- Follow-ups / TODOs: Continue systematic grassroots venue, promoter, label and specialist-media discovery.
+
+## 2026-09-08 11:20
+
+- What changed: Replaced CARAVAN Social Jam Night’s RA event URL with The Jago’s current official event page and removed unsupported price and age wording.
+- Why: The Jago’s official 3 September 2026 CARAVAN page confirms the participatory fusion-jam format, but does not establish a fixed weekly/fortnightly schedule, a 21+ condition, or the former price range. The card now truthfully retains a selected-Thursday confirmation requirement.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue direct-source reconciliation for the remaining ticketing/directory-backed cards, then repeat corpus integrity checks for final completion review.
+
+## 2026-09-08 11:05
+
+- What changed: Ran the first full post-discovery jam-corpus integrity audit; no data records changed in this checkpoint.
+- Why: The audit confirms that the current 121-card corpus has zero duplicate jam IDs, zero missing venue relationships, zero missing required public fields and zero cards with a check date before 1 September 2026. It also confirms active representation across jazz, blues, folk/acoustic, hip-hop/rap, soul/funk, Latin/global, electronic/improvisation and cross-genre formats, at all four public skill tiers.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Corrected standalone Node audit passed. The initial reporting expression had a JavaScript syntax typo and was immediately rerun; it did not inspect or alter the directory data.
+- Follow-ups / TODOs: Continue direct-source reconciliation for the remaining ticketing/directory-backed cards, then repeat this audit as part of final completion review.
+
+## 2026-09-08 10:55
+
+- What changed: Replaced The Rebel Inn Open Mic’s remaining OpenMicFinder URL with the venue’s own current page and corrected its card to use only source-backed participation details.
+- Why: The official page confirms the Thursday 8:30pm start, full house backline, bands welcome, pre-booked guaranteed slots and limited first-come-first-served walk-ins. The former `midnight` end time and unconfirmed free-entry claim were removed rather than inferred.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue direct-source reconciliation for the remaining ticketing/directory-backed cards, then complete the final integrity audit.
+
+## 2026-09-08 10:45
+
+- What changed: Added Guy’s Bar, King’s College London and KCL Jazz Society’s separate monthly `Jazz@Guy’s` house-set-to-open-jam route. Updated its public student-community venue-type mapping and the durable jam-provenance ledger to 121 current cards, 89 additions and net +78 from baseline.
+- Why: KCL Jazz Society’s current official page distinguishes the monthly Guy’s Bar series from its fortnightly Strand Sessions and explicitly describes a house set followed by an open jam.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed. The fixed-baseline provenance command returned `{ before: 43, current: 121, net: 78 }`.
+- Follow-ups / TODOs: Continue the remaining genre/format screens, then complete direct-source reconciliation and final directory integrity audit.
+
+## 2026-09-08 14:35
+
+- What changed: Appended a verified jam-discovery checkpoint: added Cosmic Fusion Late Late Show Sit-in at Upstairs at Ronnie's; changed TAM's Great British Blues Jam to TAM's current venue-owned listings and removed an unsupported ticket-platform price; added The Harrison Venue with its distinct Roda de Choro, Mid-speed English Tune Session and Singaround cards. The provenance ledger now records 129 active cards, 97 additions and net +86 from the 43-card baseline.
+- Why: Each addition has a current official venue or organiser source showing a recurring participatory format. The London Improvisation Workshop lead was not added because its listing expressly disclaims organiser verification.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, scoped `git diff --check`, and fixed-baseline duplicate/venue-link audit passed: `{ before: 43, current: 129, net: 86, distinct: true, valid: true }`.
+- Follow-ups / TODOs: Continue the cross-format discovery and direct-source reconciliation passes; keep one-off, passive, or source-disclaimed leads out of public jam cards.
+
+## 2026-09-08 15:05
+
+- What changed: Added Cloud Studies as the thirty-eighth verified London-scene artist, ordered in the developing cohort. Recorded its exact Spotify capture and rejected a private unrelated Instagram route.
+- Why: Official sources establish the London gothgaze act, its current Happy Robots EP and profile route; independent coverage supports the South London shoegaze/post-punk relevance. The screenshot is the authority for the displayed Spotify metric.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-40.json`, `research/scene-and-venues/screenshots/inbox/cloud-studies-spotify.png`, `research/scene-and-venues/screenshots/inbox/cloud-studies-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome captures completed and were inspected: Spotify 1,104 monthly listeners; Instagram was an unrelated private account and discarded. `node --check`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue the systematic London live-circuit discovery pass; retry held profiles only through an artist-controlled route or a verified public result.
+
+## 2026-09-08 15:30
+
+- What changed: Added Toothpaste as the forty-first verified London-scene artist, placing it in the developing cohort after Velveteen and before Dogviolet. Recorded the exact Spotify and Instagram capture manifest and added a durable discovery-ledger entry.
+- Why: Artist-controlled routes, current London billing and independent coverage establish Toothpaste as an active East London dream-pop/shoegaze act. The visible browser captures verify 177 Spotify monthly listeners and 1,380 Instagram followers; no current label is explicitly confirmed, so the card reports `/`.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-45.json`, `research/scene-and-venues/screenshots/inbox/toothpaste-spotify.png`, `research/scene-and-venues/screenshots/inbox/toothpaste-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome captures completed and were inspected. Dashboard syntax, smoke and scoped diff checks passed after the update.
+- Follow-ups / TODOs: Continue systematic current London venue-bill, promoter, label and specialist-source discovery; retain strict exact-profile capture before publishing each further card.
+
+## 2026-09-08 15:40
+
+- What changed: Recorded Persuader as a held New Cross bill lead; no artist card or capture manifest was created.
+- Why: The current booking and release identity are credible, but exact Spotify searches collide with unrelated artists and no source establishes a sustained London base. The strict identity gate prevents a wrong profile or false metric from entering the directory.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Research-only batch; no dashboard code changed, so no code test was required.
+- Follow-ups / TODOs: Revisit only if an artist-controlled Spotify route and London-base evidence emerge; continue current London live-circuit discovery.
+
+## 2026-09-08 16:05
+
+- What changed: Added paper hats (UK) as the forty-second verified London-scene artist, placed after Wildernesses and before Otala in the developing cohort. Recorded the exact Instagram capture, manifest and discovery-ledger entry; no Spotify link or metric was published because the artist-controlled release links did not safely resolve to a Spotify artist-page URL.
+- Why: Official Bandcamp/Linktree/Instagram and independent London noise-rock coverage establish the current London emotional-noise group, its 2026 debut EP and active grassroots/touring trajectory. The inspected public Instagram capture shows 2,817 followers. The unresolved Spotify route is explicitly retained so it can be repaired later without a name-based mismatch.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-47.json`, `research/scene-and-venues/screenshots/inbox/paper-hats-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed. The shared smoke assertion was made resilient to concurrent current-source wording changes for LCCM and Cosmic Fusion; its substantive participation checks remain intact.
+- Follow-ups / TODOs: Continue current London venue-bill, promoter, label and specialist-source discovery. Revisit paper hats only if an exact artist-page Spotify route becomes public.
+
+## 2026-09-08 16:20
+
+- What changed: Added My Theatre Friend as the forty-third verified London-scene artist, positioned after wendigo and before deary in the developing cohort. Recorded the artist-controlled Instagram capture, manifest and discovery-ledger entry; displayed the release-confirmed Spider 7 Records label.
+- Why: Official Bandcamp/Instagram plus current Lexington and Windmill evidence establish the London skramz/post-hardcore trio, sustained local live activity and direct relevance to the adjacent guitar-music scene. The inspected public Instagram capture shows 453 followers. No exact Spotify artist-page URL was safely resolved, so that metric and link are intentionally omitted.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-48.json`, `research/scene-and-venues/screenshots/inbox/my-theatre-friend-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed. The shared smoke fixture was reconciled with concurrent source-backed LCCM, Cosmic Fusion and Worship Unplugged wording changes; its substantive checks remain intact.
+- Follow-ups / TODOs: Continue London venue-bill, promoter, label and specialist-source discovery. Revisit My Theatre Friend only if an exact Spotify artist-page route becomes public.
+
+## 2026-09-08 16:35
+
+- What changed: Added Jæd as the forty-fourth verified London-scene artist, positioned after CRY-99 and before Cloud Studies in the developing cohort. Recorded the exact Instagram capture, manifest and discovery-ledger entry; displayed the publicly documented The Delphi Label affiliation.
+- Why: Artist-controlled Bandcamp/Linktree/Instagram and independent London experimental-noise coverage establish Jæd's current London guitar-music activity and direct relevance. The inspected public Instagram capture shows 1,118 followers. The official Spotify route does not safely expose an exact artist-page URL, so no Spotify link or listener metric was invented.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-49.json`, `research/scene-and-venues/screenshots/inbox/jaed-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue discovery through current London venue bills, promoters, local labels, specialist media and adjacent-scene support slots. Revisit Jæd only if an exact Spotify artist-page route becomes public.
+
+## 2026-09-08 16:50
+
+- What changed: Added Cheerless as the forty-fifth verified London-scene artist, placed after Wildernesses and before paper hats in the developing core-shoegaze cohort. Recorded its exact Instagram capture, manifest and discovery-ledger entry.
+- Why: Artist-controlled Bandcamp/Instagram, the July 2026 release trail, 2026 Hackney/Dalston bills and independent coverage establish Cheerless as an active core local shoegaze act. The inspected public Instagram capture shows 2,610 followers. No current external label or exact Spotify artist-page URL was safely resolved, so the card uses `/` and does not invent a listener metric.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-50.json`, `research/scene-and-venues/screenshots/inbox/cheerless-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue systematic London shoegaze/dream-pop/post-punk bill, label and specialist-media discovery; revisit Cheerless only if an exact Spotify artist-page route becomes public.
+
+## 2026-09-08 15:15
+
+- What changed: Added `Singers at Sunday Spot` at TAM - Temple of Art and Music as a separate Sunday card, and refreshed the jam provenance ledger to 130 current active cards (98 additions, 11 retirements/reconciliations, net +87 from the 43-card baseline).
+- Why: TAM's current venue-owned Elephant & Castle programme explicitly advertises a weekly singer-focused live-band open mic every Sunday. It is distinct from the venue's Saturday blues jam, so it needs a separate day/format card.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; the provenance ledger and data agree on 130 active cards.
+- Follow-ups / TODOs: Continue the direct-source reconciliation and remaining format-led discovery; retain only evidence-backed recurring participatory sessions.
+
+## 2026-09-08 15:25
+
+- What changed: Added Katsute100 Broadway Market and its weekly Sunday `Katsute100 x Two Hats Open Mic` card. Updated the jam provenance ledger to 131 active current cards, 99 additions and net +88 from baseline.
+- Why: Katsute100's current venue-organised multiple-date ticketing listing establishes an active weekly Sunday participatory format, its 5pm sign-up route, house keyboard/electric guitar, backing-track support and free entry. It fills a verified Hackney Sunday open-mic route without duplicating another venue or series.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, a focused Two Hats jam/venue/duplicate integrity check and scoped `git diff --check` passed. The shared `node trials/verify-scene-update.js` reached an unrelated concurrent artist-count assertion that still expects 37 cards although the working tree now has 38; no artist data or assertion was changed in this jam-only batch.
+- Follow-ups / TODOs: Continue direct-source reconciliation and format-led discovery; return to the shared smoke test after the concurrent artist assertion is refreshed.
+
+## 2026-09-08 15:35
+
+- What changed: Added The Barley Mow, Marylebone and its last-Saturday `The Barley Mow Open Mic Night` card. Updated the jam provenance ledger to 132 active cards, 100 additions and net +89 from the 43-card baseline.
+- Why: The pub's own current live-music and open-mic pages confirm a monthly, participatory cross-genre format, the 7:45pm start, named house band and direct advance sign-up route. No charge was inferred because the official venue page does not publish one.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a focused Barley Mow jam/venue/duplicate integrity check and scoped `git diff --check` all passed.
+- Follow-ups / TODOs: Continue direct-source reconciliation and the remaining scene-format screens; all geographic passes remain complete.
+
+## 2026-09-08 15:50
+
+- What changed: Reconciled the public weekday wording of five active jam cards from current direct sources: Donut Jam (selected Fridays), BOX JAM and Rap Jam at LCCM (selected Thursdays), KCL Jazz Society Strand Sessions (alternate Mondays), and Ronnie Scott's Cosmic Fusion sit-in (every Thursday).
+- Why: A full corpus audit found these cards were correctly current and participatory but could not appear under the appropriate day filter because their prior schedule text only said `monthly`, `fortnightly` or `weekly`. The refreshed sources establish the relevant weekday without inferring a fixed date.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, scoped `git diff --check`, and the weekday reconciliation audit passed. The 132-card corpus has six remaining date-led cards where the current source does not publish a stable weekday; these are deliberately retained without invented timing.
+- Follow-ups / TODOs: Resolve a weekday only if a current organiser/venue programme publishes one; continue the final source-quality and niche-format passes.
+
+## 2026-09-08 16:00
+
+- What changed: Refreshed Worship Unplugged from its organiser-owned 2026 programme: it is now recorded as a last-Thursday monthly gospel open mic, with the explicit East/South London rotating-location constraint and the published £10 door price.
+- Why: The earlier Croydon-oriented wording obscured the actual recurring day and could suggest that every edition is fixed at The Front Room. The organiser confirms both the last-Thursday rhythm and its rotating London venue model.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, scoped `git diff --check`, and the weekday reconciliation audit all passed. Five remaining active cards retain `Selected dates`/monthly wording because their current official source does not expose a stable weekday.
+- Follow-ups / TODOs: Keep the remaining five routes date-led until a current organiser or venue programme supplies a verified weekday; continue the final niche-format discovery pass.
+
+## 2026-09-08 16:15
+
+- What changed: Recorded the five remaining date-led jam schedules in the durable provenance ledger; no public card was changed.
+- Why: The named geographic sweep is complete. Current organiser/venue sources verify each session's continuing format but do not publish a stable weekday, so preserving date-led wording is more accurate than assigning an inferred day filter.
+- Files touched: `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Re-read the current jam data, dashboard, shared verifier and both working-tree statuses. Official-source checks confirmed IMC's monthly Dalston route, KCL's monthly Guy's Bar route and Stone Mountain's monthly Lord Nelson route; the LGBTQ+ Centre's official events confirm selected open-mic dates without a published fixed rule. No executable source changed, so no code test was required.
+- Follow-ups / TODOs: Refresh these five only on stronger current schedule evidence; continue the final niche-format/source-quality screen.
+
+## 2026-09-08 16:25
+
+- What changed: Refreshed The Bootlegger Vault Open Jazz Jam's check date from the current borough event listing; its established Thursday, time, participation, age and free-entry wording is unchanged.
+- Why: VisitRichmond's current exact event page publishes the weekly route through 1 April 2027, providing stronger recency evidence for this existing Outer London card.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue source-quality reconciliation of ticketing/directory-backed but current cards; preserve official or organiser-owned ticketing routes when no stronger direct event page exists.
+
+## 2026-09-08 16:35
+
+- What changed: Refreshed Craterspace: London's Alternative Open Jam from Up The Creek's current September programme. The card remains a selected-Wednesday Greenwich route and now carries the latest check date.
+- Why: The official venue listing publishes a 9 September 2026 Craterspace edition, resolving a source-quality concern raised by an older travelling-series listing. It proves current activity but not a weekly rule, so no frequency was inferred.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue the final official-source screen, prioritising potentially historical ticketing-backed cards before refreshing stable direct venue listings.
+
+## 2026-09-08 16:50
+
+- What changed: Added `TAM Open Mic Wednesday with Patrick Hinds` as a separate selected-Wednesday TAM card. Updated the jam provenance ledger to 133 current cards, 101 additions and net +90 from the fixed 43-card baseline.
+- Why: TAM's own current programme and its organiser-owned multi-date Eventbrite listing establish a distinct all-genre performer series, with standard backline and a published 6:45pm-10:30pm event window. It is not the Saturday blues jam, Sunday singers' session or Open Room community jam.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a 133-card duplicate/venue-link integrity audit, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue the final official-source screen; retain selected-day wording where an organiser's multi-date page does not formally promise a weekly schedule.
+
+## 2026-09-08 17:05
+
+- What changed: Normalised three jam-card level values from `Entry-friendly` to the established internal `Beginner-friendly` key and added a generic supported-level smoke assertion.
+- Why: The Jam Sessions UI intentionally presents `Beginner-friendly` as `Entry-friendly`, but its filter and sort map use the former internal key. The three divergent values could render but were omitted from the level dropdown and sort order.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a 133-card source/venue/filter integrity audit, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue final direct-source and niche-format reconciliation; retain `Beginner-friendly` in data and `Entry-friendly` only as the public UI label.
+
+## 2026-09-08 18:05
+
+- What changed: Added Maripool as the fiftieth verified London-scene artist, positioned after Lemondaze and before Otala in the developing cohort. Recorded the exact Instagram capture, manifest and discovery-ledger entry.
+- Why: Official Bandcamp identifies the London DIY project, exact Instagram route and current Shacklewell date. Independent current coverage establishes the forthcoming August 2026 debut album and its shoegaze-inflected indie-rock direction. The inspected Instagram capture shows 2,079 followers. No current label or exact Spotify artist-page route was safely established, so the card reports `/` and does not invent a listener metric.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-55.json`, `research/scene-and-venues/screenshots/inbox/maripool-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue systematic current London shoegaze/dream-pop/post-punk bill, label and specialist-media discovery; retain only independently supported active local acts.
+
+## 2026-09-08 17:50
+
+- What changed: Added Lost Lyra as the forty-ninth verified London-scene artist, positioned after Gravegonzo and before Cloud Studies in the developing cohort. Recorded the Instagram capture, initial two-profile manifest, Spotify retry manifest and discovery-ledger entry.
+- Why: Artist-controlled Bandcamp and Big Richard Records confirm the North London identity, catalogue and label; independent Pindrop coverage establishes direct dreamgaze relevance on a current London bill. The exact Instagram profile was captured and shows 1,377 followers plus upcoming Rough Trade East and Ivy House dates. The exact Spotify artist URL is corroborated, but two visible capture attempts failed because Windows did not return browser focus, so no unverified listener metric was added.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-54.json`, `research/scene-and-venues/scripts/artist-discovery-batch-54-spotify-retry.json`, `research/scene-and-venues/screenshots/inbox/lost-lyra-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected; two Spotify attempts hit a documented browser-focus failure. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Retry the known exact Spotify route only once Chrome focus is stable; continue systematic London live-circuit discovery.
+
+## 2026-09-08 17:35
+
+- What changed: Added Comafields as the forty-eighth verified London-scene artist, positioned after Toothpaste and before Dogviolet in the early-stage developing cohort. Recorded the exact Instagram capture, manifest and discovery-ledger entry.
+- Why: The artist-controlled Linktree identifies a South London shoegaze/noise-pop four-piece, resolves the exact Instagram identity and links current June Paper Dress and August Windmill dates. The Windmill's current programme independently identifies it as a four-piece London shoegaze act. The inspected Instagram capture shows 293 followers; no exact Spotify artist route or current label was safely established.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-53.json`, `research/scene-and-venues/screenshots/inbox/comafields-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue systematic current London shoegaze/dream-pop/post-punk bill, label and specialist-media discovery; retain only independently supported active local acts.
+
+## 2026-09-08 17:20
+
+- What changed: Added Lemondaze as the forty-seventh verified London-scene artist, positioned after paper hats and before Otala in the developing cohort. Recorded the exact Spotify/Instagram captures, manifest and discovery-ledger entry; the card reports Venner Records, which the artist-controlled Instagram explicitly names for the current EP.
+- Why: Official Bandcamp confirms the London identity, exact Instagram route and two upcoming November 2026 Strongroom Bar dates. Independent 2026 LOUD WOMEN coverage confirms the same four-piece on a current Garage bill and its droney shoegaze-adjacent sound. The inspected captures show 830 Spotify monthly listeners and 3,302 Instagram followers.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-52.json`, `research/scene-and-venues/screenshots/inbox/lemondaze-spotify.png`, `research/scene-and-venues/screenshots/inbox/lemondaze-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Spotify and Instagram captures completed and were inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue systematic current London shoegaze/dream-pop/post-punk bill, label and specialist-media discovery; retain only independently supported active local acts.
+
+## 2026-09-08 17:05
+
+- What changed: Resolved the prior Gravegonzo evidence hold and added it as the forty-sixth verified London-scene artist, positioned after Jæd and before Cloud Studies in the developing cohort. Recorded the exact Instagram capture, manifest and discovery-ledger entry.
+- Why: Artist-controlled Bandcamp/Instagram establish the Peckham dream-pop identity, while independent current coverage verifies the March 2026 `Whatever, Forever` release and its shoegaze direction. The inspected exact Instagram capture shows 1,495 followers. No exact Spotify artist-page URL or current label was safely resolved, so the card uses `/` and does not invent a listener metric.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-51.json`, `research/scene-and-venues/screenshots/inbox/gravegonzo-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue systematic current London shoegaze/dream-pop/post-punk bill, label and specialist-media discovery; revisit Gravegonzo only if an exact Spotify artist-page route becomes public.
+
+## 2026-09-08 17:30
+
+- What changed: Removed the completed venue, promoter and label placeholder entries from the visible Research queue. The queue now contains only three optional artist-profile metric follow-ups.
+- Why: Those three directory-wide audits are already represented by current venue, promoter and label cards; retaining them as open research tasks was misleading.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, a focused VM queue assertion, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: The remaining artist entries are not missing cards; they are optional exact-profile/dated-metric refreshes and can be removed if the queue should contain no maintenance work.
+
+## 2026-09-08 17:35
+
+- What changed: Removed the three optional artist-metric follow-ups from the base Research queue and added an intentional empty-state message for a genuinely empty queue.
+- Why: The Youth Play, adele dazeem and Neighbour Club already have complete source-backed cards; absent popularity snapshots do not make them unresolved research leads.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a focused base-queue assertion, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Four separately maintained rehearsal-space leads remain injected by `operations-data.js`; they were not changed because this update concerns optional artist metrics.
+
+## 2026-09-09 07:20
+
+- What changed: Added a Labels `Base` filter (London, Elsewhere in the UK, International) and the first twelve source-verified artist-linked label cards: Fiction, All My Friends, Nettwerk, Spirit Goth, Chillburn, Noon, Fuzz Club, Blitzcat, Submarine Cat, Big Richard, Happy Robots and Blang.
+- Why: Artist-card label credits now lead to a broader, transparent directory rather than silently excluding non-London operations. Existing cards retain London as their established directory scope unless explicitly classified otherwise.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a focused twelve-card VM audit, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue the same source-verification standard for the remaining already-credited artist labels; do not add Venner, Shake! Shake!, or Spider 7 until a current operator identity and source route are found.
+
+## 2026-09-08 18:00
+
+- What changed: Added The Candlemaker Open Mic in Battersea and White Hart Open Mic Night in Whitechapel, together with their distinct venue records and focused smoke-test coverage. Updated the jam provenance ledger to 135 current cards, 103 additions and net +92 from the fixed 43-card baseline.
+- Why: Direct current organiser and official venue programmes confirm both as recurring, participatory Wednesday music routes. The cards retain only published participation details and do not infer a fee, performer equipment or booking arrangement where the sources do not state one.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a 135-card duplicate/venue-link integrity audit, and scoped `git diff --check` all passed.
+- Follow-ups / TODOs: Continue the final direct-source/niche-format reconciliation; all named geographic passes remain complete.
+
+## 2026-09-08 18:30
+
+- What changed: Recorded three direct-source format-screen exclusions in the jam provenance ledger: Portobello Sessions at UNDR, Practice Jazz Jams at Vortex, and Lilybud Live / Zodiac Fruit Jam.
+- Why: The first is presented by its own current page as curated performance rather than a public sit-in; the second only has a reachable historic May 2026 event route rather than a current schedule; the third is an archived 2025 event. None should remain an ambiguous candidate in a current participatory-session directory.
+- Files touched: `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Re-read the current jam data, dashboard, shared verifier and both working-tree statuses. No executable data or test code changed, so a code test was not required.
+- Follow-ups / TODOs: Continue the final direct-source/niche-format reconciliation; all named geographic passes remain complete.
+
+## 2026-09-08 18:45
+
+- What changed: Completed a whole-corpus structural audit of the jam directory; no public jam data changed.
+- Why: The final sweep needs evidence that the active corpus remains actionable, deduplicated and current rather than simply containing many cards. The audit found 136 cards, zero missing required fields, zero duplicate IDs, zero unresolved venue identities and zero cards checked before 7 September 2026.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Evaluated `data/scene-data.js` in a Node VM after re-reading the project log, dashboard, shared verifier and both working-tree statuses; the focused audit passed. No executable file changed, so no code test was required.
+- Follow-ups / TODOs: The geographic sweep and structural reconciliation are complete. Continue only direct-source refreshes or genuine new recurring participatory-session discoveries.
+
+## 2026-09-08 18:15
+
+- What changed: Added Sound Minds Tuesday Jam Session and its Battersea community-music venue record. Updated the jam provenance ledger to 136 current cards, 104 additions and net +93 from the fixed 43-card baseline.
+- Why: Sound Minds' own current programme confirms a weekly Tuesday all-level participatory session, welcomes instrumentalists and vocalists, and publishes its self-referral/no-drop-in access constraint together with participant rates.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/JAM_SESSION_PROVENANCE.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a 136-card duplicate integrity audit, and scoped `git diff --check` all passed.
+- Follow-ups / TODOs: Continue the final direct-source/niche-format reconciliation; all named geographic passes remain complete.
+
+## 2026-09-08 18:40
+
+- What changed: Added Pynch as the fifty-second verified London-scene artist, positioned after Sennen and before Dog Race in the established cohort. Recorded the exact Instagram capture, initial capture manifest, successful Spotify-retry manifest and discovery-ledger entry; current album credits are shown as Chillburn Recordings.
+- Why: Official Bandcamp/Instagram identify the London DIY act and its active 2026 touring cycle. Independent reviews corroborate the Brixton-recorded second album's lo-fi alternative, guitar/synth and post-punk-adjacent direction. The inspected captures show 18,133 Spotify monthly listeners and 5,821 Instagram followers.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-57.json`, `research/scene-and-venues/scripts/artist-discovery-batch-57-spotify-retry.json`, `research/scene-and-venues/screenshots/inbox/pynch-spotify.png`, `research/scene-and-venues/screenshots/inbox/pynch-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Instagram capture completed and was inspected; the first Spotify capture had a transient Windows-focus failure and the exact-route retry succeeded and was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue systematic current London alternative/shoegaze/dream-pop/post-punk live-circuit and specialist-media discovery.
+
+## 2026-09-08 18:20
+
+- What changed: Added Pale as the fifty-first verified London-scene artist, positioned after Dog Race and before Wyldest in the developing cohort. Recorded exact Spotify/Instagram captures, the manifest and discovery-ledger entry; the card reports Spirit Goth for the current EP.
+- Why: Artist-controlled Bandcamp identifies the London dreamgaze project, 2025 `Nights` EP and Spirit Goth release; two independent specialist reviews corroborate its London dreamgaze/dream-pop identity. The inspected captures show 29,746 Spotify monthly listeners and 253 Instagram followers.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-56.json`, `research/scene-and-venues/screenshots/inbox/pale-spotify.png`, `research/scene-and-venues/screenshots/inbox/pale-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Spotify and Instagram captures completed and were inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue systematic current London shoegaze/dream-pop/post-punk bill, label and specialist-media discovery; retain only independently supported active local acts.
+
+## 2026-09-08 17:45
+
+- What changed: Added Apollo Studio London as a verified rehearsal card and resolved Apollo Studio and Sic Lick Studio from the visible rehearsal research queue. The card records the current paid booking route, small-band capacity, full backline, access conditions and representative rate.
+- Why: Apollo has a current detailed live booking listing that explicitly supports amplified band rehearsal. Sic Lick has no reachable operator-owned site and shares Apollo's exact Unit 11 address, so it is treated as a likely stale/superseded lead rather than an unsafe duplicate card.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: The only remaining rehearsal candidates are Brixton House and the GLA rehearsal-inventory lead; revisit Sic Lick only if a distinct, current operator booking route appears.
+
+## 2026-09-08 19:05
+
+- What changed: Added Achers as the fifty-third verified London-scene artist, ordered after paper hats and before Lemondaze in the developing cohort. Added the exact Instagram capture and batch-58 capture manifest, and updated the discovery ledger and artist-card smoke checks.
+- Why: Artist-owned Bandcamp/Linktree confirm the London DIY noise-rock identity, February 2026 EP and exact public route; independent specialist coverage corroborates the current post-hardcore/indie-rock release cycle. The inspected profile displays 1,332 followers. No exact Spotify artist page or independently confirmed current label was resolved, so neither is inferred.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-58.json`, `research/scene-and-venues/screenshots/inbox/achers-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. Syntax, smoke and diff checks are the next batch-finalisation step.
+- Follow-ups / TODOs: Continue the systematic current London alternative, shoegaze, post-punk, noise-rock and post-hardcore live-circuit sweep; retain unresolved exact Spotify routes without guessed metrics.
+
+## 2026-09-08 19:20
+
+- What changed: Added Sweet Fish as the fifty-fourth verified London-scene artist, ordered after Achers and before Lemondaze in the developing cohort. Added the exact Instagram capture and batch-59 capture manifest, discovery-ledger entry and smoke-test coverage.
+- Why: Artist-owned Bandcamp establishes the London identity and current catalogue; independent 2026 New Cross Inn and Stone Nest listings corroborate the emo/math-punk sound and continuing grassroots-bill presence. The inspected profile displays 1,081 followers. No exact Spotify artist page or current label was inferred.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-59.json`, `research/scene-and-venues/screenshots/inbox/sweet-fish-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. Syntax, smoke and diff checks are the next batch-finalisation step.
+- Follow-ups / TODOs: Continue the systematic live-circuit screen, retaining only current London acts with a resolved official identity and independent support.
+
+## 2026-09-08 19:35
+
+- What changed: Added mishikui as the fifty-fifth verified London-scene artist, ordered after Cheerless and before paper hats in the developing cohort. Added exact Spotify/Instagram captures, batch-60 manifest, discovery-ledger entry and smoke-test coverage.
+- Why: Official sources confirm a London release cycle, exact profiles and Devil Dog Distro partnership; independent sources corroborate North London shoegaze/post-hardcore identity and current 2026 New Cross activity. Inspected captures show 4,970 Spotify monthly listeners and 2,645 Instagram followers.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-60.json`, `research/scene-and-venues/screenshots/inbox/mishikui-spotify.png`, `research/scene-and-venues/screenshots/inbox/mishikui-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Both visible Chrome captures completed and were inspected. Syntax, smoke and diff checks are the next batch-finalisation step.
+- Follow-ups / TODOs: Continue current local live-circuit discovery, with emphasis on independently supported London artists rather than touring-only support acts.
+
+## 2026-09-08 19:50
+
+- What changed: Added Death of Youth as the fifty-sixth verified London-scene artist, ordered after mishikui and before paper hats in the developing cohort. Added the exact Instagram capture, batch-61 manifest, discovery-ledger entry and smoke-test coverage.
+- Why: Artist-owned sources establish the South East London emo-hardcore identity and February 2026 debut; independent specialist and label sources corroborate its post-hardcore/screamo sound and Engineer Records release. The inspected Instagram profile shows 1,273 followers. No Spotify artist page was guessed.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-61.json`, `research/scene-and-venues/screenshots/inbox/death-of-youth-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. Syntax, smoke and diff checks are the next batch-finalisation step.
+- Follow-ups / TODOs: Continue the systematic London live-circuit sweep; no profile metric is to be inferred from search or ticket-platform metadata.
+
+## 2026-09-08 20:10
+
+- What changed: Added Sunday Best as the fifty-seventh verified London-scene artist, ordered after mishikui and before Death of Youth. Recorded batch-62's exact Instagram capture and four explicit support-bill exclusions (Funeral, prom, Hemiptera and Third Kulture).
+- Why: Official and independent evidence confirms Sunday Best's London DIY emo identity, current local release/live cycle and 27 November Sebright headline. The inspected profile shows 3,331 followers. The four exclusions have documented Plymouth, Brighton or Manchester bases, so London appearances are insufficient for inclusion.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-62.json`, `research/scene-and-venues/screenshots/inbox/sunday-best-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. Syntax, smoke and diff checks are the next batch-finalisation step.
+- Follow-ups / TODOs: Continue direct official and independent-source discovery through current London shoegaze, dream-pop, post-punk, indie-rock and adjacent emo/post-hardcore bills.
+
+## 2026-09-08 20:25
+
+- What changed: Added Breakup Haircut as the fifty-eighth verified London-scene artist, ordered after Sunday Best and before Death of Youth. Added its exact Instagram capture, batch-63 manifest, ledger entry and smoke-test coverage.
+- Why: Artist-controlled sources establish the London identity and 2025 second album through INH Records; independent LOUD WOMEN and Cavendish Arms sources corroborate 2026 community-radio and local live activity. The inspected Instagram profile shows 1,823 followers; no Spotify artist profile was guessed.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-63.json`, `research/scene-and-venues/screenshots/inbox/breakup-haircut-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. Syntax, smoke and diff checks are the next batch-finalisation step.
+- Follow-ups / TODOs: Continue the London-core discovery loop and retain unresolved streaming links without inferred metrics.
+
+## 2026-09-08 20:40
+
+- What changed: Added Magnolia as the fifty-ninth verified London-scene artist, ordered after Cheerless and before mishikui in the developing cohort. Added its exact Instagram capture, batch-64 manifest, discovery-ledger entry and smoke-test coverage.
+- Why: Official routing establishes the active release and 2026 Windmill Brixton activity. Independent sources explicitly document the group as relocated and now London-based, and corroborate the art-punk/post-rock direction and Shake! Shake! Records `Omaha` EP. The inspected retry capture shows 3,085 Instagram followers; no Spotify route was guessed.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-64.json`, `research/scene-and-venues/screenshots/inbox/magnolia-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture was retried, then inspected. `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; scoped diff check follows.
+- Follow-ups / TODOs: Continue a systematic direct-source screen of current East and South London alternative-guitar bills; keep historical non-London roots explicit where an artist has demonstrably relocated.
+
+## 2026-09-08 20:50
+
+- What changed: Resolved the final GLA Cultural Infrastructure Map music-rehearsal inventory placeholder from the visible Research queue. The rehearsal queue now has no open candidates; its smoke check permits an empty completed queue while still validating sources if future leads are added.
+- Why: The GLA source is a spring/summer 2022 inventory, not a live studio card. Project-log entries from 6 September document the completed scanner-led reconciliation and current-source verification pass, so leaving the meta-task visible falsely implied unfinished discovery work.
+- Files touched: `research/scene-and-venues/data/operations-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/operations-data.js`, a focused VM queue assertion (`No rehearsal candidates remain`), and scoped `git diff --check` passed. `node trials/verify-scene-update.js` currently fails before this module at a concurrent artist-card-count assertion expecting 60 records.
+- Follow-ups / TODOs: Refresh from a newer GLA export only when one becomes available; validate its candidates against current operator sources before adding cards.
+
+## 2026-09-08 21:00
+
+- What changed: Added MORN as the sixtieth verified London-scene artist, ordered after Pynch and before Dog Race in the established cohort. Added the initial and retry capture manifests, inspected screenshots, ledger entry and smoke-test coverage.
+- Why: MORN is South Wales-origin, but independent Windmill Brixton evidence documents its move into South London and repeated 2026 local activity; official routing confirms current Paper Dress, George Tavern and national dates. The inspected Instagram capture shows 5,415 followers and the successful Spotify retry shows 15,775 monthly listeners. No label was inferred.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-65.json`, `research/scene-and-venues/scripts/artist-discovery-batch-65-spotify-retry.json`, `research/scene-and-venues/screenshots/inbox/morn-spotify.png`, `research/scene-and-venues/screenshots/inbox/morn-instagram.png`, `research/scene-and-venues/screenshots/inbox/morn-spotify-retry.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome profiles were captured and inspected; the first Spotify attempt was rejected as a focus failure and the retry succeeded. `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; scoped diff check follows.
+- Follow-ups / TODOs: Continue the direct-source current-bill screen, retaining relocation history and failed-capture details where relevant.
+
+## 2026-09-08 21:20
+
+- What changed: Added Big Red as the sixty-first verified London-scene artist, ordered after Magnolia and before mishikui in the developing cohort. Added its exact Instagram capture, batch-66 manifest, ledger entry and smoke-test coverage.
+- Why: Official Bandcamp identifies the project as London-based and current; independent coverage corroborates the London trio's 2026 debut-release cycle, Third Man Records headline, End of the Road activity and alternative-guitar relevance. The inspected profile shows 1,366 followers. No label or Spotify profile was guessed.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-66.json`, `research/scene-and-venues/screenshots/inbox/big-red-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. The first dashboard smoke check correctly exposed a stale 60-card assertion; the assertion was updated, then `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed.
+- Follow-ups / TODOs: Continue systematic current London alternative-guitar bill and release discovery; reject ambiguous profiles or record them unresolved rather than infer metrics.
+
+## 2026-09-08 21:40
+
+- What changed: Added Charlemagne as the sixty-second verified London-scene artist, ordered after Big Red and before mishikui in the developing cohort. Added its exact Instagram capture, batch-67 manifest, ledger entry and smoke-test coverage.
+- Why: Current Windmill Brixton billing and independent interview coverage establish a sustained Brixton live-circuit record, its experimental “hyper rock” direction and a regular performance history. The inspected profile shows 810 followers. The card explicitly states that the group is live-first and that no release catalogue, label or Spotify profile is confirmed.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-67.json`, `research/scene-and-venues/screenshots/inbox/charlemagne-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; scoped diff check follows.
+- Follow-ups / TODOs: Continue systematic current London alternative-guitar bill and release discovery, preserving the live-first distinction where no release evidence exists.
+
+## 2026-09-08 22:00
+
+- What changed: Added Mukbang Ray as the sixty-third verified London-scene artist, ordered after Charlemagne and before mishikui in the developing cohort. Added its exact Instagram capture, batch-68 manifest, ledger entry and smoke-test coverage.
+- Why: Current Windmill Brixton, Shacklewell and independent London listings corroborate an active South London art-rock/indie-punk five-piece and repeated 2026 grassroots activity. The inspected profile shows 310 followers. No label or streaming route was inferred.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-68.json`, `research/scene-and-venues/screenshots/inbox/mukbang-ray-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; scoped diff check follows.
+- Follow-ups / TODOs: Continue the direct-source current-bill screen and preserve unsafely unresolved streaming routes without guessed metrics.
+
+## 2026-09-08 22:15
+
+- What changed: Recorded Body Horror as an unresolved, retryable North London industrial/post-punk candidate in the artist discovery ledger; no card was created.
+- Why: Official Bandcamp and independent current-release/live evidence support the artist and its London relevance, but two visible-Chrome attempts at the candidate Instagram route captured unrelated windows. The public identity and follower metric therefore remain unverified and are not inferred.
+- Files touched: `research/scene-and-venues/scripts/artist-discovery-batch-69.json`, `research/scene-and-venues/screenshots/inbox/body-horror-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Two visible Chrome capture attempts completed but were visually rejected as desktop-focus failures. No code/data change was made; dashboard smoke test remains green from batch 68.
+- Follow-ups / TODOs: Retry Body Horror only when the browser-focus fault is resolved; continue other current London discovery routes in the meantime.
+
+## 2026-09-08 22:35
+
+- What changed: Added wears me out as the sixty-fourth verified London-scene artist, ordered after Big Red and before Charlemagne in the developing cohort. Added its exact Instagram capture, batch-70 manifest, ledger entry and smoke-test coverage.
+- Why: Official sources establish the London/Kent identity, February 2026 debut album and exact public profile; independent New Cross and Hope & Anchor listings corroborate continuing emo/hardcore circuit activity. The inspected profile shows 679 followers. No label or Spotify route was inferred.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-70.json`, `research/scene-and-venues/screenshots/inbox/wears-me-out-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; scoped diff check follows.
+- Follow-ups / TODOs: Continue direct-source current London shoegaze, post-punk, indie-rock, emo and adjacent release/bill discovery while retaining unresolved Body Horror separately.
+
+## 2026-09-08 22:55
+
+- What changed: Added Ringards as the sixty-fifth verified London-scene artist, ordered after Cheerless and before Magnolia in the developing cohort. Added its Instagram and Spotify resolution manifests, retained their inspected failure/obsolete captures, ledger entry and smoke-test coverage.
+- Why: Official Bandcamp/SoundCloud establish the East London artist and current debut LP; independent festival and current-London live sources corroborate its art-/post-punk scene position. Panache is explicitly named for the 2026 album. The historical Instagram handle is unavailable and the discovered Spotify page is an obsolete one-listener profile without the current album, so neither appears on the card.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-71.json`, `research/scene-and-venues/scripts/artist-discovery-batch-71-spotify-retry.json`, `research/scene-and-venues/screenshots/inbox/ringards-instagram.png`, `research/scene-and-venues/screenshots/inbox/ringards-spotify.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome captures were inspected; the Instagram route was unavailable and the Spotify page was rejected as obsolete. `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; scoped diff check follows.
+- Follow-ups / TODOs: Continue release/bill discovery without reusing Ringards’ obsolete profile routes; retain Body Horror separately pending a valid Chrome capture.
+
+## 2026-09-08 22:10
+
+- What changed: Made the public Research queue tab and panel conditional on there being at least one active queue item. With the current empty queue, neither is displayed; both reappear automatically if future research leads are added.
+- Why: An empty queue is internal maintenance state rather than useful directory content, while retaining the conditional renderer preserves transparent follow-up handling when work is genuinely outstanding.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Keep the queue data source for maintenance; no manual UI change is needed when new leads are created.
+
+## 2026-09-08 23:25
+
+- What changed: Added Rampressure as the sixty-seventh verified London-scene artist, ordered after Big Red and before wears me out in the developing cohort. Added its exact Instagram and Spotify captures, batch-73 manifest, ledger entry and smoke-test coverage.
+- Why: Artist-controlled Bandcamp confirms the London identity and current catalogue. Independent Left of the Dial and Alt Escape coverage corroborate the group’s sustained South East London noise/garage/post-punk live circuit, 2026 showcase activity and direct scene relevance. The inspected profiles show 1,333 Instagram followers and 840 Spotify monthly listeners. No current label was explicitly confirmed.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-73.json`, `research/scene-and-venues/screenshots/inbox/rampressure-instagram.png`, `research/scene-and-venues/screenshots/inbox/rampressure-spotify.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome captures completed and were inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue current venue, label and support-bill discovery, preserving exact-profile verification and negative findings.
+
+## 2026-09-08 23:45
+
+- What changed: Added ashnymph as the sixty-eighth verified London-scene artist, ordered after Pynch and before MORN in the established cohort. Added its exact Instagram and Spotify captures, batch-74 manifest, ledger entry and smoke-test coverage.
+- Why: Official Bandcamp confirms the London trio, its 2026 `Childhood` EP and Blitzcat Records release. Independent coverage establishes the South London identity, current grassroots/showcase trajectory and industrial/dance/DIY-guitar relevance. The inspected public profiles show 1,150 Instagram followers and 22,826 Spotify monthly listeners. The official Instagram is intentionally sparse but matches through the exact handle, account name and linked official artist hub.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-74.json`, `research/scene-and-venues/screenshots/inbox/ashnymph-instagram.png`, `research/scene-and-venues/screenshots/inbox/ashnymph-spotify.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome captures completed and were inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue London venue, independent-label and scene-media discovery; do not promote lttl mort from the current sweep until a London base or sustained London-scene presence is directly established.
+
+## 2026-09-08 23:55
+
+- What changed: Logged lttl mort as a held, non-card candidate after the current Windmill Brixton and showcase-circuit screen.
+- Why: The project is sonically relevant and has current London bills, but its official and independent sources establish only UK/showcase activity, not a London base or sustained London-scene presence. No public-profile capture was run because it does not yet meet the geographic qualification gate.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Existing dashboard syntax and smoke checks remained green after batch 74; this batch changes provenance records only.
+- Follow-ups / TODOs: Revisit lttl mort only if a reliable direct source establishes its London-base or sustained local-scene criterion.
+
+## 2026-09-09 00:05
+
+- What changed: Logged Holy Springs as a held, non-card candidate after a geographic-conflict audit.
+- Why: Official Bandcamp and some independent reporting identify the group as London/South London, but a January 2026 independent review describes it as coming from Southampton. Its shoegaze relevance is clear, but the current London-base requirement is not, so no metrics were captured and no card was created.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: No code/data changed; the batch records a negative qualification decision.
+- Follow-ups / TODOs: Revisit only if a current artist-controlled source resolves Holy Springs’ geographic status; continue the venue-led screen with candidates whose London connection is unambiguous.
+
+## 2026-09-09 00:20
+
+- What changed: Added drainfly as the sixty-ninth verified London-scene artist, placed after wendigo and before my theatre friend in the developing cohort. Added its exact Spotify capture, batch-77 manifest, ledger entry and smoke-test coverage.
+- Why: The official site identifies the band as London-based, while independent interview coverage documents its 2022 relocation to London, active Windmill-scene community and current folk-post-punk direction. The exact Spotify capture shows 184 monthly listeners. No Instagram route or record label was inferred.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-77.json`, `research/scene-and-venues/screenshots/inbox/drainfly-spotify.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Spotify capture completed and was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue strict London-scene discovery through current Windmill, East London and specialist-media bills; retain profile and geographic ambiguities in the ledger instead of guessing.
+
+## 2026-09-09 00:35
+
+- What changed: Added Dreamhaus as the seventieth verified London-scene artist, ordered after drainfly and before My Theatre Friend in the developing cohort. Added the exact Instagram capture, batch-78 manifest, ledger entry and smoke-test coverage.
+- Why: Artist-controlled routing and independent venue coverage establish a Peckham-based London four-piece with clear shoegaze/post-punk/indie/emo relevance and repeated current local bills. The inspected profile shows 1,055 followers. The name-collision Spotify search result was rejected as a different US act, so no listener metric or streaming link was inferred.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-78.json`, `research/scene-and-venues/screenshots/inbox/dreamhaus-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue strict current London support-bill, label and scene-media discovery, preserving explicit profile-rejection notes where artist names collide.
+
+## 2026-09-08 23:10
+
+- What changed: Added The Sick Man Of Europe as the sixty-sixth verified London-scene artist, placed after Wildernesses and before Cheerless in the developing cohort. Added the exact Instagram capture, batch-72 manifest, ledger entry and smoke-test coverage.
+- Why: Official sources establish the London project, its September 2026 album and a December Shacklewell Arms date. The Leaf Label explicitly confirms its label relationship and independent live evidence supports a genuine current post-punk/krautrock scene position. The inspected exact Instagram profile shows 2,397 followers. No Spotify link or listener figure was inferred because no exact artist-page route was resolved from an artist-controlled source.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-72.json`, `research/scene-and-venues/screenshots/inbox/the-sick-man-of-europe-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Instagram capture completed and was inspected. `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Continue the current London label, venue and support-bill sweep; retain unresolved profile routes rather than inferring metrics.
+
+## 2026-09-08 23:30
+
+- What changed: Renamed the Network tab to `Scene connections`, gave it a distinct pink-outlined utility treatment, and replaced its empty state with a first evidence-backed relationship card: Hot Vox -> The Spice of Life.
+- Why: The tab is now a concrete cross-directory explorer rather than an empty promise. The first card uses the existing verified relationship record and its current Hot Vox listings evidence, links back to both cards, and makes clear that future entries must be similarly source-backed.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Focused relationship/data plus embedded-script syntax check, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Judge this one-card format before expanding it; add new relationship types only when their direction and evidence link are explicit.
+
+## 2026-09-09 00:45
+
+- What changed: Recorded Ewan Samms as a held, retryable candidate rather than creating a card.
+- Why: Its official London identity and current experimental/post-punk bills qualify it for review, but the visible-Chrome Instagram capture saved an unrelated Highnote tab instead of the exact public profile. No displayed metric or profile link is therefore safe to use.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: The batch-79 visible Chrome capture command completed, and the saved image was inspected. It did not contain the requested profile; no code or data changed.
+- Follow-ups / TODOs: Retry only after the visible Chrome session is demonstrably returning navigation captures rather than its prior tab; continue discovery with independently verifiable candidates.
+
+## 2026-09-09 00:55
+
+- What changed: Documented the capture failure for the exact Body Orchestra Spotify profile and completed the candidate's source qualification.
+- Why: The capture script reported that Windows did not return focus to Chrome or Edge, so there is no screenshot-derived listener metric. Official Spotify identity plus independent Paper Dress and current Sebright Arms evidence still support the London experimental/post-rock candidate; any card must omit the unverified listener number.
+- Files touched: `research/scene-and-venues/scripts/artist-discovery-batch-80.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Spotify capture attempted and failed before capture with the reported focus error. Manifest JSON validation follows before any data change.
+- Follow-ups / TODOs: Do not rely on search-result metrics. Resume exact-profile captures only once focus can be restored; retain the verified Spotify route and continue evidence-led discovery.
+
+## 2026-09-09 01:05
+
+- What changed: Added Body Orchestra as the seventy-first verified London-scene artist, ordered after Dreamhaus and before My Theatre Friend in the developing cohort. Added the exact Spotify route, batch-80 manifest, provenance entry and smoke-test coverage.
+- Why: Official Spotify identity, Paper Dress's explicit London four-piece profile and a current Sebright Arms experimental bill establish an active, locally rooted experimental/post-rock act. The exact public Spotify capture could not run because Chrome did not regain Windows focus; the card intentionally excludes the unverified listener count and does not infer a label or social account.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-80.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, batch-80 JSON validation, `node trials/verify-scene-update.js` and scoped `git diff --check` passed. The diff check emitted only the existing `PROJECT_LOG.md` line-ending warning.
+- Follow-ups / TODOs: Continue direct-source venue, label and support-bill discovery; resume screenshot metrics only when the active Chrome session can take focus again.
+
+## 2026-09-09 01:20
+
+- What changed: Added Suitman Jungle as the seventy-second verified London-scene artist, ordered after Silt and before Wildernesses in the established cohort. Added the batch-81 capture manifest, provenance record and smoke-test coverage.
+- Why: Official Bandcamp, independent Newham reporting and current Sebright Arms/Shambala evidence establish a sustained East London experimental-electronic project with active 2026 activity. The exact Instagram capture stopped because Chrome's foreground window was unexpectedly small, so the card omits a follower metric and social link rather than guessing.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-81.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Batch-81 manifest JSON validation passed. Chrome capture correctly reported the small-window focus fault; syntax, smoke and scoped diff checks follow.
+- Follow-ups / TODOs: The Chrome capture route now has a documented focus/window-state blocker across several artists. Continue source-backed discovery, retain exact-profile routes, and retry metrics when the active browser window has returned to a normal foreground state.
+
+## 2026-09-09 01:35
+
+- What changed: Added Pigeon Dog as the seventy-third verified London-scene artist, ordered after Big Red and before Rampressure in the developing cohort. Added paired exact-profile capture manifests, screenshots, provenance entry and smoke-test coverage.
+- Why: Exact public Spotify/Instagram profiles, independent North London grunge/post-punk reporting and multiple current London listings establish a direct scene fit. The inspected captures show 137 Spotify monthly listeners and 1,596 Instagram followers. The initial Instagram capture was the correct account but began below the header; a canonical URL retry visibly confirmed the follower figure.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-82.json`, `research/scene-and-venues/scripts/artist-discovery-batch-82-instagram-retry.json`, `research/scene-and-venues/screenshots/inbox/pigeon-dog-spotify.png`, `research/scene-and-venues/screenshots/inbox/pigeon-dog-instagram.png`, `research/scene-and-venues/screenshots/inbox/pigeon-dog-instagram-retry.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Paired Chrome capture and targeted Instagram retry completed and were inspected. Syntax, smoke and scoped diff checks follow.
+- Follow-ups / TODOs: Continue the current London live-circuit screen; Chrome has now recovered for this batch, so use exact visible captures whenever available.
+
+## 2026-09-09 01:50
+
+- What changed: Added Red Peril as the seventy-fourth verified London-scene artist, ordered after Big Red and before Pigeon Dog. Added its exact Spotify capture, batch-83 manifest, provenance entry and smoke-test coverage.
+- Why: Blang Records, Resident Advisor and Paper Dress confirm a current South London post-punk/Italo-disco project, the June 2026 `Dystopian Disco` EP launch and its local live circuit. The exact Spotify capture shows 245 monthly listeners; Blang Records is explicitly credited for the current EP, so it is named as the label.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-83.json`, `research/scene-and-venues/screenshots/inbox/red-peril-spotify.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome Spotify capture completed and was inspected. Syntax, smoke and scoped diff checks follow.
+- Follow-ups / TODOs: Continue evidence-led current-bill and label discovery, with screenshot metrics captured only through exact public artist URLs.
+
+## 2026-09-09 02:05
+
+- What changed: Added Sandhouse as the seventy-fifth verified London-scene artist, ordered after Mary in the Junkyard and before Art School Girlfriend in the established cohort. Added its paired exact-profile captures, batch-84 manifest, provenance entry and smoke-test coverage.
+- Why: Official London identity and artist-controlled routing, independent South London/label/live evidence and a Rolling Stone UK current-track selection establish direct shoegaze/grunge relevance and material public traction. Inspected profiles show 158,463 Spotify monthly listeners and 3,134 Instagram followers. Broke Records is explicitly named for the 2026 single.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-84.json`, `research/scene-and-venues/screenshots/inbox/sandhouse-spotify.png`, `research/scene-and-venues/screenshots/inbox/sandhouse-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome captures completed and were inspected. `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; scoped diff check follows.
+- Follow-ups / TODOs: Continue systematic live-circuit, label, shop and community-media discovery while preserving exact-profile capture evidence.
+
+## 2026-09-09 02:20
+
+- What changed: Added Bleach Lab as the seventy-sixth verified London-scene artist, ordered after Atmos Bloom and before Holybones in the established cohort. Added batch-85 paired exact-profile captures, a ledger record and smoke-test coverage.
+- Why: Official London identity, independent South London dream-pop evidence and sustained London/touring activity support the addition. The inspected profiles show 45,070 Spotify monthly listeners and 9,385 Instagram followers; no current label was explicitly confirmed.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-85.json`, `research/scene-and-venues/screenshots/inbox/bleach-lab-spotify.png`, `research/scene-and-venues/screenshots/inbox/bleach-lab-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Visible Chrome captures were inspected. `node --check research/scene-and-venues/data/scene-data.js` and `node trials/verify-scene-update.js` passed; scoped diff check follows.
+- Follow-ups / TODOs: Continue systematic current-source discovery and exact public-profile verification.
+
+## 2026-09-09 02:30
+
+- What changed: Logged Newbuild as a held candidate after a capture-resolution attempt; no artist card or metric was added.
+- Why: Official routing and independent London DIY-rock evidence are sufficient to retain the lead, but the inspected image was an unrelated WhatsApp window rather than the exact Instagram profile.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `research/scene-and-venues/scripts/artist-discovery-batch-86.json`, `research/scene-and-venues/screenshots/inbox/newbuild-instagram.png`.
+- Commands/tests run + results: The visible-Chrome capture completed but inspection rejected the saved image. No data-code change was made.
+- Follow-ups / TODOs: Retry only after Chrome can reliably focus the exact public profile.
+
+## 2026-09-09 02:35
+
+- What changed: Logged We Lost Alice as a held candidate; no card, link or metric was created.
+- Why: Multiple current London bills establish a relevant dream-rock act, but no artist-controlled web, social, streaming, Bandcamp or link-hub identity could be safely resolved.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`.
+- Commands/tests run + results: Direct-source identity screen completed; no exact capture was eligible.
+- Follow-ups / TODOs: Revisit only when an official artist route becomes discoverable.
+
+## 2026-09-09 02:40
+
+- What changed: Logged The Fallen Sky as held after exact Spotify capture inspection; no card was added.
+- Why: London shoegaze relevance is clear, but the exact profile showed zero monthly listeners and no current catalogue or sustained 2026 activity could be established.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `research/scene-and-venues/scripts/artist-discovery-batch-88.json`, `research/scene-and-venues/screenshots/inbox/the-fallen-sky-spotify.png`.
+- Commands/tests run + results: Exact Spotify capture was inspected and rejected as insufficient evidence for a current card.
+- Follow-ups / TODOs: Revisit when a current release or live cycle is independently established.
+
+## 2026-09-09 02:45
+
+- What changed: Logged Boy Marina as a held candidate; no card or screenshot metric was added.
+- Why: Official Bandcamp and independent London shoegaze coverage confirm identity and fit, but the latest independently confirmed activity found is a June 2024 show.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official and independent current-activity screen completed; no capture was eligible.
+- Follow-ups / TODOs: Continue current-bill discovery and revisit this lead only when newer activity emerges.
+
+## 2026-09-09 03:00
+
+- What changed: Added Temporal Comet as the seventy-seventh verified London-scene artist, ordered between Speedial and sadplanet in the developing cohort. Added paired exact-profile captures, batch-90 manifest, provenance entry and smoke-test coverage.
+- Why: Official E1 identity, three current London Bandcamp listings and independently listed Star of Kings activity establish a sustained, active local alternative project. Valid inspected captures show 20 Spotify monthly listeners and 2,582 Instagram followers; no current label is explicitly confirmed.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-90.json`, `research/scene-and-venues/screenshots/inbox/temporal-comet-spotify.png`, `research/scene-and-venues/screenshots/inbox/temporal-comet-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Batch-90 JSON validation and visible Chrome captures completed; both screenshots were inspected. Syntax, smoke and scoped diff checks follow.
+- Follow-ups / TODOs: Continue systematic current-source discovery and use only visually verified public-profile metrics.
+
+## 2026-09-09 03:10
+
+- What changed: Logged Aqualine as a non-qualifying geographic lead; no card or screenshot metric was added.
+- Why: The sound, current release and individual London dates are relevant, but official material identifies a Guildford base and the source set does not yet establish sustained London-scene presence.
+- Files touched: `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Official and independent source screen completed; no capture was eligible.
+- Follow-ups / TODOs: Revisit only if a recurring London live-circuit relationship is independently evidenced.
+
+## 2026-09-09 03:30
+
+- What changed: Added World News as the seventy-eighth and test plan as the seventy-ninth verified London-scene artists. World News is ordered after Mary in the Junkyard in the established cohort; test plan is ordered after Big Red in the developing cohort. Added batch-92 paired public-profile captures, provenance records and smoke-test coverage.
+- Why: Both acts have official London identity, exact public profiles, active 2026 release/touring cycles and independent scene support. Valid captures show World News at 283,201 Spotify monthly listeners and 8,351 Instagram followers, and test plan at 819 and 1,831 respectively. No current label is explicitly confirmed for either act.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-92.json`, `research/scene-and-venues/screenshots/inbox/world-news-spotify.png`, `research/scene-and-venues/screenshots/inbox/world-news-instagram.png`, `research/scene-and-venues/screenshots/inbox/test-plan-spotify.png`, `research/scene-and-venues/screenshots/inbox/test-plan-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Batch JSON validation and visible Chrome captures completed; all four screenshots were inspected. Syntax, smoke and scoped diff checks follow.
+- Follow-ups / TODOs: Continue systematic venue, promoter, label and independent-media discovery using exact, inspected public-profile captures.
+
+## 2026-09-09 03:45
+
+- What changed: Added Terra Twin as the eightieth verified London-scene artist, ordered after Silt and before Suitman Jungle in the developing cohort. Added the batch-93 paired exact-profile captures, provenance record and smoke-test coverage.
+- Why: Official London identity, a current EP/singles cycle, recurring local bills and the October Moth Club headline support the addition. Valid captures show 3,725 Spotify monthly listeners and 3,449 Instagram followers; no current label is explicitly confirmed.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-93.json`, `research/scene-and-venues/screenshots/inbox/terra-twin-spotify.png`, `research/scene-and-venues/screenshots/inbox/terra-twin-instagram.png`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Batch-93 JSON validation and visible Chrome captures completed; both screenshots were inspected. Syntax, smoke and scoped diff checks follow.
+- Follow-ups / TODOs: Continue evidence-led current-source discovery with profile metrics recorded only from inspected captures.
+
+## 2026-09-09 04:00
+
+- What changed: Re-ranked all London-scene cards into one explicit evidence-led establishment order and added The Holy Hour as the eighty-first reviewed artist.
+- Why: The prior order was broadly curated but had accumulated individual placements and scale tags that no longer consistently reflected career, current release/live scale and captured audience evidence. The revised order uses those factors in that priority order, rather than treating raw followers as a complete ranking. The Holy Hour qualifies through official London darkwave/post-punk identity and 2026 releases, but is placed in the lower developing cohort because its current live scale and audience remain unverified.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-94.json`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Batch-94 manifest validation passed. Chrome capture was attempted through a process-local execution-policy bypass after the direct PowerShell invocation was blocked; Chrome did not expose a foreground window, so no screenshot metric was used. Syntax, smoke and scoped diff checks follow.
+- Follow-ups / TODOs: Retry The Holy Hour only when Chrome can expose the exact foreground Instagram page; continue the same evidence-led order when new artist cards are added.
+
+## 2026-09-09 04:00
+
+- What changed: Hid the staged `Scene connections` tab from public navigation while retaining its underlying evidence-backed relationship implementation for a future fuller launch.
+- Why: A single venue-promoter card duplicates information already present on both directory cards, so the feature should not be exposed until it can show useful multi-connection patterns.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Re-enable only after a non-duplicative circuit or multi-hop relationship design has been populated with enough explicit evidence.
+
+## 2026-09-09 04:10
+
+- What changed: Renamed the public artist navigation tab to `Similar artists` and changed the interface/body font stack to Trebuchet MS with Arial fallback; existing Georgia display headings remain unchanged.
+- Why: The label better conveys the curated peer-set purpose, while the small type change gives the directory a warmer editorial character without disrupting readability or its established headline treatment.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Reassess the font only after viewing it in the target browser; no artist data or card ordering was changed.
+
+## 2026-09-09 04:20
+
+- What changed: Gave only the `Similar artists` navigation tab a 14px Georgia, sentence-case treatment and removed the `Research in progress` status chip.
+- Why: The global uppercase button rule had masked the earlier general font adjustment; the dedicated display treatment makes this curated section visibly distinct, while the removed chip no longer presents a stale status.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Confirm the visual weight in the target browser after refresh; no directory data or artist content was changed.
+
+## 2026-09-09 04:25
+
+- What changed: Replaced the typography-only `Similar artists` tab style with the same dark-purple and pink-border accent-button treatment used by the staged Scene connections tab.
+- Why: This makes the curated artist section visibly distinct in the same clear way as the network navigation design.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node trials/verify-scene-update.js` and scoped `git diff --check` passed.
+- Follow-ups / TODOs: No directory data or adjacent tab content was changed.
+
+## 2026-09-09 04:35
+
+- What changed: Added two London-scene artist filters, `Scene position` and `Label status`, a concise two-part legend, card-level status tags, and live artist counters. Split the previous two-tier artist scale into Established (25), Developing (24) and Emerging (32), retaining the existing evidence-led scene order within every filtered result.
+- Why: The Similar artists directory can now be narrowed by practical career stage and confirmed label context without overstating `/` as proof that an act is unsigned. `Larger label` is reserved for the confirmed major/international-label group; all other explicitly confirmed labels are presented as Independent / smaller label.
+- Files touched: `research/scene-and-venues/index.html`, `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, a tier/count audit (81 total: 25 Established, 24 Developing, 32 Emerging; 5 larger-label, 28 independent/smaller-label, 48 no-confirmed-label), and scoped `git diff --check` all passed.
+- Follow-ups / TODOs: When a future artist is added, assign one of the three scene-position tiers and retain `/` until a current label is explicitly confirmed.
+
+## 2026-09-09 04:50
+
+- What changed: Excluded Suitman Jungle and holybones from the visible Similar artists peer set while retaining their source records as archived provenance. Re-tiered Wildernesses, ashnymph and Sandhouse from Established to Developing. Added user-supplied exact Instagram routes for atmos bloom, Zetra, Sennen, A.A. Williams, WILDES and Art School Girlfriend; Wyldest already had the supplied exact route.
+- Why: The two archived acts fall outside the intended alternative/shoegaze/post-punk peer scene. The three re-tiered acts have compelling current activity but debut-era or emerging-career evidence, which does not meet the directory's sustained-profile definition of Established.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `research/scene-and-venues/scripts/artist-discovery-batch-95.json`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Data and smoke checks passed before capture. The six-profile visible-Chrome capture batch ran but every profile stopped with `Could not determine the foreground browser window for capture`; no screenshot or follower metric was accepted. Post-change smoke test and scoped diff checks passed.
+- Follow-ups / TODOs: Retry batch 95 only after the interactive desktop exposes a normal foreground Chrome/Edge window; use the resulting images to add dated follower metrics only after visual identity review.
+
+## 2026-09-09 05:05
+
+- What changed: Added `untitled (recs)` as a checked London label card, with its official about page and public opportunities/licensing contact route.
+- Why: The label was previously mentioned only on deathcrash's artist card. Its official site independently confirms a London base, current multi-artist label roster, releases, management activity and boutique-label standing.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed after correcting a test-scope reference.
+- Follow-ups / TODOs: The public email is an opportunities/licensing route, not evidence of open demos; retain the `public-contact` rather than `open-submissions` classification unless the label publishes a demo policy.
+
+## 2026-09-09 05:05
+
+- What changed: Kept the public field name `Scene position` but rewrote its legend to make current live stature its primary basis: room scale, bill role, repeat bookings, festival placement and touring reach. Streaming, social audience, releases and press are supporting evidence; catalogue history is only a tie-breaker.
+- Why: The directory should answer how large and active an artist is now, not reward longevity or a label relationship by itself.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Syntax, dashboard smoke and scoped diff checks follow this update.
+- Follow-ups / TODOs: Reassess existing tiers through a source-backed current-live audit rather than mechanically applying older catalogue-led descriptions.
+
+## 2026-09-09 05:10
+
+- What changed: Removed the detailed Scene position methodology from the public legend and retained it as an internal implementation comment and project-log policy.
+- Why: Visitors need the concise three-tier definitions; the evidence hierarchy is for consistent internal classification, not public display.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Syntax, dashboard smoke and scoped diff checks follow this update.
+- Follow-ups / TODOs: Keep the internal current-live evidence hierarchy when auditing or adding artists, without expanding the public legend.
+
+## 2026-09-09 05:25
+
+- What changed: Completed the current-live-position audit of the active Established tier. Moved WILDES, atmos bloom, Pynch, MORN, Mesadorm, heavy wild, Black Doldrums, Kilu, Dog Race and Wyldest to Developing. Retained ten Established acts: Night Tapes, Man/Woman/Chainsaw, mary in the junkyard, Art School Girlfriend, A.A. Williams, Sennen, Zetra, deathcrash, Bleach Lab and World News.
+- Why: Scene position now prioritises present-day headline/support role, room scale, repeat bookings, festival placement and touring reach. Man/Woman/Chainsaw's sold-out Electric Ballroom and announced O2 Forum headline, mary in the junkyard's UK/EU/North American headline tour, and deathcrash's UK/EU tour including The Garage support their retained tier. Pynch and Black Doldrums have meaningful activity but the current recorded room scale supports Developing rather than Established.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Current official/independent live-source cross-check complete; syntax, dashboard smoke, tier-count audit and scoped diff checks follow.
+- Follow-ups / TODOs: Treat these tiers as current-position snapshots and refresh from current tour announcements, rather than allowing old catalogue or one audience metric to drive a future tier change.
+
+## 2026-09-09 05:40
+
+- What changed: Completed the Developing/Emerging scene-position audit and added the durable `docs/SCENE_POSITION_AUDIT.md` decision ledger. Rampressure moved to Developing after a live-source check found a sold-out Windmill Brixton headline and current showcase activity; reviewed Fanchon, Cheerless and Cloud Studies remain Emerging.
+- Why: The full active peer set now has a documented current-live-position rule and reversible audit rationale, rather than inheriting an arbitrary lower-half ordering as the Emerging tier.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `docs/SCENE_POSITION_AUDIT.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Current live-source review complete; syntax, dashboard smoke, tier-count audit and scoped diff checks follow.
+- Follow-ups / TODOs: Refresh individual tiers when source-backed room, bill-role or tour-scale evidence changes; keep label status independent from scene position.
+
+## 2026-09-09 05:50
+
+- What changed: Restored the concise current-live-position methodology as a shared introduction on both London scene and Influences artist views.
+- Why: The user requested that the explanation remain visible when switching to Influences; the London-only peer-set explanation remains alongside it only in the London scene view.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Syntax, dashboard smoke and scoped diff checks follow this update.
+- Follow-ups / TODOs: Retain the shared methodology across both artist sub-tabs unless the user requests separate copy by view.
+
+## 2026-09-09 06:05
+
+- What changed: Added the nine user-supplied exact Instagram routes for Man/Woman/Chainsaw, Ghost Patterns, drainfly, Ringards, Cloud Studies, Body Orchestra, Red Peril, rain cloud nine and Menaura. Added the batch-96 capture manifest, regression coverage and a reversible ledger record.
+- Why: These resolve all remaining active-card Instagram route gaps without treating an uninspected URL as proof of a follower count. Red Peril remains included as an adjacent South London darkwave/post-punk / Italo-disco peer, rather than as a core shoegaze act.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/scripts/artist-discovery-batch-96.json`, `trials/verify-scene-update.js`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, scoped `git diff --check`, and batch-96 JSON validation passed. The visible Chrome batch was run twice; every route failed with `Could not determine the foreground browser window for capture`, so no screenshot or metric was accepted.
+- Follow-ups / TODOs: Retry batch 96 only once the active desktop exposes a normal foreground browser window; inspect each saved image before replacing `official route` with a dated follower metric.
+
+## 2026-09-09 06:15
+
+- What changed: Completed an active-card platform audit and corrected Cloud Studies’ label field to `Happy Robots / The Weird Beard`.
+- Why: Every active card now has a supplied or previously verified Instagram route. Cloud Studies’ official current EP page explicitly identifies Happy Robots for digital release and The Weird Beard for cassette, so the single-label field was incomplete.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Platform audit identified 79 active artists, zero Instagram gaps and 24 unresolved Spotify artist-page gaps. Syntax, smoke and scoped diff checks follow this correction.
+- Follow-ups / TODOs: Resolve Spotify links only through exact artist-page identity checks; retain alternative official, Bandcamp or live-date routes where an exact Spotify artist page is unavailable.
+
+## 2026-09-09 06:30
+
+- What changed: Added six user-supplied exact Spotify artist pages for Maripool, The Sick Man Of Europe, Cheerless, Ringards, Magnolia and Big Red. Added batch-97 capture manifest, regression coverage and a reversible ledger record.
+- Why: These resolve the first six Spotify identity gaps while keeping listener figures absent until a valid screenshot can be inspected.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/scripts/artist-discovery-batch-97.json`, `trials/verify-scene-update.js`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Data syntax, smoke and batch JSON checks passed before capture. Batch-97 visible Chrome attempted all six pages; each failed with `Could not determine the foreground browser window for capture`, so no screenshot or listener metric was accepted.
+- Follow-ups / TODOs: Retry batch 97 only when the foreground-browser API works again; inspect the saved images before replacing `official route` with a dated listener metric.
+
+## 2026-09-09 06:50
+
+- What changed: Added thirteen user-supplied exact Spotify artist pages, created batch-98 with regression coverage, and recorded four deliberate no-Spotify exclusions: Charlemagne and Mukbang Ray have no released music; Comafields and The Holy Hour have no Spotify profile. Confirmed Jæd’s supplied Instagram route already matches the existing card.
+- Why: This resolves all supplied platform identities without inventing listener metrics or treating absent music/profile pages as incomplete research.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/scripts/artist-discovery-batch-98.json`, `trials/verify-scene-update.js`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Data syntax, smoke and batch JSON checks passed before capture. Batch-98 visible Chrome attempted all thirteen profiles twice; each failed with `Could not determine the foreground browser window for capture`, so no screenshot or listener metric was accepted.
+- Follow-ups / TODOs: Retry batch 98 only when the foreground-browser API works again; inspect saved images before replacing `official route` with a dated listener metric.
+
+## 2026-09-09 07:05
+
+- What changed: Added a double-clickable manual capture launcher for all current user-supplied profile backfill batches: 96 (nine Instagram routes), 97 (six Spotify routes) and 98 (thirteen Spotify routes).
+- Why: The Codex execution host cannot currently see Chrome windows, while the normal signed-in desktop session previously produced valid captures. The launcher lets that desktop session run the exact existing helper and manifests without retyping commands.
+- Files touched: `research/scene-and-venues/scripts/run_manual_profile_backfill.cmd`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Launcher dry run and the normal data smoke/diff checks follow.
+- Follow-ups / TODOs: Run the launcher by double-clicking it from Windows Explorer, keep Chrome visible, then return the saved inbox screenshots for inspection and metric extraction.
+
+## 2026-09-07 20:30
+
+- What changed: Inspected all 28 screenshots created by the manual profile-backfill launcher and completed the matching artist cards with 9 Instagram follower metrics and 19 Spotify monthly-listener metrics. Updated metric regression coverage and the discovery ledger.
+- Why: Each image visibly shows the exact supplied profile URL, matching artist identity and its displayed figure; no metric was inferred from a search result or URL alone. No scene-position tier was changed solely from a streaming or follower figure.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`; inspected screenshots remain in `research/scene-and-venues/screenshots/inbox/`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, active-platform coverage audit and scoped diff checks passed. The active set has zero Instagram gaps; Spotify remains absent only for Charlemagne and Mukbang Ray (no music), Comafields and The Holy Hour (no Spotify profile), and Jæd (Spotify page not yet supplied).
+- Follow-ups / TODOs: Add Jæd only if an exact Spotify artist page becomes available; retain the four documented no-Spotify exclusions rather than guessing profiles.
+
+## 2026-09-07 20:45
+
+- What changed: Prepared batch 100 and a double-clickable manual launcher for the remaining directly capturable metrics: 11 Instagram profiles plus deary and Body Orchestra Spotify artist pages.
+- Why: These cards have verified direct URLs but lack a current inspected metric. Neighbour Club is deliberately excluded from Spotify capture because its only stored Spotify URL is a track page, not an artist page.
+- Files touched: `research/scene-and-venues/scripts/artist-discovery-batch-100.json`, `research/scene-and-venues/scripts/run_manual_metric_refresh.cmd`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Batch JSON and launcher dry-run validation follow.
+
+## 2026-09-07 21:00
+
+- What changed: Inspected all 13 batch-100 screenshots and completed the matching cards with 11 Instagram follower metrics plus Spotify monthly-listener metrics for deary and Body Orchestra. Updated metric-regression coverage and the artist discovery ledger.
+- Why: Every image visibly shows the exact direct profile, matching artist identity and displayed figure. No scene-position tier was changed from social or streaming metrics alone.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `PROJECT_LOG.md`; inspected screenshots remain in `research/scene-and-venues/screenshots/inbox/`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node trials/verify-scene-update.js`, the active-platform coverage audit, and scoped `git diff --check` passed. Later DevTools/background-capture trial: PowerShell dry runs and whitespace checks passed, but a real neutral-page test failed. Chrome exposed the DevTools HTTP endpoint then reset the local WebSocket; its headless renderer then crashed with `GPU process isn't usable` before writing a PNG. The current Codex host therefore cannot perform unattended browser rendering. Separate batch 101 then proved the visible-Chrome method remains viable with the physical monitor off: irisworm was captured, inspected and added with 3,360 Instagram followers.
+- Follow-ups / TODOs: Resolve Neighbour Club’s exact Spotify artist page separately before queueing it; do not capture the current track URL as though it supplied an artist-level listener number.
+
+## 2026-09-08
+
+- What changed: Added the eleven user-supplied exact Instagram routes for Lo Simple, Rainham Sheds, Static Palm, Godzooki, China Aster, Palindrones, Oh Doom!, Citizen Above Suspicion, Curbside Lambsear, House Arrest and Norman D. Loco.
+- Why: These complete the outstanding active-card Instagram link backfill without inferring follower figures from an uninspected profile.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: JavaScript syntax check, dashboard smoke test, visible active-card Instagram coverage audit (`171 / 171`), and scoped `git diff --check` passed.
+- Follow-ups / TODOs: These supplied links are Instagram routes (despite the request describing them as Spotify); keep their metrics as `official artist profile` until a visible capture is inspected.
+
+## 2026-09-08
+
+- What changed: Ran and inspected the batch-112 visible-Chrome capture of eleven user-supplied Instagram profiles; added their dated follower figures to the matching cards. Reassessed Rainham Sheds and The Howling Fiends against current live evidence and moved both from Developing to Emerging, with their display positions moved into the Emerging cohort.
+- Why: Every accepted figure is shown on an exact, matching profile capture. Neither act has current evidence of a larger headline room, broad touring reach or sustained headline role: the verified activity remains small-room and mainly support-bill work, so Emerging is the defensible current-live tier.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, batch-112 manifests, goal review, discovery ledger and `PROJECT_LOG.md`; inspected captures are in `research/scene-and-venues/screenshots/inbox/`.
+- Commands/tests run + results: Eleven visible-browser screenshots inspected; data and test syntax checks, dashboard smoke test, three manifest JSON validations and scoped `git diff --check` all passed.
+- Follow-ups / TODOs: The batch covers all eleven supplied Instagram routes; no follower figure or label change was inferred without the inspected capture.
+
+## 2026-09-08 — final supplied Spotify verification pass
+
+- What changed: Added 20 user-supplied, capture-verified Spotify artist links and monthly-listener figures to their matching London-scene cards. Documented seven remaining exact-profile searches as unresolved, with no public missing-status display.
+- Why: Each accepted page was visibly captured, inspected and matched to its artist before its listener figure was displayed. Spotify figures support the directory but did not alter live-first scene-position classification.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `docs/ARTIST_DISCOVERY_LEDGER.md`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: All 20 visible-Chrome captures were inspected. JavaScript syntax checks, dashboard smoke test and scoped `git diff --check` passed.
+- Follow-ups / TODOs: The remaining profile gaps are Hiding, Recogniser, Hiding From Mirrors, Ewan Samms, Maddison Windfarm, Babydoll Deadbeat and The Wheel 2!. Treat these as unresolved public Spotify identities, not as proof of no released music.
+
+## 2026-09-08 — current-live tier review
+
+- What changed: Moved Sennen and Cusk from Established to Developing and repositioned both within the Developing display order.
+- Why: The reviewed current evidence supports real national/live momentum, but their current headline rooms are still grassroots scale. The move applies the project’s live-first rule rather than allowing historic catalogue, label or listener figures to decide the tier.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: JavaScript syntax checks, dashboard smoke test and scoped whitespace validation follow this change.
+
+## 2026-09-09 — deary current-live tier review
+
+- What changed: Moved deary from Developing to Established and placed it after A.A. Williams in the Established display order.
+- Why: Current evidence shows a sold-out UK headline tour, a European headline run, Reeperbahn/End of the Road placement and a London Oslo headline. This meets the directory's live-first Established threshold.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node --check trials/verify-scene-update.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+
+## 2026-09-09 — current-live down-tier and scope review
+
+- What changed: Moved Broken Horses, Daltons Fen and Mabel Clarke from Developing to Emerging; moved their display positions to the start of the Emerging cohort; removed Fat Concubine from the active directory; removed The Youth Play's old Instagram capture-date display override.
+- Why: The three re-tiered acts have current, credible activity but only early-stage/grassroots live evidence. Fat Concubine sits outside the directory's alternative/shoegaze/post-punk peer scope. The Youth Play card should show its verified follower metric without exposing a capture date.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: JavaScript syntax checks for the data and smoke test, plus scoped `git diff --check`, passed.
+
+## 2026-09-09 — supplied profile-metric completion
+
+- What changed: Added user-supplied Spotify monthly-listener figures for Mabel Clarke (165), House of Women (323), Monochromatic Visions (1,569) and Neighbour Club (679), plus Fatberg's 1,300 Instagram followers. Corrected Mabel Clarke's stale prose to reflect its Emerging tier.
+- Why: These figures close every outstanding displayed Spotify or Instagram metric gap on active artist cards.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Data and test syntax checks, dashboard smoke test, metric-coverage audit and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Neighbour Club's current Spotify URL is a track route, not an exact artist-profile route; retain the supplied figure but repair the destination when its exact artist URL is available.
+
+## 2026-09-09 — current-live Developing review
+
+- What changed: Moved Fanchon, Dreamhaus and irisworm from Emerging to Developing and placed them together at the end of the Developing display cohort.
+- Why: Each has verified repeat current grassroots activity rather than only recording or social momentum: Fanchon has a current The Victoria release-show headline, Dreamhaus has a repeated London-room circuit, and irisworm has three current London bills.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Data and test syntax checks, dashboard smoke test and scoped `git diff --check` passed.
+
+## 2026-09-09 — within-tier popularity ordering
+
+- What changed: London-scene cards now remain grouped by scene position, then sort by verified Spotify monthly listeners, Instagram followers and the prior editorial order as a stable final tie-breaker.
+- Why: The directory continues to classify from current live position while making the card sequence within each tier consistently popularity-led where comparable metrics exist.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Data and test syntax checks, dashboard smoke test, top-of-tier metric-order audit and scoped `git diff --check` passed.
+
+## 2026-09-09 — weighted within-tier standing order
+
+- What changed: Replaced the audience-only within-tier ordering with a weighted standing score: confirmed label scale, explicitly documented touring/live-run reach, Spotify monthly listeners and Instagram followers.
+- Why: The requested ordering should represent a mixed current standing rather than audience metrics alone. Touring is read only from the reviewed positive reach summary, avoiding false positives from notes that state touring evidence is absent.
+- Files touched: `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Data and test syntax checks, dashboard smoke test, representative within-tier standing audit and scoped `git diff --check` passed.
+
+## 2026-09-09 — label-backed Emerging live-position review
+
+- What changed: Moved Ghost Patterns, Death of Youth, My Theatre Friend, Transmigration, Strange Devotion, Godzooki, The InSect and Mabel Clarke from Emerging to Developing. The retained ordering remains the weighted current-standing order within each scene-position tier.
+- Why: The reviewed evidence documents repeat current grassroots booking, headline/support progression or a sustained small-room live run for each act. Label affiliation supports the ordering but does not itself determine the tier.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `docs/ARTIST_DIRECTORY_GOAL_2026-09-08_REVIEW.md`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node --check trials/verify-scene-update.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+- Follow-ups / TODOs: Reassess Tayne and Cusk separately against current headline-room and touring evidence; their larger international infrastructure is not, by itself, grounds for Established.
+
+## 2026-09-09 — Tayne and Cusk live-position review
+
+- What changed: No artist card or classification changed; reviewed Tayne and Cusk as the two Developing acts with larger international label or artist-services backing.
+- Why: Tayne's 2026 activity is a mixture of support dates and festival bills, while Cusk's verified current own-headline listing is at the Shacklewell Arms. Neither establishes the repeatable substantial own-headline-room position required for Established.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Current official ticketing, artist and label sources were checked. No code or data changed, so no code test was required.
+- Follow-ups / TODOs: Revisit Tayne after an own-headline run and Cusk after further current headline dates or a larger-room headline step.
+
+## 2026-09-09 — Totality label addition
+
+- What changed: Added Totality as a checked Bristol-based Developing alternative/noise label with a public Bandcamp contact route.
+- Why: Its official roster identifies the invite-led DIY label, its Bristol base and the London-scene connection through Ritual Error. The source says it began as a DIY night but does not establish a current regular live programme, so it is classified as label-only.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node --check trials/verify-scene-update.js`, `node trials/verify-scene-update.js`, and scoped `git diff --check` passed.
+
+## 2026-09-09 — artist-affiliated label completion
+
+- What changed: Added 27 Labels-tab records for every remaining explicit active-artist label affiliation, including label partners and imprints separately where the artist card names them separately.
+- Why: The labels tab now covers all 56 distinct explicit label references from active similar-artist cards. Bases, roster scale, operation and submission routes are source-led; Scenic Route, Shake! Shake!, Spider 7 and Venner retain explicit “no separate public route located” wording rather than invented contact information.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check research/scene-and-venues/data/scene-data.js`, `node --check trials/verify-scene-update.js`, `node trials/verify-scene-update.js`, scoped `git diff --check`, and a label-count audit (`164`) passed.
+
+## 2026-09-09 — scene-and-venues integrity review
+
+- What changed: No directory data or dashboard code changed; completed a read-only integrity review.
+- Why: Confirmed that the current dashboard is internally complete and renders from both scene and operations data without syntax or smoke-test failures. The visible review queue is empty.
+- Files touched: `PROJECT_LOG.md`.
+- Commands/tests run + results: Syntax checks for both data files and the regression test passed; active-record audit found 284 venues, 133 jam sessions, 255 promoters, 164 labels, 170 active artists, 82 rehearsal spaces and 177 recording studios.
+- Follow-ups / TODOs: The remaining caveats are deliberately cautious source wording: 11 venue participation routes ask users to confirm a specific date/booking detail, 13 artist notes retain uninspected follower/listener metrics, four rehearsal prices/access arrangements and three studio service details remain quote/availability-dependent. These are not render or schema failures.
+
+## 2026-09-09 — stale artist-metric note repair
+
+- What changed: Removed thirteen obsolete “pending an inspectable capture” statements from artist research notes.
+- Why: A direct link-metric audit showed that every affected Instagram or Spotify profile already has a numeric, displayed verified metric. The stale notes made the directory look incomplete and contradicted the actual cards.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Data syntax check, dashboard smoke test, pending-note search (zero remaining matches) and scoped `git diff --check` passed.
+
+## 2026-09-21 — 2026 Dropbox Plus funding-request draft
+
+- What changed: Created an unsigned 2026 Word draft for an annual Dropbox Plus funding request in the user-specified LBS folder.
+- Why: The only 2023 Dropbox record was a signed PDF; no editable Dropbox-specific Word source was present. The draft retains the LBS template while stating the 2026 request, £95.88 total, and original research-use justification.
+- Files touched: `C:\Users\ASUS\OneDrive - London Business School\Desktop\LBS\Dropbox Plus funding request 2026 - UNSIGNED.docx`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Read-only LBS filename/content search; inspected the 2023 signed PDF; validated the generated DOCX text fields and confirmed the stored supervisor-signature image was not included.
+
+## 2026-09-21 — Dropbox draft date and signature placeholder
+
+- What changed: Updated the supervisor date to 21/09/2026 and replaced the first signature line with the explicit text “Supervisor signature pending.”
+- Why: The document remains clearly unsigned until the supervisor signs it directly.
+- Files touched: `C:\Users\ASUS\OneDrive - London Business School\Desktop\LBS\Dropbox Plus funding request 2026 - UNSIGNED.docx`, `PROJECT_LOG.md`.
+- Commands/tests run + results: DOCX-package content checks confirmed the date, placeholder, Dropbox Plus wording, and £95.88 amount are present.
+
+## 2026-09-21 — Dropbox draft signature-placeholder image
+
+- What changed: Replaced the first supervisor-signature text placeholder with an embedded graphic reading “SUPERVISOR SIGNATURE PENDING,” and restored the adjacent 21/09/2026 date.
+- Why: The graphic makes the form's unsigned status unambiguous while preserving the required supervisor date.
+- Files touched: `C:\Users\ASUS\OneDrive - London Business School\Desktop\LBS\Dropbox Plus funding request 2026 - UNSIGNED.docx`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Embedded-image, DOCX-relationship, date, Dropbox Plus, and £95.88 package-content check passed.
+
+## 2026-09-21 — Dropbox draft date-rule restoration
+
+- What changed: Restored the visible underscore rule around the dated supervisor field: `Date: ____21/09/2026________`.
+- Why: The embedded placeholder graphic had replaced the original shared signature/date run and removed the template's visual date line.
+- Files touched: `C:\Users\ASUS\OneDrive - London Business School\Desktop\LBS\Dropbox Plus funding request 2026 - UNSIGNED.docx`, `PROJECT_LOG.md`.
+- Commands/tests run + results: DOCX-package check confirmed the date rule, placeholder image part/relationship, Dropbox Plus wording, and £95.88 amount.
+
+## 2026-09-21 — Dropbox draft supervisor-row alignment
+
+- What changed: Restored the original two-tab structure between the supervisor placeholder graphic and its date, and reduced the graphic width to fit the row.
+- Why: The date had not remained in the original side-by-side supervisor-row position after the graphic replacement.
+- Files touched: `C:\Users\ASUS\OneDrive - London Business School\Desktop\LBS\Dropbox Plus funding request 2026 - UNSIGNED.docx`, `PROJECT_LOG.md`.
+- Commands/tests run + results: DOCX XML check passed: the supervisor row is an embedded graphic followed by two Word tabs and `Date: ____21/09/2026________`; image relationship is present. No headless Word renderer is installed for a pixel-level preview.
+
+## 2026-09-21 — Dropbox draft placeholder rollback
+
+- What changed: Restored the original LBS-logo header and the original blank supervisor signature/date row; removed the placeholder graphic, its relationship, and the added date.
+- Why: The placeholder layout did not meet the requested form layout, so the draft was returned to its initial unsigned-template state.
+- Files touched: `C:\Users\ASUS\OneDrive - London Business School\Desktop\LBS\Dropbox Plus funding request 2026 - UNSIGNED.docx`, `PROJECT_LOG.md`.
+- Commands/tests run + results: DOCX-package check passed: the LBS logo is restored, the supervisor row is the original blank signature/date row, no placeholder asset or relationship remains, and Dropbox Plus/£95.88 details remain.
+
+## 2026-10-01 ? Instagram link restored
+
+- What changed: Restored the landing-page Instagram icon as a clickable link to the Inertia Whim account; removed obsolete inactive-icon styling.
+- Why: The account is ready to be linked again.
+- Files touched: `index.html`, `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: Focused Python HTML-parser smoke check confirmed one accessible Instagram anchor with the SVG icon and external-link attributes; `git diff --check -- index.html styles.css` passed.
+- Follow-ups / TODOs: None.
+
+## 2026-10-01 - Automatic playlist continuation
+
+- What changed: Made each track start the next track when playback ends, wrapping the final track to the first.
+- Why: Keep the music playlist playing continuously in its displayed order.
+- Files touched: `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: No tests were run.
+- Follow-ups / TODOs: None.
+
+## 2026-10-01 - Mobile gallery layout
+
+- What changed: Enlarged the active gallery image, hid neighboring cards on mobile, overlaid the navigation arrows, and vertically centered the gallery content.
+- Why: The mobile view showed a small photo with distracting side slivers and excess unused space.
+- Files touched: `index.html`, `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: No tests were run.
+- Follow-ups / TODOs: Review in Chrome mobile emulation.
+
+## 2026-10-01 - Mobile carousel arrow consistency
+
+- What changed: Matched all mobile carousel arrow buttons at 38px and kept the gallery's overlay placement.
+- Why: Use the clearer, larger gallery arrow treatment consistently across mobile carousels.
+- Files touched: `index.html`, `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: No tests were run.
+- Follow-ups / TODOs: Review in Chrome mobile emulation.
+
+## 2026-10-01 - Transparent carousel arrow backgrounds
+
+- What changed: Made carousel arrow backgrounds transparent by default while preserving the filled hover state.
+- Why: Match the music carousel arrows to the transparent gallery arrows.
+- Files touched: `index.html`, `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: No tests were run.
+- Follow-ups / TODOs: Review in Chrome mobile emulation.
+
+## 2026-10-01 - Music arrow backing
+
+- What changed: Added a dark backing to music carousel arrows while retaining transparent gallery arrows and the existing hover treatment.
+- Why: Keep neighboring song cards from showing through the arrow buttons.
+- Files touched: `index.html`, `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: No tests were run.
+- Follow-ups / TODOs: Review in Chrome mobile emulation.
+
+## 2026-10-01 - Music arrows transparent
+
+- What changed: Removed the music-only arrow backing so the music arrows share the gallery arrows' transparent default.
+- Why: Keep both carousel arrow treatments visually consistent.
+- Files touched: `index.html`, `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: No tests were run.
+- Follow-ups / TODOs: Review in Chrome mobile emulation.
+
+## 2026-10-01 - Mobile music carousel edge bleed
+
+- What changed: Expanded the mobile music carousel viewport to the screen edges and overlaid the transparent arrows, preserving the existing card sizes and side previews.
+- Why: Side cards were clipped at the viewport reserved for the arrows.
+- Files touched: `index.html`, `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: No tests were run.
+- Follow-ups / TODOs: Review in Chrome mobile emulation.
+
+## 2026-10-01 - Mobile music arrow alignment
+
+- What changed: Raised the mobile music carousel arrows by 8px to align them with the track cards.
+- Why: The arrows appeared slightly low beside the cards.
+- Files touched: `index.html`, `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: No tests were run.
+- Follow-ups / TODOs: Review in Chrome mobile emulation.
+
+## 2026-10-01 - Mobile music arrow position refinement
+
+- What changed: Raised the mobile music arrows by a further 8px.
+- Why: The arrows still appeared low relative to the track cards.
+- Files touched: `index.html`, `styles.css`, `PROJECT_LOG.md`.
+- Commands/tests run + results: No tests were run.
+- Follow-ups / TODOs: Review in Chrome mobile emulation.
+
+## 2026-10-02 — The Hawley Arms venue addition
+
+- What changed: Added The Hawley Arms in Camden as a checked grassroots live-music pub and included it in the dashboard's scene-venue classification; added regression coverage.
+- Why: The official events page confirms current live bills and welcomes emerging talent; the official contact page publishes a dedicated music enquiry email.
+- Files touched: `research/scene-and-venues/data/scene-data.js`, `research/scene-and-venues/index.html`, `trials/verify-scene-update.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check` passed for the venue data and regression test; `node trials/verify-scene-update.js` passed; scoped `git diff --check` passed.
+- Follow-ups / TODOs: Confirm current event presenter, slot availability and terms directly before pitching.
