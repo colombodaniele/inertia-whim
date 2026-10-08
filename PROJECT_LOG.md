@@ -4,6 +4,14 @@
 - Source content currently lives in `Bio.txt`, `Graphics/`, `Music/`, and `Pictures/`.
 - The first local build is a single-page HTML/CSS/JS site using existing image and audio assets.
 
+## 2026-10-08 — Gallery photo update
+
+- What changed: Removed the Dani live-performance and Ophelia live-performance gallery cards shown in the supplied screenshot, and added Richard1.jpeg as a Richard card.
+- Why: Refresh the band photo gallery as requested.
+- Files touched: `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: PowerShell gallery check passed (five cards, Richard image present, Dani2 and Ophelia1 absent). `git diff --check` reported a pre-existing trailing blank line in `set_directory_IW.R`; no whitespace errors were reported in the files changed for this update.
+- Follow-ups / TODOs: None.
+
 ## 2026-09-12 — The Sundays influence addition
 
 - What changed: Added The Sundays, using a four-member band photo, to the public Inertia Whim influence carousel and the private London-scene dashboard's Influences view.
