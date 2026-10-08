@@ -12,6 +12,14 @@
 - Commands/tests run + results: PowerShell gallery check passed (five cards, Richard image present, Dani2 and Ophelia1 absent). `git diff --check` reported a pre-existing trailing blank line in `set_directory_IW.R`; no whitespace errors were reported in the files changed for this update.
 - Follow-ups / TODOs: None.
 
+## 2026-10-08 — Keep Richard gallery portrait uncropped
+
+- What changed: Applied the gallery's existing contain styling to Richard1.jpeg so the portrait head is not cut off by the wide card crop.
+- Why: Preserve the full portrait in the gallery carousel.
+- Files touched: `index.html`, `PROJECT_LOG.md`.
+- Commands/tests run + results: PowerShell gallery check passed; Richard's image uses the existing `object-fit: contain` rule.
+- Follow-ups / TODOs: None.
+
 ## 2026-09-12 — The Sundays influence addition
 
 - What changed: Added The Sundays, using a four-member band photo, to the public Inertia Whim influence carousel and the private London-scene dashboard's Influences view.
