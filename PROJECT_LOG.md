@@ -20,6 +20,14 @@
 - Commands/tests run + results: PowerShell gallery check passed; Richard's image uses the existing `object-fit: contain` rule.
 - Follow-ups / TODOs: None.
 
+## 2026-10-08 — Route landing Spotify icon to Music
+
+- What changed: Wired the landing-page Spotify icon to the same smooth Music-section navigation used by the landing arrow.
+- Why: The band does not have a Spotify destination yet; the icon should guide visitors to the available music instead.
+- Files touched: `index.html`, `script.js`, `PROJECT_LOG.md`.
+- Commands/tests run + results: `node --check script.js` and focused Spotify-to-Music navigation check passed.
+- Follow-ups / TODOs: Update the icon destination when an official Spotify page is available.
+
 ## 2026-09-12 — The Sundays influence addition
 
 - What changed: Added The Sundays, using a four-member band photo, to the public Inertia Whim influence carousel and the private London-scene dashboard's Influences view.
