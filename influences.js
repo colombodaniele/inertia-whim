@@ -24,6 +24,7 @@
     ['Soviet Soviet', 'https://images.weserv.nl/?url=https%3A%2F%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F5b09e9ac506fbe8e21994dcf%2F1527411177135-9GVF2UFFAV4P0V0FZGME%2F0010219821_10.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
     ['David Bowie', 'https://images.weserv.nl/?url=https%3A%2F%2Fwww.fubiz.net%2Fwp-content%2Fuploads%2F2017%2F11%2Ffubiz-david-bowie-tony-mcgee-photography-01-639x804.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
     ['Joy Division', 'https://images.weserv.nl/?url=https%3A%2F%2Fwww.gigslutz.co.uk%2Fwp-content%2Fuploads%2F2015%2F10%2FJoyDivision_GQ_13Aug12_rex_b.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
+    ['Killing Joke', 'https://images.weserv.nl/?url=https%3A%2F%2Fi.scdn.co%2Fimage%2F6a7998abc8930dd07915199c69482adf8adb08a3&w=960&h=640&fit=cover&output=webp&q=80'],
     ['Nine Inch Nails', 'https://images.weserv.nl/?url=https%3A%2F%2Fassets.exclaim.ca%2Fimage%2Fupload%2Fv1703989385%2Fnin_2.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
     ['Placebo', 'https://images.weserv.nl/?url=https%3A%2F%2Fwww.nme.com%2Fwp-content%2Fuploads%2F2016%2F09%2FPlacebo04PR251111.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
     ['Queens of the Stone Age', 'https://images.weserv.nl/?url=https%3A%2F%2Ffestileaks.com%2Fwp-content%2Fuploads%2F2017%2F08%2Fqotsa.jpg&w=960&h=640&fit=cover&output=webp&q=80'],
